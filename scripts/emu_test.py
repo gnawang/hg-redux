@@ -161,7 +161,7 @@ def read_species_data(species_name):
     return {
         "stats": stats,
         "growth": re.search(r"\.expRate = (GROWTH_\w+)", entry).group(1),
-        "ability": re.search(r"\.abilities = \{ (\w+)", entry).group(1),
+        "abilities": re.search(r"\.abilities = \{ (\w+), (\w+)", entry).groups(),
     }
 
 
@@ -236,6 +236,10 @@ class Mon:
 
     def moves(self):
         return struct.unpack_from("<4H", self.blocks, self.b)
+
+    def ability(self):
+        msb = struct.unpack_from("<I", self.blocks, self.a + 8)[0] & ABILITY_MSB
+        return self.blocks[self.a + 0xD] | (0x100 if msb else 0)
 
     def status(self):
         return struct.unpack_from("<I", self.party, 0)[0]
@@ -339,16 +343,17 @@ def find_pocket(ram, constants, name):
 def print_party(emu, constants):
     names = {}
     for name, value in constants.items():
-        for prefix in ("SPECIES_", "ITEM_", "MOVE_"):
+        for prefix in ("SPECIES_", "ITEM_", "MOVE_", "ABILITY_"):
             if name.startswith(prefix):
                 names.setdefault((prefix, value), name[len(prefix):])
 
     _, mons = read_stable_party(emu)
     for slot, mon in enumerate(mons):
         moves = [names.get(("MOVE_", move), str(move)) for move in mon.moves() if move]
-        print("%d %-12s Lv.%-3d HP %d/%d status %d item %s moves %s" % (
+        print("%d %-12s Lv.%-3d HP %d/%d status %d ability %s item %s moves %s" % (
             slot, names.get(("SPECIES_", mon.species()), mon.species()), mon.level(), mon.hp()[0], mon.hp()[1],
-            mon.status(), names.get(("ITEM_", mon.item()), mon.item()), ", ".join(moves)))
+            mon.status(), names.get(("ABILITY_", mon.ability()), mon.ability()),
+            names.get(("ITEM_", mon.item()), mon.item()), ", ".join(moves)))
 
 
 def command_step(args):
@@ -390,7 +395,10 @@ def command_team(args):
         moves = [constants[move] for move in fields[3].split("+")] if len(fields) > 3 else None
         mon = Mon(template)
         data = read_species_data(species_name)
-        mon.rebuild(constants[species_name], level, item, moves, data, constants[data["ability"]])
+        # as in SetBoxMonAbility, the low PID bit picks the slot when a species has two abilities
+        first, second = data["abilities"]
+        ability = constants[second if mon.pid & 1 and second != "ABILITY_NONE" else first]
+        mon.rebuild(constants[species_name], level, item, moves, data, ability)
         write_mon(emu, party_offset, slot, mon)
 
     write_ram(emu, party_offset + 4, struct.pack("<I", len(args.mon)))

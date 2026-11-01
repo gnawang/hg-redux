@@ -4,6 +4,9 @@ Pokémon HeartGold Redux is a fork of [BluRosie/hg-engine](https://github.com/Bl
 This file lists every change Redux makes on top of upstream, the design rules behind them,
 and the work still planned. Keep it up to date in the same commit as each change.
 
+For what's in the game now (wild encounters, every Pokémon, key trainers' teams), see
+[the reference pages](reference/README.md).
+
 ## Design rules
 
 - **Roster:** all 493 Pokémon from Gens 1–4, plus later evolutions of normal Gen 1–4 Pokémon
@@ -192,6 +195,20 @@ These later evolutions only come from a regional form, so they're excluded too: 
 
 Regional forms of Gen 5+ Pokémon (e.g. Galarian Darumaka, Hisuian Zorua) were never in scope. Ursaluna's Bloodmoon form
 isn't a regional form, but it's also left out: it can't be reached by evolution.
+
+### Wild encounters and trainers
+
+Not changed yet. `data/Encounters.c`, `data/Headbutt.c`, `data/SafariEncounters.c` and `data/Trainers.c` are hg-engine's
+(see [Planned, not started](#planned-not-started)), so the [encounter](reference/encounters.md) and
+[trainer](reference/trainers.md) pages describe upstream's data.
+
+Ability Capsules, Ability Patches and Mints are hg-engine features. Redux only adds them to shops and sets their prices.
+
+### Developer tools
+
+- `scripts/emu_test.py`: plays `test.nds` headlessly for testing. See `AGENTS.md`
+- `scripts/build_reference_docs.py`: generates `documentation/reference/`
+- `scripts/build_title_logo.py`: converts the title logo PNG
 
 ## Dropped
 
