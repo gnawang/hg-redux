@@ -123,33 +123,31 @@ and can't be tossed or sold.
 | Item | ID | How it works |
 |---|---|---|
 | Infinite Candy | 2685 (`ITEM_INFINITE_CANDY`) | Same item data as Rare Candy (HeartGold Generations' setup). Use it on a Pokémon from the bag; it's never used up and can be reused in a row. Works for level-100 evolutions like Rare Candy |
-| Pocket PKMN Center | 2686 (`ITEM_POCKET_PKMN_CENTER`) | Register it to the Y button, like GB Sounds. Pressing Y runs common script 2074, which plays the heal jingle, heals the whole party (`heal_party`, the Pokémon Center command) and prints a message. Outside battle only |
+| Pocket PKMN Center | 2686 (`ITEM_POCKET_PKMN_CENTER`) | Use it from the bag, or register it to the Y button. Either way it runs common script 2074, which plays the heal jingle, heals the whole party (`heal_party`, the Pokémon Center command) and prints a message. Outside battle only |
 
 Files involved:
 
 - `include/constants/item.h`: IDs, `MAX_TOTAL_ITEM_NUM` and `IS_ITEM_INFINITE`
 - `data/itemdata/itemdata.c`: item data (copied from Rare Candy and GB Sounds)
-- `src/item.c`: `ItemFieldUseFunc_PocketPkmnCenter` (field use function 36)
+- `src/item.c`: field use function 36. `ItemMenuUseFunc_PocketPkmnCenter` handles the bag: it closes the bag and runs the
+  script through the start menu's exit task, like pokeheartgold's `StartScriptFromMenu`.
+  `ItemFieldUseFunc_PocketPkmnCenter` handles the Y button.
+- `rom.ld`, `include/script.h`: `Task_RunScripts`, `ScriptEnvironment_New`, `SetupScriptEngine`. The addresses come from
+  KalaayPT/G4Patcher's `QoLItems_HG_SS.asm`; they match hg-engine's existing `EventSet_Script` and
+  `FieldSystem_LoadFieldOverlay`, and the function order in pokeheartgold's `script_manager.c`
 - `src/bag.c`: `Bag_TakeItem` never removes infinite items
 - `src/individual/GetMonEvolutionInternal.c`, `src/pokemon.c`: Infinite Candy gets Rare Candy's special cases
-- `data/scr_seq/scr_seq_00003_commonscript.s`: script 2074 (Pocket PKMN Center) and 2075 (Mom gives both items)
+- `data/scr_seq/scr_seq_00003_commonscript.s`: script 2074 (Pocket PKMN Center), script 2038 (Mom's handoff, below),
+  and 2075 (gives both items directly, for debugging)
 - `data/text/040.txt` lines 121–122 (script messages); `222.txt` (names); `221`/`223`/`224`/`829.txt` (custom item descriptions and name forms)
 - `data/graphics/itemgra.mk`: icons reuse `rare_candy.png` and `full_restore.png`. The dummy and return icons
   moved to 2689/2690 to stay right after the last item
 
-**Not hooked up yet: Mom giving the items.** Common script 2075 gives both items with the
-usual "obtained" fanfare. It needs a `callstd 2075` added to Mom's opening scene in New Bark
-Town (map script 845, `T20R0201`, scene 0, right after she explains the Options button).
-That map script isn't in the repo. Dump it from a ROM on a scratch branch:
-
-```bash
-make dump_scripts DUMP_ROM=rom.nds
-```
-
-Keep only Mom's script file from the dump and discard the rest; the dump also rewrites text
-files Redux has edited. Copy it to a five-digit engine script, e.g. `data/scr_seq/scr_seq_00845_T20R0201.s`.
-Five-digit scripts are always built and replace only their own slot, so `BUILD_DUMPED_SCR_SEQ`
-stays off. Then add the `callstd 2075` line.
+**Mom gives the items.** Mom's opening scene in New Bark Town ends with `callstd 2038`
+(`std_fade_end_mom_music`). Vanilla shares that script's body with five other shared scripts, so Redux gives 2038 its own
+entry point. If the player doesn't have the Pocket PKMN Center yet, Mom says one extra line and gives both items with the
+usual "obtained" fanfare (the vanilla give-item routine `_080A`); then the music fades as before. Her scene is the first
+script that calls 2038, and the item check makes it a one-time gift, so no new flag or map script edit is needed.
 
 ## Planned, not started
 

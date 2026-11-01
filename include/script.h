@@ -4,6 +4,7 @@
 #include "types.h"
 
 #include "save.h"
+#include "task.h"
 
 // pokeheartgold coming through
 
@@ -103,6 +104,11 @@ u16 LONG_CALL VarGet(FieldSystem *fsys, u16 varIdx);
 u32 LONG_CALL VarSet(FieldSystem *fsys, u16 varIdx, u16 value);
 void LONG_CALL WORDSET_RegisterAbilityName(void *wordset, u32 bufID, u32 wazaID);
 void LONG_CALL EventSet_Script(FieldSystem *fsys, u16 scr_id, void *obj);
+// pret/pokeheartgold script_manager.c: used together to start a script after leaving the start menu/bag
+BOOL LONG_CALL Task_RunScripts(TaskManager *taskman);
+void *LONG_CALL ScriptEnvironment_New(void);
+void LONG_CALL SetupScriptEngine(FieldSystem *fsys, void *scriptEnv, u16 script, void *lastInteracted, void *a4);
+void LONG_CALL FieldSystem_LoadFieldOverlay(FieldSystem *fsys);
 void LONG_CALL ScriptJump(SCRIPTCONTEXT *ctx, const u8 *ptr); // this is important
 void *LONG_CALL FieldSysGetAttrAddr(FieldSystem *fsys, int field);
 u32 LONG_CALL Fsys_GetWeather_HandleDiamondDust(FieldSystem *fsys, u32 mapID);

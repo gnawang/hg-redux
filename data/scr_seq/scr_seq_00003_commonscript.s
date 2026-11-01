@@ -1321,8 +1321,27 @@ scr_seq_0003_074_pocket_pkmn_center:
     releaseall
     end
 
-// Redux: Mom hands over the infinite items. Call with callstd 2075 from her opening scene.
+// Redux: std 2038 (std_fade_end_mom_music) ends Mom's temporary music. Vanilla shares its body
+// with std 2043/2045/2066/2068/2071. Mom's opening scene in New Bark Town is the first script to
+// call it, right after she explains the Options menu, so she hands over the Redux starting items
+// here. The item check makes this happen once, without a new flag.
+scr_seq_0003_038:
+    hasitem ITEM_POCKET_PKMN_CENTER, 1, VAR_SPECIAL_RESULT
+    compare VAR_SPECIAL_RESULT, 0
+    call_if_eq _ReduxGiveStartingItems
+    fade_out_bgm 0, 30
+    stop_bgm 0
+    reset_bgm
+    endstd
+    end
+
+// Redux: give the starting items directly (debug or future use)
 scr_seq_0003_075_redux_starting_items:
+    call _ReduxGiveStartingItems
+    endstd
+    end
+
+_ReduxGiveStartingItems:
     npc_msg 122
     setvar VAR_SPECIAL_x8004, ITEM_INFINITE_CANDY
     setvar VAR_SPECIAL_x8005, 1
@@ -1330,8 +1349,8 @@ scr_seq_0003_075_redux_starting_items:
     setvar VAR_SPECIAL_x8004, ITEM_POCKET_PKMN_CENTER
     setvar VAR_SPECIAL_x8005, 1
     call _080A
-    endstd
-    end
+    closemsg
+    return
 
 scr_seq_0003_072_repels:
     play_se SEQ_SE_DP_SELECT
@@ -1486,7 +1505,6 @@ scr_seq_0003_067:
 
 scr_seq_0003_030:
 scr_seq_0003_032:
-scr_seq_0003_038:
 scr_seq_0003_043:
 scr_seq_0003_045:
 scr_seq_0003_066:

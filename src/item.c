@@ -12,6 +12,9 @@
 #define GFX_ITEM_RETURN_ID ((MAX_TOTAL_ITEM_NUM + 1) * 2 + 4)
 #define NEW_ITEM_GFX       (797)
 
+// Redux: common script that heals the party and prints a message (scr_seq_0003_074_pocket_pkmn_center)
+#define SCRIPT_POCKET_PKMN_CENTER 2074
+
 u16 GetItemIndex(u16 item, u16 type);
 void *GetItemNarcData(u16 item, u16 type, u32 heap_id);
 u16 ItemToMachineMove(u16 itemId);
@@ -26,6 +29,7 @@ void ItemMenuUseFunc_AbilityCapsule(struct ItemMenuUseData *data, const struct I
 void ItemMenuUseFunc_Mint(struct ItemMenuUseData *data, const struct ItemCheckUseData *dat2 UNUSED);
 void ItemMenuUseFunc_Nectar(struct ItemMenuUseData *data, const struct ItemCheckUseData *dat2 UNUSED);
 void ItemMenuUseFunc_RotomCatalog(struct ItemMenuUseData *data, const struct ItemCheckUseData *dat2 UNUSED);
+void ItemMenuUseFunc_PocketPkmnCenter(struct ItemMenuUseData *data, const struct ItemCheckUseData *dat2 UNUSED);
 BOOL ItemFieldUseFunc_PocketPkmnCenter(struct ItemFieldUseData *data);
 
 const struct ItemUseFuncDat sNewItemFieldUseFuncs[] = {
@@ -35,8 +39,8 @@ const struct ItemUseFuncDat sNewItemFieldUseFuncs[] = {
     { ItemMenuUseFunc_Mint, NULL, NULL },
     { ItemMenuUseFunc_Nectar, NULL, NULL },
     { ItemMenuUseFunc_RotomCatalog, NULL, NULL },
-    // Redux: used from the Y button like GB Sounds, so there is no bag menu function
-    { NULL, ItemFieldUseFunc_PocketPkmnCenter, NULL }, // fieldUseFunc 36
+    // Redux: usable from the bag and from the registered (Y) button
+    { ItemMenuUseFunc_PocketPkmnCenter, ItemFieldUseFunc_PocketPkmnCenter, NULL }, // fieldUseFunc 36
 };
 
 extern const struct ItemUseFuncDat sItemFieldUseFuncs[NUM_VANILLA_FIELD_USE_FUNCS];
@@ -328,8 +332,29 @@ void ItemMenuUseFunc_RotomCatalog(struct ItemMenuUseData *data, const struct Ite
     sub_0203C8F0(env, 0x0203CA9C | 1);
 }
 
-// Common script that heals the party and prints a message (scr_seq_0003_074_pocket_pkmn_center)
-#define SCRIPT_POCKET_PKMN_CENTER 2074
+/**
+ *  @brief bag use function for the Pocket PKMN Center key item
+ *         closes the bag and start menu, then runs the heal script in the overworld. This is
+ *         pokeheartgold's StartScriptFromMenu done through the start menu's exit task (state 12 makes
+ *         the start menu close and then run atexit_TaskFunc), the same approach as the
+ *         "PKMN Box Link" item in KalaayPT/G4Patcher's QoLItems_HG_SS.asm
+ *
+ *  @param data bag item use data
+ *  @param dat2 unused
+ */
+void ItemMenuUseFunc_PocketPkmnCenter(struct ItemMenuUseData *data, const struct ItemCheckUseData *dat2 UNUSED)
+{
+    FieldSystem *fieldSystem = data->taskManager->fieldSystem; // TaskManager_GetFieldSystem(data->taskManager);
+    struct BagViewAppWork *env = data->taskManager->env; // TaskManager_GetEnvironment(data->taskManager);
+    void *scriptEnv;
+
+    FieldSystem_LoadFieldOverlay(fieldSystem);
+    scriptEnv = ScriptEnvironment_New();
+    SetupScriptEngine(fieldSystem, scriptEnv, SCRIPT_POCKET_PKMN_CENTER, NULL, NULL);
+    env->atexit_TaskFunc = Task_RunScripts;
+    env->atexit_TaskEnv = scriptEnv;
+    env->state = 12;
+}
 
 /**
  *  @brief field use function for the Pocket PKMN Center key item, run from the registered (Y) button
