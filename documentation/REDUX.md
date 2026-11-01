@@ -21,3 +21,19 @@ python3 scripts/build_learnsets.py --generate data/learnsets/learnsets.json --cu
   anyway). Rage Fist is replaced with Shadow Punch for Primeape and Annihilape.
 
 To change a single learnset, edit its entry in `custom.json` and rerun the command above.
+
+## Evolutions
+
+Vanilla and hg-engine evolution methods are kept. Redux adds or replaces these:
+
+| Change | Species |
+|---|---|
+| Pure trade evolutions also evolve at **level 36** | Kadabra, Machoke, Graveler (incl. Alolan), Haunter |
+| Trade-with-item evolutions also evolve by **using the item** from the bag | Poliwhirl and Slowpoke (King's Rock), Onix and Scyther (Metal Coat), Rhydon (Protector), Seadra (Dragon Scale), Electabuzz (Electirizer), Magmar (Magmarizer), Porygon (Up-Grade), Porygon2 (Dubious Disc), Feebas (Prism Scale), Dusclops (Reaper Cloth), Clamperl (Deep Sea Tooth/Scale) |
+| Hold-item-and-level evolutions also evolve by **using the item** (no day/night requirement) | Gligar (Razor Fang), Sneasel (Razor Claw), Hisuian Sneasel (Razor Claw), Ursaring (Peat Block), Happiny (Oval Stone) |
+| `EVO_FORM_ARGUMENT` is not evaluated by hg-engine, so it is replaced with **level 35** | Primeape → Annihilape, Stantler → Wyrdeer |
+
+For the "use the item" evolutions, the items are marked usable on party Pokémon in
+`data/itemdata/itemdata.c` (`fieldUseFunc = 20`, `partyUse = 1`, `evolve = TRUE`), the same
+settings hg-engine already uses for Linking Cord and Peat Block. Their held-item battle
+effects are unchanged.
