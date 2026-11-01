@@ -13,7 +13,6 @@ import argparse
 import os
 import re
 import struct
-import sys
 
 from desmume.controls import Keys, keymask
 from desmume.emulator import DeSmuME
@@ -27,6 +26,7 @@ MON_SIZE = 0xEC
 BOX_SIZE = 0x88
 BLOCK_SIZE = 0x20
 PARTY_HEADER_SIZE = 8
+PARTY_SIZE = 6
 BLOCK_ORDERS = ["ABCD", "ABDC", "ACBD", "ACDB", "ADBC", "ADCB", "BACD", "BADC", "BCAD", "BCDA", "BDAC", "BDCA",
                 "CABD", "CADB", "CBAD", "CBDA", "CDAB", "CDBA", "DABC", "DACB", "DBAC", "DBCA", "DCAB", "DCBA"]
 EXP_MASK = 0x1FFFFF
@@ -128,7 +128,7 @@ def save_contact_sheet(shots, path):
 def read_constants():
     # returns {"SPECIES_KADABRA": 64, ...} for the headers the tool's arguments can name
     pending = {}
-    for path in ("include/constants/species.h", "include/constants/item.h", "include/constants/moves.h"):
+    for path in ("include/constants/species.h", "include/constants/item.h", "include/constants/moves.h", "include/constants/ability.h"):
         with open(path, encoding="utf-8") as source:
             for line in source:
                 match = re.match(r"#define\s+(\w+)\s+([^/\n]+)", line)
@@ -163,12 +163,6 @@ def read_species_data(species_name):
         "growth": re.search(r"\.expRate = (GROWTH_\w+)", entry).group(1),
         "ability": re.search(r"\.abilities = \{ (\w+)", entry).group(1),
     }
-
-
-def read_ability(name):
-    with open("include/constants/ability.h", encoding="utf-8") as source:
-        match = re.search(r"#define\s+%s\s+(\d+)" % name, source.read())
-    return int(match.group(1)) if match else 0
 
 
 def exp_for_level(growth, level):
@@ -217,7 +211,7 @@ def checksum(blocks):
 
 
 class Mon:
-    # one party Pokemon, decrypted for editing; `order` gives each substruct's position
+    # one party Pokemon, decrypted for editing; a and b are the offsets of substructs A and B
     def __init__(self, raw):
         self.pid, self.flags, self.stored_checksum = struct.unpack_from("<IHH", raw, 0)
         self.blocks = bytearray(crypt(raw[8:BOX_SIZE], self.stored_checksum))
@@ -260,11 +254,10 @@ class Mon:
         struct.pack_into("<H", self.party, 6, hp)
         struct.pack_into("<I", self.party, 0, status)
 
-    def rebuild(self, species, level, item, moves, data):
+    def rebuild(self, species, level, item, moves, data, ability):
         struct.pack_into("<HH", self.blocks, self.a, species, item)
         exp_and_flags = struct.unpack_from("<I", self.blocks, self.a + 8)[0]
         exp_and_flags = (exp_and_flags & ~(EXP_MASK | ABILITY_MSB)) | exp_for_level(data["growth"], level)
-        ability = read_ability(data["ability"])
         if ability > 0xFF:
             exp_and_flags |= ABILITY_MSB
         struct.pack_into("<I", self.blocks, self.a + 8, exp_and_flags)
@@ -281,6 +274,7 @@ class Mon:
         max_hp = (2 * base["hp"] + ivs[0]) * level // 100 + level + 10
         others = [(2 * base[field] + ivs[index]) * level // 100 + 5
                   for field, index in (("attack", 1), ("defense", 2), ("speed", 3), ("spAttack", 4), ("spDefense", 5))]
+        struct.pack_into("<I", self.party, 0, 0)
         self.party[4] = level
         struct.pack_into("<HH5H", self.party, 6, max_hp, max_hp, *others)
 
@@ -295,8 +289,8 @@ def write_ram(emu, offset, data):
 
 
 def find_party(ram):
-    for count in range(1, 7):
-        pattern = struct.pack("<II", 6, count)
+    for count in range(1, PARTY_SIZE + 1):
+        pattern = struct.pack("<II", PARTY_SIZE, count)
         offset = ram.find(pattern)
         while offset >= 0:
             if offset % 4 == 0 and Mon(ram[offset + PARTY_HEADER_SIZE:offset + PARTY_HEADER_SIZE + MON_SIZE]).valid():
@@ -380,6 +374,9 @@ def command_party(args):
 
 
 def command_team(args):
+    if len(args.mon) > PARTY_SIZE:
+        raise SystemExit("A party holds at most %d Pokemon" % PARTY_SIZE)
+
     constants = read_constants()
     emu = open_emulator(args.rom, args.state)
     party_offset, mons = read_stable_party(emu)
@@ -392,7 +389,8 @@ def command_team(args):
         item = constants[fields[2]] if len(fields) > 2 and fields[2] else 0
         moves = [constants[move] for move in fields[3].split("+")] if len(fields) > 3 else None
         mon = Mon(template)
-        mon.rebuild(constants[species_name], level, item, moves, read_species_data(species_name))
+        data = read_species_data(species_name)
+        mon.rebuild(constants[species_name], level, item, moves, data, constants[data["ability"]])
         write_mon(emu, party_offset, slot, mon)
 
     write_ram(emu, party_offset + 4, struct.pack("<I", len(args.mon)))
@@ -407,8 +405,8 @@ def command_bag(args):
         fields = text.split(":")
         item, quantity = constants[fields[0]], int(fields[1])
         pocket = fields[2] if len(fields) > 2 else "items"
-        offset, slots = find_pocket(read_ram(emu), constants, pocket)
         ram = read_ram(emu)
+        offset, slots = find_pocket(ram, constants, pocket)
         for slot in range(slots):
             position = offset + slot * ITEM_SLOT_SIZE
             if ram[position:position + ITEM_SLOT_SIZE] == bytes(ITEM_SLOT_SIZE):
@@ -420,9 +418,11 @@ def command_bag(args):
     emu.savestate.save_file(state_path(args.out))
 
 
-def command_hurt(args):
+def command_damage(args):
     emu = open_emulator(args.rom, args.state)
     party_offset, mons = read_stable_party(emu)
+    if not 0 <= args.slot < len(mons):
+        raise SystemExit("Slot must be 0 to %d" % (len(mons) - 1))
     mons[args.slot].set_hp(args.hp, args.status)
     write_mon(emu, party_offset, args.slot, mons[args.slot])
     print_party(emu, read_constants())
@@ -460,13 +460,13 @@ def main():
     bag.add_argument("--add", action="append", required=True, help="ITEM_X:QUANTITY[:POCKET]")
     bag.set_defaults(handler=command_bag)
 
-    hurt = commands.add_parser("hurt", help="set a party member's HP and status")
-    hurt.add_argument("state")
-    hurt.add_argument("out")
-    hurt.add_argument("slot", type=int)
-    hurt.add_argument("hp", type=int)
-    hurt.add_argument("--status", type=int, default=0, help="8 is poison")
-    hurt.set_defaults(handler=command_hurt)
+    damage = commands.add_parser("damage", help="set a party member's HP and status")
+    damage.add_argument("state")
+    damage.add_argument("out")
+    damage.add_argument("slot", type=int)
+    damage.add_argument("hp", type=int)
+    damage.add_argument("--status", type=int, default=0, help="8 is poison")
+    damage.set_defaults(handler=command_damage)
 
     args = parser.parse_args()
     os.makedirs(STATE_DIR, exist_ok=True)
