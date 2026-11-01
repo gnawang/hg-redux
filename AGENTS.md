@@ -23,8 +23,8 @@ Follow the README, then run `make`, which writes `test.nds`. Problems seen on ma
 - A `pyexpat` symbol error from `pip` or `venv` means Homebrew's Python doesn't match the macOS libexpat.
   Install a standalone Python (`uv python install 3.12`) and put a `python3` link to it first on `PATH`
   before the first `make`, which creates `.venv`.
-- `brew install --cask gcc-arm-embedded` needs a password. The same toolchain is available as a tarball
-  from Arm that works when added to `PATH`.
+- `brew install --cask gcc-arm-embedded` runs a system installer. If that isn't possible, the same toolchain
+  is available as a tarball from Arm that works when added to `PATH`.
 
 ## Testing in the emulator
 
@@ -36,17 +36,17 @@ they contain game data. Run it from the repo root with `.venv/bin/python scripts
 .venv/bin/python scripts/emu_test.py new-game start
 .venv/bin/python scripts/emu_test.py team start t1 --mon SPECIES_POLIWHIRL:30 --mon SPECIES_ALTARIA:40::MOVE_MOONBLAST+MOVE_DRAGON_PULSE
 .venv/bin/python scripts/emu_test.py bag t1 t2 --add ITEM_KINGS_ROCK:1
-.venv/bin/python scripts/emu_test.py hurt t2 t3 1 1 --status 8
+.venv/bin/python scripts/emu_test.py damage t2 t3 1 1 --status 8
 .venv/bin/python scripts/emu_test.py step t3 t4 t:43:115 w150 snap t:62:56 w90
 .venv/bin/python scripts/emu_test.py party t4
 ```
 
 | Command | What it does |
 |---|---|
-| `new-game OUT` | Plays from power-on to the overworld in Elm's Lab with Totodile, Mom's items in the bag. Takes about 30 seconds. Check `OUT_mom.png`, `OUT_lab.png` and `OUT_starter.png` if it fails |
+| `new-game OUT` | Plays from power-on to the overworld in Elm's Lab with Totodile, Mom's items in the bag. Takes about a minute. Check `OUT_mom.png`, `OUT_lab.png` and `OUT_starter.png` if it fails |
 | `team IN OUT --mon SPECIES:LEVEL[:ITEM[:MOVE+MOVE]]` | Replaces the party, with correct EXP, ability and HP for the species. Leave the item empty with `::` to give moves only |
 | `bag IN OUT --add ITEM:QTY[:POCKET]` | Adds items. Pockets: items (default), key, tms, mail, medicine, berries, balls, battle. The game doesn't check pockets for you, so use the item's real one |
-| `hurt IN OUT SLOT HP [--status 8]` | Sets HP and status (8 is poison) |
+| `damage IN OUT SLOT HP [--status 8]` | Sets HP and status (8 is poison) |
 | `party STATE` | Prints species, level, HP, status, item and moves |
 | `step IN OUT INPUTS...` | Loads a state (`-` boots the ROM), applies inputs, saves `OUT.ds` and `OUT.png` |
 
@@ -102,9 +102,9 @@ Every picture costs tokens, so use the fewest that prove the result.
 
 ### Limits
 
-- `team` copies slot 0 for every Pokémon, so they share a PID, IVs, nature and gender. Non-HP stats ignore
+- `team` copies slot 0 for every Pokémon, so they share a PID, IVs and nature. Non-HP stats ignore
   nature until the next level up. Don't use it to check exact stats.
-- Reading RAM can catch a Pokémon mid-update. `party`, `team` and `hurt` wait for valid checksums; custom
+- Reading RAM can catch a Pokémon mid-update. `party`, `team` and `damage` wait for valid checksums; custom
   scripts must do the same (`read_stable_party`).
 - `team` and `bag` find their data from the party and Mom's two key items, and `bag` assumes
   `ITEM_POCKET_EXPANSION` is on. Update `POCKETS` in the script if bag sizes change.
