@@ -37,3 +37,19 @@ For the "use the item" evolutions, the items are marked usable on party Pokémon
 `data/itemdata/itemdata.c` (`fieldUseFunc = 20`, `partyUse = 1`, `evolve = TRUE`), the same
 settings hg-engine already uses for Linking Cord and Peat Block. Their held-item battle
 effects are unchanged.
+
+## Shops
+
+Shops use hg-engine's `MART_EXPANSION` lists in `src/field/mart.c`. Additions follow
+HeartGold Generations' layout:
+
+| Shop | Added items |
+|---|---|
+| Every Poké Mart (badge-gated) | Max Ether (3 badges), Elixir (5), Max Elixir (7), Max Revive (8) |
+| Goldenrod and Celadon Dept. Store 2F, medicine clerk | PP Up, Ability Capsule, Ability Patch, all 21 Nature Mints |
+| Goldenrod Dept. Store 3F | King's Rock, Metal Coat, Dragon Scale, Up-Grade, Dubious Disc, Protector, Electirizer, Magmarizer, Reaper Cloth, Prism Scale, Deep Sea Tooth/Scale, Razor Fang, Razor Claw, Oval Stone |
+| Goldenrod Dept. Store 5F | Fire, Water, Thunder, Leaf, Moon, Sun and Ice Stones |
+| Celadon Dept. Store 3F | Shiny, Dusk and Dawn Stones, Black Augurite, Peat Block, Galarica Cuff and Wreath |
+
+Prices are the modern defaults from `itemdata.c` (Mints ₽20,000, Ability Capsule ₽100,000,
+Ability Patch ₽500,000).
