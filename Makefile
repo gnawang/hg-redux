@@ -423,6 +423,9 @@ endif
 	@echo "opening demo files:"
 	cp $(OPENDEMO_NARC) $(OPENDEMO_TARGET)
 
+	@echo "title screen files:"
+	cp $(TITLEDEMO_NARC) $(TITLEDEMO_TARGET)
+
 	@echo "mon personal data:"
 	cp $(MONDATA_NARC) $(MONDATA_TARGET)
 

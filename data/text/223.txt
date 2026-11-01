@@ -1,2 +1,2 @@
 an {COLOR 255}Infinite Candy{COLOR 0}
-a {COLOR 255}Pocket PKMN Center{COLOR 0}
+a {COLOR 255}Pocket Center{COLOR 0}

@@ -333,7 +333,7 @@ void ItemMenuUseFunc_RotomCatalog(struct ItemMenuUseData *data, const struct Ite
 }
 
 /**
- *  @brief bag use function for the Pocket PKMN Center key item
+ *  @brief bag use function for the Pocket Center key item
  *         closes the bag and start menu, then runs the heal script in the overworld. This is
  *         pokeheartgold's StartScriptFromMenu done through the start menu's exit task (state 12 makes
  *         the start menu close and then run atexit_TaskFunc), the same approach as the
@@ -357,7 +357,7 @@ void ItemMenuUseFunc_PocketPkmnCenter(struct ItemMenuUseData *data, const struct
 }
 
 /**
- *  @brief field use function for the Pocket PKMN Center key item, run from the registered (Y) button
+ *  @brief field use function for the Pocket Center key item, run from the registered (Y) button
  *         queues a common script that heals the party like a Pokémon Center, mirroring how
  *         vanilla GB Sounds and hg-engine's reusable repel prompt start overworld tasks
  *
