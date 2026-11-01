@@ -1,2 +1,2 @@
 {COLOR 255}Infinite Candies{COLOR 0}
-{COLOR 255}Pocket PKMN Centers{COLOR 0}
+{COLOR 255}Pocket Centers{COLOR 0}

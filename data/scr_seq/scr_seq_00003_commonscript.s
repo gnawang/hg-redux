@@ -1308,7 +1308,7 @@ scr_seq_0003_022:
     releaseall
     end
 
-// Redux: Pocket PKMN Center key item, used from the bag or the Y button. Heals the party like a Pokemon Center.
+// Redux: Pocket Center key item, used from the bag or the Y button. Heals the party like a Pokemon Center.
 scr_seq_0003_074_pocket_pkmn_center:
     lockall
     play_fanfare SEQ_ME_ASA

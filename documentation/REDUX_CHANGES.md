@@ -43,6 +43,16 @@ and the work still planned. Keep it up to date in the same commit as each change
 | Transparent text boxes, level cap, 60 fps, wild double battles | Off (upstream default) | Not wanted, or unstable |
 | `ALLOW_SAVE_CHANGES` | On (upstream default) | Required for the expanded Pokédex. Saves aren't PKHeX-compatible. The armips side uses `.ifdef`, so its `0` value still means on |
 
+### Title screen logo (`rawdata/title_demo/`, `data/graphics/title/redux_logo.png`)
+
+The title screen shows "REDUX" in place of "VERSION" under the HeartGold logo, following the layout of HeartGold Generations.
+"REDUX" is original pixel art; the rest of the logo is the vanilla art, and it uses the vanilla palette, so there are no
+code changes. The logo is one tile row taller than vanilla (16 rows, 32 KB), which is the most that fits before its tilemap in VRAM.
+
+- `narcs.mk`, `Makefile`: `a/0/4/6` gets the same `rawdata` override rule as `a/2/6/2`
+- `rawdata/title_demo/6_03`, `6_00`: the logo's tiles and tilemap. To change the logo, edit the PNG, then run
+  `python3 scripts/build_title_logo.py` to regenerate them
+
 ### Types (`data/Species.c`)
 
 Final stage only; pre-evolutions keep their types.
@@ -133,7 +143,7 @@ and can't be tossed or sold.
 | Item | ID | How it works |
 |---|---|---|
 | Infinite Candy | 2685 (`ITEM_INFINITE_CANDY`) | Same item data as Rare Candy (HeartGold Generations' setup). Use it on a Pokémon from the bag; it's never used up and can be reused in a row. Works for level-100 evolutions like Rare Candy |
-| Pocket PKMN Center | 2686 (`ITEM_POCKET_PKMN_CENTER`) | Use it from the bag, or register it to the Y button. Either way it runs common script 2074, which plays the heal jingle, heals the whole party (`heal_party`, the Pokémon Center command) and prints a message. Outside battle only |
+| Pocket Center | 2686 (`ITEM_POCKET_PKMN_CENTER`) | Use it from the bag, or register it to the Y button. Either way it runs common script 2074, which plays the heal jingle, heals the whole party (`heal_party`, the Pokémon Center command) and prints a message. Outside battle only |
 
 Files involved:
 
@@ -147,7 +157,7 @@ Files involved:
   `FieldSystem_LoadFieldOverlay`, and the function order in pokeheartgold's `script_manager.c`
 - `src/bag.c`: `Bag_TakeItem` never removes infinite items
 - `src/individual/GetMonEvolutionInternal.c`, `src/pokemon.c`: Infinite Candy gets Rare Candy's special cases
-- `data/scr_seq/scr_seq_00003_commonscript.s`: script 2074 (Pocket PKMN Center), script 2038 (Mom's handoff, below),
+- `data/scr_seq/scr_seq_00003_commonscript.s`: script 2074 (Pocket Center), script 2038 (Mom's handoff, below),
   and 2075 (gives both items directly, for debugging)
 - `data/text/040.txt` lines 121–122 (script messages); `222.txt` (names); `221`/`223`/`224`/`829.txt` (custom item descriptions and name forms)
 - `data/graphics/itemgra.mk`: icons reuse `rare_candy.png` and `full_restore.png`. The dummy and return icons
@@ -155,7 +165,7 @@ Files involved:
 
 **Mom gives the items.** Mom's opening scene in New Bark Town ends with `callstd 2038`
 (`std_fade_end_mom_music`). Vanilla shares that script's body with five other shared scripts, so Redux gives 2038 its own
-entry point. If the player doesn't have the Pocket PKMN Center yet, Mom says one extra line and gives both items with the
+entry point. If the player doesn't have the Pocket Center yet, Mom says one extra line and gives both items with the
 usual "obtained" fanfare (the vanilla give-item routine `_080A`); then the music fades as before. Her scene is the first
 script that calls 2038, and the item check makes it a one-time gift, so no new flag or map script edit is needed.
 
