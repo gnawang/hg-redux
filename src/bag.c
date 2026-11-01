@@ -256,6 +256,10 @@ BOOL Bag_TakeItem(BAG_DATA *bag, u16 itemId, u16 quantity, int heap_id)
     if (slot == NULL) {
         return FALSE;
     }
+    // Redux: infinite items are never used up
+    if (IS_ITEM_INFINITE(itemId)) {
+        return TRUE;
+    }
     slot->quantity -= quantity;
     if (slot->quantity == 0) {
         slot->id = ITEM_NONE;

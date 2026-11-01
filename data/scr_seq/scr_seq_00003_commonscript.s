@@ -99,6 +99,8 @@ scrdef scr_seq_0003_070
 scrdef scr_seq_0003_071
 scrdef scr_seq_0003_072_repels
 scrdef scr_seq_0003_073_autobattle_testing
+scrdef scr_seq_0003_074_pocket_pkmn_center
+scrdef scr_seq_0003_075_redux_starting_items
 scrdef_end
 
 scr_seq_0003_002:
@@ -1304,6 +1306,31 @@ scr_seq_0003_022:
     wait_button
     closemsg
     releaseall
+    end
+
+// Redux: Pocket PKMN Center key item (Y button). Heals the party like a Pokemon Center.
+scr_seq_0003_074_pocket_pkmn_center:
+    lockall
+    play_fanfare SEQ_ME_ASA
+    wait_fanfare
+    heal_party
+    buffer_players_name 0
+    npc_msg 121
+    wait_button_or_walk_away
+    closemsg
+    releaseall
+    end
+
+// Redux: Mom hands over the infinite items. Call with callstd 2075 from her opening scene.
+scr_seq_0003_075_redux_starting_items:
+    npc_msg 122
+    setvar VAR_SPECIAL_x8004, ITEM_INFINITE_CANDY
+    setvar VAR_SPECIAL_x8005, 1
+    call _080A
+    setvar VAR_SPECIAL_x8004, ITEM_POCKET_PKMN_CENTER
+    setvar VAR_SPECIAL_x8005, 1
+    call _080A
+    endstd
     end
 
 scr_seq_0003_072_repels:

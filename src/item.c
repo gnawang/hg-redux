@@ -26,6 +26,7 @@ void ItemMenuUseFunc_AbilityCapsule(struct ItemMenuUseData *data, const struct I
 void ItemMenuUseFunc_Mint(struct ItemMenuUseData *data, const struct ItemCheckUseData *dat2 UNUSED);
 void ItemMenuUseFunc_Nectar(struct ItemMenuUseData *data, const struct ItemCheckUseData *dat2 UNUSED);
 void ItemMenuUseFunc_RotomCatalog(struct ItemMenuUseData *data, const struct ItemCheckUseData *dat2 UNUSED);
+BOOL ItemFieldUseFunc_PocketPkmnCenter(struct ItemFieldUseData *data);
 
 const struct ItemUseFuncDat sNewItemFieldUseFuncs[] = {
     { ItemMenuUseFunc_RevealGlass, ItemFieldUseFunc_RevealGlass, NULL },
@@ -34,6 +35,8 @@ const struct ItemUseFuncDat sNewItemFieldUseFuncs[] = {
     { ItemMenuUseFunc_Mint, NULL, NULL },
     { ItemMenuUseFunc_Nectar, NULL, NULL },
     { ItemMenuUseFunc_RotomCatalog, NULL, NULL },
+    // Redux: used from the Y button like GB Sounds, so there is no bag menu function
+    { NULL, ItemFieldUseFunc_PocketPkmnCenter, NULL }, // fieldUseFunc 36
 };
 
 extern const struct ItemUseFuncDat sItemFieldUseFuncs[NUM_VANILLA_FIELD_USE_FUNCS];
@@ -323,4 +326,21 @@ void ItemMenuUseFunc_RotomCatalog(struct ItemMenuUseData *data, const struct Ite
     struct BagViewAppWork *env = data->taskManager->env; // TaskManager_GetEnvironment(data->taskManager);
     env->atexit_TaskEnv = sub_0203FAE8(fieldSystem, HEAPID_WORLD, ITEM_ROTOM_CATALOG);
     sub_0203C8F0(env, 0x0203CA9C | 1);
+}
+
+// Common script that heals the party and prints a message (scr_seq_0003_074_pocket_pkmn_center)
+#define SCRIPT_POCKET_PKMN_CENTER 2074
+
+/**
+ *  @brief field use function for the Pocket PKMN Center key item, run from the registered (Y) button
+ *         queues a common script that heals the party like a Pokémon Center, mirroring how
+ *         vanilla GB Sounds and hg-engine's reusable repel prompt start overworld tasks
+ *
+ *  @param data registered item use data
+ *  @return FALSE so the caller frees data
+ */
+BOOL ItemFieldUseFunc_PocketPkmnCenter(struct ItemFieldUseData *data)
+{
+    EventSet_Script(data->fieldSystem, SCRIPT_POCKET_PKMN_CENTER, NULL);
+    return FALSE;
 }

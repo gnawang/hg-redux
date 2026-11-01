@@ -1055,7 +1055,7 @@ BOOL LONG_CALL CanUseItemOnMonInParty(struct Party *party, u16 itemID, s32 party
 #if defined(IMPLEMENT_LEVEL_CAP) && defined(UNCAP_CANDIES_FROM_LEVEL_CAP)
     int currentLevel = GetMonData(mon, MON_DATA_LEVEL, NULL);
     if (GetItemData(itemID, ITEM_PARAM_LEVEL_UP, heapID)) {
-        if (currentLevel < 100 && itemID == ITEM_RARE_CANDY) {
+        if (currentLevel < 100 && (itemID == ITEM_RARE_CANDY || itemID == ITEM_INFINITE_CANDY)) {
             return TRUE;
         }
     }

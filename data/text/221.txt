@@ -1,1 +1,2 @@
-Custom item description
+A candy that never runs out. It raises\nthe level of a single Pokémon by one.\nIt can be used again and again.
+A portable healing device. Use it with\nthe Y button to fully heal your party,\njust like at a Pokémon Center.

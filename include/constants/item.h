@@ -2694,7 +2694,13 @@
 // define your custom move effects below like this
 // #define ITEM_CUSTOM_1 (MAX_BASE_ITEM_NUM + 1)
 
-#define MAX_TOTAL_ITEM_NUM ITEM_CANARI_BREAD
+// Redux custom items (names/descriptions in data/text/222.txt and the custom files 221/223/224/829)
+#define ITEM_INFINITE_CANDY     (MAX_BASE_ITEM_NUM + 1) // Rare Candy that is never used up
+#define ITEM_POCKET_PKMN_CENTER (MAX_BASE_ITEM_NUM + 2) // key item: heals the whole party outside battle
+
+#define MAX_TOTAL_ITEM_NUM ITEM_POCKET_PKMN_CENTER
+
+#define IS_ITEM_INFINITE(item) ((item) == ITEM_INFINITE_CANDY || (item) == ITEM_POCKET_PKMN_CENTER)
 
 #define NUM_MEGA_STONES   (48) // includes the pixie plate, doesn't include plza megas due to overflowing bag
 #define NUM_HMS           (ITEM_HM08 - ITEM_HM01 + 1) // intentionally do not include HM07_ORAS (Dive)

@@ -115,9 +115,44 @@ Redux prices (selling to a shop gives half):
 | Ability Capsule, Ability Patch | ₽2,000 |
 | All evolution items and stones listed above | ₽1,000 |
 
+### Infinite items
+
+Two custom item IDs follow the last hg-engine item (Canari Bread, 2684). Both are Key Items
+and can't be tossed or sold.
+
+| Item | ID | How it works |
+|---|---|---|
+| Infinite Candy | 2685 (`ITEM_INFINITE_CANDY`) | Same item data as Rare Candy (HeartGold Generations' setup). Use it on a Pokémon from the bag; it's never used up and can be reused in a row. Works for level-100 evolutions like Rare Candy |
+| Pocket PKMN Center | 2686 (`ITEM_POCKET_PKMN_CENTER`) | Register it to the Y button, like GB Sounds. Pressing Y runs common script 2074, which plays the heal jingle, heals the whole party (`heal_party`, the Pokémon Center command) and prints a message. Outside battle only |
+
+Files involved:
+
+- `include/constants/item.h`: IDs, `MAX_TOTAL_ITEM_NUM` and `IS_ITEM_INFINITE`
+- `data/itemdata/itemdata.c`: item data (copied from Rare Candy and GB Sounds)
+- `src/item.c`: `ItemFieldUseFunc_PocketPkmnCenter` (field use function 36)
+- `src/bag.c`: `Bag_TakeItem` never removes infinite items
+- `src/individual/GetMonEvolutionInternal.c`, `src/pokemon.c`: Infinite Candy gets Rare Candy's special cases
+- `data/scr_seq/scr_seq_00003_commonscript.s`: script 2074 (Pocket PKMN Center) and 2075 (Mom gives both items)
+- `data/text/040.txt` lines 121–122 (script messages); `222.txt` (names); `221`/`223`/`224`/`829.txt` (custom item descriptions and name forms)
+- `data/graphics/itemgra.mk`: icons reuse `rare_candy.png` and `full_restore.png`. The dummy and return icons
+  moved to 2689/2690 to stay right after the last item
+
+**Not hooked up yet: Mom giving the items.** Common script 2075 gives both items with the
+usual "obtained" fanfare. It needs a `callstd 2075` added to Mom's opening scene in New Bark
+Town (map script 845, `T20R0201`, scene 0, right after she explains the Options button).
+That map script isn't in the repo. Dump it from a ROM on a scratch branch:
+
+```bash
+make dump_scripts DUMP_ROM=rom.nds
+```
+
+Keep only Mom's script file from the dump and discard the rest; the dump also rewrites text
+files Redux has edited. Copy it to a five-digit engine script, e.g. `data/scr_seq/scr_seq_00845_T20R0201.s`.
+Five-digit scripts are always built and replace only their own slot, so `BUILD_DUMPED_SCR_SEQ`
+stays off. Then add the `callstd 2075` line.
+
 ## Planned, not started
 
-- **Infinite items:** Infinite Candy, plus one consolidated field-only heal item (see the design note below).
 - **PC anywhere** (L button, from HeartGold Generations): undecided; it hooks overworld input and needs in-game testing.
 - **Roster restriction:** remove Gen 5–9 species from the Pokédex order and keep them out of encounters and trainers.
 - **Wild encounters:** place all roster Pokémon at reasonable points; post-game sanctuaries.
@@ -129,16 +164,3 @@ Redux prices (selling to a shop gives half):
   so the vanilla Sinjoh and Ilex events run; post-game encounters or gifts for Pokémon HeartGold lacks.
 - **Extra NPCs and battles:** Gym Leader and Elite Four rematches, Kanto Gym Leader boss rush,
   Coach Trainers giving TMs, Kurt making balls instantly, fewer phone calls.
-
-### Design note: infinite items
-
-- HeartGold Generations has three never-consumed items (Infinite Candy, Infinite Rejuv,
-  Infinite Ashes). Its public source has no script that gives them to the player, and its item
-  numbering predates upstream's current item system, so it can't be copied directly.
-- ReEmerald and Heart & Soul (pokeemerald hacks) use an Infinite Candy / Rare Candy Box that
-  works like Rare Candy but isn't used up. Heart & Soul keeps it in the Key Items pocket so it
-  can't be sold or tossed.
-- Proposed for Redux: one key item for healing, usable only outside battle, that does what a
-  Pokémon Center does (revive, full HP, status and PP for the whole party). The heal routine is
-  short (`HealParty` in pret/pokeheartgold's `src/use_item_on_mon.c`) and can go in a new
-  custom item use function in `src/item.c`.
