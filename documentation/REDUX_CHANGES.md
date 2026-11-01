@@ -56,6 +56,11 @@ Final stage only; pre-evolutions keep their types.
 | Altaria | Dragon/Fairy |
 | Staraptor | Fighting/Flying |
 
+The Pokédex search-by-type lists in `data/PokedexSort.c` are updated to match: Feraligatr, Ampharos and Sceptile are
+under Dragon, Lopunny and Staraptor under Fighting, and Chimecho under Steel. Altaria is no longer under Flying and Staraptor
+no longer under Normal. The Pokédex has no Fairy search list; upstream never added one, so Fairy types are listed under
+their other type or their pre-Fairy type, as in vanilla.
+
 ### Learnsets (`data/learnsets/`)
 
 `data/learnsets/learnsets.json` is generated, not hand-edited. Regenerate it with:
@@ -89,6 +94,9 @@ The original methods are kept; Redux adds alternatives or replaces broken ones.
 | Trade-with-item evolutions also evolve by **using the item** from the bag | Poliwhirl and Slowpoke (King's Rock), Onix and Scyther (Metal Coat), Rhydon (Protector), Seadra (Dragon Scale), Electabuzz (Electirizer), Magmar (Magmarizer), Porygon (Up-Grade), Porygon2 (Dubious Disc), Feebas (Prism Scale), Dusclops (Reaper Cloth), Clamperl (Deep Sea Tooth/Scale) |
 | Hold-item-and-level evolutions also evolve by **using the item** (no day/night requirement) | Gligar (Razor Fang), Sneasel (Razor Claw), Hisuian Sneasel (Razor Claw), Ursaring (Peat Block), Happiny (Oval Stone) |
 | Upstream bug: `EVO_FORM_ARGUMENT` is never evaluated, so these could not evolve. Replaced with **level 35** | Primeape → Annihilape, Stantler → Wyrdeer |
+
+`src/individual/GetMonEvolutionInternal.c` keeps the Gen 4 quirk that an Everstone doesn't stop Kadabra's
+*trade* evolution, but no longer applies it to other evolutions, so an Everstone still stops Kadabra's level-36 evolution.
 
 To make the items usable, they're marked usable on party Pokémon in `itemdata.c`
 (`fieldUseFunc = 20`, `partyUse = 1`, `evolve = TRUE`), the same settings upstream uses for
@@ -149,9 +157,12 @@ entry point. If the player doesn't have the Pocket PKMN Center yet, Mom says one
 usual "obtained" fanfare (the vanilla give-item routine `_080A`); then the music fades as before. Her scene is the first
 script that calls 2038, and the item check makes it a one-time gift, so no new flag or map script edit is needed.
 
+## Dropped
+
+- **PC anywhere** (L button, from HeartGold Generations): it hooks overworld input and uses an arbitrary game flag. Not worth the risk.
+
 ## Planned, not started
 
-- **PC anywhere** (L button, from HeartGold Generations): undecided; it hooks overworld input and needs in-game testing.
 - **Roster restriction:** remove Gen 5–9 species from the Pokédex order and keep them out of encounters and trainers.
 - **Wild encounters:** place all roster Pokémon at reasonable points; post-game sanctuaries.
 - **Trainers:** rebuild teams and level curve along Sacred Gold's lines.

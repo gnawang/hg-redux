@@ -60,7 +60,9 @@ u16 GetMonEvolutionInternal(struct Party *party, struct PartyPokemon *pokemon, u
     holdEffect = GetItemData(heldItem, ITEM_PARAM_HOLD_EFFECT, 0);
     level = (u8)GetMonData(pokemon, MON_DATA_LEVEL, NULL);
 
-    if (species != SPECIES_KADABRA && holdEffect == HOLD_EFFECT_NO_EVOLVE && context != EVOCTX_ITEM_USE) {
+    // Gen 4 quirk: an Everstone doesn't stop Kadabra's trade evolution. Redux limits the quirk to trades,
+    // so a Kadabra holding an Everstone still won't evolve through Redux's level-36 evolution.
+    if (!(species == SPECIES_KADABRA && context == EVOCTX_TRADE) && holdEffect == HOLD_EFFECT_NO_EVOLVE && context != EVOCTX_ITEM_USE) {
         return SPECIES_NONE;
     }
 
