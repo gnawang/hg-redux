@@ -11,6 +11,10 @@ and the work still planned.
   playtesting is still the final check.
 - The ROM (`rom.nds`) is not in the repo, so a full `make` isn't possible in cloud sessions.
   Compile-check C changes with `arm-none-eabi-gcc -fsyntax-only` and the `Makefile` `CFLAGS`.
+- After changing encounters, trainers, Pokémon or learnsets, run `.venv/bin/python scripts/build_reference_docs.py`
+  and commit `documentation/reference/`. Those pages are generated, so don't edit them by hand. The script needs a built
+  repo (`base/`) and the `upstream` remote fetched. `gift_static.md` is the exception: it's hand-written from the event
+  scripts, so update it yourself when scripts or legendaries change.
 - `data/learnsets/learnsets.json` is generated. Change learnsets through
   `data/learnsets/base/custom.json` and regenerate it with the command in the changes file.
 
@@ -45,9 +49,9 @@ they contain game data. Run it from the repo root with `.venv/bin/python scripts
 |---|---|
 | `new-game OUT` | Plays from power-on to the overworld in Elm's Lab with Totodile, Mom's items in the bag. Takes about a minute. Check `OUT_mom.png`, `OUT_lab.png` and `OUT_starter.png` if it fails |
 | `team IN OUT --mon SPECIES:LEVEL[:ITEM[:MOVE+MOVE]]` | Replaces the party, with correct EXP, ability and HP for the species. Leave the item empty with `::` to give moves only |
-| `bag IN OUT --add ITEM:QTY[:POCKET]` | Adds items. Pockets: items (default), key, tms, mail, medicine, berries, balls, battle. The game doesn't check pockets for you, so use the item's real one |
+| `bag IN OUT --add ITEM:QTY[:POCKET]` | Adds items. Pockets: items (default), key, tms, mail, medicine, berries, balls, battle. The game doesn't check pockets for you, so use the item's real one (`fieldPocket` in `data/itemdata/itemdata.c`). Ability Capsules, Ability Patches and Mints are in medicine |
 | `damage IN OUT SLOT HP [--status 8]` | Sets HP and status (8 is poison) |
-| `party STATE` | Prints species, level, HP, status, item and moves |
+| `party STATE` | Prints species, level, HP, status, ability, item and moves |
 | `step IN OUT INPUTS...` | Loads a state (`-` boots the ROM), applies inputs, saves `OUT.ds` and `OUT.png` |
 
 Inputs for `step`:
@@ -96,6 +100,8 @@ Every picture costs tokens, so use the fewest that prove the result.
   cursor still on the Pokémon uses the item again, so a Rare Candy test can overshoot.
 - Inputs are ignored during fades. Evolutions take about 1,500 frames, and more if a move is learned,
   and input sent early lands on the wrong screen. Allow for this and check with `party` afterwards.
+- A Mint doesn't change the nature named on the summary's memo tab, as in mainline games. Check the
+  red and blue stat names on the skills tab, and the stats themselves.
 - Item fanfares lock input for several hundred frames. Wait longer before calling it a hang.
 - Runs aren't identical, because the game seeds from the clock: PID, stats and NPC walks vary.
   `new-game` has been reliable, but an NPC could block it. Rerun it once before debugging it.
@@ -104,6 +110,8 @@ Every picture costs tokens, so use the fewest that prove the result.
 
 - `team` copies slot 0 for every Pokémon, so they share a PID, IVs and nature. Non-HP stats ignore
   nature until the next level up. Don't use it to check exact stats.
+- Open only one emulator per process. A second `DeSmuME()` crashes with no error, so scripts that read
+  several states need one process each.
 - Reading RAM can catch a Pokémon mid-update. `party`, `team` and `damage` wait for valid checksums; custom
   scripts must do the same (`read_stable_party`).
 - `team` and `bag` find their data from the party and Mom's two key items, and `bag` assumes
