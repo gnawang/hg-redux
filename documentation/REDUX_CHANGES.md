@@ -40,8 +40,8 @@ and the work still planned. Keep it up to date in the same commit as each change
 | `SHINY_ODDS` | 32 (1 in 2048) | Matches HeartGold Generations |
 | `DELETABLE_HMS` | On | HMs can be forgotten |
 | `FAST_TEXT_PRINTING`, `ALWAYS_HAVE_NATIONAL_DEX` | On | QoL; National Dex from the start |
-| `ALLOW_SAVE_CHANGES` (armips) | On | Required for the expanded Pokédex. Breaks PKHeX compatibility |
 | Transparent text boxes, level cap, 60 fps, wild double battles | Off (upstream default) | Not wanted, or unstable |
+| `ALLOW_SAVE_CHANGES` | On (upstream default) | Required for the expanded Pokédex. Saves aren't PKHeX-compatible. The armips side uses `.ifdef`, so its `0` value still means on |
 
 ### Types (`data/Species.c`)
 
