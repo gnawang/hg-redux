@@ -165,6 +165,9 @@ script that calls 2038, and the item check makes it a one-time gift, so no new f
 
 - **Roster restriction:** remove Gen 5–9 species from the Pokédex order and keep them out of encounters and trainers.
 - **Wild encounters:** place all roster Pokémon at reasonable points; post-game sanctuaries.
+  Regional forms that only come from evolving in their home region (Alolan Raichu, Exeggutor and Marowak,
+  Hisuian Typhlosion, Ursaluna's Bloodmoon form) can't be reached through `data/Evolutions.c`, so they need their own
+  wild or gift placements.
 - **Trainers:** rebuild teams and level curve along Sacred Gold's lines.
 - **Faster egg hatching:** halve every species' `hatchCycles` in `data/Species.c`.
 - **Move tutors and Move Relearner:** free. Tutor costs in `src/field/move_tutor.c`, plus script edits.
