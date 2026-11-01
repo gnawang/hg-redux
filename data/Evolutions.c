@@ -15950,7 +15950,7 @@ const EvolutionTable __data[MAX_SPECIES_INCLUDING_FORMS + 1] =
         .entries = {
             { EVO_TRADE, 0, MON_WITH_FORM(SPECIES_GOLEM, 1) },
             { EVO_STONE, ITEM_LINKING_CORD, MON_WITH_FORM(SPECIES_GOLEM, 1) },
-            { EVO_LEVEL, 36, MON_WITH_FORM(SPECIES_GOLEM, 1) },
+            { EVO_NONE, 0, SPECIES_NONE },
             { EVO_NONE, 0, SPECIES_NONE },
             { EVO_NONE, 0, SPECIES_NONE },
             { EVO_NONE, 0, SPECIES_NONE },
@@ -18665,7 +18665,7 @@ const EvolutionTable __data[MAX_SPECIES_INCLUDING_FORMS + 1] =
     [SPECIES_SNEASEL_HISUIAN] = {
         .entries = {
             { EVO_ITEM_DAY, ITEM_RAZOR_CLAW, SPECIES_SNEASLER },
-            { EVO_STONE, ITEM_RAZOR_CLAW, SPECIES_SNEASLER },
+            { EVO_NONE, 0, SPECIES_NONE },
             { EVO_NONE, 0, SPECIES_NONE },
             { EVO_NONE, 0, SPECIES_NONE },
             { EVO_NONE, 0, SPECIES_NONE },

@@ -6,8 +6,10 @@ and the work still planned. Keep it up to date in the same commit as each change
 
 ## Design rules
 
-- **Roster:** all 493 Pokémon from Gens 1–4, later evolutions of Gen 1–4 Pokémon, and
-  regional forms of Gen 1–4 Pokémon. No other Gen 5–9 species in encounters or trainer teams.
+- **Roster:** all 493 Pokémon from Gens 1–4, plus later evolutions of normal Gen 1–4 Pokémon
+  (Sylveon, Wyrdeer, Kleavor, Ursaluna, Annihilape, Farigiraf, Dudunsparce). No regional forms
+  (see [Regional forms](#regional-forms-excluded)) and no other Gen 5–9 species in encounters,
+  trainer teams, gifts or shops.
 - **Stats:** modern official base stats (hg-engine default). No custom stat changes.
 - **Types:** official typings, except 8 final evolutions retyped to their Mega typings (see below).
 - **Story:** vanilla cutscenes only. New NPCs, rematches and post-game battles are fine.
@@ -90,9 +92,9 @@ The original methods are kept; Redux adds alternatives or replaces broken ones.
 
 | Change | Species |
 |---|---|
-| Pure trade evolutions also evolve at **level 36** (Definitive HeartGold's level) | Kadabra, Machoke, Graveler (incl. Alolan), Haunter |
+| Pure trade evolutions also evolve at **level 36** (Definitive HeartGold's level) | Kadabra, Machoke, Graveler, Haunter |
 | Trade-with-item evolutions also evolve by **using the item** from the bag | Poliwhirl and Slowpoke (King's Rock), Onix and Scyther (Metal Coat), Rhydon (Protector), Seadra (Dragon Scale), Electabuzz (Electirizer), Magmar (Magmarizer), Porygon (Up-Grade), Porygon2 (Dubious Disc), Feebas (Prism Scale), Dusclops (Reaper Cloth), Clamperl (Deep Sea Tooth/Scale) |
-| Hold-item-and-level evolutions also evolve by **using the item** (no day/night requirement) | Gligar (Razor Fang), Sneasel (Razor Claw), Hisuian Sneasel (Razor Claw), Ursaring (Peat Block), Happiny (Oval Stone) |
+| Hold-item-and-level evolutions also evolve by **using the item** (no day/night requirement) | Gligar (Razor Fang), Sneasel (Razor Claw), Ursaring (Peat Block), Happiny (Oval Stone) |
 | Upstream bug: `EVO_FORM_ARGUMENT` is never evaluated, so these could not evolve. Replaced with **level 35** | Primeape → Annihilape, Stantler → Wyrdeer |
 
 `src/individual/GetMonEvolutionInternal.c` keeps the Gen 4 quirk that an Everstone doesn't stop Kadabra's
@@ -113,7 +115,7 @@ HeartGold Generations.
 | Goldenrod and Celadon Dept. Store 2F, medicine clerk | PP Up, Ability Capsule, Ability Patch, all 21 Nature Mints |
 | Goldenrod Dept. Store 3F | King's Rock, Metal Coat, Dragon Scale, Up-Grade, Dubious Disc, Protector, Electirizer, Magmarizer, Reaper Cloth, Prism Scale, Deep Sea Tooth/Scale, Razor Fang, Razor Claw, Oval Stone |
 | Goldenrod Dept. Store 5F | Fire, Water, Thunder, Leaf, Moon, Sun and Ice Stones |
-| Celadon Dept. Store 3F | Shiny, Dusk and Dawn Stones, Black Augurite, Peat Block, Galarica Cuff and Wreath |
+| Celadon Dept. Store 3F | Shiny, Dusk and Dawn Stones, Black Augurite (Kleavor), Peat Block (Ursaluna) |
 
 Redux prices (selling to a shop gives half):
 
@@ -157,17 +159,36 @@ entry point. If the player doesn't have the Pocket PKMN Center yet, Mom says one
 usual "obtained" fanfare (the vanilla give-item routine `_080A`); then the music fades as before. Her scene is the first
 script that calls 2038, and the item check makes it a one-time gift, so no new flag or map script edit is needed.
 
+### Regional forms (excluded)
+
+Redux has no regional forms: they add complexity and don't fit the feel of HeartGold. hg-engine keeps their species
+data, but nothing in Redux places them. Upstream's wild encounters, trainers, Safari Zone, Headbutt trees, shops and
+scripts don't use them, and no normal Gen 1–4 Pokémon can evolve into one, so they can't appear in a playthrough.
+Keep it that way when adding encounters, trainers, gifts, trades and eggs.
+
+| Region | Forms |
+|---|---|
+| Alolan | Rattata, Raticate, Raichu, Sandshrew, Sandslash, Vulpix, Ninetales, Diglett, Dugtrio, Meowth, Persian, Geodude, Graveler, Golem, Grimer, Muk, Exeggutor, Marowak |
+| Galarian | Meowth, Ponyta, Rapidash, Slowpoke, Slowbro, Slowking, Farfetch'd, Weezing, Mr. Mime, Articuno, Zapdos, Moltres, Corsola, Zigzagoon, Linoone |
+| Hisuian | Growlithe, Arcanine, Voltorb, Electrode, Typhlosion, Qwilfish, Sneasel |
+| Paldean | Wooper, Tauros (Combat, Blaze and Aqua Breeds) |
+
+These later evolutions only come from a regional form, so they're excluded too: **Perrserker** (Galarian Meowth),
+**Sirfetch'd** (Galarian Farfetch'd), **Mr. Rime** (Galarian Mr. Mime), **Cursola** (Galarian Corsola), **Obstagoon**
+(Galarian Linoone), **Overqwil** (Hisuian Qwilfish), **Sneasler** (Hisuian Sneasel) and **Clodsire** (Paldean Wooper).
+
+Regional forms of Gen 5+ Pokémon (e.g. Galarian Darumaka, Hisuian Zorua) were never in scope. Ursaluna's Bloodmoon form
+isn't a regional form, but it's also left out: it can't be reached by evolution.
+
 ## Dropped
 
 - **PC anywhere** (L button, from HeartGold Generations): it hooks overworld input and uses an arbitrary game flag. Not worth the risk.
 
 ## Planned, not started
 
-- **Roster restriction:** remove Gen 5–9 species from the Pokédex order and keep them out of encounters and trainers.
+- **Roster restriction:** remove Gen 5–9 species from the Pokédex order and keep them, and the regional forms and their
+  evolutions listed under [Regional forms](#regional-forms-excluded), out of encounters and trainers.
 - **Wild encounters:** place all roster Pokémon at reasonable points; post-game sanctuaries.
-  Regional forms that only come from evolving in their home region (Alolan Raichu, Exeggutor and Marowak,
-  Hisuian Typhlosion, Ursaluna's Bloodmoon form) can't be reached through `data/Evolutions.c`, so they need their own
-  wild or gift placements.
 - **Trainers:** rebuild teams and level curve along Sacred Gold's lines.
 - **Faster egg hatching:** halve every species' `hatchCycles` in `data/Species.c`.
 - **Move tutors and Move Relearner:** free. Tutor costs in `src/field/move_tutor.c`, plus script edits.

@@ -102843,7 +102843,7 @@ const ITEMDATA __data[] =
 
 [ITEM_GALARICA_CUFF] =
 {
-    ITEM_PRICE(1000),
+    ITEM_PRICE(3000),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -103493,7 +103493,7 @@ const ITEMDATA __data[] =
 
 [ITEM_GALARICA_WREATH] =
 {
-    ITEM_PRICE(1000),
+    ITEM_PRICE(3000),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,

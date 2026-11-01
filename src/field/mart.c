@@ -147,8 +147,8 @@ u16 sCeladonDepartmentLower2F[] = {
 
 u16 sCeladonDepartment3F[] = {
     ITEM_TM021, ITEM_TM027, ITEM_TM087, ITEM_TM078, ITEM_TM012, ITEM_TM041, ITEM_TM020, ITEM_TM028, ITEM_TM076, ITEM_TM055, ITEM_TM072, ITEM_TM079,
-    // Redux: late-game stones and regional evolution items
-    ITEM_SHINY_STONE, ITEM_DUSK_STONE, ITEM_DAWN_STONE, ITEM_BLACK_AUGURITE, ITEM_PEAT_BLOCK, ITEM_GALARICA_CUFF, ITEM_GALARICA_WREATH,
+    // Redux: late-game stones and items for later evolutions of Gen 1-4 Pokemon (Kleavor, Ursaluna)
+    ITEM_SHINY_STONE, ITEM_DUSK_STONE, ITEM_DAWN_STONE, ITEM_BLACK_AUGURITE, ITEM_PEAT_BLOCK,
     0xFFFF
 };
 
