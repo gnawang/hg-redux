@@ -17,7 +17,7 @@ and the work still planned. Keep it up to date in the same commit as each change
 - **When unsure:** use hg-engine's existing code and defaults. Follow HeartGold Generations
   ([spearmintz1/hg-engine](https://github.com/spearmintz1/hg-engine)) for implementation and
   Drayano's Sacred Gold for design (trainer teams, level curve).
-- **Stability first:** the project has one developer and no automated in-game testing.
+- **Stability first:** the project has one developer and only light in-game testing.
   Anything experimental or known to be buggy stays off.
 
 ## Building and checking
@@ -27,6 +27,9 @@ and the work still planned. Keep it up to date in the same commit as each change
 - Without the ROM, C changes can be compile-checked with `arm-none-eabi-gcc -fsyntax-only` and
   the project `CFLAGS` from the `Makefile`. Generate `include/constants/generated/learnsets.h`
   first (see Learnsets).
+- With a built `test.nds`, `scripts/emu_test.py` plays the game headlessly in DeSmuME and can build test
+  teams and bags from savestates. `AGENTS.md` covers its use and the agent instructions. `CLAUDE.md` only
+  imports `AGENTS.md`, because Claude Code doesn't read `AGENTS.md` by itself.
 
 ## Changes
 
