@@ -323,6 +323,7 @@ Ability Capsules, Ability Patches and Mints are hg-engine features. Redux only a
 
 - `scripts/emu_test.py`: plays `test.nds` headlessly for testing. See `AGENTS.md`
 - `scripts/build_reference_docs.py`: generates `documentation/reference/`
+- `scripts/build_reference_site.py`: builds the [reference site](https://gnawang.github.io/hg-redux/) from `documentation/reference/`, using `scripts/reference_site.html`. `.github/workflows/reference-site.yml` publishes it to GitHub Pages when those pages change on `main`
 - `scripts/build_title_logo.py`: converts the title logo PNG
 - `scripts/build_dex_areas.py`: updates `data/PokedexArea.c` from the wild encounters
 

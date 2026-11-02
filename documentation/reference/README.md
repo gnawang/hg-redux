@@ -1,6 +1,6 @@
 # Pokémon HeartGold Redux reference
 
-What's in the game now. `scripts/build_reference_docs.py` generates the data pages from the game's data, so don't
+What's in the game now. The [reference site](https://gnawang.github.io/hg-redux/) shows the same data in a searchable page. `scripts/build_reference_docs.py` generates the data pages from the game's data, so don't
 edit them by hand. Rerun it after changing that data. Only [gift_static.md](gift_static.md) is written by hand,
 because that information is in the game's event scripts.
 

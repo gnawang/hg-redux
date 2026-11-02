@@ -1,0 +1,45 @@
+name: Publish reference site
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "documentation/reference/**"
+      - "scripts/build_reference_site.py"
+      - "scripts/reference_site.html"
+      - ".github/workflows/reference-site.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: reference-site
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: ${{ github.repository == 'gnawang/hg-redux' }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build the site
+        run: python3 scripts/build_reference_site.py site
+
+      - name: Upload the site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
