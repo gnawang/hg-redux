@@ -569,3 +569,10 @@ arm9 020701AC 08 E0
 
 # sub_02070854 always call GetMonPicHeightBySpeciesGenderForm
 arm9 020708B0 06 E0
+
+# Redux: Dark Cave and Rock Tunnel are lit. Weather byte of each map header in sMapHeaders (arm9 0xF6BE0 + map * 0x18 + 0x14),
+# weather 11 (WEATHER_FLASH) cleared, region bit kept
+arm9 020F7614 01
+arm9 020F9654 01
+arm9 020F777C 00
+arm9 020F7C74 00

@@ -1311,6 +1311,16 @@ scr_seq_0003_022:
 // Redux: Pocket Center key item, used from the bag or the Y button. Heals the party like a Pokemon Center.
 scr_seq_0003_074_pocket_pkmn_center:
     lockall
+    get_party_count VAR_SPECIAL_RESULT
+    compare VAR_SPECIAL_RESULT, 0
+    goto_if_ne _pocket_pkmn_center_heal
+    npc_msg 123
+    wait_button_or_walk_away
+    closemsg
+    releaseall
+    end
+
+_pocket_pkmn_center_heal:
     play_fanfare SEQ_ME_ASA
     wait_fanfare
     heal_party

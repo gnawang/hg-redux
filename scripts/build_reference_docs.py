@@ -142,6 +142,7 @@ def read_species(revision=None):
                 "abilities": [ability for ability in dict.fromkeys(abilities.groups()) if ability != "ABILITY_NONE"],
                 "stats": [int(re.search(r"\.%s = (\d+)" % stat, body).group(1))
                           for stat in ("hp", "attack", "defense", "spAttack", "spDefense", "speed")],
+                "hatch_cycles": int(re.search(r"\.hatchCycles = (\d+)", body).group(1)),
             }
     return species
 
@@ -160,6 +161,10 @@ def read_hidden_abilities(revision=None):
 
 def read_learnsets(revision=None):
     return json.loads(read_file("data/learnsets/learnsets.json", revision))
+
+
+def read_game_moves(path):
+    return {move for move in re.findall(r"\bMOVE_\w+", read_file(path)) if move != "MOVE_NONE" and not move.startswith("MOVE_TUTOR_NPC")}
 
 
 def read_species_ids():
@@ -372,16 +377,19 @@ def build_special_encounters(species):
     return lines + build_headbutt(names) + build_safari(names) + build_bug_contest(names, read_species_ids())
 
 
-def trainer_ability(entry, data, species):
+def trainer_ability(entry, data, species, hidden):
     abilities = species.get(data, {}).get("abilities", [])
     if not abilities:
         return "–"
+    if "ABILITY_HIDDEN" in entry and data in hidden:
+        return pretty(hidden[data])
     second = "ABILITY_2" in entry
     return pretty(abilities[1] if second and len(abilities) > 1 else abilities[0])
 
 
 def build_trainers(species):
     names = {key: value["name"] for key, value in species.items()}
+    hidden = read_hidden_abilities()
     lines = ["# Key trainers", "",
              "Generated from `data/Trainers.c` by `scripts/build_reference_docs.py`. Don't edit by hand.", "",
              "Teams are listed in trainer ID order, which is roughly the order you meet them. A trainer with several "
@@ -417,7 +425,7 @@ def build_trainers(species):
                     if moves:
                         move_text = ", ".join(pretty(move) for move in re.findall(r"MOVE_\w+", moves.group(1)) if move != "MOVE_NONE")
                     held = pretty(item.group(1)) if item and item.group(1) != "ITEM_NONE" else "–"
-                    lines.append("| %s | %s | %s | %s | %s |" % (names.get(mon, pretty(mon)), level, trainer_ability(entry, mon, species), held, move_text))
+                    lines.append("| %s | %s | %s | %s | %s |" % (names.get(mon, pretty(mon)), level, trainer_ability(entry, mon, species, hidden), held, move_text))
                 lines.append("")
     return lines
 
@@ -426,15 +434,49 @@ def level_moves(learnset):
     return [(entry["Level"], entry["Move"]) for entry in learnset.get("LevelMoves", [])]
 
 
+def level_text(level):
+    return "evolve" if level == 0 else "Lv %d" % level
+
+
 def move_change_text(old, new):
-    added = [item for item in new if item not in old]
-    removed = [item for item in old if item not in new]
+    old_levels, new_levels = {}, {}
+    for levels, moves in ((old_levels, old), (new_levels, new)):
+        for level, move in moves:
+            levels.setdefault(move, level)
+    added = [move for level, move in new if move not in old_levels]
+    removed = [move for level, move in old if move not in new_levels]
+    moved = [move for move, level in new_levels.items() if move in old_levels and old_levels[move] != level]
     parts = []
     if added:
-        parts.append("added " + ", ".join("%s (Lv %d)" % (pretty(move), level) for level, move in added))
+        parts.append("added " + ", ".join("%s (%s)" % (pretty(move), level_text(new_levels[move])) for move in dict.fromkeys(added)))
+    if moved:
+        parts.append("moved " + ", ".join("%s (%s → %s)" % (pretty(move), level_text(old_levels[move]), level_text(new_levels[move])) for move in moved))
     if removed:
-        parts.append("removed " + ", ".join("%s (Lv %d)" % (pretty(move), level) for level, move in removed))
+        parts.append("removed " + ", ".join("%s (%s)" % (pretty(move), level_text(old_levels[move])) for move in dict.fromkeys(removed)))
     return "; ".join(parts)
+
+
+def learnable_moves(learnset, field, game_moves=None):
+    moves = dict.fromkeys(learnset.get(field, []))
+    return [move for move in moves if game_moves is None or move in game_moves]
+
+
+def move_list_text(moves):
+    return ", ".join(sorted(map(pretty, moves))) or "None"
+
+
+def set_change_text(old, new):
+    added, removed = sorted(map(pretty, set(new) - set(old))), sorted(map(pretty, set(old) - set(new)))
+    parts = []
+    if added:
+        parts.append("added " + ", ".join(added))
+    if removed:
+        parts.append("removed " + ", ".join(removed))
+    return "; ".join(parts)
+
+
+def friendship_threshold():
+    return int(re.search(r"#define FRIENDSHIP_EVOLUTION_THRESHOLD (\d+)", read_file("include/config.h")).group(1))
 
 
 def build_pokemon(species, base):
@@ -443,6 +485,7 @@ def build_pokemon(species, base):
     evolutions, base_evolutions = read_evolutions(), read_evolutions(base)
     hidden, base_hidden = read_hidden_abilities(), read_hidden_abilities(base)
     learnsets, base_learnsets = read_learnsets(), read_learnsets(base)
+    machine_moves, tutor_moves = read_game_moves("data/MachineMoves.c"), read_game_moves("src/field/move_tutor.c")
     ids = read_species_ids()
     roster = sorted((key for key, number in ids.items() if 1 <= number <= LAST_GEN_4_SPECIES and key in species), key=ids.get)
     roster += [key for key in ROSTER_EXTRAS if key in species]
@@ -483,18 +526,35 @@ def build_pokemon(species, base):
         if evolution_lines:
             entries.append("- Evolves: %s" % "; ".join(evolution_lines))
         entries.append("- Level-up moves: %s" % ", ".join("%s (%s)" % (pretty(move), "evolve" if level == 0 else level) for level, move in moves))
-        entries.append("- TMs/HMs: %d, tutor moves: %d, egg moves: %d" % (
-            len(learnset.get("MachineMoves", [])), len(learnset.get("TutorMoves", [])), len(learnset.get("EggMoves", []))))
-        difference = move_change_text(level_moves(base_learnsets.get(key, {})), moves)
-        if difference:
-            entries.append("- Level-up moves changed from hg-engine: %s" % difference)
+        move_fields = (("TMs/HMs", "MachineMoves", machine_moves), ("Tutor moves", "TutorMoves", tutor_moves), ("Egg moves", "EggMoves", None))
+        for label, field, game_moves in move_fields:
+            entries.append("- %s: %s" % (label, move_list_text(learnable_moves(learnset, field, game_moves))))
+        if data["hatch_cycles"]:
+            entries.append("- Egg cycles: %d" % data["hatch_cycles"])
+
+        details = list(changes)
+        base_learnset = base_learnsets.get(key, {})
+        level_difference = move_change_text(level_moves(base_learnset), moves)
+        if level_difference:
+            details.append("Level-up moves: %s" % level_difference)
+        for label, field, game_moves in move_fields:
+            difference = set_change_text(learnable_moves(base_learnset, field, game_moves), learnable_moves(learnset, field, game_moves))
+            if difference:
+                details.append("%s: %s" % (label, difference))
+        if data["hatch_cycles"] != old["hatch_cycles"]:
+            details.append("Egg cycles: %d → %d" % (old["hatch_cycles"], data["hatch_cycles"]))
+        if details:
+            entries.append("- Changes from hg-engine:")
+            entries += ["  - %s" % detail for detail in details]
         entries.append("")
 
     lines = ["# Pokémon", "",
              "Generated from the data files by `scripts/build_reference_docs.py`. Don't edit by hand.", "",
              "Covers the Redux roster: all 493 Pokémon of Gens 1–4 plus the later evolutions it adds. \"Changed\" means "
              "different from hg-engine, not from the original HeartGold, so changes hg-engine already made aren't flagged.", "",
-             "## Changes from hg-engine", "", "Level-up move changes are in each Pokémon's entry below.", "",
+             "TMs/HMs and tutor moves list only what the game teaches. Friendship evolutions need %d friendship in every case." % friendship_threshold(), "",
+             "## Changes from hg-engine", "",
+             "This table covers types, abilities, stats and evolutions. Each Pokémon's entry below lists these along with its move and egg cycle changes.", "",
              "| Pokémon | Change |", "|---|---|"] + summary + [""]
     return lines + entries
 

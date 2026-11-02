@@ -12,9 +12,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gastly | 14 | Levitate | – | Default |
-| Zubat | 16 | Inner Focus | – | Default |
-| Bayleef | 18 | Overgrow | – | Default |
+| Teddiursa | 19 | Pickup | – | Fury Swipes, Lick, Fake Tears, Baby-Doll Eyes |
+| Larvitar | 19 | Guts | – | Bite, Rock Slide, Screech, Sandstorm |
+| Bayleef | 21 | Overgrow | Oran Berry | Razor Leaf, Reflect, Synthesis, Headbutt |
 
 ### Silver (trainer 2)
 
@@ -32,21 +32,21 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gastly | 20 | Levitate | – | Lick, Confuse Ray, Mean Look, Curse |
-| Magnemite | 18 | Magnet Pull | – | Thunder Wave, Thunder Shock, Supersonic, Sonic Boom |
-| Zubat | 20 | Inner Focus | – | Astonish, Supersonic, Bite, Wing Attack |
-| Bayleef | 22 | Overgrow | – | Synthesis, Reflect, Magical Leaf, Poison Powder |
+| Teddiursa | 25 | Pickup | – | Fury Swipes, Lick, Fake Tears, Baby-Doll Eyes |
+| Pupitar | 25 | Shed Skin | – | Rock Slide, Crunch, Earthquake, Screech |
+| Corphish | 26 | Hyper Cutter | – | Bubble Beam, Knock Off, Double Hit, Protect |
+| Bayleef | 27 | Overgrow | Oran Berry | Razor Leaf, Reflect, Synthesis, Headbutt |
 
 ### Silver (trainer 264)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Sneasel | 36 | Inner Focus | – | Quick Attack, Icy Wind, Feint Attack, Fury Swipes |
-| Golbat | 38 | Inner Focus | – | Astonish, Bite, Confuse Ray, Air Cutter |
-| Magneton | 37 | Magnet Pull | – | Spark, Supersonic, Thunder Wave, Magnet Bomb |
-| Haunter | 37 | Levitate | – | Mean Look, Curse, Shadow Ball, Confuse Ray |
-| Kadabra | 37 | Synchronize | – | Disable, Psybeam, Recover, Reflect |
-| Meganium | 40 | Overgrow | – | Reflect, Petal Dance, Poison Powder, Synthesis |
+| Ursaring | 50 | Guts | – | Slash, Crunch, Close Combat, Rest |
+| Crobat | 50 | Inner Focus | – | Brave Bird, Cross Poison, Confuse Ray, Super Fang |
+| Crawdaunt | 51 | Adaptability | – | Waterfall, Crunch, Aqua Jet, X-Scissor |
+| Ninetales | 51 | Flash Fire | – | Flamethrower, Extrasensory, Will-O-Wisp, Confuse Ray |
+| Meganium | 53 | Overgrow | Sitrus Berry | Giga Drain, Synthesis, Reflect, Dazzling Gleam |
+| Tyranitar | 53 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
 
 ### Silver (trainer 265)
 
@@ -58,120 +58,120 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gastly | 14 | Levitate | – | Default |
-| Zubat | 16 | Inner Focus | – | Default |
-| Quilava | 18 | Blaze | – | Default |
+| Teddiursa | 19 | Pickup | – | Fury Swipes, Lick, Fake Tears, Baby-Doll Eyes |
+| Larvitar | 19 | Guts | – | Bite, Rock Slide, Screech, Sandstorm |
+| Quilava | 21 | Blaze | Oran Berry | Flame Wheel, Quick Attack, Smokescreen, Swift |
 
 ### Silver (trainer 267)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gastly | 20 | Levitate | – | Lick, Confuse Ray, Mean Look, Curse |
-| Magnemite | 18 | Magnet Pull | – | Thunder Wave, Thunder Shock, Supersonic, Sonic Boom |
-| Zubat | 20 | Inner Focus | – | Astonish, Supersonic, Bite, Wing Attack |
-| Quilava | 22 | Blaze | – | Flame Wheel, Smokescreen, Ember, Quick Attack |
+| Teddiursa | 25 | Pickup | – | Fury Swipes, Lick, Fake Tears, Baby-Doll Eyes |
+| Pupitar | 25 | Shed Skin | – | Rock Slide, Crunch, Earthquake, Screech |
+| Weepinbell | 26 | Chlorophyll | – | Razor Leaf, Sleep Powder, Stun Spore, Growth |
+| Quilava | 27 | Blaze | Oran Berry | Flame Wheel, Quick Attack, Smokescreen, Swift |
 
 ### Silver (trainer 268)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Sneasel | 36 | Inner Focus | – | Quick Attack, Icy Wind, Feint Attack, Fury Swipes |
-| Golbat | 38 | Inner Focus | – | Astonish, Bite, Confuse Ray, Air Cutter |
-| Magneton | 37 | Magnet Pull | – | Spark, Supersonic, Thunder Wave, Magnet Bomb |
-| Haunter | 37 | Levitate | – | Mean Look, Curse, Shadow Ball, Confuse Ray |
-| Kadabra | 37 | Synchronize | – | Disable, Psybeam, Recover, Reflect |
-| Typhlosion | 40 | Blaze | – | Lava Plume, Swift, Quick Attack, Flame Wheel |
+| Ursaring | 50 | Guts | – | Slash, Crunch, Close Combat, Rest |
+| Crobat | 50 | Inner Focus | – | Brave Bird, Cross Poison, Confuse Ray, Super Fang |
+| Crawdaunt | 51 | Adaptability | – | Waterfall, Crunch, Aqua Jet, X-Scissor |
+| Victreebel | 51 | Chlorophyll | – | Sludge Bomb, Razor Leaf, Sleep Powder, Sunny Day |
+| Typhlosion | 53 | Blaze | Sitrus Berry | Flamethrower, Thunder Punch, Swift, Smokescreen |
+| Tyranitar | 53 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
 
 ### Silver (trainer 269)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gastly | 14 | Levitate | – | Default |
-| Zubat | 16 | Inner Focus | – | Default |
-| Croconaw | 18 | Torrent | – | Default |
+| Teddiursa | 19 | Pickup | – | Fury Swipes, Lick, Fake Tears, Baby-Doll Eyes |
+| Larvitar | 19 | Guts | – | Bite, Rock Slide, Screech, Sandstorm |
+| Croconaw | 21 | Torrent | Oran Berry | Water Pulse, Bite, Ice Fang, Scary Face |
 
 ### Silver (trainer 270)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gastly | 20 | Levitate | – | Lick, Confuse Ray, Mean Look, Curse |
-| Magnemite | 18 | Magnet Pull | – | Thunder Wave, Thunder Shock, Supersonic, Sonic Boom |
-| Zubat | 20 | Inner Focus | – | Astonish, Supersonic, Bite, Wing Attack |
-| Croconaw | 22 | Torrent | – | Scary Face, Ice Fang, Water Gun, Bite |
+| Teddiursa | 25 | Pickup | – | Fury Swipes, Lick, Fake Tears, Baby-Doll Eyes |
+| Pupitar | 25 | Shed Skin | – | Rock Slide, Crunch, Earthquake, Screech |
+| Vulpix | 26 | Flash Fire | – | Ember, Will-O-Wisp, Confuse Ray, Quick Attack |
+| Croconaw | 27 | Torrent | Oran Berry | Water Pulse, Bite, Ice Fang, Scary Face |
 
 ### Silver (trainer 271)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Golbat | 30 | Inner Focus | – | Astonish, Bite, Confuse Ray, Air Cutter |
-| Magnemite | 28 | Magnet Pull | – | Supersonic, Spark, Sonic Boom, Thunder Wave |
-| Haunter | 30 | Levitate | – | Confuse Ray, Mean Look, Curse, Shadow Ball |
-| Sneasel | 32 | Inner Focus | – | Icy Wind, Quick Attack, Fury Swipes, Feint Attack |
-| Feraligatr | 32 | Torrent | – | Ice Fang, Water Gun, Crunch, Thrash |
+| Ursaring | 44 | Guts | – | Slash, Crunch, Close Combat, Rest |
+| Pupitar | 44 | Shed Skin | – | Rock Slide, Crunch, Earthquake, Screech |
+| Victreebel | 44 | Chlorophyll | – | Sludge Bomb, Razor Leaf, Sleep Powder, Sunny Day |
+| Ninetales | 44 | Flash Fire | – | Flamethrower, Extrasensory, Will-O-Wisp, Confuse Ray |
+| Feraligatr | 46 | Torrent | Sitrus Berry | Waterfall, Dragon Claw, Crunch, Ice Fang |
 
 ### Silver (trainer 272)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Sneasel | 36 | Inner Focus | – | Quick Attack, Icy Wind, Feint Attack, Fury Swipes |
-| Golbat | 38 | Inner Focus | – | Astonish, Bite, Confuse Ray, Air Cutter |
-| Magneton | 37 | Magnet Pull | – | Spark, Supersonic, Thunder Wave, Magnet Bomb |
-| Haunter | 37 | Levitate | – | Mean Look, Curse, Shadow Ball, Confuse Ray |
-| Kadabra | 37 | Synchronize | – | Disable, Psybeam, Recover, Reflect |
-| Feraligatr | 40 | Torrent | – | Waterfall, Ice Fang, Crunch, Slash |
+| Ursaring | 50 | Guts | – | Slash, Crunch, Close Combat, Rest |
+| Crobat | 50 | Inner Focus | – | Brave Bird, Cross Poison, Confuse Ray, Super Fang |
+| Victreebel | 51 | Chlorophyll | – | Sludge Bomb, Razor Leaf, Sleep Powder, Sunny Day |
+| Ninetales | 51 | Flash Fire | – | Flamethrower, Extrasensory, Will-O-Wisp, Confuse Ray |
+| Feraligatr | 53 | Torrent | Sitrus Berry | Waterfall, Dragon Claw, Crunch, Ice Fang |
+| Tyranitar | 53 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
 
 ### Silver (trainer 285)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Sneasel | 46 | Inner Focus | – | Quick Attack, Icy Wind, Feint Attack, Shadow Claw |
-| Golbat | 47 | Inner Focus | – | Poison Fang, Bite, Confuse Ray, Air Cutter |
-| Magneton | 46 | Magnet Pull | – | Discharge, Supersonic, Thunder Wave, Magnet Bomb |
-| Gengar | 48 | Cursed Body | – | Mean Look, Curse, Shadow Ball, Confuse Ray |
-| Alakazam | 48 | Synchronize | – | Disable, Recover, Reflect, Psychic |
-| Meganium | 50 | Overgrow | – | Petal Dance, Poison Powder, Synthesis, Light Screen |
+| Ursaluna | 58 | Guts | – | Earthquake, Crunch, Close Combat, Rest |
+| Crobat | 56 | Inner Focus | – | Brave Bird, Cross Poison, Confuse Ray, Super Fang |
+| Crawdaunt | 57 | Adaptability | – | Waterfall, Crunch, Aqua Jet, X-Scissor |
+| Ninetales | 57 | Flash Fire | – | Flamethrower, Extrasensory, Will-O-Wisp, Confuse Ray |
+| Meganium | 60 | Overgrow | Sitrus Berry | Giga Drain, Synthesis, Reflect, Dazzling Gleam |
+| Tyranitar | 59 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
 
 ### Silver (trainer 286)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Sneasel | 46 | Inner Focus | – | Quick Attack, Icy Wind, Feint Attack, Shadow Claw |
-| Golbat | 47 | Inner Focus | – | Poison Fang, Bite, Confuse Ray, Air Cutter |
-| Magneton | 46 | Magnet Pull | – | Discharge, Supersonic, Thunder Wave, Magnet Bomb |
-| Gengar | 48 | Cursed Body | – | Mean Look, Curse, Shadow Ball, Confuse Ray |
-| Alakazam | 48 | Synchronize | – | Disable, Recover, Reflect, Psychic |
-| Typhlosion | 50 | Blaze | – | Flamethrower, Quick Attack, Flame Wheel, Swift |
+| Ursaluna | 58 | Guts | – | Earthquake, Crunch, Close Combat, Rest |
+| Crobat | 56 | Inner Focus | – | Brave Bird, Cross Poison, Confuse Ray, Super Fang |
+| Crawdaunt | 57 | Adaptability | – | Waterfall, Crunch, Aqua Jet, X-Scissor |
+| Victreebel | 57 | Chlorophyll | – | Sludge Bomb, Razor Leaf, Sleep Powder, Sunny Day |
+| Typhlosion | 60 | Blaze | Sitrus Berry | Flamethrower, Thunder Punch, Swift, Smokescreen |
+| Tyranitar | 59 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
 
 ### Silver (trainer 287)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Sneasel | 46 | Inner Focus | – | Quick Attack, Icy Wind, Feint Attack, Shadow Claw |
-| Golbat | 47 | Inner Focus | – | Poison Fang, Bite, Confuse Ray, Air Cutter |
-| Magneton | 46 | Magnet Pull | – | Discharge, Supersonic, Thunder Wave, Magnet Bomb |
-| Gengar | 48 | Cursed Body | – | Mean Look, Curse, Shadow Ball, Confuse Ray |
-| Alakazam | 48 | Synchronize | – | Disable, Recover, Reflect, Psychic |
-| Feraligatr | 50 | Torrent | – | Waterfall, Ice Fang, Crunch, Slash |
+| Ursaluna | 58 | Guts | – | Earthquake, Crunch, Close Combat, Rest |
+| Crobat | 56 | Inner Focus | – | Brave Bird, Cross Poison, Confuse Ray, Super Fang |
+| Victreebel | 57 | Chlorophyll | – | Sludge Bomb, Razor Leaf, Sleep Powder, Sunny Day |
+| Ninetales | 57 | Flash Fire | – | Flamethrower, Extrasensory, Will-O-Wisp, Confuse Ray |
+| Feraligatr | 60 | Torrent | Sitrus Berry | Waterfall, Dragon Claw, Crunch, Ice Fang |
+| Tyranitar | 59 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
 
 ### Silver (trainer 288)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Golbat | 32 | Inner Focus | – | Astonish, Bite, Confuse Ray, Air Cutter |
-| Magnemite | 30 | Magnet Pull | – | Supersonic, Spark, Sonic Boom, Thunder Wave |
-| Haunter | 32 | Levitate | – | Confuse Ray, Mean Look, Curse, Shadow Ball |
-| Sneasel | 34 | Inner Focus | – | Icy Wind, Quick Attack, Fury Swipes, Feint Attack |
-| Meganium | 34 | Overgrow | – | Reflect, Synthesis, Poison Powder, Petal Dance |
+| Ursaring | 44 | Guts | – | Slash, Crunch, Close Combat, Rest |
+| Pupitar | 44 | Shed Skin | – | Rock Slide, Crunch, Earthquake, Screech |
+| Crawdaunt | 44 | Adaptability | – | Waterfall, Crunch, Aqua Jet, X-Scissor |
+| Ninetales | 44 | Flash Fire | – | Flamethrower, Extrasensory, Will-O-Wisp, Confuse Ray |
+| Meganium | 46 | Overgrow | Sitrus Berry | Giga Drain, Synthesis, Reflect, Dazzling Gleam |
 
 ### Silver (trainer 289)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Golbat | 32 | Inner Focus | – | Astonish, Bite, Confuse Ray, Air Cutter |
-| Magnemite | 30 | Magnet Pull | – | Supersonic, Spark, Sonic Boom, Thunder Wave |
-| Haunter | 32 | Levitate | – | Confuse Ray, Mean Look, Curse, Shadow Ball |
-| Sneasel | 34 | Inner Focus | – | Icy Wind, Quick Attack, Fury Swipes, Feint Attack |
-| Quilava | 34 | Blaze | – | Smokescreen, Swift, Quick Attack, Flame Wheel |
+| Ursaring | 44 | Guts | – | Slash, Crunch, Close Combat, Rest |
+| Pupitar | 44 | Shed Skin | – | Rock Slide, Crunch, Earthquake, Screech |
+| Crawdaunt | 44 | Adaptability | – | Waterfall, Crunch, Aqua Jet, X-Scissor |
+| Victreebel | 44 | Chlorophyll | – | Sludge Bomb, Razor Leaf, Sleep Powder, Sunny Day |
+| Typhlosion | 46 | Blaze | Sitrus Berry | Flamethrower, Thunder Punch, Swift, Smokescreen |
 
 ### Silver (trainer 489)
 
@@ -179,12 +179,12 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Sneasel | 55 | Inner Focus | – | Icy Wind, Shadow Claw, Feint Attack, Metal Claw |
-| Crobat | 58 | Inner Focus | – | Toxic, Bite, Confuse Ray, Air Cutter |
-| Magneton | 55 | Magnet Pull | – | Discharge, Mirror Shot, Thunder Wave, Magnet Bomb |
-| Gengar | 56 | Cursed Body | – | Dark Pulse, Sludge Bomb, Shadow Ball, Confuse Ray |
-| Alakazam | 56 | Synchronize | – | Recover, Focus Blast, Psychic, Reflect |
-| Meganium | 60 | Overgrow | – | Petal Dance, Body Slam, Light Screen, Synthesis |
+| Ursaluna | 77 | Guts | – | Earthquake, Crunch, Close Combat, Rest |
+| Crobat | 76 | Inner Focus | – | Brave Bird, Cross Poison, Confuse Ray, Super Fang |
+| Crawdaunt | 77 | Adaptability | – | Waterfall, Crunch, Aqua Jet, X-Scissor |
+| Ninetales | 77 | Flash Fire | – | Flamethrower, Extrasensory, Will-O-Wisp, Confuse Ray |
+| Meganium | 78 | Overgrow | Sitrus Berry | Giga Drain, Synthesis, Reflect, Dazzling Gleam |
+| Tyranitar | 78 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
 
 ### Silver (trainer 490)
 
@@ -192,12 +192,12 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Sneasel | 55 | Inner Focus | – | Icy Wind, Shadow Claw, Feint Attack, Metal Claw |
-| Crobat | 58 | Inner Focus | – | Toxic, Bite, Confuse Ray, Air Cutter |
-| Magneton | 55 | Magnet Pull | – | Discharge, Mirror Shot, Thunder Wave, Magnet Bomb |
-| Gengar | 56 | Cursed Body | – | Dark Pulse, Sludge Bomb, Shadow Ball, Confuse Ray |
-| Alakazam | 56 | Synchronize | – | Recover, Focus Blast, Psychic, Reflect |
-| Typhlosion | 60 | Blaze | – | Rollout, Flamethrower, Will-O-Wisp, Swift |
+| Ursaluna | 77 | Guts | – | Earthquake, Crunch, Close Combat, Rest |
+| Crobat | 76 | Inner Focus | – | Brave Bird, Cross Poison, Confuse Ray, Super Fang |
+| Crawdaunt | 77 | Adaptability | – | Waterfall, Crunch, Aqua Jet, X-Scissor |
+| Victreebel | 77 | Chlorophyll | – | Sludge Bomb, Razor Leaf, Sleep Powder, Sunny Day |
+| Typhlosion | 78 | Blaze | Sitrus Berry | Flamethrower, Thunder Punch, Swift, Smokescreen |
+| Tyranitar | 78 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
 
 ### Silver (trainer 491)
 
@@ -205,12 +205,12 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Sneasel | 55 | Inner Focus | – | Icy Wind, Shadow Claw, Feint Attack, Metal Claw |
-| Crobat | 58 | Inner Focus | – | Toxic, Bite, Confuse Ray, Air Cutter |
-| Magneton | 55 | Magnet Pull | – | Discharge, Mirror Shot, Thunder Wave, Magnet Bomb |
-| Gengar | 56 | Cursed Body | – | Dark Pulse, Sludge Bomb, Shadow Ball, Confuse Ray |
-| Alakazam | 56 | Synchronize | – | Recover, Focus Blast, Psychic, Reflect |
-| Feraligatr | 60 | Torrent | – | Crunch, Aqua Tail, Slash, Ice Fang |
+| Ursaluna | 77 | Guts | – | Earthquake, Crunch, Close Combat, Rest |
+| Crobat | 76 | Inner Focus | – | Brave Bird, Cross Poison, Confuse Ray, Super Fang |
+| Victreebel | 77 | Chlorophyll | – | Sludge Bomb, Razor Leaf, Sleep Powder, Sunny Day |
+| Ninetales | 77 | Flash Fire | – | Flamethrower, Extrasensory, Will-O-Wisp, Confuse Ray |
+| Feraligatr | 78 | Torrent | Sitrus Berry | Waterfall, Dragon Claw, Crunch, Ice Fang |
+| Tyranitar | 78 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
 
 ### Silver (trainer 735)
 
@@ -218,9 +218,9 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Meganium | 60 | Overgrow | – | Petal Dance, Body Slam, Light Screen, Synthesis |
-| Crobat | 58 | Inner Focus | – | Toxic, Bite, Confuse Ray, Air Cutter |
-| Gengar | 56 | Cursed Body | – | Dark Pulse, Sludge Bomb, Shadow Ball, Confuse Ray |
+| Crobat | 77 | Inner Focus | – | Brave Bird, Cross Poison, Confuse Ray, Super Fang |
+| Tyranitar | 78 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
+| Meganium | 78 | Overgrow | Sitrus Berry | Giga Drain, Synthesis, Reflect, Dazzling Gleam |
 
 ### Silver (trainer 736)
 
@@ -228,9 +228,9 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Typhlosion | 60 | Blaze | – | Rollout, Flamethrower, Will-O-Wisp, Swift |
-| Crobat | 58 | Inner Focus | – | Toxic, Bite, Confuse Ray, Air Cutter |
-| Gengar | 56 | Cursed Body | – | Dark Pulse, Sludge Bomb, Shadow Ball, Confuse Ray |
+| Crobat | 77 | Inner Focus | – | Brave Bird, Cross Poison, Confuse Ray, Super Fang |
+| Tyranitar | 78 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
+| Typhlosion | 78 | Blaze | Sitrus Berry | Flamethrower, Thunder Punch, Swift, Smokescreen |
 
 ### Silver (trainer 737)
 
@@ -238,9 +238,9 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Feraligatr | 60 | Torrent | – | Crunch, Aqua Tail, Slash, Ice Fang |
-| Crobat | 58 | Inner Focus | – | Toxic, Bite, Confuse Ray, Air Cutter |
-| Gengar | 56 | Cursed Body | – | Dark Pulse, Sludge Bomb, Shadow Ball, Confuse Ray |
+| Crobat | 77 | Inner Focus | – | Brave Bird, Cross Poison, Confuse Ray, Super Fang |
+| Tyranitar | 78 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
+| Feraligatr | 78 | Torrent | Sitrus Berry | Waterfall, Dragon Claw, Crunch, Ice Fang |
 
 ## Johto Gym Leaders
 
@@ -248,8 +248,9 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Pidgey | 9 | Keen Eye | – | Tackle, Sand Attack |
-| Pidgeotto | 13 | Keen Eye | – | Tackle, Roost, Gust |
+| Pidgey | 13 | Keen Eye | – | Quick Attack, Gust, Tackle, Feather Dance |
+| Hoothoot | 13 | Insomnia | – | Hypnosis, Peck, Confusion, Reflect |
+| Pidgeotto | 15 | Keen Eye | Oran Berry | Roost, Aerial Ace, Quick Attack, Mud-Slap |
 
 ### Falkner (trainer 712)
 
@@ -257,12 +258,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Staraptor | 50 | Intimidate | – | Attract, Brave Bird, Close Combat, U-turn |
-| Noctowl | 52 | Insomnia | – | Roost, Air Slash, Shadow Ball, Feather Dance |
-| Swellow | 52 | Guts | Flame Orb | Facade, Protect, Double Team, Endeavor |
-| Honchkrow | 54 | Insomnia | – | Night Slash, Sucker Punch, Thunder Wave, Dark Pulse |
-| Pelipper | 48 | Keen Eye | – | Surf, Tailwind, Ice Beam, Hidden Power |
-| Pidgeot | 56 | Keen Eye | – | Return, Double Team, Swagger, Roost |
+| Noctowl | 70 | Tinted Lens | – | Air Slash, Shadow Ball, Hypnosis, Psychic |
+| Xatu | 70 | Magic Bounce | – | Psychic, Air Slash, Heat Wave, Roost |
+| Skarmory | 71 | Sturdy | Leftovers | Spikes, Brave Bird, Steel Wing, Roost |
+| Honchkrow | 71 | Moxie | – | Brave Bird, Sucker Punch, Heat Wave, Roost |
+| Dodrio | 71 | Early Bird | Choice Band | Brave Bird, Double-Edge, Knock Off, Drill Run |
+| Pidgeot | 72 | Keen Eye | Sitrus Berry | Hurricane, Heat Wave, U-turn, Roost |
 
 ### Bugsy (trainer 21)
 
@@ -270,9 +271,10 @@ Uses in battle: Super Potion
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Scyther | 17 | Technician | Sitrus Berry | Quick Attack, Leer, U-turn, Focus Energy |
-| Kakuna | 15 | Shed Skin | – | Poison Sting |
-| Metapod | 15 | Shed Skin | – | Tackle |
+| Spinarak | 19 | Swarm | – | Shadow Sneak, Poison Sting, Night Shade, Bug Bite |
+| Pineco | 19 | Sturdy | – | Rock Blast, Bug Bite, Protect, Self-Destruct |
+| Yanma | 19 | Speed Boost | – | Air Cutter, U-turn, Double Team, Quick Attack |
+| Scyther | 21 | Technician | Sitrus Berry | U-turn, Quick Attack, Wing Attack, Swords Dance |
 
 ### Bugsy (trainer 713)
 
@@ -280,12 +282,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Scizor | 56 | Technician | Sitrus Berry | Bullet Punch, X-Scissor, Swords Dance, Superpower |
-| Shedinja | 48 | Wonder Guard | – | Toxic, X-Scissor, Shadow Sneak, Swagger |
-| Yanmega | 52 | Tinted Lens | – | Detect, Bug Buzz, Air Slash, Ancient Power |
-| Pinsir | 55 | Hyper Cutter | – | Earthquake, Guillotine, X-Scissor, Rock Tomb |
-| Heracross | 54 | Swarm | – | Close Combat, Megahorn, Stone Edge, Counter |
-| Vespiquen | 52 | Pressure | Sitrus Berry | Protect, Confuse Ray, Attack Order, Defend Order |
+| Forretress | 70 | Sturdy | Leftovers | Spikes, Gyro Ball, Volt Switch, Toxic |
+| Yanmega | 70 | Speed Boost | Life Orb | Bug Buzz, Air Slash, Ancient Power, Protect |
+| Heracross | 71 | Moxie | Choice Scarf | Megahorn, Close Combat, Stone Edge, Earthquake |
+| Pinsir | 71 | Moxie | – | X-Scissor, Close Combat, Earthquake, Swords Dance |
+| Ariados | 71 | Swarm | – | Megahorn, Poison Jab, Sucker Punch, Toxic Spikes |
+| Scizor | 72 | Technician | Sitrus Berry | Bullet Punch, X-Scissor, Swords Dance, Superpower |
 
 ### Whitney (trainer 30)
 
@@ -293,8 +295,9 @@ Uses in battle: Super Potion, Super Potion
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Clefairy | 17 | Cute Charm | – | Double Slap, Mimic, Encore, Metronome |
-| Miltank | 19 | Scrappy | Lum Berry | Rollout, Attract, Stomp, Milk Drink |
+| Clefairy | 20 | Cute Charm | – | Metronome, Disarming Voice, Attract, Encore |
+| Teddiursa | 20 | Pickup | – | Baby-Doll Eyes, Lick, Attract, Metal Claw |
+| Miltank | 22 | Scrappy | Lum Berry | Rollout, Attract, Stomp, Milk Drink |
 
 ### Whitney (trainer 714)
 
@@ -302,12 +305,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Girafarig | 52 | Inner Focus | – | Psychic, Shadow Ball, Calm Mind, Baton Pass |
-| Lickilicky | 50 | Own Tempo | – | Wring Out, Flamethrower, Ice Beam, Thunderbolt |
-| Bibarel | 54 | Simple | – | Double Team, Charge Beam, Surf, Ice Beam |
-| Delcatty | 54 | Normalize | – | Fake Out, Assist, Calm Mind, Baton Pass |
-| Clefable | 52 | Cute Charm | – | Blizzard, Thunder, Fire Blast, Calm Mind |
-| Miltank | 58 | Scrappy | Lum Berry | Body Slam, Attract, Sleep Talk, Rest |
+| Granbull | 71 | Intimidate | – | Play Rough, Earthquake, Crunch, Fire Punch |
+| Blissey | 71 | Natural Cure | Leftovers | Seismic Toss, Toxic, Soft-Boiled, Thunder Wave |
+| Stantler | 71 | Intimidate | – | Double-Edge, Earthquake, Megahorn, Hypnosis |
+| Clefable | 72 | Magic Guard | Life Orb | Moonblast, Calm Mind, Fire Blast, Thunderbolt |
+| Wigglytuff | 72 | Competitive | – | Hyper Voice, Moonblast, Fire Blast, Thunder Wave |
+| Miltank | 73 | Scrappy | Sitrus Berry | Rollout, Body Slam, Earthquake, Milk Drink |
 
 ### Morty (trainer 31)
 
@@ -315,10 +318,10 @@ Uses in battle: Hyper Potion, Hyper Potion
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gastly | 21 | Levitate | – | Lick, Spite, Mean Look, Curse |
-| Haunter | 21 | Levitate | – | Hypnosis, Dream Eater, Curse, Nightmare |
-| Gengar | 25 | Cursed Body | Sitrus Berry | Hypnosis, Shadow Ball, Mean Look, Sucker Punch |
-| Haunter | 23 | Levitate | – | Curse, Mean Look, Sucker Punch, Night Shade |
+| Haunter | 27 | Levitate | – | Hypnosis, Shadow Ball, Curse, Dark Pulse |
+| Misdreavus | 28 | Levitate | – | Shadow Ball, Power Gem, Will-O-Wisp, Mean Look |
+| Sableye | 28 | Keen Eye | – | Shadow Claw, Recover, Aerial Ace, Torment |
+| Gengar | 29 | Cursed Body | Sitrus Berry | Hypnosis, Shadow Ball, Thunderbolt, Dream Eater |
 
 ### Morty (trainer 715)
 
@@ -326,12 +329,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Drifblim | 52 | Unburden | Sitrus Berry | Destiny Bond, Substitute, Thunderbolt, Shadow Ball |
-| Dusknoir | 52 | Pressure | – | Pain Split, Will-O-Wisp, Substitute, Payback |
-| Sableye | 52 | Keen Eye | – | Sucker Punch, Brick Break, Ice Punch, Fake Out |
-| Mismagius | 54 | Levitate | – | Perish Song, Mean Look, Confuse Ray, Astonish |
-| Gengar | 57 | Cursed Body | – | Hypnosis, Confuse Ray, Shadow Ball, Focus Blast |
-| Gengar | 57 | Cursed Body | – | Substitute, Shadow Ball, Thunderbolt, Destiny Bond |
+| Sableye | 71 | Prankster | Leftovers | Foul Play, Will-O-Wisp, Recover, Taunt |
+| Drifblim | 71 | Unburden | – | Shadow Ball, Acrobatics, Will-O-Wisp, Destiny Bond |
+| Dusknoir | 72 | Pressure | – | Shadow Punch, Earthquake, Ice Punch, Will-O-Wisp |
+| Spiritomb | 72 | Infiltrator | – | Shadow Ball, Dark Pulse, Nasty Plot, Will-O-Wisp |
+| Mismagius | 73 | Levitate | Life Orb | Shadow Ball, Thunderbolt, Dazzling Gleam, Nasty Plot |
+| Gengar | 74 | Cursed Body | Sitrus Berry | Shadow Ball, Sludge Bomb, Hypnosis, Destiny Bond |
 
 ### Chuck (trainer 34)
 
@@ -339,8 +342,10 @@ Uses in battle: Hyper Potion, Hyper Potion
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Primeape | 29 | Vital Spirit | – | Leer, Double Team, Focus Punch, Rock Slide |
-| Poliwrath | 31 | Water Absorb | Sitrus Berry | Hypnosis, Surf, Focus Punch, Body Slam |
+| Hitmontop | 33 | Intimidate | – | Fake Out, Close Combat, Sucker Punch, Rapid Spin |
+| Sudowoodo | 33 | Rock Head | – | Rock Slide, Sucker Punch, Low Kick, Thunder Punch |
+| Primeape | 34 | Anger Point | – | Close Combat, Rock Slide, Thunder Punch, U-turn |
+| Poliwrath | 35 | Water Absorb | Sitrus Berry | Hypnosis, Dynamic Punch, Surf, Ice Punch |
 
 ### Chuck (trainer 718)
 
@@ -348,12 +353,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Medicham | 54 | Pure Power | Sitrus Berry | High Jump Kick, Psycho Cut, Attract, Thunder Punch |
-| Hitmonchan | 52 | Iron Fist | – | Mach Punch, Swagger, Focus Punch, Double Team |
-| Hitmonlee | 55 | Reckless | – | High Jump Kick, Fake Out, Blaze Kick, Bulk Up |
-| Breloom | 54 | Poison Heal | Toxic Orb | Substitute, Focus Punch, Drain Punch, Stone Edge |
-| Primeape | 56 | Vital Spirit | – | Close Combat, Payback, Thunder Punch, Swagger |
-| Poliwrath | 60 | Water Absorb | Sitrus Berry | Double Team, Waterfall, Focus Punch, Substitute |
+| Hitmontop | 73 | Intimidate | – | Fake Out, Close Combat, Sucker Punch, Stone Edge |
+| Heracross | 73 | Guts | – | Close Combat, Megahorn, Stone Edge, Earthquake |
+| Breloom | 74 | Technician | – | Spore, Mach Punch, Bullet Seed, Rock Tomb |
+| Annihilape | 74 | Defiant | Life Orb | Close Combat, Shadow Punch, Stone Edge, Bulk Up |
+| Lucario | 74 | Inner Focus | – | Close Combat, Extreme Speed, Crunch, Bullet Punch |
+| Poliwrath | 75 | Water Absorb | Sitrus Berry | Waterfall, Close Combat, Ice Punch, Bulk Up |
 
 ### Jasmine (trainer 33)
 
@@ -361,9 +366,10 @@ Uses in battle: Hyper Potion, Hyper Potion
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Magnemite | 30 | Magnet Pull | – | Thunderbolt, Supersonic, Sonic Boom, Thunder Wave |
-| Magnemite | 30 | Sturdy | – | Thunderbolt, Supersonic, Sonic Boom, Thunder Wave |
-| Steelix | 35 | Sturdy | Sitrus Berry | Screech, Sandstorm, Rock Throw, Iron Tail |
+| Skarmory | 38 | Sturdy | – | Spikes, Aerial Ace, Steel Wing, Roost |
+| Magneton | 38 | Magnet Pull | – | Thunderbolt, Flash Cannon, Tri Attack, Thunder Wave |
+| Scizor | 39 | Technician | Focus Sash | Bullet Punch, X-Scissor, Swords Dance, Aerial Ace |
+| Steelix | 40 | Sturdy | Sitrus Berry | Earthquake, Iron Tail, Stone Edge, Crunch |
 
 ### Jasmine (trainer 717)
 
@@ -371,12 +377,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Metagross | 52 | Clear Body | – | Meteor Mash, Bullet Punch, Gravity, Explosion |
-| Magnezone | 56 | Sturdy | – | Zap Cannon, Lock-On, Mirror Coat, Metal Sound |
-| Skarmory | 52 | Keen Eye | – | Air Slash, Spikes, Night Slash, Steel Wing |
-| Bronzong | 50 | Heatproof | – | Gyro Ball, Hypnosis, Dream Eater, Gravity |
-| Empoleon | 52 | Torrent | – | Hydro Pump, Blizzard, Aqua Jet, Roar |
-| Steelix | 62 | Sturdy | – | Stone Edge, Stealth Rock, Roar, Iron Tail |
+| Skarmory | 76 | Sturdy | Leftovers | Spikes, Brave Bird, Roost, Whirlwind |
+| Forretress | 76 | Sturdy | – | Stealth Rock, Gyro Ball, Volt Switch, Explosion |
+| Magnezone | 77 | Sturdy | Life Orb | Thunderbolt, Flash Cannon, Volt Switch, Thunder Wave |
+| Scizor | 77 | Technician | – | Bullet Punch, X-Scissor, Swords Dance, Superpower |
+| Metagross | 77 | Clear Body | – | Meteor Mash, Earthquake, Zen Headbutt, Bullet Punch |
+| Steelix | 78 | Sturdy | Sitrus Berry | Earthquake, Iron Head, Crunch, Stone Edge |
 
 ### Pryce (trainer 32)
 
@@ -384,9 +390,11 @@ Uses in battle: Hyper Potion, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Seel | 30 | Thick Fat | – | Snore, Hail, Icy Wind, Rest |
-| Dewgong | 32 | Thick Fat | – | Sleep Talk, Ice Shard, Aurora Beam, Rest |
-| Piloswine | 34 | Snow Cloak | Sitrus Berry | Hail, Ice Fang, Mud Bomb, Blizzard |
+| Dewgong | 41 | Thick Fat | Chesto Berry | Rest, Surf, Ice Beam, Toxic |
+| Cloyster | 41 | Shell Armor | – | Spikes, Ice Shard, Surf, Rock Blast |
+| Sneasel | 41 | Inner Focus | – | Ice Shard, Knock Off, Low Kick, Swords Dance |
+| Lapras | 42 | Water Absorb | – | Ice Beam, Surf, Thunderbolt, Confuse Ray |
+| Mamoswine | 43 | Oblivious | Sitrus Berry | Earthquake, Ice Shard, Stone Edge, Superpower |
 
 ### Pryce (trainer 716)
 
@@ -394,12 +402,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Abomasnow | 56 | Snow Warning | – | Ice Shard, Wood Hammer, Earthquake, Blizzard |
-| Dewgong | 58 | Thick Fat | Lum Berry | Dive, Sheer Cold, Sleep Talk, Rest |
-| Glalie | 52 | Inner Focus | – | Payback, Torment, Attract, Blizzard |
-| Froslass | 52 | Snow Cloak | – | Ice Shard, Confuse Ray, Attract, Blizzard |
-| Walrein | 54 | Ice Body | – | Hail, Body Slam, Swagger, Blizzard |
-| Mamoswine | 60 | Snow Cloak | Sitrus Berry | Earthquake, Avalanche, Stone Edge, Double Team |
+| Abomasnow | 74 | Snow Warning | Icy Rock | Blizzard, Wood Hammer, Earthquake, Ice Shard |
+| Weavile | 74 | Pressure | – | Icicle Crash, Night Slash, Low Kick, Ice Shard |
+| Cloyster | 75 | Skill Link | White Herb | Shell Smash, Icicle Spear, Rock Blast, Hydro Pump |
+| Walrein | 75 | Thick Fat | – | Blizzard, Surf, Earthquake, Rest |
+| Lapras | 75 | Water Absorb | Leftovers | Blizzard, Surf, Thunderbolt, Psychic |
+| Mamoswine | 76 | Thick Fat | Sitrus Berry | Earthquake, Icicle Crash, Stone Edge, Ice Shard |
 
 ### Clair (trainer 35)
 
@@ -407,10 +415,11 @@ Uses in battle: Hyper Potion, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gyarados | 38 | Intimidate | – | Twister, Dragon Rage, Bite, Dragon Pulse |
-| Dragonair | 38 | Shed Skin | – | Thunder Wave, Fire Blast, Slam, Dragon Pulse |
-| Dragonair | 38 | Shed Skin | – | Thunder Wave, Aqua Tail, Slam, Dragon Pulse |
-| Kingdra | 41 | Sniper | Sitrus Berry | Smokescreen, Hydro Pump, Hyper Beam, Dragon Pulse |
+| Dragonair | 47 | Shed Skin | – | Thunder Wave, Dragon Pulse, Flamethrower, Thunderbolt |
+| Ampharos | 47 | Static | – | Thunderbolt, Dragon Pulse, Power Gem, Thunder Wave |
+| Altaria | 48 | Natural Cure | – | Moonblast, Dragon Pulse, Roost, Flamethrower |
+| Gyarados | 48 | Intimidate | – | Dragon Dance, Waterfall, Earthquake, Crunch |
+| Kingdra | 50 | Sniper | Sitrus Berry | Dragon Pulse, Surf, Ice Beam, Focus Energy |
 
 ### Clair (trainer 719)
 
@@ -418,12 +427,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gyarados | 56 | Intimidate | Wacan Berry | Dragon Dance, Earthquake, Waterfall, Dragon Pulse |
-| Dragonair | 52 | Shed Skin | – | Thunder Wave, Dragon Rush, Thunderbolt, Flamethrower |
-| Aerodactyl | 52 | Rock Head | – | Earthquake, Thunder Fang, Rock Slide, Roar |
-| Kingdra | 56 | Sniper | – | Yawn, Hydro Pump, Ice Beam, Dragon Breath |
-| Charizard | 52 | Blaze | – | Shadow Claw, Air Slash, Dragon Claw, Fire Fang |
-| Dragonite | 60 | Inner Focus | Sitrus Berry | Thunder, Safeguard, Dragon Breath, Hyper Beam |
+| Ampharos | 76 | Static | – | Thunderbolt, Dragon Pulse, Focus Blast, Thunder Wave |
+| Altaria | 76 | Natural Cure | Leftovers | Moonblast, Dragon Pulse, Roost, Flamethrower |
+| Gyarados | 77 | Intimidate | – | Dragon Dance, Waterfall, Earthquake, Crunch |
+| Salamence | 77 | Intimidate | – | Outrage, Fire Blast, Earthquake, Dragon Dance |
+| Dragonite | 77 | Inner Focus | – | Dragon Claw, Fire Punch, Thunder Punch, Extreme Speed |
+| Kingdra | 78 | Sniper | Sitrus Berry | Dragon Pulse, Hydro Pump, Ice Beam, Dragon Dance |
 
 ### Clair (trainer 734)
 
@@ -431,9 +440,9 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Dragonair | 52 | Shed Skin | – | Thunder Wave, Dragon Rush, Thunderbolt, Flamethrower |
-| Kingdra | 56 | Sniper | – | Yawn, Hydro Pump, Ice Beam, Dragon Breath |
-| Dragonite | 60 | Inner Focus | – | Thunder, Protect, Dragon Breath, Hyper Beam |
+| Ampharos | 76 | Static | – | Thunderbolt, Dragon Pulse, Focus Blast, Protect |
+| Salamence | 76 | Intimidate | – | Outrage, Fire Blast, Earthquake, Dragon Dance |
+| Kingdra | 78 | Sniper | Sitrus Berry | Dragon Pulse, Hydro Pump, Ice Beam, Focus Energy |
 
 ## Elite Four and Champion
 
@@ -443,11 +452,11 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Xatu | 40 | Synchronize | – | U-turn, Me First, Confuse Ray, Psychic |
-| Jynx | 41 | Oblivious | – | Double Slap, Lovely Kiss, Ice Punch, Psychic |
-| Exeggutor | 41 | Chlorophyll | – | Reflect, Hypnosis, Egg Bomb, Psychic |
-| Slowbro | 41 | Own Tempo | – | Curse, Amnesia, Water Pulse, Psychic |
-| Xatu | 42 | Early Bird | Sitrus Berry | Aerial Ace, Ominous Wind, Confuse Ray, Psychic |
+| Wyrdeer | 53 | Intimidate | – | Psychic, Shadow Ball, Megahorn, Calm Mind |
+| Jynx | 53 | Dry Skin | – | Lovely Kiss, Ice Beam, Psychic, Focus Blast |
+| Espeon | 54 | Synchronize | – | Psychic, Shadow Ball, Reflect, Dazzling Gleam |
+| Slowking | 54 | Own Tempo | – | Surf, Psychic, Flamethrower, Calm Mind |
+| Xatu | 55 | Synchronize | Sitrus Berry | Air Slash, Psychic, Heat Wave, Thunder Wave |
 
 ### Will (trainer 702)
 
@@ -455,12 +464,12 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Bronzong | 58 | Heatproof | – | Reflect, Payback, Gravity, Psychic |
-| Jynx | 60 | Oblivious | – | Fake Tears, Lovely Kiss, Blizzard, Dream Eater |
-| Grumpig | 59 | Thick Fat | – | Confuse Ray, Signal Beam, Power Gem, Psychic |
-| Slowbro | 60 | Own Tempo | – | Curse, Amnesia, Body Slam, Psychic |
-| Gardevoir | 61 | Synchronize | – | Focus Blast, Charge Beam, Calm Mind, Psychic |
-| Xatu | 62 | Early Bird | Sitrus Berry | Quick Attack, Shadow Ball, Confuse Ray, Psychic |
+| Exeggutor | 78 | Chlorophyll | White Herb | Trick Room, Sleep Powder, Psychic, Leaf Storm |
+| Wyrdeer | 78 | Intimidate | – | Psychic, Shadow Ball, Megahorn, Earthquake |
+| Espeon | 79 | Magic Bounce | Life Orb | Psychic, Shadow Ball, Dazzling Gleam, Calm Mind |
+| Slowking | 80 | Regenerator | Leftovers | Surf, Psychic, Flamethrower, Calm Mind |
+| Gardevoir | 80 | Trace | – | Psychic, Moonblast, Focus Blast, Will-O-Wisp |
+| Xatu | 81 | Magic Bounce | Sitrus Berry | Psychic, Air Slash, Heat Wave, Thunder Wave |
 
 ### Koga (trainer 247)
 
@@ -468,11 +477,11 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Ariados | 40 | Insomnia | – | Poison Jab, Spider Web, Baton Pass, Giga Drain |
-| Venomoth | 41 | Shield Dust | – | Supersonic, Gust, Psychic, Toxic |
-| Forretress | 43 | Sturdy | – | Protect, Swift, Explosion, Toxic Spikes |
-| Muk | 42 | Sticky Hold | Black Sludge | Minimize, Screech, Gunk Shot, Toxic |
-| Crobat | 44 | Inner Focus | Sitrus Berry | Double Team, Quick Attack, Wing Attack, Poison Fang |
+| Ariados | 53 | Swarm | – | Toxic Spikes, Poison Jab, Sucker Punch, Megahorn |
+| Forretress | 54 | Sturdy | – | Spikes, Gyro Ball, Toxic, Explosion |
+| Venomoth | 54 | Tinted Lens | – | Bug Buzz, Psychic, Sleep Powder, Sludge Bomb |
+| Muk | 55 | Stench | – | Gunk Shot, Fire Punch, Minimize, Toxic |
+| Crobat | 55 | Inner Focus | Sitrus Berry | Brave Bird, Cross Poison, Double Team, Toxic |
 
 ### Koga (trainer 703)
 
@@ -480,12 +489,12 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Skuntank | 61 | Aftermath | – | Sucker Punch, Dig, Toxic, Explosion |
-| Venomoth | 63 | Shield Dust | – | Double Team, Baton Pass, Psychic, Silver Wind |
-| Toxicroak | 60 | Dry Skin | – | Cross Chop, X-Scissor, Swagger, Gunk Shot |
-| Muk | 62 | Sticky Hold | Black Sludge | Minimize, Screech, Swagger, Toxic |
-| Crobat | 64 | Inner Focus | – | Toxic, Mean Look, Fly, Cross Poison |
-| Swalot | 62 | Sticky Hold | Leftovers | Yawn, Amnesia, Pain Split, Sludge Bomb |
+| Ariados | 78 | Swarm | – | Toxic Spikes, Poison Jab, Sucker Punch, Megahorn |
+| Forretress | 79 | Sturdy | Leftovers | Spikes, Gyro Ball, Toxic, Explosion |
+| Venomoth | 79 | Tinted Lens | – | Bug Buzz, Psychic, Sleep Powder, Quiver Dance |
+| Muk | 80 | Poison Touch | Black Sludge | Gunk Shot, Ice Punch, Fire Punch, Minimize |
+| Drapion | 80 | Sniper | – | Cross Poison, Crunch, Earthquake, Aqua Tail |
+| Crobat | 81 | Infiltrator | Sitrus Berry | Brave Bird, Cross Poison, Double Team, Toxic |
 
 ### Bruno (trainer 418)
 
@@ -493,11 +502,11 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Hitmontop | 42 | Technician | – | Counter, Quick Attack, Dig, Triple Kick |
-| Hitmonlee | 42 | Reckless | – | Swagger, Focus Energy, High Jump Kick, Blaze Kick |
-| Hitmonchan | 42 | Iron Fist | – | Thunder Punch, Ice Punch, Fire Punch, Bullet Punch |
-| Onix | 43 | Sturdy | – | Dragon Breath, Earthquake, Sandstorm, Rock Slide |
-| Machamp | 46 | No Guard | Sitrus Berry | Rock Slide, Foresight, Revenge, Cross Chop |
+| Hitmontop | 53 | Intimidate | – | Close Combat, Sucker Punch, Earthquake, Stone Edge |
+| Hitmonlee | 53 | Reckless | – | High Jump Kick, Stone Edge, Sucker Punch, Blaze Kick |
+| Hitmonchan | 54 | Iron Fist | – | Thunder Punch, Ice Punch, Fire Punch, Mach Punch |
+| Steelix | 54 | Sturdy | – | Earthquake, Iron Head, Crunch, Stone Edge |
+| Machamp | 55 | No Guard | Sitrus Berry | Dynamic Punch, Stone Edge, Earthquake, Bullet Punch |
 
 ### Bruno (trainer 704)
 
@@ -505,12 +514,12 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Hitmontop | 62 | Technician | – | Counter, Quick Attack, Close Combat, Earthquake |
-| Hitmonlee | 61 | Reckless | – | Swagger, Close Combat, Reversal, Blaze Kick |
-| Hitmonchan | 61 | Iron Fist | – | Substitute, Drain Punch, Close Combat, Bullet Punch |
-| Hariyama | 62 | Thick Fat | Sitrus Berry | Low Kick, Payback, Bullet Punch, Bulk Up |
-| Machamp | 64 | No Guard | – | Bullet Punch, Foresight, Stone Edge, Dynamic Punch |
-| Lucario | 64 | Inner Focus | – | Extreme Speed, Close Combat, Counter, Iron Tail |
+| Hitmontop | 78 | Technician | – | Fake Out, Close Combat, Mach Punch, Stone Edge |
+| Hitmonlee | 78 | Reckless | Life Orb | High Jump Kick, Stone Edge, Blaze Kick, Earthquake |
+| Hitmonchan | 79 | Iron Fist | – | Ice Punch, Thunder Punch, Fire Punch, Mach Punch |
+| Lucario | 80 | Inner Focus | – | Close Combat, Extreme Speed, Crunch, Ice Punch |
+| Steelix | 80 | Sturdy | Leftovers | Earthquake, Iron Head, Crunch, Stone Edge |
+| Machamp | 81 | No Guard | Sitrus Berry | Dynamic Punch, Stone Edge, Earthquake, Bullet Punch |
 
 ### Karen (trainer 246)
 
@@ -518,11 +527,11 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Umbreon | 42 | Synchronize | – | Double Team, Confuse Ray, Feint Attack, Payback |
-| Vileplume | 42 | Chlorophyll | – | Stun Spore, Acid, Moonlight, Petal Dance |
-| Gengar | 45 | Cursed Body | – | Lick, Spite, Focus Blast, Destiny Bond |
-| Murkrow | 44 | Super Luck | – | Pluck, Whirlwind, Sucker Punch, Feint Attack |
-| Houndoom | 47 | Early Bird | Sitrus Berry | Nasty Plot, Dark Pulse, Flamethrower, Crunch |
+| Umbreon | 53 | Synchronize | Leftovers | Foul Play, Toxic, Moonlight, Confuse Ray |
+| Vileplume | 53 | Chlorophyll | – | Sleep Powder, Giga Drain, Moonblast, Sludge Bomb |
+| Gengar | 54 | Cursed Body | – | Shadow Ball, Dark Pulse, Thunderbolt, Destiny Bond |
+| Honchkrow | 55 | Super Luck | – | Brave Bird, Sucker Punch, Roost, Thunder Wave |
+| Houndoom | 55 | Flash Fire | Sitrus Berry | Dark Pulse, Flamethrower, Nasty Plot, Solar Beam |
 
 ### Karen (trainer 705)
 
@@ -530,12 +539,12 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Weavile | 62 | Pressure | – | Ice Shard, Night Slash, Ice Punch, Low Kick |
-| Spiritomb | 62 | Pressure | – | Curse, Confuse Ray, Pain Split, Sucker Punch |
-| Absol | 62 | Super Luck | – | Night Slash, Psycho Cut, Detect, Perish Song |
-| Honchkrow | 64 | Super Luck | – | Drill Peck, Whirlwind, Sucker Punch, Thunder Wave |
-| Houndoom | 63 | Early Bird | – | Nasty Plot, Dark Pulse, Flamethrower, Sludge Bomb |
-| Umbreon | 64 | Synchronize | Sitrus Berry | Curse, Payback, Confuse Ray, Sucker Punch |
+| Weavile | 78 | Pressure | Focus Sash | Night Slash, Ice Punch, Low Kick, Fake Out |
+| Vileplume | 78 | Chlorophyll | Black Sludge | Sleep Powder, Giga Drain, Moonblast, Sludge Bomb |
+| Gengar | 79 | Cursed Body | – | Shadow Ball, Dark Pulse, Thunderbolt, Destiny Bond |
+| Umbreon | 80 | Synchronize | Leftovers | Foul Play, Toxic, Moonlight, Curse |
+| Honchkrow | 80 | Super Luck | White Herb | Brave Bird, Sucker Punch, Superpower, Thunder Wave |
+| Houndoom | 81 | Flash Fire | Sitrus Berry | Dark Pulse, Fire Blast, Nasty Plot, Solar Beam |
 
 ### Lance (trainer 244)
 
@@ -543,12 +552,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gyarados | 46 | Intimidate | – | Flail, Dragon Pulse, Waterfall, Ice Fang |
-| Dragonite | 49 | Inner Focus | – | Thunder Wave, Dragon Rush, Thunder, Hyper Beam |
-| Dragonite | 49 | Inner Focus | – | Thunder Wave, Dragon Rush, Blizzard, Hyper Beam |
-| Aerodactyl | 48 | Pressure | – | Aerial Ace, Crunch, Rock Slide, Thunder Fang |
-| Charizard | 48 | Blaze | – | Shadow Claw, Air Slash, Dragon Claw, Fire Fang |
-| Dragonite | 50 | Inner Focus | Sitrus Berry | Fire Blast, Safeguard, Outrage, Hyper Beam |
+| Gyarados | 56 | Intimidate | – | Dragon Dance, Waterfall, Earthquake, Stone Edge |
+| Aerodactyl | 56 | Rock Head | – | Stone Edge, Earthquake, Aerial Ace, Crunch |
+| Charizard | 57 | Blaze | – | Flamethrower, Air Slash, Focus Blast, Dragon Pulse |
+| Kingdra | 57 | Sniper | – | Dragon Pulse, Surf, Ice Beam, Focus Energy |
+| Dragonite | 58 | Inner Focus | – | Fire Blast, Blizzard, Thunder, Hurricane |
+| Dragonite | 60 | Multiscale | Sitrus Berry | Dragon Dance, Outrage, Extreme Speed, Earthquake |
 
 ### Lance (trainer 701)
 
@@ -556,12 +565,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Salamence | 72 | Intimidate | Lum Berry | Flamethrower, Shadow Claw, Dragon Claw, Rest |
-| Gyarados | 68 | Intimidate | – | Thunder Wave, Ice Fang, Waterfall, Dragon Dance |
-| Garchomp | 72 | Sand Veil | – | Swords Dance, Outrage, Earthquake, Roar |
-| Altaria | 73 | Natural Cure | – | Perish Song, Dragon Breath, Double Team, Hyper Beam |
-| Charizard | 68 | Blaze | – | Flamethrower, Air Slash, Dragon Claw, Hyper Beam |
-| Dragonite | 75 | Inner Focus | Sitrus Berry | Fire Blast, Safeguard, Draco Meteor, Hyper Beam |
+| Gyarados | 84 | Intimidate | Life Orb | Dragon Dance, Waterfall, Earthquake, Stone Edge |
+| Aerodactyl | 84 | Rock Head | Focus Sash | Stone Edge, Earthquake, Aerial Ace, Crunch |
+| Garchomp | 85 | Sand Veil | – | Earthquake, Dragon Claw, Fire Blast, Stone Edge |
+| Charizard | 85 | Blaze | White Herb | Overheat, Air Slash, Focus Blast, Dragon Pulse |
+| Dragonite | 86 | Inner Focus | Leftovers | Fire Blast, Blizzard, Thunder, Hurricane |
+| Dragonite | 88 | Multiscale | Sitrus Berry | Dragon Dance, Outrage, Extreme Speed, Earthquake |
 
 ### Lance (trainer 733)
 
@@ -569,15 +578,16 @@ Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gyarados | 68 | Intimidate | – | Thunder Wave, Ice Fang, Waterfall, Dragon Dance |
-| Charizard | 68 | Blaze | – | Flamethrower, Air Slash, Dragon Claw, Hyper Beam |
-| Dragonite | 75 | Inner Focus | – | Fire Punch, Safeguard, Draco Meteor, Hyper Beam |
+| Gyarados | 84 | Intimidate | Life Orb | Waterfall, Earthquake, Stone Edge, Dragon Dance |
+| Charizard | 85 | Blaze | Charcoal | Flamethrower, Air Slash, Focus Blast, Dragon Pulse |
+| Dragonite | 88 | Multiscale | Sitrus Berry | Outrage, Extreme Speed, Earthquake, Dragon Dance |
 
 ### Lance (trainer 675)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Dragonite | 40 | Inner Focus | – | Fly, Twister, Thunder, Hyper Beam |
+| Aerodactyl | 43 | Rock Head | – | Stone Edge, Aerial Ace, Crunch, Earthquake |
+| Dragonite | 44 | Inner Focus | Sitrus Berry | Dragon Claw, Fire Punch, Thunder Punch, Extreme Speed |
 
 ## Kanto Gym Leaders
 
@@ -587,11 +597,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Graveler | 51 | Sturdy | – | Defense Curl, Rock Slide, Rollout, Earthquake |
-| Rhyhorn | 51 | Lightning Rod | – | Sandstorm, Scary Face, Earthquake, Horn Drill |
-| Omastar | 53 | Shell Armor | – | Ancient Power, Brine, Protect, Spike Cannon |
-| Onix | 54 | Rock Head | Sitrus Berry | Iron Tail, Rock Slide, Screech, Sandstorm |
-| Kabutops | 52 | Battle Armor | – | Rock Slide, Aqua Jet, Endure, Giga Drain |
+| Golem | 59 | Sturdy | – | Earthquake, Stone Edge, Fire Punch, Explosion |
+| Omastar | 59 | Shell Armor | – | Surf, Ice Beam, Earth Power, Spikes |
+| Kabutops | 59 | Battle Armor | – | Swords Dance, Aqua Tail, Stone Edge, Aqua Jet |
+| Aerodactyl | 60 | Rock Head | – | Stone Edge, Earthquake, Aerial Ace, Crunch |
+| Rhyperior | 60 | Solid Rock | – | Earthquake, Stone Edge, Megahorn, Ice Punch |
+| Onix | 61 | Sturdy | Focus Sash | Earthquake, Stone Edge, Iron Tail, Rock Blast |
 
 ### Brock (trainer 720)
 
@@ -599,12 +610,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Golem | 55 | Sturdy | – | Sandstorm, Rock Slide, Rock Polish, Earthquake |
-| Relicanth | 54 | Rock Head | Lum Berry | Head Smash, Aqua Tail, Earthquake, Rest |
-| Omastar | 56 | Shell Armor | – | Ancient Power, Brine, Protect, Sandstorm |
-| Onix | 61 | Rock Head | Sitrus Berry | Stealth Rock, Rock Slide, Rock Polish, Sandstorm |
-| Kabutops | 55 | Battle Armor | – | Rock Slide, Aqua Jet, Endure, Giga Drain |
-| Rampardos | 57 | Mold Breaker | – | Earthquake, Stone Edge, Avalanche, Rock Polish |
+| Golem | 71 | Sturdy | – | Stealth Rock, Earthquake, Stone Edge, Explosion |
+| Omastar | 71 | Shell Armor | – | Surf, Ice Beam, Earth Power, Spikes |
+| Kabutops | 72 | Battle Armor | – | Swords Dance, Aqua Tail, Stone Edge, Aqua Jet |
+| Aerodactyl | 72 | Rock Head | Focus Sash | Stone Edge, Earthquake, Aerial Ace, Crunch |
+| Rhyperior | 72 | Solid Rock | – | Earthquake, Stone Edge, Megahorn, Ice Punch |
+| Steelix | 73 | Sturdy | Sitrus Berry | Earthquake, Iron Head, Crunch, Stone Edge |
 
 ### Misty (trainer 254)
 
@@ -612,10 +623,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Golduck | 49 | Damp | – | Water Pulse, Disable, Psych Up, Psychic |
-| Quagsire | 49 | Water Absorb | – | Water Pulse, Amnesia, Earthquake, Rain Dance |
-| Lapras | 52 | Water Absorb | – | Water Pulse, Sing, Ice Beam, Body Slam |
-| Starmie | 54 | Natural Cure | Sitrus Berry | Water Pulse, Confuse Ray, Recover, Ice Beam |
+| Politoed | 60 | Drizzle | – | Hydro Pump, Ice Beam, Encore, Hyper Voice |
+| Quagsire | 60 | Water Absorb | – | Earthquake, Surf, Curse, Amnesia |
+| Lanturn | 60 | Volt Absorb | – | Surf, Thunder, Ice Beam, Scald |
+| Golduck | 60 | Cloud Nine | – | Surf, Psychic, Ice Beam, Calm Mind |
+| Lapras | 60 | Water Absorb | – | Surf, Ice Beam, Thunderbolt, Future Sight |
+| Starmie | 62 | Natural Cure | Sitrus Berry | Hydro Pump, Psychic, Thunderbolt, Recover |
 
 ### Misty (trainer 721)
 
@@ -623,12 +636,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Starmie | 60 | Natural Cure | Colbur Berry | Thunderbolt, Psychic, Ice Beam, Surf |
-| Quagsire | 56 | Water Absorb | – | Water Pulse, Amnesia, Earthquake, Rain Dance |
-| Lapras | 56 | Water Absorb | – | Surf, Perish Song, Blizzard, Rain Dance |
-| Lanturn | 54 | Volt Absorb | – | Confuse Ray, Thunderbolt, Surf, Thunder Wave |
-| Floatzel | 54 | Swift Swim | – | Agility, Ice Fang, Waterfall, Baton Pass |
-| Milotic | 60 | Marvel Scale | – | Hydro Pump, Ice Beam, Rest, Sleep Talk |
+| Politoed | 70 | Drizzle | Damp Rock | Hydro Pump, Ice Beam, Encore, Hypnosis |
+| Quagsire | 70 | Water Absorb | Leftovers | Earthquake, Scald, Recover, Toxic |
+| Lanturn | 71 | Volt Absorb | – | Thunder, Hydro Pump, Ice Beam, Scald |
+| Gorebyss | 71 | Swift Swim | – | Hydro Pump, Psychic, Ice Beam, Aqua Ring |
+| Milotic | 71 | Marvel Scale | – | Scald, Ice Beam, Recover, Hypnosis |
+| Starmie | 72 | Natural Cure | Sitrus Berry | Hydro Pump, Psychic, Thunderbolt, Recover |
 
 ### Lt. Surge (trainer 255)
 
@@ -636,11 +649,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Raichu | 51 | Static | – | Thunder Wave, Quick Attack, Shock Wave, Double Team |
-| Electrode | 47 | Static | – | Thunder Wave, Double Team, Shock Wave, Light Screen |
-| Magneton | 47 | Magnet Pull | – | Supersonic, Double Team, Shock Wave, Mirror Shot |
-| Electrode | 47 | Static | – | Screech, Double Team, Self-Destruct, Charge Beam |
-| Electabuzz | 53 | Static | Sitrus Berry | Quick Attack, Shock Wave, Light Screen, Low Kick |
+| Electrode | 60 | Static | – | Thunderbolt, Thunder Wave, Explosion, Double Team |
+| Electrode | 60 | Static | – | Thunderbolt, Screech, Explosion, Double Team |
+| Magnezone | 61 | Sturdy | – | Thunderbolt, Flash Cannon, Zap Cannon, Thunder Wave |
+| Jolteon | 61 | Volt Absorb | – | Thunderbolt, Shadow Ball, Thunder Wave, Double Team |
+| Electivire | 62 | Motor Drive | – | Thunder Punch, Ice Punch, Fire Punch, Earthquake |
+| Raichu | 63 | Lightning Rod | Sitrus Berry | Thunderbolt, Surf, Focus Blast, Nasty Plot |
 
 ### Lt. Surge (trainer 722)
 
@@ -648,12 +662,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Raichu | 60 | Static | – | Thunder Wave, Quick Attack, Thunderbolt, Grass Knot |
-| Manectric | 52 | Static | Pinap Berry | Thunder Wave, Natural Gift, Discharge, Overheat |
-| Magnezone | 52 | Magnet Pull | – | Thunderbolt, Double Team, Magnet Rise, Mirror Shot |
-| Electrode | 52 | Static | – | Thunder Wave, Double Team, Thunderbolt, Explosion |
-| Pachirisu | 58 | Run Away | – | Quick Attack, Super Fang, Discharge, Sweet Kiss |
-| Electivire | 56 | Motor Drive | Sitrus Berry | Thunderbolt, Cross Chop, Ice Punch, Earthquake |
+| Electrode | 72 | Static | Focus Sash | Thunderbolt, Thunder Wave, Explosion, Light Screen |
+| Magnezone | 73 | Sturdy | – | Thunderbolt, Flash Cannon, Volt Switch, Thunder Wave |
+| Luxray | 73 | Intimidate | – | Wild Charge, Crunch, Ice Fang, Fire Fang |
+| Jolteon | 73 | Volt Absorb | – | Thunderbolt, Shadow Ball, Volt Switch, Hyper Voice |
+| Electivire | 73 | Motor Drive | Life Orb | Thunder Punch, Ice Punch, Earthquake, Cross Chop |
+| Raichu | 74 | Lightning Rod | Sitrus Berry | Thunderbolt, Surf, Focus Blast, Nasty Plot |
 
 ### Erika (trainer 256)
 
@@ -661,10 +675,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Jumpluff | 51 | Chlorophyll | – | U-turn, Leech Seed, Sunny Day, Giga Drain |
-| Tangela | 52 | Chlorophyll | – | Ancient Power, Wring Out, Giga Drain, Sleep Powder |
-| Victreebel | 56 | Chlorophyll | – | Sunny Day, Synthesis, Grass Knot, Leaf Storm |
-| Bellossom | 56 | Chlorophyll | Sitrus Berry | Sunny Day, Synthesis, Giga Drain, Solar Beam |
+| Jumpluff | 63 | Chlorophyll | Heat Rock | Sunny Day, Sleep Powder, Leech Seed, Acrobatics |
+| Sunflora | 63 | Chlorophyll | – | Solar Beam, Sludge Bomb, Earth Power, Synthesis |
+| Vileplume | 63 | Chlorophyll | – | Solar Beam, Sludge Bomb, Moonblast, Sleep Powder |
+| Victreebel | 63 | Chlorophyll | – | Solar Beam, Sludge Bomb, Weather Ball, Sleep Powder |
+| Bellossom | 64 | Chlorophyll | – | Solar Beam, Moonblast, Sludge Bomb, Quiver Dance |
+| Tangrowth | 65 | Chlorophyll | Sitrus Berry | Power Whip, Earthquake, Focus Blast, Sleep Powder |
 
 ### Erika (trainer 723)
 
@@ -672,12 +688,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Shiftry | 54 | Chlorophyll | – | Leaf Storm, Sucker Punch, Explosion, Sunny Day |
-| Jumpluff | 53 | Chlorophyll | – | U-turn, Memento, Sleep Powder, Giga Drain |
-| Victreebel | 56 | Chlorophyll | Kelpsy Berry | Natural Gift, Sludge Bomb, Leaf Storm, Leaf Blade |
-| Bellossom | 56 | Chlorophyll | – | Sunny Day, Solar Beam, Giga Drain, Attract |
-| Tangrowth | 60 | Chlorophyll | – | Swords Dance, Power Whip, Rock Slide, Earthquake |
-| Roserade | 55 | Natural Cure | – | Weather Ball, Energy Ball, Sludge Bomb, Stun Spore |
+| Jumpluff | 74 | Chlorophyll | Heat Rock | Sunny Day, Sleep Powder, Acrobatics, Leech Seed |
+| Sunflora | 74 | Chlorophyll | – | Solar Beam, Sludge Bomb, Earth Power, Synthesis |
+| Venusaur | 75 | Chlorophyll | – | Solar Beam, Sludge Bomb, Earthquake, Sleep Powder |
+| Roserade | 75 | Natural Cure | – | Leaf Storm, Sludge Bomb, Shadow Ball, Sleep Powder |
+| Bellossom | 75 | Chlorophyll | – | Solar Beam, Moonblast, Sludge Bomb, Quiver Dance |
+| Tangrowth | 76 | Chlorophyll | Sitrus Berry | Power Whip, Earthquake, Focus Blast, Sleep Powder |
 
 ### Janine (trainer 257)
 
@@ -685,11 +701,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Crobat | 47 | Inner Focus | – | Screech, Supersonic, Confuse Ray, Wing Attack |
-| Weezing | 44 | Levitate | – | Double Hit, Sludge Bomb, Toxic, Explosion |
-| Ariados | 47 | Insomnia | – | Scary Face, Poison Jab, Pin Missile, Psychic |
-| Ariados | 47 | Swarm | – | Pin Missile, Poison Jab, Swagger, Night Shade |
-| Venomoth | 50 | Shield Dust | Sitrus Berry | Sludge Bomb, Double Team, Signal Beam, Psychic |
+| Crobat | 61 | Inner Focus | – | Brave Bird, Cross Poison, Toxic, Double Team |
+| Ariados | 61 | Swarm | – | Toxic Spikes, Poison Jab, Sucker Punch, Megahorn |
+| Qwilfish | 62 | Poison Point | – | Poison Jab, Waterfall, Spikes, Toxic |
+| Weezing | 62 | Levitate | – | Sludge Bomb, Fire Blast, Thunder, Explosion |
+| Nidoqueen | 63 | Poison Point | – | Earth Power, Sludge Bomb, Ice Beam, Thunderbolt |
+| Venomoth | 64 | Tinted Lens | Sitrus Berry | Bug Buzz, Psychic, Sleep Powder, Quiver Dance |
 
 ### Janine (trainer 724)
 
@@ -697,12 +714,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Crobat | 52 | Inner Focus | – | Heat Wave, Cross Poison, Confuse Ray, U-turn |
-| Weezing | 56 | Levitate | – | Thunderbolt, Sludge Bomb, Toxic, Explosion |
-| Toxicroak | 52 | Dry Skin | – | Cross Chop, Poison Jab, Attract, Substitute |
-| Ariados | 58 | Swarm | – | Toxic, Bounce, Swagger, Night Shade |
-| Venomoth | 59 | Shield Dust | Sitrus Berry | Sleep Powder, Double Team, Bug Buzz, Psychic |
-| Drapion | 55 | Battle Armor | – | Cross Poison, Confuse Ray, Crunch, Swords Dance |
+| Ariados | 70 | Swarm | – | Toxic Spikes, Poison Jab, Sucker Punch, Megahorn |
+| Qwilfish | 70 | Intimidate | – | Spikes, Poison Jab, Waterfall, Toxic |
+| Crobat | 71 | Inner Focus | – | Brave Bird, Cross Poison, Double Team, Toxic |
+| Drapion | 71 | Sniper | – | Cross Poison, Crunch, Earthquake, Aqua Tail |
+| Nidoqueen | 71 | Poison Point | Leftovers | Earth Power, Sludge Bomb, Ice Beam, Thunderbolt |
+| Venomoth | 72 | Tinted Lens | Sitrus Berry | Bug Buzz, Psychic, Sleep Powder, Quiver Dance |
 
 ### Sabrina (trainer 258)
 
@@ -710,9 +727,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Espeon | 53 | Synchronize | – | Shadow Ball, Skill Swap, Calm Mind, Psychic |
-| Mr. Mime | 53 | Filter | – | Mimic, Light Screen, Skill Swap, Psychic |
-| Alakazam | 55 | Synchronize | Sitrus Berry | Skill Swap, Psychic, Energy Ball, Reflect |
+| Espeon | 64 | Synchronize | – | Psychic, Shadow Ball, Dazzling Gleam, Reflect |
+| Farigiraf | 64 | Armor Tail | – | Psychic, Shadow Ball, Calm Mind, Thunderbolt |
+| Hypno | 64 | Insomnia | – | Hypnosis, Psychic, Focus Blast, Nasty Plot |
+| Mr. Mime | 64 | Filter | – | Psychic, Thunderbolt, Focus Blast, Reflect |
+| Wobbuffet | 65 | Shadow Tag | – | Counter, Mirror Coat, Encore, Destiny Bond |
+| Alakazam | 66 | Magic Guard | Sitrus Berry | Psychic, Focus Blast, Shadow Ball, Recover |
 
 ### Sabrina (trainer 725)
 
@@ -720,12 +740,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Alakazam | 60 | Synchronize | – | Gravity, Focus Blast, Energy Ball, Psychic |
-| Espeon | 58 | Synchronize | – | Calm Mind, Baton Pass, Shadow Ball, Psychic |
-| Mr. Mime | 56 | Soundproof | – | Reflect, Skill Swap, Thunder, Psychic |
-| Jynx | 54 | Oblivious | – | Blizzard, Perish Song, Psychic, Focus Blast |
-| Wobbuffet | 53 | Shadow Tag | – | Counter, Mirror Coat, Destiny Bond, Encore |
-| Gallade | 53 | Steadfast | Sitrus Berry | Close Combat, Psycho Cut, Night Slash, Stone Edge |
+| Wobbuffet | 74 | Shadow Tag | Leftovers | Counter, Mirror Coat, Encore, Destiny Bond |
+| Farigiraf | 74 | Armor Tail | – | Psychic, Shadow Ball, Calm Mind, Thunderbolt |
+| Espeon | 75 | Synchronize | – | Psychic, Shadow Ball, Dazzling Gleam, Calm Mind |
+| Gallade | 75 | Steadfast | – | Close Combat, Psycho Cut, Leaf Blade, Swords Dance |
+| Mr. Mime | 75 | Filter | Light Clay | Psychic, Reflect, Light Screen, Thunderbolt |
+| Alakazam | 76 | Magic Guard | Sitrus Berry | Psychic, Focus Blast, Shadow Ball, Recover |
 
 ### Blaine (trainer 259)
 
@@ -733,9 +753,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Magcargo | 54 | Flame Body | White Herb | Sunny Day, Smog, Overheat, Rock Slide |
-| Magmar | 54 | Flame Body | White Herb | Thunder Punch, Overheat, Sunny Day, Confuse Ray |
-| Rapidash | 59 | Flash Fire | White Herb | Quick Attack, Flare Blitz, Bounce, Overheat |
+| Ninetales | 66 | Drought | Heat Rock | Fire Blast, Solar Beam, Will-O-Wisp, Dark Pulse |
+| Magcargo | 66 | Flame Body | – | Earth Power, Lava Plume, Recover, Solar Beam |
+| Houndoom | 66 | Flash Fire | – | Fire Blast, Dark Pulse, Solar Beam, Nasty Plot |
+| Arcanine | 67 | Intimidate | – | Flare Blitz, Extreme Speed, Wild Charge, Crunch |
+| Rapidash | 67 | Flash Fire | – | Flare Blitz, Solar Beam, Megahorn, Wild Charge |
+| Magmortar | 68 | Flame Body | Sitrus Berry | Fire Blast, Thunderbolt, Focus Blast, Solar Beam |
 
 ### Blaine (trainer 726)
 
@@ -743,12 +766,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Torkoal | 54 | White Smoke | – | Sunny Day, Yawn, Body Slam, Overheat |
-| Camerupt | 57 | Solid Rock | – | Earthquake, Eruption, Solar Beam, Sunny Day |
-| Rapidash | 60 | Flash Fire | – | Megahorn, Quick Attack, Overheat, Flare Blitz |
-| Magcargo | 58 | Magma Armor | – | Curse, Gyro Ball, Overheat, Stone Edge |
-| Houndoom | 54 | Flash Fire | – | Shadow Ball, Dark Pulse, Flamethrower, Sucker Punch |
-| Magmortar | 62 | Flame Body | – | Thunderbolt, Low Kick, Flamethrower, Confuse Ray |
+| Ninetales | 76 | Drought | Heat Rock | Fire Blast, Solar Beam, Will-O-Wisp, Dark Pulse |
+| Houndoom | 76 | Flash Fire | – | Fire Blast, Dark Pulse, Solar Beam, Nasty Plot |
+| Camerupt | 77 | Solid Rock | – | Earth Power, Lava Plume, Stone Edge, Yawn |
+| Arcanine | 77 | Intimidate | – | Flare Blitz, Extreme Speed, Wild Charge, Crunch |
+| Rapidash | 77 | Flash Fire | – | Flare Blitz, Megahorn, Wild Charge, Swords Dance |
+| Magmortar | 78 | Flame Body | Sitrus Berry | Fire Blast, Thunderbolt, Focus Blast, Solar Beam |
 
 ### Blue (trainer 261)
 
@@ -756,12 +779,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Exeggutor | 55 | Chlorophyll | – | Leaf Storm, Psychic, Hypnosis, Trick Room |
-| Arcanine | 58 | Intimidate | – | Roar, Dragon Pulse, Flare Blitz, Extreme Speed |
-| Rhydon | 58 | Rock Head | – | Megahorn, Stone Edge, Thunder Fang, Earthquake |
-| Gyarados | 52 | Intimidate | – | Ice Fang, Waterfall, Dragon Dance, Return |
-| Machamp | 56 | No Guard | – | Dynamic Punch, Earthquake, Stone Edge, Thunder Punch |
-| Pidgeot | 60 | Keen Eye | Sitrus Berry | Return, Whirlwind, Air Slash, Mirror Move |
+| Exeggutor | 68 | Chlorophyll | – | Trick Room, Sleep Powder, Psychic, Giga Drain |
+| Gyarados | 68 | Intimidate | – | Dragon Dance, Waterfall, Earthquake, Stone Edge |
+| Machamp | 68 | No Guard | – | Dynamic Punch, Stone Edge, Ice Punch, Bullet Punch |
+| Arcanine | 69 | Intimidate | – | Flare Blitz, Extreme Speed, Wild Charge, Crunch |
+| Rhyperior | 69 | Solid Rock | – | Earthquake, Stone Edge, Megahorn, Ice Punch |
+| Pidgeot | 70 | Keen Eye | Sitrus Berry | Hurricane, Heat Wave, U-turn, Roost |
 
 ### Blue (trainer 727)
 
@@ -769,12 +792,12 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Exeggutor | 67 | Chlorophyll | – | Leaf Storm, Psychic, Explosion, Trick Room |
-| Machamp | 69 | No Guard | Iron Ball | Dynamic Punch, Stone Edge, Fling, Attract |
-| Rhyperior | 70 | Solid Rock | – | Megahorn, Stone Edge, Thunder Fang, Earthquake |
-| Arcanine | 68 | Intimidate | – | Flare Blitz, Extreme Speed, Thunder Fang, Crunch |
-| Tyranitar | 70 | Sand Stream | – | Low Kick, Fire Fang, Rock Slide, Earthquake |
-| Pidgeot | 72 | Keen Eye | Sitrus Berry | Return, Double Team, Air Slash, Steel Wing |
+| Exeggutor | 80 | Chlorophyll | White Herb | Trick Room, Sleep Powder, Psychic, Leaf Storm |
+| Gyarados | 80 | Intimidate | – | Dragon Dance, Waterfall, Earthquake, Stone Edge |
+| Tyranitar | 80 | Sand Stream | Leftovers | Crunch, Stone Edge, Earthquake, Fire Punch |
+| Arcanine | 81 | Intimidate | – | Flare Blitz, Extreme Speed, Wild Charge, Crunch |
+| Rhyperior | 81 | Solid Rock | – | Earthquake, Stone Edge, Megahorn, Ice Punch |
+| Pidgeot | 82 | Keen Eye | Sitrus Berry | Hurricane, Heat Wave, U-turn, Roost |
 
 ## Team Rocket
 
@@ -782,58 +805,66 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Houndour | 35 | Early Bird | – | Fire Fang, Roar, Bite, Feint Attack |
-| Koffing | 35 | Levitate | – | Tackle, Sludge, Smokescreen, Haze |
-| Houndoom | 38 | Early Bird | – | Fire Fang, Smog, Bite, Feint Attack |
+| Weezing | 46 | Levitate | – | Sludge Bomb, Will-O-Wisp, Pain Split, Fire Blast |
+| Gengar | 46 | Cursed Body | – | Hypnosis, Shadow Ball, Sludge Bomb, Pain Split |
+| Slowbro | 46 | Own Tempo | – | Surf, Psychic, Amnesia, Flamethrower |
+| Raticate | 46 | Hustle | – | Crunch, Super Fang, Hyper Fang, Double-Edge |
+| Houndoom | 48 | Flash Fire | Focus Sash | Flamethrower, Dark Pulse, Will-O-Wisp, Sludge Bomb |
 
 ### Ariana (trainer 478)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Arbok | 32 | Intimidate | – | Wrap, Poison Sting, Crunch, Glare |
-| Vileplume | 32 | Chlorophyll | – | Mega Drain, Sweet Scent, Sleep Powder, Acid |
-| Murkrow | 32 | Super Luck | – | Wing Attack, Pursuit, Astonish, Night Shade |
+| Arbok | 45 | Intimidate | – | Glare, Crunch, Gunk Shot, Earthquake |
+| Persian | 45 | Technician | – | Slash, Foul Play, Hypnosis, Play Rough |
+| Vileplume | 45 | Chlorophyll | – | Sleep Powder, Giga Drain, Sludge Bomb, Moonblast |
+| Gyarados | 45 | Intimidate | – | Waterfall, Crunch, Earthquake, Ice Fang |
+| Honchkrow | 47 | Insomnia | Sitrus Berry | Brave Bird, Sucker Punch, Roost, Thunder Wave |
 
 ### Ariana (trainer 479)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Arbok | 25 | Intimidate | – | Wrap, Poison Sting, Crunch, Glare |
-| Gloom | 25 | Chlorophyll | – | Mega Drain, Sweet Scent, Sleep Powder, Acid |
-| Murkrow | 27 | Super Luck | – | Wing Attack, Pursuit, Astonish, Night Shade |
+| Arbok | 42 | Intimidate | – | Glare, Crunch, Gunk Shot, Earthquake |
+| Persian | 42 | Technician | – | Slash, Foul Play, Hypnosis, Screech |
+| Vileplume | 42 | Chlorophyll | – | Sleep Powder, Giga Drain, Sludge Bomb, Leech Seed |
+| Murkrow | 43 | Insomnia | Sitrus Berry | Drill Peck, Foul Play, Haze, Night Shade |
 
 ### Proton (trainer 486)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Zubat | 8 | Inner Focus | – | Default |
-| Koffing | 12 | Levitate | – | Default |
+| Qwilfish | 17 | Poison Point | – | Poison Jab, Water Pulse, Pin Missile, Toxic |
+| Spinarak | 17 | Insomnia | – | Poison Sting, Shadow Sneak, Night Shade, Bug Bite |
+| Golbat | 18 | Inner Focus | Oran Berry | Air Cutter, Poison Fang, Confuse Ray, Bite |
 
 ### Proton (trainer 706)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Golbat | 28 | Inner Focus | – | Leech Life, Bite, Confuse Ray, Wing Attack |
-| Weezing | 33 | Levitate | – | Double Hit, Sludge, Smokescreen, Smog |
+| Qwilfish | 45 | Poison Point | – | Poison Jab, Waterfall, Toxic Spikes, Pin Missile |
+| Octillery | 45 | Sniper | – | Octazooka, Flamethrower, Ice Beam, Energy Ball |
+| Ariados | 45 | Insomnia | – | Poison Jab, Sucker Punch, Megahorn, Toxic Spikes |
+| Crobat | 46 | Inner Focus | Sitrus Berry | Cross Poison, Brave Bird, Super Fang, Confuse Ray |
 
 ### Petrel (trainer 487)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Koffing | 30 | Levitate | – | Tackle, Self-Destruct, Sludge, Smokescreen |
-| Koffing | 30 | Levitate | – | Tackle, Self-Destruct, Sludge, Smokescreen |
-| Koffing | 30 | Levitate | – | Tackle, Self-Destruct, Sludge, Smokescreen |
-| Weezing | 32 | Levitate | – | Tackle, Explosion, Sludge, Smokescreen |
-| Koffing | 30 | Levitate | – | Tackle, Self-Destruct, Sludge, Smokescreen |
-| Koffing | 30 | Levitate | – | Tackle, Smog, Sludge, Smokescreen |
+| Ditto | 44 | Imposter | Choice Scarf | Transform |
+| Skuntank | 44 | Aftermath | – | Poison Jab, Crunch, Flamethrower, Toxic |
+| Muk | 44 | Poison Touch | – | Gunk Shot, Fire Punch, Knock Off, Rock Slide |
+| Raticate | 44 | Hustle | – | Crunch, Super Fang, Hyper Fang, Quick Attack |
+| Weezing | 45 | Levitate | Sitrus Berry | Sludge Bomb, Fire Blast, Explosion, Will-O-Wisp |
 
 ### Petrel (trainer 488)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Zubat | 22 | Inner Focus | – | Default |
-| Raticate | 24 | Guts | – | Default |
-| Koffing | 22 | Levitate | – | Default |
+| Skuntank | 41 | Aftermath | – | Poison Jab, Crunch, Flamethrower, Toxic |
+| Muk | 41 | Stench | – | Gunk Shot, Knock Off, Fire Punch, Minimize |
+| Raticate | 41 | Hustle | – | Crunch, Super Fang, Hyper Fang, Swords Dance |
+| Weezing | 43 | Levitate | Sitrus Berry | Sludge Bomb, Will-O-Wisp, Explosion, Fire Blast |
 
 ### Giovanni (trainer 700)
 
@@ -841,10 +872,11 @@ Uses in battle: Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Nidoking | 42 | Poison Point | – | Focus Energy, Fury Attack, Double Kick, Shadow Claw |
-| Kangaskhan | 40 | Scrappy | – | Dizzy Punch, Sucker Punch, Leer, Outrage |
-| Honchkrow | 43 | Insomnia | – | Dark Pulse, Nasty Plot, Swagger, Shadow Ball |
-| Nidoqueen | 46 | Poison Point | – | Earth Power, Superpower, Crunch, Roar |
+| Kangaskhan | 48 | Early Bird | – | Double-Edge, Earthquake, Crunch, Sucker Punch |
+| Dugtrio | 48 | Arena Trap | – | Earthquake, Stone Edge, Sucker Punch, Shadow Claw |
+| Nidoqueen | 49 | Poison Point | – | Earth Power, Sludge Bomb, Ice Beam, Thunderbolt |
+| Nidoking | 50 | Sheer Force | – | Earth Power, Sludge Bomb, Ice Beam, Flamethrower |
+| Rhyperior | 50 | Solid Rock | Sitrus Berry | Earthquake, Stone Edge, Megahorn, Ice Punch |
 
 ## Red
 
@@ -854,9 +886,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Pikachu | 88 | Static | Light Ball | Volt Tackle, Iron Tail, Quick Attack, Thunderbolt |
-| Lapras | 80 | Shell Armor | – | Blizzard, Brine, Psychic, Body Slam |
-| Snorlax | 82 | Thick Fat | – | Shadow Ball, Crunch, Blizzard, Giga Impact |
-| Venusaur | 84 | Overgrow | – | Sludge Bomb, Giga Drain, Sleep Powder, Frenzy Plant |
-| Charizard | 84 | Blaze | – | Flare Blitz, Air Slash, Blast Burn, Dragon Pulse |
-| Blastoise | 84 | Torrent | – | Focus Blast, Hydro Cannon, Blizzard, Flash Cannon |
+| Lapras | 88 | Water Absorb | Leftovers | Blizzard, Brine, Psychic, Body Slam |
+| Snorlax | 88 | Immunity | Leftovers | Shadow Ball, Crunch, Blizzard, Giga Impact |
+| Venusaur | 90 | Overgrow | Occa Berry | Sludge Bomb, Giga Drain, Sleep Powder, Frenzy Plant |
+| Charizard | 90 | Blaze | Passho Berry | Flare Blitz, Air Slash, Blast Burn, Dragon Pulse |
+| Blastoise | 90 | Torrent | Rindo Berry | Focus Blast, Hydro Cannon, Blizzard, Flash Cannon |
+| Pikachu | 94 | Lightning Rod | Light Ball | Volt Tackle, Iron Tail, Quick Attack, Thunderbolt |

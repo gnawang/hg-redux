@@ -96,6 +96,20 @@ python3 scripts/build_learnsets.py --generate data/learnsets/learnsets.json --cu
   implemented (the engine blocks learning them anyway) and replaces Rage Fist with Shadow Punch
   for Primeape and Annihilape. To change one learnset, edit its entry there and rerun the command.
 
+`custom.json` also holds a learnset pass over the roster, which adds moves or moves them earlier and removes nothing. Every added move is one the Pokémon or its
+pre-evolutions officially get in a mainline game, by level-up, TM, tutor or egg. The exceptions, all asked for by name, are Icicle Crash on Mamoswine and Piloswine, Spore on Breloom, and Moonblast on Meganium.
+
+- Defining moves that the official learnsets give too late or only by TM, tutor or egg.
+- Polished Crystal's level-up moves, where the Pokémon officially gets them: strong same-type attacks, coverage for the better attacking stat, and useful recovery or status
+  moves. Up to 4 per Pokémon, level 56 or earlier.
+- A move from the Pokémon's own TM, tutor or egg pool where it has no 55+ power same-type move by level 30, or, for a final evolution, no 75+ one by level 44.
+- Final-stage Pokémon were checked type by type for a usable STAB move, and clearly helpful egg, tutor or TM moves were added to level-up, such as Earthquake on
+  Steelix, Roost on Dragonite and Surf on Empoleon. All are official except Moonblast on Meganium, which suits its Fairy retype.
+- Dual Wingbeat is added to winged physical attackers short on physical Flying moves: Charizard, Pidgeot, Aerodactyl, Dragonite, Crobat, Ninjask, Salamence, Mothim,
+  Vespiquen and Gliscor.
+- Extreme Speed keeps its official placement, except that Linoone learns it at level 52, from its official egg move. Strong setup moves such as Dragon Dance and Swords Dance stay at their official level, or at level 50 or later if they aren't
+  officially learned by level-up.
+
 To compile-check without a ROM, generate the header with:
 
 ```bash
@@ -196,11 +210,61 @@ These later evolutions only come from a regional form, so they're excluded too: 
 Regional forms of Gen 5+ Pokémon (e.g. Galarian Darumaka, Hisuian Zorua) were never in scope. Ursaluna's Bloodmoon form
 isn't a regional form, but it's also left out: it can't be reached by evolution.
 
-### Wild encounters and trainers
+### Wild encounters (`data/Encounters.c`)
 
-Not changed yet. `data/Encounters.c`, `data/Headbutt.c`, `data/SafariEncounters.c` and `data/Trainers.c` are hg-engine's
-(see [Planned, not started](#planned-not-started)), so the [encounter](reference/encounters.md) and
-[trainer](reference/trainers.md) pages describe upstream's data.
+Grass, cave, water, Rock Smash, swarm and radio-sound encounters follow Drayano's
+[Sacred Gold wild Pokémon list](https://drayano.wordpress.com/sgss/sgss-wp/) in the 116 areas that list covers. Where a
+listed rate can't be made from the game's slots (for example 7% on a water table), the closest fit is used. Land levels are spread across
+the listed range. Water and rod levels keep upstream's values except in slots that were empty. Headbutt trees, the Safari Zone,
+the Bug-Catching Contest, Cerulean Cave and Mt. Silver are unchanged, and Bell Tower uses Storm Silver's levels because the list gives none for
+Sacred Gold. Gifts and static encounters from Sacred Gold aren't added.
+
+### Trainers (`data/Trainers.c`)
+
+Key trainers are rebuilt with team design drawn equally from Sacred Gold, Crystal Legacy and Polished Crystal, on top of vanilla rosters.
+Levels follow Sacred Gold's curve, matching Redux's wild levels. This covers all 16 Gym Leaders, the first-round Elite Four, Lance, Red, Giovanni,
+the Rocket Executives and Silver's fights from Azalea on, except the Cherrygrove and Dragon's Den ones. The full teams are on the [trainer](reference/trainers.md) page.
+
+- Team size starts from vanilla. Early bosses gain one or two Pokémon, the Johto Gyms use 3 to 5, and 6-Pokémon teams start with Lance's
+  league fight and the Kanto Gyms. The Elite Four keep 5.
+- Silver grows a set team: Teddiursa, then Ursaring, then Ursaluna, and Larvitar through Tyranitar. From the Burned Tower on, his other slots change to
+  cover his starter's weaknesses.
+- Red keeps his vanilla HeartGold movesets on Sacred Gold's levels, including the three ultimate starter moves.
+- Proton's ace is the Zubat line and Petrel's is Weezing; neither uses the other's line.
+- Fighting Dojo rematches, the League second round, the tag battles, Kimono Girls and Eusine use Redux's own teams, set by each trainer's theme and place in the
+  story. Levels for the Dojo and second round follow Sacred Gold's range.
+- Cheryl, Marley, Mira, Riley and Buck use Redux versions of their Platinum Battleground teams, taken from pret/pokeplatinum.
+- Bug Catcher Wade's first two rematches are swapped, because the rematch table calls them in reverse order.
+
+Generic trainers are generated from rules, using Sacred Gold as a reference rather than a template:
+
+- Levels are Sacred Gold's for that fight, with the ace at the top and the rest one lower.
+- Team size is Polished Crystal's for the same-named trainer, raised to vanilla's size if Sacred Gold's team is at least that big. It's capped at 3 below level 15,
+  4 below 32, 5 below 60 and 6 after.
+- Species favour the class's type, then Pokémon on that route, then Johto species. Vanilla's strongest Pokémon stays as the ace.
+- Gen 3 and 4 Pokémon appear only where Sacred Gold used them or they live on the route, and fill at most half a team.
+- Rematches keep the same lines, evolved for the level. Moves come from level-up learnsets and generic trainers hold no items.
+
+### Egg hatching and evolution friendship (`data/Species.c`, `include/config.h`)
+
+- Every species' `hatchCycles` is halved, rounded down.
+- `FRIENDSHIP_EVOLUTION_THRESHOLD` is 80, half of hg-engine's 160 (vanilla is 220). It applies to all friendship evolutions and to
+  Sylveon. Pokémon that start above it, such as hatched Pokémon (120) and Chansey (140), evolve on their next level-up.
+
+### Move Tutors and Move Relearner (`src/field/move_tutor.c`, `data/scr_seq/scr_seq_0948_T30R0601.s`, `data/text/635.txt`)
+
+- Every tutor move costs 0 BP. The shared tutor script needs no edit, because a price of 0 passes its BP check.
+- The Move Maniac in Blackthorn no longer asks for or takes a Heart Scale, and his lines are updated. His script is the vanilla dump with those
+  checks removed. `BUILD_DUMPED_SCR_SEQ` is on so it gets built; only scripts present in `data/scr_seq/` replace the ROM's.
+
+### Flash (`bytereplacement`)
+
+Dark Cave and Rock Tunnel are lit. Each map's weather byte in the arm9 map header table is changed from `WEATHER_FLASH` to none.
+Whirl Islands and Cerulean Cave stay dark.
+
+### Pocket Center with no Pokémon (`data/scr_seq/scr_seq_00003_commonscript.s`, `data/text/040.txt`)
+
+With an empty party, the Pocket Center now says there's nothing to heal, with no heal jingle.
 
 Ability Capsules, Ability Patches and Mints are hg-engine features. Redux only adds them to shops and sets their prices.
 
@@ -218,11 +282,9 @@ Ability Capsules, Ability Patches and Mints are hg-engine features. Redux only a
 
 - **Roster restriction:** remove Gen 5–9 species from the Pokédex order and keep them, and the regional forms and their
   evolutions listed under [Regional forms](#regional-forms-excluded), out of encounters and trainers.
-- **Wild encounters:** place all roster Pokémon at reasonable points; post-game sanctuaries.
-- **Trainers:** rebuild teams and level curve along Sacred Gold's lines.
-- **Faster egg hatching:** halve every species' `hatchCycles` in `data/Species.c`.
-- **Move tutors and Move Relearner:** free. Tutor costs in `src/field/move_tutor.c`, plus script edits.
-- **Flash and HM obstacles:** light Dark Cave and Rock Tunnel; remove HM obstacles that don't gate progress.
+- **Wild encounters:** place roster Pokémon the Sacred Gold list leaves out, as post-game encounters or gifts.
+- **Pokédex area maps:** `data/PokedexArea.c` is hand-maintained and doesn't yet match the new wild encounters.
+- **HM obstacles:** remove the ones that don't gate progress.
 - **Legendaries and mythicals:** NPCs give the Enigma Stone and Red Orb; make Arceus and Celebi obtainable
   so the vanilla Sinjoh and Ilex events run; post-game encounters or gifts for Pokémon HeartGold lacks.
 - **Extra NPCs and battles:** Gym Leader and Elite Four rematches, Kanto Gym Leader boss rush,
