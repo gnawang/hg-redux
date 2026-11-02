@@ -576,3 +576,7 @@ arm9 020F7614 01
 arm9 020F9654 01
 arm9 020F777C 00
 arm9 020F7C74 00
+
+# Redux: random phone calls ring on 5% of checks instead of 50%. Story calls don't use this roll.
+arm9 02092DBA 05
+arm9 02092F9A 05

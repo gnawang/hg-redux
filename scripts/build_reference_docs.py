@@ -492,7 +492,7 @@ def build_pokemon(species, base):
 
     summary = []
     entries = []
-    for key in roster:
+    for dex_number, key in enumerate(roster, 1):
         data = species[key]
         old = base_species.get(key, data)
         changes = []
@@ -519,7 +519,7 @@ def build_pokemon(species, base):
         if key in hidden and hidden[key] != "ABILITY_NONE":
             ability_text += " (hidden: %s)" % pretty(hidden[key])
 
-        entries += ["## %03d %s" % (ids[key], data["name"]), "",
+        entries += ["## %03d %s" % (dex_number, data["name"]), "",
                     "- Type: %s" % "/".join(map(pretty, data["types"])),
                     "- Abilities: %s" % ability_text,
                     "- Base stats (HP/Atk/Def/SpA/SpD/Spe): %s" % "/".join(map(str, data["stats"]))]

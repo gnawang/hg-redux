@@ -814,7 +814,7 @@ const EvolutionTable __data[MAX_SPECIES_INCLUDING_FORMS + 1] =
 
     [SPECIES_PRIMEAPE] = {
         .entries = {
-            { EVO_LEVEL, 35, SPECIES_ANNIHILAPE },
+            { EVO_LEVEL, 36, SPECIES_ANNIHILAPE },
             { EVO_NONE, 0, SPECIES_NONE },
             { EVO_NONE, 0, SPECIES_NONE },
             { EVO_NONE, 0, SPECIES_NONE },
@@ -3292,7 +3292,7 @@ const EvolutionTable __data[MAX_SPECIES_INCLUDING_FORMS + 1] =
 
     [SPECIES_STANTLER] = {
         .entries = {
-            { EVO_LEVEL, 35, SPECIES_WYRDEER },
+            { EVO_LEVEL, 36, SPECIES_WYRDEER },
             { EVO_NONE, 0, SPECIES_NONE },
             { EVO_NONE, 0, SPECIES_NONE },
             { EVO_NONE, 0, SPECIES_NONE },

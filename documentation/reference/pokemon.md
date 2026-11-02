@@ -12,7 +12,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 
 | Pokémon | Change |
 |---|---|
-| Primeape | New evolution: Level 35 → Annihilape<br>Removed evolution: Form Argument (20) → Annihilape |
+| Primeape | New evolution: Level 36 → Annihilape<br>Removed evolution: Form Argument (20) → Annihilape |
 | Poliwhirl | New evolution: Use King’s Rock → Politoed |
 | Kadabra | New evolution: Level 36 → Alakazam |
 | Machoke | New evolution: Level 36 → Machamp |
@@ -33,7 +33,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 | Sneasel | New evolution: Use Razor Claw → Weavile |
 | Ursaring | New evolution: Use Peat Block → Ursaluna |
 | Porygon2 | New evolution: Use Dubious Disc → Porygon-Z |
-| Stantler | New evolution: Level 35 → Wyrdeer<br>Removed evolution: Form Argument (20) → Wyrdeer |
+| Stantler | New evolution: Level 36 → Wyrdeer<br>Removed evolution: Form Argument (20) → Wyrdeer |
 | Sceptile | Type: Grass → Grass/Dragon |
 | Altaria | Type: Dragon/Flying → Dragon/Fairy |
 | Feebas | New evolution: Use Prism Scale → Milotic |
@@ -895,14 +895,14 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Fighting
 - Abilities: Vital Spirit, Anger Point (hidden: Defiant)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 65/105/60/60/70/95
-- Evolves: Level 35 → Annihilape
+- Evolves: Level 36 → Annihilape
 - Level-up moves: Tackle (1), Leer (1), Focus Energy (1), Rock Throw (8), Rock Smash (10), Take Down (13), Low Sweep (16), Knock Off (18), Bulldoze (22), Brick Break (25), Facade (28), Cross Chop (34), Shadow Punch (35), Thrash (35), Screech (40), Close Combat (44), Gunk Shot (48), Outrage (50), Dynamic Punch (54)
 - TMs/HMs: Aerial Ace, Attract, Body Slam, Brick Break, Bulk Up, Captivate, Close Combat, Confide, Curse, Dig, Double Team, Double-Edge, Drain Punch, Earthquake, Encore, Endeavor, Endure, Facade, Fling, Focus Blast, Focus Energy, Focus Punch, Frustration, Giga Impact, Gunk Shot, Helping Hand, Hidden Power, Hyper Beam, Iron Tail, Knock Off, Lash Out, Low Kick, Mega Punch, Metronome, Natural Gift, Outrage, Overheat, Payback, Poison Jab, Protect, Psych Up, Rain Dance, Rest, Return, Reversal, Roar, Rock Climb, Rock Slide, Rock Smash, Rock Tomb, Secret Power, Seed Bomb, Shadow Claw, Sleep Talk, Smack Down, Spite, Stealth Rock, Stone Edge, Strength, Substitute, Sunny Day, Swagger, Taunt, Tera Blast, Thief, Throat Chop, Thunder, Thunderbolt, Torment, Toxic, U-turn, Uproar, Vacuum Wave, Work Up
 - Tutor moves: Endeavor, Fire Punch, Gunk Shot, Headbutt, Helping Hand, Ice Punch, Low Kick, Mud-Slap, Outrage, Role Play, Seed Bomb, Snore, Spite, Swift, Thunder Punch, Uproar, Vacuum Wave
 - Egg moves: Beat Up, Counter, Curse, Encore, Night Slash, Spite
 - Egg cycles: 10
 - Changes from hg-engine:
-  - New evolution: Level 35 → Annihilape
+  - New evolution: Level 36 → Annihilape
   - Removed evolution: Form Argument (20) → Annihilape
   - Level-up moves: added Tackle (Lv 1), Rock Throw (Lv 8), Rock Smash (Lv 10), Take Down (Lv 13), Low Sweep (Lv 16), Knock Off (Lv 18), Bulldoze (Lv 22), Brick Break (Lv 25), Facade (Lv 28), Shadow Punch (Lv 35), Gunk Shot (Lv 48), Dynamic Punch (Lv 54); moved Cross Chop (Lv 22 → Lv 34), Thrash (Lv 30 → Lv 35), Screech (Lv 44 → Lv 40), Close Combat (Lv 39 → Lv 44), Outrage (Lv 53 → Lv 50); removed Scratch (Lv 1), Fling (Lv 1), Fury Swipes (Lv 5), Low Kick (Lv 8), Seismic Toss (Lv 15), Swagger (Lv 17), Assurance (Lv 26), Rage Fist (Lv 35), StompingTantrum (Lv 48), Final Gambit (Lv 57)
   - TMs/HMs: added Focus Energy, Knock Off, Roar, Torment
@@ -3574,14 +3574,14 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Normal
 - Abilities: Intimidate, Frisk (hidden: Sap Sipper)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 73/95/62/85/65/85
-- Evolves: Level 35 → Wyrdeer
+- Evolves: Level 36 → Wyrdeer
 - Level-up moves: Tackle (1), Leer (3), Astonish (7), Hypnosis (10), Stomp (13), Sand Attack (16), Take Down (21), Headbutt (21), Confuse Ray (23), Calm Mind (27), Role Play (32), Zen Headbutt (37), Thrash (43), Imprison (49), Double-Edge (55), Megahorn (55)
 - TMs/HMs: Agility, Attract, Body Slam, Calm Mind, Captivate, Charge Beam, Confide, Curse, Dig, Double Team, Double-Edge, Dream Eater, Earth Power, Earthquake, Endure, Energy Ball, Facade, Flash, Frustration, Future Sight, Giga Impact, Gravity, Helping Hand, Hidden Power, Hyper Beam, Iron Tail, Light Screen, Lunge, Megahorn, Natural Gift, Protect, Psych Up, Psychic, Psyshock, Rain Dance, Reflect, Rest, Return, Roar, Secret Power, Shadow Ball, Shock Wave, Skill Swap, Sleep Talk, Solar Beam, Spite, Stored Power, Substitute, Sunny Day, Swagger, Tera Blast, Thief, Throat Chop, Thunder, Thunder Wave, Thunderbolt, Toxic, Trick, Trick Room, Uproar, Wild Charge, Work Up, Zen Headbutt
 - Tutor moves: Bounce, Gravity, Headbutt, Last Resort, Mud-Slap, Role Play, Signal Beam, Snore, Spite, Sucker Punch, Swift, Uproar, Zen Headbutt
 - Egg moves: Bite, Disable, Double Kick, Extrasensory, Megahorn, Psyshield Bash, Spite, Thrash
 - Egg cycles: 10
 - Changes from hg-engine:
-  - New evolution: Level 35 → Wyrdeer
+  - New evolution: Level 36 → Wyrdeer
   - Removed evolution: Form Argument (20) → Wyrdeer
   - Level-up moves: added Headbutt (Lv 21), Thrash (Lv 43), Megahorn (Lv 55)
   - TMs/HMs: added Megahorn
@@ -7415,7 +7415,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - TMs/HMs: added Cosmic Power
   - Egg cycles: 120 → 60
 
-## 750 Sylveon
+## 494 Sylveon
 
 - Type: Fairy
 - Abilities: Cute Charm (hidden: Pixilate)
@@ -7430,7 +7430,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - TMs/HMs: added Taunt
   - Egg cycles: 35 → 17
 
-## 949 Wyrdeer
+## 495 Wyrdeer
 
 - Type: Normal/Psychic
 - Abilities: Intimidate, Frisk (hidden: Sap Sipper)
@@ -7443,7 +7443,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - Level-up moves: added Headbutt (Lv 21), Extrasensory (Lv 37), Psychic (Lv 42), Thrash (Lv 43)
   - TMs/HMs: added Megahorn
 
-## 950 Kleavor
+## 496 Kleavor
 
 - Type: Bug/Rock
 - Abilities: Swarm, Sheer Force (hidden: Sharpness)
@@ -7456,7 +7456,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - Level-up moves: added Wing Attack (Lv 12), Brutal Swing (Lv 20), Bug Bite (Lv 25), Bug Buzz (Lv 34), Air Slash (Lv 36), Stone Edge (Lv 42), Lunge (Lv 46), Rock Blast (Lv 50); moved X-Scissor (Lv 40 → Lv 32), Swords Dance (Lv 44 → Lv 42); removed Fury Cutter (Lv 4), False Swipe (Lv 8), Smack Down (Lv 12), Double Hit (Lv 20), Rock Slide (Lv 36)
   - TMs/HMs: added Double Team, Focus Energy, Knock Off, Rock Smash, Silver Wind
 
-## 951 Ursaluna
+## 497 Ursaluna
 
 - Type: Ground/Normal
 - Abilities: Guts, Bulletproof (hidden: Unnerve)
@@ -7469,7 +7469,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - Level-up moves: added Body Slam (Lv 34), Earthquake (Lv 44), Double-Edge (Lv 52)
   - TMs/HMs: added Payback
 
-## 1029 Annihilape
+## 498 Annihilape
 
 - Type: Fighting/Ghost
 - Abilities: Vital Spirit, Inner Focus (hidden: Defiant)
@@ -7484,7 +7484,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - TMs/HMs: added Close Combat, Focus Energy, Knock Off, Roar, Rock Smash, Swagger, Torment, Work Up
   - Egg cycles: 20 → 10
 
-## 1031 Farigiraf
+## 499 Farigiraf
 
 - Type: Normal/Psychic
 - Abilities: Cud Chew, Armor Tail (hidden: Sap Sipper)
@@ -7499,7 +7499,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - TMs/HMs: added Attract
   - Egg cycles: 20 → 10
 
-## 1032 Dudunspars
+## 500 Dudunspars
 
 - Type: Normal
 - Abilities: Serene Grace, Run Away (hidden: Rattled)

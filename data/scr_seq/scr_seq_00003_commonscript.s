@@ -100,7 +100,6 @@ scrdef scr_seq_0003_071
 scrdef scr_seq_0003_072_repels
 scrdef scr_seq_0003_073_autobattle_testing
 scrdef scr_seq_0003_074_pocket_pkmn_center
-scrdef scr_seq_0003_075_redux_starting_items
 scrdef_end
 
 scr_seq_0003_002:
@@ -1342,12 +1341,6 @@ scr_seq_0003_038:
     fade_out_bgm 0, 30
     stop_bgm 0
     reset_bgm
-    endstd
-    end
-
-// Redux: give the starting items directly (debug or future use)
-scr_seq_0003_075_redux_starting_items:
-    call _ReduxGiveStartingItems
     endstd
     end
 

@@ -34,6 +34,14 @@ For what's in the game now (wild encounters, every Pokémon, key trainers' teams
   teams and bags from savestates. `AGENTS.md` covers its use and the agent instructions. `CLAUDE.md` only
   imports `AGENTS.md`, because Claude Code doesn't read `AGENTS.md` by itself.
 
+## What hg-engine already changes from HeartGold
+
+The rest of this file lists changes from hg-engine. These come with hg-engine and stay on in Redux (see `include/config.h`):
+
+- **Pokémon and battles:** Fairy type and the latest type chart, modern base stats, moves and abilities, hidden abilities, the expanded species list, and Champions power, type, accuracy and effect-chance changes.
+- **Catching and growth:** capture experience, critical captures, modern Poké Ball logic, the modern experience formula and vitamin EV caps.
+- **Field and items:** reusable TMs, a prompt to use another repel, an EV/IV viewer, expanded bag pockets and PC boxes, and editable shop lists. Poison does no damage in the overworld.
+
 ## Changes
 
 ### Settings (`include/config.h`, `armips/include/config.s`, `header.yaml`, `banner.yaml`)
@@ -47,6 +55,7 @@ For what's in the game now (wild encounters, every Pokémon, key trainers' teams
 | `DELETABLE_HMS` | On | HMs can be forgotten |
 | `FAST_TEXT_PRINTING`, `ALWAYS_HAVE_NATIONAL_DEX` | On | QoL; National Dex from the start |
 | Transparent text boxes, level cap, 60 fps, wild double battles | Off (upstream default) | Not wanted, or unstable |
+| `BUILD_DUMPED_EVENTDATA` | On | Map objects Redux changes come from `data/eventdata/zone_event/`. Only maps in that folder replace the ROM's |
 | `ALLOW_SAVE_CHANGES` | On (upstream default) | Required for the expanded Pokédex. Saves aren't PKHeX-compatible. The armips side uses `.ifdef`, so its `0` value still means on |
 
 ### Title screen logo (`rawdata/title_demo/`, `data/graphics/title/redux_logo.png`)
@@ -78,6 +87,18 @@ The Pokédex search-by-type lists in `data/PokedexSort.c` are updated to match: 
 under Dragon, Lopunny and Staraptor under Fighting, and Chimecho under Steel. Altaria is no longer under Flying and Staraptor
 no longer under Normal. The Pokédex has no Fairy search list; upstream never added one, so Fairy types are listed under
 their other type or their pre-Fairy type, as in vanilla.
+
+### Pokédex (`data/PokedexSort.c`, `data/PokedexArea.c`, `armips/asm/pokedex.s`, `scripts/build_dex_areas.py`)
+
+The National list and every search list hold only the Redux roster of 500 Pokémon: Gens 1–4 and the seven later evolutions. Upstream had those seven only in the National list, so
+they're added to the name, height, weight, type and body lists, and Sylveon is listed under Normal. Kyogre, Giratina and Shaymin, missing from upstream's height lists, are added too.
+
+The seven later evolutions are numbered 494 to 500 in roster order, straight after Arceus, instead of their official numbers, so the National grid ends at 500 with no blank run. The numbers come from
+one lookup, `redux_dex_species` in `armips/asm/pokedex.s`, which the grid, entry page and summary screen all use. Keep it in the same order as the end of `sPokedexSort_NationalNum`. Their entries in `data/Species.c` are
+trimmed where a long line stopped the text from wrapping: Ursaluna, Annihilape, Farigiraf and Dudunsparce. Dudunsparce shows as "Dudunspars" because names are capped at 10 characters.
+
+The area maps' time-of-day lists are generated from `data/Encounters.c` by `scripts/build_dex_areas.py`. Swarm and radio Pokémon go in the Special lists, which
+otherwise keep their vanilla Headbutt areas, and Safari Zone entries are kept.
 
 ### Learnsets (`data/learnsets/`)
 
@@ -125,7 +146,7 @@ The original methods are kept; Redux adds alternatives or replaces broken ones.
 | Pure trade evolutions also evolve at **level 36** (Definitive HeartGold's level) | Kadabra, Machoke, Graveler, Haunter |
 | Trade-with-item evolutions also evolve by **using the item** from the bag | Poliwhirl and Slowpoke (King's Rock), Onix and Scyther (Metal Coat), Rhydon (Protector), Seadra (Dragon Scale), Electabuzz (Electirizer), Magmar (Magmarizer), Porygon (Up-Grade), Porygon2 (Dubious Disc), Feebas (Prism Scale), Dusclops (Reaper Cloth), Clamperl (Deep Sea Tooth/Scale) |
 | Hold-item-and-level evolutions also evolve by **using the item** (no day/night requirement) | Gligar (Razor Fang), Sneasel (Razor Claw), Ursaring (Peat Block), Happiny (Oval Stone) |
-| Upstream bug: `EVO_FORM_ARGUMENT` is never evaluated, so these could not evolve. Replaced with **level 35** | Primeape → Annihilape, Stantler → Wyrdeer |
+| Upstream bug: `EVO_FORM_ARGUMENT` is never evaluated, so these could not evolve. Replaced with **level 36** | Primeape → Annihilape, Stantler → Wyrdeer |
 
 `src/individual/GetMonEvolutionInternal.c` keeps the Gen 4 quirk that an Everstone doesn't stop Kadabra's
 *trade* evolution, but no longer applies it to other evolutions, so an Everstone still stops Kadabra's level-36 evolution.
@@ -177,8 +198,7 @@ Files involved:
   `FieldSystem_LoadFieldOverlay`, and the function order in pokeheartgold's `script_manager.c`
 - `src/bag.c`: `Bag_TakeItem` never removes infinite items
 - `src/individual/GetMonEvolutionInternal.c`, `src/pokemon.c`: Infinite Candy gets Rare Candy's special cases
-- `data/scr_seq/scr_seq_00003_commonscript.s`: script 2074 (Pocket Center), script 2038 (Mom's handoff, below),
-  and 2075 (gives both items directly, for debugging)
+- `data/scr_seq/scr_seq_00003_commonscript.s`: script 2074 (Pocket Center) and script 2038 (Mom's handoff, below)
 - `data/text/040.txt` lines 121–122 (script messages); `222.txt` (names); `221`/`223`/`224`/`829.txt` (custom item descriptions and name forms)
 - `data/graphics/itemgra.mk`: icons reuse `rare_candy.png` and `full_restore.png`. The dummy and return icons
   moved to 2689/2690 to stay right after the last item
@@ -217,7 +237,7 @@ Grass, cave, water, Rock Smash, swarm and radio-sound encounters follow Drayano'
 listed rate can't be made from the game's slots (for example 7% on a water table), the closest fit is used. Land levels are spread across
 the listed range. Water and rod levels keep upstream's values except in slots that were empty. Headbutt trees, the Safari Zone,
 the Bug-Catching Contest, Cerulean Cave and Mt. Silver are unchanged, and Bell Tower uses Storm Silver's levels because the list gives none for
-Sacred Gold. Gifts and static encounters from Sacred Gold aren't added.
+Sacred Gold. Gifts and static encounters from Sacred Gold aren't added. Roster Pokémon the list leaves out come from [the Collector](reference/gift_static.md).
 
 ### Trainers (`data/Trainers.c`)
 
@@ -233,7 +253,6 @@ the Rocket Executives and Silver's fights from Azalea on, except the Cherrygrove
 - Proton's ace is the Zubat line and Petrel's is Weezing; neither uses the other's line.
 - Fighting Dojo rematches, the League second round, the tag battles, Kimono Girls and Eusine use Redux's own teams, set by each trainer's theme and place in the
   story. Levels for the Dojo and second round follow Sacred Gold's range.
-- Cheryl, Marley, Mira, Riley and Buck use Redux versions of their Platinum Battleground teams, taken from pret/pokeplatinum.
 - Bug Catcher Wade's first two rematches are swapped, because the rematch table calls them in reverse order.
 
 Generic trainers are generated from rules, using Sacred Gold as a reference rather than a template:
@@ -262,6 +281,38 @@ Generic trainers are generated from rules, using Sacred Gold as a reference rath
 Dark Cave and Rock Tunnel are lit. Each map's weather byte in the arm9 map header table is changed from `WEATHER_FLASH` to none.
 Whirl Islands and Cerulean Cave stay dark.
 
+### HM obstacles (`data/eventdata/zone_event/`)
+
+65 Cut trees and Rock Smash rocks are hidden, by setting each object's hidden flag to `FLAG_GOT_BAG`, which is set in the opening and never cleared. They stay in the object list, so
+script object IDs don't change. Each obstacle was checked with a flood fill of the map's collision data, then its surroundings were read in the event scripts.
+
+- **Kept because they block required progress:** the Ilex Forest tree, the trees in front of the Vermilion and Celadon Gyms, and the three inside Celadon Gym.
+- **Kept as Rock Smash encounter spots:** every rock in Ruins of Alph (outside), Cianwood City, Dark Cave, Cliff Cave, Route 19, Vermilion City, Rock Tunnel, Victory Road and Cerulean Cave. Removing
+  them would remove those wild encounters.
+- **Kept as puzzles:** all Strength boulders, and the two rocks in Burned Tower B1F that are part of a boulder puzzle.
+- **Removed:** every other tree on routes and towns, Viridian Forest's two, and the rocks on Routes 3 and 32, in Pewter and Violet Cities, Burned Tower 1F, Ice Path B3F, Tohjo Falls and Mt. Silver Cave.
+  None of them is the only way to a required place. The Route 35 tree opens a shortcut to Route 36 that's west of Sudowoodo, so it doesn't bypass that gate.
+
+### Legendaries and gifts (`data/scr_seq/scr_seq_0228_R30R0101.s`, `data/text/376.txt`, `src/script_new_cmds.c`)
+
+After the Elite Four, a new NPC, the Collector, in the house beside Mr. Pokémon's gives one of each Pokémon with no other source, and the Enigma Stone and Red Orb. See the
+[gift page](reference/gift_static.md). Each gift is tracked by one of the unused flags `FLAG_UNK_880` to `FLAG_UNK_8A8`. New script command `SetLastMonFateful` marks the last party Pokémon as a fateful
+encounter, because the vanilla Celebi and Arceus events and mythical obedience need that. Giving the Enigma Stone also sets `VAR_UNK_4043` to the value Mystery Gift would have set, so Steven's event runs.
+
+In HeartGold the Embedded Tower hides Groudon and only uses the Blue Orb, which Mr. Pokémon gives for Kyogre. So that the Red Orb does something:
+
+- `data/scr_seq/scr_seq_0260_R47.s`: with the Red Orb and no Groudon caught, the tower door leads to Groudon's room.
+- `data/scr_seq/scr_seq_0133_D52R0101.s`: Groudon appears while you hold the Red Orb and returns if you run or knock it out. Catching it ends with no hiker scene and leaves `VAR_SCENE_EMBEDDED_TOWER` alone, because Oak's Blue Orb, Kyogre and Rayquaza event chain runs on that value.
+
+### Battles and NPCs
+
+- **League:** the second-round teams are vanilla's rule, used once `VAR_UNK_4135` reaches 8, after all eight Kanto Gyms. **Gym Leader rematches** are vanilla's, at the Fighting Dojo in Saffron City after
+  the phone calls. Neither needed a change.
+- **Kanto boss rush** (`data/scr_seq/scr_seq_0832_T11R0101.s`, `data/text/533.txt`): a new NPC in the Fighting Dojo, available with all eight Kanto Badges, runs the eight Kanto Leaders' rematch teams in a row. The party
+  is healed between battles and it can be repeated.
+- **Kurt** (`data/scr_seq/scr_seq_0874_T23R0501.s`) makes the balls immediately instead of the next day. His phone number step still follows the first batch.
+- **Phone calls** (`bytereplacement`): the chance of a random call on each check is 5%, down from 50%. Story calls aren't affected.
+
 ### Pocket Center with no Pokémon (`data/scr_seq/scr_seq_00003_commonscript.s`, `data/text/040.txt`)
 
 With an empty party, the Pocket Center now says there's nothing to heal, with no heal jingle.
@@ -273,6 +324,7 @@ Ability Capsules, Ability Patches and Mints are hg-engine features. Redux only a
 - `scripts/emu_test.py`: plays `test.nds` headlessly for testing. See `AGENTS.md`
 - `scripts/build_reference_docs.py`: generates `documentation/reference/`
 - `scripts/build_title_logo.py`: converts the title logo PNG
+- `scripts/build_dex_areas.py`: updates `data/PokedexArea.c` from the wild encounters
 
 ## Dropped
 
@@ -280,12 +332,4 @@ Ability Capsules, Ability Patches and Mints are hg-engine features. Redux only a
 
 ## Planned, not started
 
-- **Roster restriction:** remove Gen 5–9 species from the Pokédex order and keep them, and the regional forms and their
-  evolutions listed under [Regional forms](#regional-forms-excluded), out of encounters and trainers.
-- **Wild encounters:** place roster Pokémon the Sacred Gold list leaves out, as post-game encounters or gifts.
-- **Pokédex area maps:** `data/PokedexArea.c` is hand-maintained and doesn't yet match the new wild encounters.
-- **HM obstacles:** remove the ones that don't gate progress.
-- **Legendaries and mythicals:** NPCs give the Enigma Stone and Red Orb; make Arceus and Celebi obtainable
-  so the vanilla Sinjoh and Ilex events run; post-game encounters or gifts for Pokémon HeartGold lacks.
-- **Extra NPCs and battles:** Gym Leader and Elite Four rematches, Kanto Gym Leader boss rush,
-  Coach Trainers giving TMs, Kurt making balls instantly, fewer phone calls.
+- **Coach Trainers giving TMs:** needs a decision on who these NPCs are.

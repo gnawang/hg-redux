@@ -15,6 +15,10 @@ and the work still planned.
   and commit `documentation/reference/`. Those pages are generated, so don't edit them by hand. The script needs a built
   repo (`base/`) and the `upstream` remote fetched. `gift_static.md` is the exception: it's hand-written from the event
   scripts, so update it yourself when scripts or legendaries change.
+- After changing wild encounters, run `python3 scripts/build_dex_areas.py` too, which updates `data/PokedexArea.c`.
+- Map objects and warps are built from `data/eventdata/zone_event/`, which holds only the maps Redux changes (`BUILD_DUMPED_EVENTDATA` is on). To hide an object
+  without changing script object IDs, set its `hidden_flag` to `FLAG_GOT_BAG`, which is set in the opening and never cleared. Don't delete it from the list.
+  Some outdoor maps, such as Route 47, stack levels on the same tiles, so collision data alone doesn't prove a new object is reachable. Check it in the emulator.
 - `data/learnsets/learnsets.json` is generated. Change learnsets through
   `data/learnsets/base/custom.json` and regenerate it with the command in the changes file.
 
@@ -22,6 +26,7 @@ and the work still planned.
 
 Follow the README, then run `make`, which writes `test.nds`. Problems seen on macOS on Apple Silicon:
 
+- `base/` keeps files from earlier builds. If a build shows changes that aren't in the repo, such as a reverted map edit, restore that file from `rom.nds`.
 - Clone with `--recursive`, or run `git submodule update --init`, or `make` stops at `tools/nitrogfx`.
 - Make paths with spaces can fail. Build through a symlink to the repo from a path without spaces.
 - A `pyexpat` symbol error from `pip` or `venv` means Homebrew's Python doesn't match the macOS libexpat.
@@ -114,6 +119,7 @@ Every picture costs tokens, so use the fewest that prove the result.
   several states need one process each.
 - Reading RAM can catch a Pokémon mid-update. `party`, `team` and `damage` wait for valid checksums; custom
   scripts must do the same (`read_stable_party`).
+- After a wild battle, `party` can read the opponent's leftover party instead of yours, until the game overwrites it.
 - `team` and `bag` find their data from the party and Mom's two key items, and `bag` assumes
   `ITEM_POCKET_EXPANSION` is on. Update `POCKETS` in the script if bag sizes change.
 - Passing here means it works in DeSmuME. It doesn't prove real hardware or a saved and reloaded game.
