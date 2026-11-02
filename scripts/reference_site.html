@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HeartGold Redux Reference</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a Pokégear-style reference tool. Dark top band with tabs, a searchable index on the left, one entry on the right. */
+:root{
+  --bg:#f2f3f8;--panel:#ffffff;--sunk:#e8eaf2;--fg:#1a1d30;--muted:#5c6178;--line:#d5d8e4;
+  --band:#1b1f38;--band-fg:#f1f2f8;--band-muted:#a9aec6;
+  --gold:#946c08;--gold-soft:#f5e7bd;--red:#b8322a;--heat:178,132,20;
+  --display:"Saira Semi Condensed","Arial Narrow",Arial,sans-serif;--body:"IBM Plex Sans","Segoe UI",Arial,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121423;--panel:#1b1e33;--sunk:#24283f;--fg:#e9ebf5;--muted:#a2a7bf;--line:#32364f;
+  --band:#0c0e1a;--band-fg:#f1f2f8;--band-muted:#a2a7bf;--gold:#e6b93f;--gold-soft:#3b3218;--red:#ee7a70;--heat:230,185,63;color-scheme:dark}}
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+body{margin:0}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--band)}
+header{background:var(--band);color:var(--band-fg);padding:18px max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px))}
+.wrap{max-width:1240px;margin:0 auto}
+h1{font:700 26px/1.15 var(--display);margin:0;letter-spacing:.01em}
+.sub{color:var(--band-muted);margin:4px 0 14px;font-size:14px;max-width:70ch}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav button{font:600 16px var(--display);padding:9px 18px;border:0;background:transparent;color:var(--band-muted);cursor:pointer;border-radius:8px 8px 0 0}
+nav button[aria-selected="true"]{background:var(--bg);color:var(--fg)}
+main{padding-block:16px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.cols{display:grid;grid-template-columns:300px minmax(0,1fr);gap:18px;align-items:start}
+.index{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);display:flex;flex-direction:column;gap:8px;max-height:calc(100vh - 28px);min-width:0}
+.ctl{display:flex;flex-direction:column;gap:6px}
+input[type=search],select{font:inherit;width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--fg)}
+label.chk{font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:center}
+.count{font:400 12px var(--mono);color:var(--muted)}
+.list{overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px;min-height:120px}
+.list h3{position:sticky;top:0;margin:0;padding:6px 10px;font:600 12px var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--sunk)}
+.item{display:flex;gap:8px;align-items:center;width:100%;padding:7px 10px;border:0;border-top:1px solid var(--line);background:none;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.item:hover{background:var(--sunk)}
+.item[aria-current="true"]{background:var(--gold-soft);box-shadow:inset 3px 0 0 var(--gold)}
+.item .no{font:400 12px var(--mono);color:var(--muted);width:40px;flex:none}
+.item .nm{flex:1;min-width:0}
+.dots{display:flex;gap:3px;flex:none}.dots i{width:10px;height:10px;border-radius:50%;display:block}
+.item .tag{font:400 11px var(--mono);color:var(--muted);flex:none}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+.entry{min-width:0;display:flex;flex-direction:column;gap:14px}
+.eh h2{font:700 28px/1.15 var(--display);margin:0;text-wrap:balance}
+.eh .no{font:500 15px var(--mono);color:var(--muted)}
+.eh p{margin:4px 0 0;color:var(--muted);font-size:14px;max-width:70ch}
+.sec{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0}
+.sec h3{font:600 16px var(--display);margin:0 0 8px}
+.sec h3 small{font:400 12px var(--mono);color:var(--muted);margin-left:6px}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th{font:600 12px var(--display);letter-spacing:.05em;text-transform:uppercase;color:var(--muted);text-align:left;padding:4px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:5px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+td.pct{white-space:nowrap}td.pct b{font-weight:600}td.pct span{color:var(--muted);font:400 12px var(--mono);margin-left:6px}
+td.none{color:var(--muted)}
+.mon{border:0;background:none;padding:0;font:inherit;color:inherit;font-weight:500;cursor:pointer;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.mon:hover{color:var(--gold);text-decoration-color:var(--gold)}
+.t{display:inline-block;font:600 11px/1 var(--display);letter-spacing:.05em;text-transform:uppercase;color:#fff;padding:4px 7px;border-radius:3px;text-shadow:0 1px 0 rgba(0,0,0,.35)}
+.ts{display:inline-flex;gap:4px;flex-wrap:wrap;vertical-align:middle}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.stat{display:grid;grid-template-columns:44px 34px minmax(0,1fr);gap:8px;align-items:center;font:400 13px var(--mono);padding:2px 0}
+.stat i{display:block;height:9px;border-radius:2px;background:var(--gold);min-width:2px}.stat .tr{background:var(--sunk);border-radius:2px}
+.stat.total{border-top:1px solid var(--line);margin-top:4px;padding-top:6px;font-weight:500}
+dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 12px;margin:0;font-size:14px}dt{color:var(--muted)}dd{margin:0}
+.lv{columns:2 230px;column-gap:24px;font-size:14px}
+.lv div{display:flex;gap:10px;padding:3px 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.lv b{font:500 13px var(--mono);width:46px;flex:none;color:var(--gold)}
+.chips{margin:0;font-size:14px;line-height:1.7}
+.chg{border-color:var(--gold);background:var(--gold-soft)}
+.chg ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:14px}.chg b{font-weight:600}
+.team{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.card{border:1px solid var(--line);border-radius:6px;padding:9px 11px;display:flex;flex-direction:column;gap:5px;min-width:0}
+.card .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}.card .top span{font:500 13px var(--mono);color:var(--gold)}
+.card small{color:var(--muted);font-size:13px}.card ol{margin:0;padding:0;list-style:none;font-size:13.5px;display:grid;grid-template-columns:1fr 1fr;gap:1px 10px}
+.note{color:var(--muted);font-size:13.5px;margin:0}
+.empty{padding:16px;color:var(--muted)}
+@media (max-width:820px){.cols{grid-template-columns:minmax(0,1fr)}.index{position:static;max-height:none}.list{max-height:280px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>HeartGold Redux Reference</h1>
+<p class="sub">Wild Pokémon, key trainer teams and every Pokémon in the game. Built from the current game data.</p>
+<nav role="tablist" id="tabs"></nav>
+</div></header>
+<main><div class="wrap cols">
+<aside class="index"><div class="ctl" id="ctl"></div><div class="list" id="list"></div></aside>
+<article class="entry" id="entry"></article>
+</div></main>
+<script type="application/json" id="d">__DATA__</script>
+<script>
+const D=JSON.parse(document.getElementById('d').textContent);
+const TC={Normal:'#8f8f6a',Fire:'#d9642a',Water:'#3f74d6',Grass:'#4c9a3a',Electric:'#c79a12',Ice:'#3e9c9c',Fighting:'#a8322a',Poison:'#8a3f92',Ground:'#a9833a',Flying:'#7a6bd0',Psychic:'#d4436f',Bug:'#809317',Rock:'#94802e',Ghost:'#5f4b8b',Dragon:'#5a35e0',Dark:'#5a4638',Steel:'#7878a0',Fairy:'#c95a93'};
+const STATS=['HP','Atk','Def','SpA','SpD','Spe'];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const byName=new Map(D.P.map(p=>[p.name,p]));
+const num=n=>'#'+String(n).padStart(4,'0');
+const chips=ts=>'<span class="ts">'+ts.map(t=>`<span class="t" style="background:${TC[t]||'#666'}">${esc(t)}</span>`).join('')+'</span>';
+const mon=n=>{const p=byName.get(n);return p?`<button class="mon" data-p="${p.n}">${esc(n)}</button>`:esc(n)};
+const AREAS=[...D.E.map(a=>({...a,g:'Towns, routes and caves'})),...D.S];
+const FOUND=new Map();
+AREAS.forEach(a=>a.m.forEach(m=>m.r.forEach(r=>{const p=r[0];const lab=a.g==='Towns, routes and caves'?a.a:a.g+': '+a.a;if(!FOUND.has(p))FOUND.set(p,new Map());const f=FOUND.get(p);if(!f.has(lab))f.set(lab,new Set());f.get(lab).add(m.k||'Encounter')})));
+AREAS.forEach(a=>a.s=(a.a+' '+a.m.flatMap(m=>m.r.map(r=>r[0])).join(' ')+' '+(a.sp||[]).join(' ')).toLowerCase());
+const TG=[];D.T.forEach(t=>{const k=t.g+'|'+t.name;let e=TG.find(x=>x.k===k);if(!e){e={k,g:t.g,name:t.name,f:[]};TG.push(e)}e.f.push(t)});
+TG.forEach(e=>{e.top=Math.max(...e.f.flatMap(f=>f.t.map(r=>+r[1]||0)));e.s=(e.name+' '+e.g+' '+e.f.flatMap(f=>f.t.flatMap(r=>[r[0],r[2],r[3],r[4]])).join(' ')).toLowerCase()});
+D.P.forEach(p=>{p.s=(p.name+' '+p.types.join(' ')+' '+p.ab.join(' ')+' '+(p.hid||'')+' '+p.lvl.map(x=>x[1]).join(' ')+' '+p.tm.join(' ')+' '+p.tutor.join(' ')+' '+p.egg.join(' ')).toLowerCase();p.big=p.chg.some(c=>/^(Type|Abilities|Base stats|New evolution|Removed evolution)/.test(c[0]||c[1]))});
+const TABS={wild:'Wild Pokémon',trainers:'Key trainers',pokemon:'Pokémon'};
+const st={tab:'wild',q:{wild:'',trainers:'',pokemon:''},sel:{wild:AREAS.find(a=>a.a==='Route 29'),trainers:TG[0],pokemon:byName.get('Meganium')},type:'',big:false};
+const $=id=>document.getElementById(id);
+function tabs(){$('tabs').innerHTML=Object.entries(TABS).map(([k,v])=>`<button role="tab" data-tab="${k}" aria-selected="${st.tab===k}">${v}</button>`).join('')}
+function controls(){
+  const ph={wild:'Search a place or Pokémon',trainers:'Search a trainer, Pokémon or move',pokemon:'Search a name, move or ability'}[st.tab];
+  let h=`<input type="search" id="q" aria-label="${ph}" placeholder="${ph}" value="${esc(st.q[st.tab])}">`;
+  if(st.tab==='pokemon')h+=`<select id="ty" aria-label="Filter by type"><option value="">All types</option>${Object.keys(TC).map(t=>`<option${st.type===t?' selected':''}>${t}</option>`).join('')}</select><label class="chk"><input type="checkbox" id="big"${st.big?' checked':''}>Type, ability or evolution changed</label>`;
+  h+='<div class="count" id="ct"></div>';$('ctl').innerHTML=h;
+  $('q').oninput=e=>{st.q[st.tab]=e.target.value;list()};
+  if(st.tab==='pokemon'){$('ty').onchange=e=>{st.type=e.target.value;list()};$('big').onchange=e=>{st.big=e.target.checked;list()}}
+}
+function grouped(items,render){let g=null,h='';items.forEach((x,i)=>{if(x.g!==g){g=x.g;h+=`<h3>${esc(g)}</h3>`}h+=render(x,i)});return h}
+let cur=[];
+function list(){
+  const q=st.q[st.tab].trim().toLowerCase();let h='';
+  if(st.tab==='wild'){cur=AREAS.filter(a=>!q||a.s.includes(q));h=grouped(cur,(a,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.wild===a}"><span class="nm">${esc(a.a)}</span></button>`)}
+  if(st.tab==='trainers'){cur=TG.filter(t=>!q||t.s.includes(q));h=grouped(cur,(t,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.trainers===t}"><span class="nm">${esc(t.name)}</span><span class="tag">Lv ${t.top}</span></button>`)}
+  if(st.tab==='pokemon'){cur=D.P.filter(p=>(!q||p.s.includes(q))&&(!st.type||p.types.includes(st.type))&&(!st.big||p.big));h=cur.map((p,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.pokemon===p}"><span class="no">${num(p.n)}</span><span class="nm">${esc(p.name)}</span><span class="dots">${p.types.map(t=>`<i style="background:${TC[t]}" title="${t}"></i>`).join('')}</span></button>`).join('')}
+  $('list').innerHTML=h||'<div class="empty">Nothing matches that search.</div>';
+  $('ct').textContent=cur.length+(cur.length===1?' entry':' entries');
+}
+function pct(c){if(c==='–'||c==='')return '<td class="none">–</td>';const m=c.match(/^(\d+)%(?: \((.*)\))?$/);if(!m)return `<td>${esc(c)}</td>`;return `<td class="pct" style="background:rgba(var(--heat),${(m[1]/100*.55).toFixed(2)})"><b>${m[1]}%</b>${m[2]?`<span>${esc(m[2])}</span>`:''}</td>`}
+function tbl(m){const hd=m.h;return `<div class="scroll"><table><thead><tr>${hd.map(x=>`<th scope="col">${esc(x)}</th>`).join('')}</tr></thead><tbody>${m.r.map(r=>'<tr>'+r.map((c,i)=>{if(i===0||/^Bonus/.test(hd[i]))return `<td>${mon(c)}</td>`;if(hd[i]==='Chance'||/Morning|Day|Night/.test(hd[i]))return pct(c);return `<td>${esc(c)}</td>`}).join('')+'</tr>').join('')}</tbody></table></div>`}
+function wild(a){const sp=a.sp?`<section class="sec"><h3>Special conditions</h3><dl>${a.sp.map(s=>{const i=s.indexOf(': ');return `<dt>${esc(s.slice(0,i))}</dt><dd>${s.slice(i+2).split(', ').map(mon).join(', ')}</dd>`}).join('')}</dl></section>`:'';
+  return `<div class="eh"><h2>${esc(a.a)}</h2><p>${esc(a.g)}</p></div>`+a.m.map(m=>`<section class="sec"><h3>${esc(m.k||'Encounters')}</h3>${tbl(m)}</section>`).join('')+sp}
+function trainer(t){return `<div class="eh"><h2>${esc(t.name)}</h2><p>${esc(t.g)}${t.g==='Rival'?'. Silver has one set of fights for each starter you can pick.':''}</p></div>`+t.f.map((f,i)=>`<section class="sec"><h3>${t.f.length>1?`Fight ${i+1} of ${t.f.length}`:'Team'}<small>trainer ${f.id}</small></h3>${f.it?`<p class="note">Uses in battle: ${esc(f.it)}</p><br>`:''}<div class="team">${f.t.map(r=>{const p=byName.get(r[0]);const mv=r[4]==='Default'?'<li>Default moves for its level</li>':r[4].split(', ').map(x=>`<li>${esc(x)}</li>`).join('');return `<div class="card"><div class="top">${mon(r[0])}<span>Lv ${esc(r[1])}</span></div>${p?chips(p.types):''}<small>${esc(r[2])}${r[3]!=='–'?' · '+esc(r[3]):''}</small><ol>${mv}</ol></div>`}).join('')}</div></section>`).join('')}
+function pokemon(p){
+  const tot=p.st.reduce((a,b)=>a+b,0);const where=FOUND.get(p.name);
+  return `<div class="eh"><span class="no">${num(p.n)}</span><h2>${esc(p.name)}</h2><p>${chips(p.types)}</p></div>`+
+  (p.chg.length?`<section class="sec chg"><h3>Changed in Redux</h3><ul>${p.chg.map(c=>`<li>${c[0]?`<b>${esc(c[0])}:</b> `:''}${esc(c[1])}</li>`).join('')}</ul></section>`:'')+
+  `<div class="grid2"><section class="sec"><h3>Base stats</h3>${p.st.map((v,i)=>`<div class="stat"><span>${STATS[i]}</span><span>${v}</span><span class="tr"><i style="width:${(v/255*100).toFixed(1)}%"></i></span></div>`).join('')}<div class="stat total"><span>Total</span><span>${tot}</span><span></span></div></section>
+  <section class="sec"><h3>Details</h3><dl><dt>Abilities</dt><dd>${esc(p.ab.join(', ')||'None')}</dd><dt>Hidden</dt><dd>${esc(p.hid||'None')}</dd>${p.cyc?`<dt>Egg cycles</dt><dd>${p.cyc}</dd>`:''}<dt>Evolves</dt><dd>${p.evo.length?p.evo.map(esc).join('<br>'):'Does not evolve further'}</dd></dl></section></div>
+  <section class="sec"><h3>Level-up moves<small>${p.lvl.length}</small></h3><div class="lv">${p.lvl.map(x=>`<div><b>${x[0]==='evolve'?'Evolve':'Lv '+x[0]}</b><span>${esc(x[1])}</span></div>`).join('')}</div></section>
+  ${[['TMs and HMs',p.tm],['Tutor moves',p.tutor],['Egg moves',p.egg]].filter(x=>x[1].length).map(([k,v])=>`<section class="sec"><h3>${k}<small>${v.length}</small></h3><p class="chips">${v.map(esc).join(', ')}</p></section>`).join('')}
+  <section class="sec"><h3>Where to find it</h3>${where?`<dl>${[...where].map(([a,k])=>`<dt>${esc(a)}</dt><dd>${esc([...k].join(', '))}</dd>`).join('')}</dl>`:'<p class="note">Not in the wild. Evolve it, or check the gift list.</p>'}</section>`}
+function entry(){const s=st.sel[st.tab];$('entry').innerHTML=st.tab==='wild'?wild(s):st.tab==='trainers'?trainer(s):pokemon(s)}
+function show(){tabs();controls();list();entry()}
+function go(t){st.tab=t;try{history.replaceState(null,'','#'+t)}catch(e){}show()}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.tab)return go(b.dataset.tab);
+  if(b.dataset.p){st.sel.pokemon=D.P.find(p=>p.n==b.dataset.p);go('pokemon');const c=$('list').querySelector('[aria-current="true"]');if(c)c.scrollIntoView({block:'nearest'});window.scrollTo(0,0);return}
+  if(b.dataset.i!==undefined){st.sel[st.tab]=cur[+b.dataset.i];list();entry();window.scrollTo(0,0)}
+});
+const h=location.hash.slice(1);if(TABS[h])st.tab=h;show();
+</script>
+</body>
+</html>

@@ -15,6 +15,7 @@ and the work still planned.
   and commit `documentation/reference/`. Those pages are generated, so don't edit them by hand. The script needs a built
   repo (`base/`) and the `upstream` remote fetched. `gift_static.md` is the exception: it's hand-written from the event
   scripts, so update it yourself when scripts or legendaries change.
+- Pushing changed reference pages to `main` republishes the reference site through `.github/workflows/reference-site.yml`.
 - After changing wild encounters, run `python3 scripts/build_dex_areas.py` too, which updates `data/PokedexArea.c`.
 - Map objects and warps are built from `data/eventdata/zone_event/`, which holds only the maps Redux changes (`BUILD_DUMPED_EVENTDATA` is on). To hide an object
   without changing script object IDs, set its `hidden_flag` to `FLAG_GOT_BAG`, which is set in the opening and never cleared. Don't delete it from the list.
