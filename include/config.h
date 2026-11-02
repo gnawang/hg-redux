@@ -128,7 +128,7 @@
 
 // FRIENDSHIP_EVOLUTION_THRESHOLD defines the amount of friendship needed to evolve mons with friendship-related evolutions
 // modern generations have this value at 160, older ones at 220.  still max out at 255
-#define FRIENDSHIP_EVOLUTION_THRESHOLD 160
+#define FRIENDSHIP_EVOLUTION_THRESHOLD 80
 
 // Friendship grants additional bonuses.
 // Comment out the line below to revert back to Gen 5- behaviour
@@ -278,6 +278,6 @@
 // DSPRE, PokeText, or any other external tool keeps its own version of everything hg-engine does not itself change.
 // hg-engine's own text archives and its common and trainer scripts are always built.
 // #define BUILD_DUMPED_EVENTDATA
-// #define BUILD_DUMPED_SCR_SEQ
+#define BUILD_DUMPED_SCR_SEQ
 
 #endif

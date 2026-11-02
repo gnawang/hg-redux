@@ -121,3 +121,4 @@ You used the {STRVAR_1 8, 1, 0}.
 Begin auto-battle.
 {STRVAR_1 3, 0, 0} used the Pocket Center!\nYour Pokémon were fully healed.
 Mom: Oh, and before you go...\rTake these too. They should make\nyour journey a little easier!
+You don’t have any Pokémon to heal!
