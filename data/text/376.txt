@@ -1,0 +1,61 @@
+People usually come to my house\nlooking for Mr. Pokémon’s house.\fYou did mean to visit my house, right?\rHow kind of you!\nDo you...have any Apricorns?\fApricorn trees bear fruit once a day.\fI have one of those trees, too!\rApricorns are really something.\nYou can make Poké Balls and\fother things.\rThey are quite useful.\rI have a feeling this is meant to be.\nI’m so happy that I’ll give you this!\r
+                     
+With that Apricorn Box, you can carry\nso many Apricorns.\fYou’ll be a decent Apricorn collector!
+Hey, collector of Apricorns!\rHave you noticed that Apricorn colors\nare different from tree to tree?\rTry to remember what color Apricorn\nyou get from each tree!
+I travel the world, looking after\nrare Pokémon.\rBecome Champion, and I’ll have\nsomething to show you.
+Well done, Champion!\rI travel the world, looking after\nrare Pokémon. Pick any you like.
+What would you like to see?
+Which one would you like?
+That one’s already yours.
+Your party’s full.\nMake some room first.
+{STRVAR_1 3, 0, 0} received\n{STRVAR_1 0, 1, 0}!
+Come back any time.
+I’ve already given you those.
+A friend from Hoenn left these with\nme. One’s for Steven in Pewter City,\rand the other wakes something\nin the Embedded Tower.
+Cancel
+Treasures
+Starters I
+Starters II
+Fossils
+Rare
+Legendary
+Mythical
+Bulbasaur
+Charmander
+Squirtle
+Chikorita
+Cyndaquil
+Totodile
+Treecko
+Torchic
+Mudkip
+Turtwig
+Chimchar
+Piplup
+Omanyte
+Kabuto
+Aerodactyl
+Lileep
+Anorith
+Cranidos
+Shieldon
+Castform
+Spiritomb
+Rotom
+Uxie
+Mesprit
+Azelf
+Manaphy
+Regirock
+Regice
+Registeel
+Regigigas
+Heatran
+Cresselia
+Mew
+Celebi
+Jirachi
+Deoxys
+Darkrai
+Shaymin
+Arceus

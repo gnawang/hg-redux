@@ -6770,6 +6770,7 @@ move_person_facing obj_partner_poke, 0x8000, 0, 0x8001, VAR_SPECIAL_RESULT
 
 // 208 has been reused for new script commands
 .equ NEW_COMMAND_QUEUE_NEW_REPEL, 0
+.equ NEW_COMMAND_SET_LAST_MON_FATEFUL, 1
 
 .macro RunNewCommand,slot,unk
 DummyTextTrap \slot, \unk
@@ -6777,6 +6778,10 @@ DummyTextTrap \slot, \unk
 
 .macro QueueNewRepel
 RunNewCommand NEW_COMMAND_QUEUE_NEW_REPEL, 0x800C
+.endm
+
+.macro SetLastMonFateful
+RunNewCommand NEW_COMMAND_SET_LAST_MON_FATEFUL, 0
 .endm
 
 // Dummy
