@@ -33,6 +33,7 @@ BUG_CONTEST_SETS = ["Johto Dex", "National Dex, Tuesday", "National Dex, Thursda
 ROSTER_EXTRAS = ["SPECIES_SYLVEON", "SPECIES_WYRDEER", "SPECIES_KLEAVOR", "SPECIES_URSALUNA", "SPECIES_ANNIHILAPE",
                  "SPECIES_FARIGIRAF", "SPECIES_DUDUNSPARCE"]
 LAST_GEN_4_SPECIES = 493
+LAST_VANILLA_TM = 92
 
 KEY_TRAINER_GROUPS = [
     ("Rival", ["RIVAL"]),
@@ -45,6 +46,25 @@ KEY_TRAINER_GROUPS = [
     ("Team Rocket", ["EXECUTIVE_ARCHER", "EXECUTIVE_ARIANA", "EXECUTIVE_PROTON", "EXECUTIVE_PETREL", "ROCKET_BOSS"]),
     ("Red", ["PKMN_TRAINER_RED"]),
 ]
+
+SHOP_NAMES = {
+    "sCherrygroveCityMart": "Cherrygrove City Poké Mart", "sVioletCityMart": "Violet City Poké Mart", "sAzaleaCityMart": "Azalea Town Poké Mart",
+    "sGoldenrodDepartmentLower2F": "Goldenrod Dept. Store 2F, Poké Ball clerk", "sGoldenrodDepartmentUpper2F": "Goldenrod Dept. Store 2F, medicine clerk",
+    "sGoldenrodDepartment3F": "Goldenrod Dept. Store 3F", "sGoldenrodDepartment4F": "Goldenrod Dept. Store 4F", "sGoldenrodDepartment5F": "Goldenrod Dept. Store 5F",
+    "sGoldenrodHerbs": "Goldenrod Herb Shop", "sEcruteakMart": "Ecruteak City Poké Mart", "sOlivineMart": "Olivine City Poké Mart",
+    "sCianwoodPharmacy": "Cianwood City Pharmacy", "sBlackthornAndBattleFrontierMart": "Blackthorn City Poké Mart and Battle Frontier",
+    "sIndigoPlateau": "Indigo Plateau", "sVermilionAndSafariMart": "Vermilion City Poké Mart and Safari Zone Gate", "sSaffronMart": "Saffron City Poké Mart",
+    "sLavenderMart": "Lavender Town Poké Mart", "sCeruleanMart": "Cerulean City Poké Mart",
+    "sCeladonDepartmentUpper2F": "Celadon Dept. Store 2F, medicine clerk", "sCeladonDepartmentLower2F": "Celadon Dept. Store 2F, Poké Ball clerk",
+    "sCeladonDepartment3F": "Celadon Dept. Store 3F", "sCeladonDepartment4F": "Celadon Dept. Store 4F", "sCeladonDepartmentLeft5F": "Celadon Dept. Store 5F, left clerk",
+    "sCeladonDepartmentRight5F": "Celadon Dept. Store 5F, right clerk", "sFuschiaMart": "Fuchsia City Poké Mart", "sPewterMart": "Pewter City Poké Mart",
+    "sViridianMart": "Viridian City Poké Mart", "sMtMoonSquare": "Mt. Moon Square shop", "sMahoganyPreRocketHideout": "Mahogany Town shop, before the Rocket Hideout",
+    "sMahoganyPostRocketHideout": "Mahogany Town shop, after the Rocket Hideout",
+}
+
+# item description banks from include/constants/file.h, split where ITEM_GENERATION in include/constants/item.h splits
+ITEM_DESCRIPTION_BANKS = [("ITEM_ENIGMA_STONE", 830), ("ITEM_REVEAL_GLASS", 834), ("ITEM_EON_FLUTE", 838), ("ITEM_UNKNOWN_1073", 842),
+                          ("ITEM_LEGEND_PLATE", 846), ("ITEM_CANARI_BREAD", 850)]
 
 EVOLUTION_TEXT = {
     "EVO_LEVEL": "Level {level}",
@@ -165,6 +185,30 @@ def read_learnsets(revision=None):
 
 def read_game_moves(path):
     return {move for move in re.findall(r"\bMOVE_\w+", read_file(path)) if move != "MOVE_NONE" and not move.startswith("MOVE_TUTOR_NPC")}
+
+
+def read_shops():
+    # (shop name, [(item, badges needed)]) for every list in src/field/mart.c
+    text = read_file("src/field/mart.c").split("#ifdef POKEATHLON_SHOP_EXPANSION")[0]
+    shops = [("Every Poké Mart", [(item, int(badges)) for item, badges in re.findall(r"\{ (ITEM_\w+), (\d+) \}", re.search(r"sBadgeMart\[\] = \{(.*?)\};", text, re.S).group(1))])]
+    for key, body in re.findall(r"u16 (s\w+)\[\] = \{(.*?)\};", text, re.S):
+        shops.append((SHOP_NAMES[key], [(item, 0) for item in re.findall(r"\bITEM_\w+", re.sub(r"//.*", "", body))]))
+    return shops
+
+
+def read_machine_items():
+    # {move: [items]} for every TM, HM and TR, from the comments in data/MachineMoves.c
+    items = {}
+    for move, item in re.findall(r"(MOVE_\w+), // (\w+)", read_file("data/MachineMoves.c")):
+        items.setdefault(move, []).append("ITEM_" + item)
+    return items
+
+
+def read_obtainable_machine_moves():
+    # the vanilla TMs and HMs, plus hg-engine's expansion TMs and TRs that a shop sells
+    vanilla = read_file("data/MachineMoves.c").split("// expansion TMs")[0]
+    sold = {item for _, items in read_shops() for item, _ in items}
+    return set(re.findall(r"\bMOVE_\w+", vanilla)) | {move for move, items in read_machine_items().items() if sold & set(items)}
 
 
 def read_species_ids():
@@ -396,37 +440,176 @@ def build_trainers(species):
              "entries has several fights, and the rival's entries also vary with your starter.", "",
              "\"Default\" moves means the Pokémon uses the latest moves it would know at that level.", ""]
 
+    trainers = read_trainers_by_class()
+    for group, classes in KEY_TRAINER_GROUPS:
+        lines += ["## %s" % group, ""]
+        for trainer_class in classes:
+            for number, body in trainers.get(trainer_class, []):
+                lines += trainer_lines(number, body, names, species, hidden)
+    return lines
+
+
+def read_trainers_by_class():
     trainers = {}
     for key, body in split_entries(read_file("data/Trainers.c"), r"^    \[(\d+)\] = \{"):
         trainer_class = re.search(r"\.trainerClass = TRAINERCLASS_(\w+)", body)
         if trainer_class:
             trainers.setdefault(trainer_class.group(1), []).append((int(key), body))
+    return trainers
 
-    for group, classes in KEY_TRAINER_GROUPS:
-        lines += ["## %s" % group, ""]
-        for trainer_class in classes:
-            for number, body in trainers.get(trainer_class, []):
-                party = block(body, "party")
-                entries = re.findall(r"\{\s*\.ivs.*?\.ballSeal = \d+,\s*\}", party, re.S)
-                if not entries:
-                    continue
-                name = re.search(r'\.name = "([^"]*)"', body).group(1)
-                bag = [pretty(item) for item in re.findall(r"ITEM_\w+", re.search(r"\.items = \{([^}]*)\}", body).group(1)) if item != "ITEM_NONE"]
-                lines += ["### %s (trainer %d)" % (name, number), ""]
-                if bag:
-                    lines += ["Uses in battle: %s" % ", ".join(bag), ""]
-                lines += ["| Pokémon | Level | Ability | Held item | Moves |", "|---|---|---|---|---|"]
-                for entry in entries:
-                    mon = re.search(r"\.species = (SPECIES_\w+)", entry).group(1)
-                    level = re.search(r"\.level = (\d+)", entry).group(1)
-                    item = re.search(r"\.item = (ITEM_\w+)", entry)
-                    moves = re.search(r"\.moves = \{([^}]*)\}", entry)
-                    move_text = "Default"
-                    if moves:
-                        move_text = ", ".join(pretty(move) for move in re.findall(r"MOVE_\w+", moves.group(1)) if move != "MOVE_NONE")
-                    held = pretty(item.group(1)) if item and item.group(1) != "ITEM_NONE" else "–"
-                    lines.append("| %s | %s | %s | %s | %s |" % (names.get(mon, pretty(mon)), level, trainer_ability(entry, mon, species, hidden), held, move_text))
-                lines.append("")
+
+def trainer_lines(number, body, names, species, hidden):
+    party = block(body, "party")
+    entries = re.findall(r"\{\s*\.ivs.*?\.ballSeal = \d+,\s*\}", party, re.S)
+    if not entries:
+        return []
+    name = re.search(r'\.name = "([^"]*)"', body).group(1)
+    bag = [pretty(item) for item in re.findall(r"ITEM_\w+", re.search(r"\.items = \{([^}]*)\}", body).group(1)) if item != "ITEM_NONE"]
+    lines = ["### %s (trainer %d)" % (name, number), ""]
+    if bag:
+        lines += ["Uses in battle: %s" % ", ".join(bag), ""]
+    lines += ["| Pokémon | Level | Ability | Held item | Moves |", "|---|---|---|---|---|"]
+    for entry in entries:
+        mon = re.search(r"\.species = (SPECIES_\w+)", entry).group(1)
+        level = re.search(r"\.level = (\d+)", entry).group(1)
+        item = re.search(r"\.item = (ITEM_\w+)", entry)
+        moves = re.search(r"\.moves = \{([^}]*)\}", entry)
+        move_text = "Default"
+        if moves:
+            move_text = ", ".join(pretty(move) for move in re.findall(r"MOVE_\w+", moves.group(1)) if move != "MOVE_NONE")
+        held = pretty(item.group(1)) if item and item.group(1) != "ITEM_NONE" else "–"
+        lines.append("| %s | %s | %s | %s | %s |" % (names.get(mon, pretty(mon)), level, trainer_ability(entry, mon, species, hidden), held, move_text))
+    return lines + [""]
+
+
+def build_other_trainers(species):
+    names = {key: value["name"] for key, value in species.items()}
+    hidden = read_hidden_abilities()
+    key_classes = {trainer_class for _, classes in KEY_TRAINER_GROUPS for trainer_class in classes}
+    lines = ["# Trainers", "",
+             "Generated from `data/Trainers.c` by `scripts/build_reference_docs.py`. Don't edit by hand.", "",
+             "Every trainer not in [trainers.md](trainers.md), grouped by trainer class and listed in trainer ID order. "
+             "Some entries are rematches or are never fought.", "",
+             "\"Default\" moves means the Pokémon uses the latest moves it would know at that level.", ""]
+    trainers = read_trainers_by_class()
+    for trainer_class in sorted(trainers, key=pretty):
+        if trainer_class in key_classes:
+            continue
+        fights = [line for number, body in trainers[trainer_class] for line in trainer_lines(number, body, names, species, hidden)]
+        if fights:
+            lines += ["## %s" % pretty(trainer_class), ""] + fights
+    return lines
+
+
+def read_item_prices():
+    return {item: int(price) for item, price in re.findall(r"\[(ITEM_\w+)\] =\s*\{\s*ITEM_PRICE\((\d+)\)", read_file("data/itemdata/itemdata.c"))}
+
+
+def read_item_descriptions():
+    with open("include/constants/item.h", encoding="utf-8") as source:
+        ids = {name: int(value) for name, value in re.findall(r"#define (ITEM_\w+)\s+(\d+)", source.read())}
+    banks = []
+    start = 0
+    for last, bank in ITEM_DESCRIPTION_BANKS:
+        with open("data/text/%03d.txt" % bank, encoding="utf-8") as source:
+            banks.append((start, ids[last], source.read().split("\n")))
+        start = ids[last] + 1
+    descriptions = {}
+    for item, number in ids.items():
+        for first, last, text in banks:
+            if first <= number <= last and number - first < len(text):
+                descriptions[item] = text[number - first].replace("\\n", " ")
+    return descriptions
+
+
+def machine_label(item, machine_moves):
+    # "TM160 Hurricane" for a machine, the item's own name for anything else
+    move = machine_moves.get(item)
+    return "%s %s" % (pretty(item), pretty(move)) if move else pretty(item)
+
+
+def build_items():
+    prices, descriptions = read_item_prices(), read_item_descriptions()
+    machine_moves = {item: move for move, items in read_machine_items().items() for item in items}
+    lines = ["# Items in shops", "",
+             "Generated from `src/field/mart.c` and `data/itemdata/itemdata.c` by `scripts/build_reference_docs.py`. Don't edit by hand.", "",
+             "Every Poké Mart has two clerks: one sells the shared list below, which grows with your badges, and the other sells "
+             "the town's own items. Selling an item to a shop gives half its price. TRs are used up when taught; TMs and HMs aren't.", ""]
+    for shop, items in read_shops():
+        badge_column = any(badges for _, badges in items)
+        lines += ["## %s" % shop, ""]
+        lines += ["| Item | Price | Badges | Description |" if badge_column else "| Item | Price | Description |", "|---|---|---|---|" if badge_column else "|---|---|---|"]
+        for item, badges in items:
+            cells = [machine_label(item, machine_moves), "₽{:,}".format(prices[item])] + (["%d" % badges] if badge_column else [])
+            lines.append("| %s | %s |" % (" | ".join(cells), descriptions.get(item, "").replace("|", "/")))
+        lines.append("")
+    return lines
+
+
+def resolve_config_choice(value, config):
+    # Moves.c writes some values as ((CHAMPIONS_POWER_CHANGES) ? (80) : (70)), switched by include/config.h
+    choice = re.fullmatch(r"\(\((\w+)\) \? \((\w+)\) : \((\w+)\)\)", value)
+    if choice is None:
+        return value
+    return choice.group(2) if config.get(choice.group(1), "0") != "0" else choice.group(3)
+
+
+def read_move_data():
+    config = dict(re.findall(r"#define (\w+) +(\d+)", read_file("include/config.h")))
+    moves = {}
+    for key, body in split_entries(read_file("data/Moves.c"), r"^    \[(MOVE_\w+)\] = \{"):
+        values = {name: resolve_config_choice(value, config) for name, value in re.findall(r"\.(type|split|power|accuracy|pp) = (.+),\n", body)}
+        if len(values) < 5:
+            continue
+        field = values.get
+        description = re.search(r'\.description = "(.*)"', body)
+        moves[key] = {"type": pretty(field("type")), "category": field("split").replace("SPLIT_", "").title(),
+                      "power": int(field("power")), "accuracy": int(field("accuracy")), "pp": int(field("pp")),
+                      "description": description.group(1).replace("\\\\n", " ").replace("\\n", " ") if description else ""}
+    return moves
+
+
+def build_moves(species):
+    learnsets = read_learnsets()
+    move_data = read_move_data()
+    machine_moves, tutor_moves = read_obtainable_machine_moves(), read_game_moves("src/field/move_tutor.c")
+    machine_items = read_machine_items()
+    shops = {item: shop for shop, items in read_shops() for item, _ in items}
+    prices = read_item_prices()
+
+    learners = {}
+    for key in roster_keys(species):
+        learnset = learnsets.get(key, {})
+        name = species[key]["name"]
+        for level, move in level_moves(learnset):
+            learners.setdefault(move, {}).setdefault("level", {}).setdefault(name, level)
+        for label, field, game_moves in (("machine", "MachineMoves", machine_moves), ("tutor", "TutorMoves", tutor_moves), ("egg", "EggMoves", None)):
+            for move in learnable_moves(learnset, field, game_moves):
+                learners.setdefault(move, {}).setdefault(label, []).append(name)
+
+    lines = ["# Moves", "",
+             "Generated from `data/Moves.c` and the learnsets by `scripts/build_reference_docs.py`. Don't edit by hand.", "",
+             "Every move a Redux Pokémon can learn, with who learns it and how. Power and accuracy show \"–\" where they don't apply.", ""]
+    for move in sorted(learners, key=pretty):
+        data, ways = move_data[move], learners[move]
+        lines += ["## %s" % pretty(move), "",
+                  "- Type: %s" % data["type"], "- Category: %s" % data["category"],
+                  "- Power: %s" % (data["power"] if data["power"] > 1 else "–"), "- Accuracy: %s" % (data["accuracy"] or "–"),
+                  "- PP: %d" % data["pp"], "- Description: %s" % data["description"]]
+        if "machine" in ways:
+            sources = []
+            for item in machine_items.get(move, []):
+                if item in shops:
+                    sources.append("%s (%s, ₽%s)" % (pretty(item), shops[item], "{:,}".format(prices[item])))
+                elif re.fullmatch(r"ITEM_HM0\d", item) or re.fullmatch(r"ITEM_TM0\d\d", item) and int(item[7:]) <= LAST_VANILLA_TM:
+                    sources.append(pretty(item))
+            lines.append("- Machine: %s" % "; ".join(dict.fromkeys(sources)))
+        if "level" in ways:
+            lines.append("- Level-up: %s" % ", ".join("%s (%s)" % (name, level_text(level)) for name, level in ways["level"].items()))
+        for label, field in (("TM/HM", "machine"), ("Tutor", "tutor"), ("Egg", "egg")):
+            if field in ways:
+                lines.append("- %s: %s" % (label, ", ".join(ways[field])))
+        lines.append("")
     return lines
 
 
@@ -438,22 +621,20 @@ def level_text(level):
     return "evolve" if level == 0 else "Lv %d" % level
 
 
-def move_change_text(old, new):
+def move_changes(old, new):
+    # one line per added, moved or removed level-up move, in level order
     old_levels, new_levels = {}, {}
     for levels, moves in ((old_levels, old), (new_levels, new)):
         for level, move in moves:
             levels.setdefault(move, level)
-    added = [move for level, move in new if move not in old_levels]
-    removed = [move for level, move in old if move not in new_levels]
-    moved = [move for move, level in new_levels.items() if move in old_levels and old_levels[move] != level]
-    parts = []
-    if added:
-        parts.append("added " + ", ".join("%s (%s)" % (pretty(move), level_text(new_levels[move])) for move in dict.fromkeys(added)))
-    if moved:
-        parts.append("moved " + ", ".join("%s (%s → %s)" % (pretty(move), level_text(old_levels[move]), level_text(new_levels[move])) for move in moved))
-    if removed:
-        parts.append("removed " + ", ".join("%s (%s)" % (pretty(move), level_text(old_levels[move])) for move in dict.fromkeys(removed)))
-    return "; ".join(parts)
+    changes = []
+    for move, level in new_levels.items():
+        if move not in old_levels:
+            changes.append((level, "%s (new)" % pretty(move)))
+        elif old_levels[move] != level:
+            changes.append((level, "%s (was %s)" % (pretty(move), level_text(old_levels[move]))))
+    changes += [(level, "%s (removed)" % pretty(move)) for move, level in old_levels.items() if move not in new_levels]
+    return ["%s: %s" % ("Evolve" if level == 0 else "Lv %d" % level, text) for level, text in sorted(changes, key=lambda change: change[0])]
 
 
 def learnable_moves(learnset, field, game_moves=None):
@@ -479,16 +660,20 @@ def friendship_threshold():
     return int(re.search(r"#define FRIENDSHIP_EVOLUTION_THRESHOLD (\d+)", read_file("include/config.h")).group(1))
 
 
+def roster_keys(species):
+    ids = read_species_ids()
+    roster = sorted((key for key, number in ids.items() if 1 <= number <= LAST_GEN_4_SPECIES and key in species), key=ids.get)
+    return roster + [key for key in ROSTER_EXTRAS if key in species]
+
+
 def build_pokemon(species, base):
     names = {key: value["name"] for key, value in species.items()}
     base_species = read_species(base)
     evolutions, base_evolutions = read_evolutions(), read_evolutions(base)
     hidden, base_hidden = read_hidden_abilities(), read_hidden_abilities(base)
     learnsets, base_learnsets = read_learnsets(), read_learnsets(base)
-    machine_moves, tutor_moves = read_game_moves("data/MachineMoves.c"), read_game_moves("src/field/move_tutor.c")
-    ids = read_species_ids()
-    roster = sorted((key for key, number in ids.items() if 1 <= number <= LAST_GEN_4_SPECIES and key in species), key=ids.get)
-    roster += [key for key in ROSTER_EXTRAS if key in species]
+    machine_moves, tutor_moves = read_obtainable_machine_moves(), read_game_moves("src/field/move_tutor.c")
+    roster = roster_keys(species)
 
     summary = []
     entries = []
@@ -534,9 +719,9 @@ def build_pokemon(species, base):
 
         details = list(changes)
         base_learnset = base_learnsets.get(key, {})
-        level_difference = move_change_text(level_moves(base_learnset), moves)
+        level_difference = move_changes(level_moves(base_learnset), moves)
         if level_difference:
-            details.append("Level-up moves: %s" % level_difference)
+            details.append("Level-up moves:" + "".join("\n    - %s" % line for line in level_difference))
         for label, field, game_moves in move_fields:
             difference = set_change_text(learnable_moves(base_learnset, field, game_moves), learnable_moves(learnset, field, game_moves))
             if difference:
@@ -575,7 +760,10 @@ def main():
     write("encounters", build_encounters(species))
     write("special_encounters", build_special_encounters(species))
     write("trainers", build_trainers(species))
+    write("other_trainers", build_other_trainers(species))
     write("pokemon", build_pokemon(species, base))
+    write("moves", build_moves(species))
+    write("items", build_items())
 
 
 if __name__ == "__main__":

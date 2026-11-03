@@ -58,9 +58,11 @@ def read_pokemon():
                 entry["egg"] = name_list(line[13:])
             elif line.startswith("- Egg cycles: "):
                 entry["cyc"] = int(line[14:])
+            elif line.startswith("    - "):
+                entry["chg"][-1][2].append(line[6:])
             elif line.startswith("  - "):
-                key, _, value = line[4:].rpartition(": ")
-                entry["chg"].append([key, value])
+                key, _, value = line[4:-1].partition(":") if line.endswith(":") else line[4:].rpartition(": ")
+                entry["chg"].append([key, value, []])
         pokemon.append(entry)
     return pokemon
 
@@ -93,8 +95,8 @@ def read_areas(name, heading, group_heading=None):
     return areas
 
 
-def read_trainers():
-    lines = read_lines("trainers.md")
+def read_trainers(name):
+    lines = read_lines(name)
     trainers = []
     group = trainer = None
     index = 0
@@ -115,16 +117,44 @@ def read_trainers():
     return trainers
 
 
+def read_moves():
+    parts = re.split(r"\n## (.+)\n", "\n".join(read_lines("moves.md")))
+    moves = []
+    for name, body in zip(parts[1::2], parts[2::2]):
+        fields = dict(re.findall(r"^- ([^:]+): (.*)$", body, re.M))
+        moves.append({"name": name, "type": fields["Type"], "cat": fields["Category"], "pow": fields["Power"], "acc": fields["Accuracy"],
+                      "pp": fields["PP"], "desc": fields["Description"], "src": fields.get("Machine", "").split("; ") if fields.get("Machine") else [],
+                      "lvl": [[mon.strip(), level] for mon, level in re.findall(r"([^,()]+) \((evolve|Lv \d+)\)", fields.get("Level-up", ""))],
+                      "tm": name_list(fields.get("TM/HM", "")), "tutor": name_list(fields.get("Tutor", "")), "egg": name_list(fields.get("Egg", ""))})
+    return moves
+
+
+def read_shops():
+    lines = read_lines("items.md")
+    shops = []
+    index = 0
+    while index < len(lines):
+        if lines[index].startswith("## "):
+            shops.append({"name": lines[index][3:]})
+        elif lines[index].startswith("|") and shops:
+            shops[-1]["h"], shops[-1]["r"], index = read_table(lines, index)
+            continue
+        index += 1
+    return shops
+
+
 def main():
     output = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_OUTPUT
-    data = {"P": read_pokemon(), "E": read_areas("encounters.md", "## "), "S": read_areas("special_encounters.md", "### ", "## "), "T": read_trainers()}
+    data = {"P": read_pokemon(), "E": read_areas("encounters.md", "## "), "S": read_areas("special_encounters.md", "### ", "## "),
+            "T": read_trainers("trainers.md"), "O": read_trainers("other_trainers.md"), "M": read_moves(), "I": read_shops()}
     with open(TEMPLATE, encoding="utf-8") as source:
         page = source.read()
     text = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     os.makedirs(output, exist_ok=True)
     with open(os.path.join(output, "index.html"), "w", encoding="utf-8") as target:
         target.write(page.replace("__DATA__", text))
-    print("Wrote %s with %d Pokémon, %d areas and %d trainer fights" % (os.path.join(output, "index.html"), len(data["P"]), len(data["E"]) + len(data["S"]), len(data["T"])))
+    print("Wrote %s with %d Pokémon, %d areas, %d trainer fights, %d moves and %d shops" % (os.path.join(output, "index.html"), len(data["P"]),
+          len(data["E"]) + len(data["S"]), len(data["T"]) + len(data["O"]), len(data["M"]), len(data["I"])))
 
 
 if __name__ == "__main__":

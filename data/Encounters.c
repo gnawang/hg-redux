@@ -428,8 +428,8 @@ const EncounterData __data[] =
                 SPECIES_PSYDUCK,
                 SPECIES_METAPOD,
                 SPECIES_KAKUNA,
-                SPECIES_BUTTERFREE,
-                SPECIES_BEEDRILL,
+                SPECIES_METAPOD,
+                SPECIES_KAKUNA,
             },
             .speciesDay = {
                 SPECIES_WURMPLE,
@@ -442,8 +442,8 @@ const EncounterData __data[] =
                 SPECIES_PSYDUCK,
                 SPECIES_SILCOON,
                 SPECIES_CASCOON,
-                SPECIES_EXEGGCUTE,
-                SPECIES_EXEGGCUTE,
+                SPECIES_SILCOON,
+                SPECIES_CASCOON,
             },
             .speciesNight = {
                 SPECIES_SPINARAK,
@@ -456,8 +456,8 @@ const EncounterData __data[] =
                 SPECIES_BUIZEL,
                 SPECIES_METAPOD,
                 SPECIES_KAKUNA,
-                SPECIES_BEAUTIFLY,
-                SPECIES_DUSTOX,
+                SPECIES_METAPOD,
+                SPECIES_KAKUNA,
             },
         },
         .hoennSoundSpecies = {
@@ -2128,8 +2128,8 @@ const EncounterData __data[] =
                 SPECIES_SNUBBULL,
                 SPECIES_DITTO,
                 SPECIES_SNUBBULL,
-                SPECIES_KADABRA,
-                SPECIES_KADABRA,
+                SPECIES_DITTO,
+                SPECIES_SNUBBULL,
             },
             .speciesDay = {
                 SPECIES_DROWZEE,
@@ -2142,8 +2142,8 @@ const EncounterData __data[] =
                 SPECIES_SNUBBULL,
                 SPECIES_DITTO,
                 SPECIES_SNUBBULL,
-                SPECIES_KADABRA,
-                SPECIES_KADABRA,
+                SPECIES_DITTO,
+                SPECIES_SNUBBULL,
             },
             .speciesNight = {
                 SPECIES_DROWZEE,
@@ -2156,8 +2156,8 @@ const EncounterData __data[] =
                 SPECIES_SNUBBULL,
                 SPECIES_DITTO,
                 SPECIES_SNUBBULL,
-                SPECIES_KADABRA,
-                SPECIES_KADABRA,
+                SPECIES_DITTO,
+                SPECIES_SNUBBULL,
             },
         },
         .hoennSoundSpecies = {
@@ -4173,7 +4173,7 @@ const EncounterData __data[] =
             { 10, 20, SPECIES_TENTACOOL },
             { 15, 25, SPECIES_PELIPPER },
             { 15, 25, SPECIES_TENTACRUEL },
-            { 15, 25, SPECIES_PHIONE },
+            { 15, 25, SPECIES_TENTACRUEL },
         },
         .rockSmashSlots = {
             { 0, 0, SPECIES_NONE },
@@ -4273,7 +4273,7 @@ const EncounterData __data[] =
             { 15, 25, SPECIES_MANTYKE },
             { 15, 25, SPECIES_MANTINE },
             { 15, 25, SPECIES_TENTACRUEL },
-            { 15, 25, SPECIES_PHIONE },
+            { 15, 25, SPECIES_TENTACRUEL },
         },
         .rockSmashSlots = {
             { 0, 0, SPECIES_NONE },
@@ -5929,7 +5929,7 @@ const EncounterData __data[] =
                 SPECIES_CHERRIM,
                 SPECIES_ALTARIA,
                 SPECIES_CHERRIM,
-                SPECIES_VESPIQUEN,
+                SPECIES_ALTARIA,
             },
             .speciesDay = {
                 SPECIES_TANGELA,
@@ -5943,7 +5943,7 @@ const EncounterData __data[] =
                 SPECIES_CHERRIM,
                 SPECIES_ALTARIA,
                 SPECIES_CHERRIM,
-                SPECIES_VESPIQUEN,
+                SPECIES_ALTARIA,
             },
             .speciesNight = {
                 SPECIES_TANGELA,
@@ -5957,7 +5957,7 @@ const EncounterData __data[] =
                 SPECIES_SNOVER,
                 SPECIES_ALTARIA,
                 SPECIES_SNOVER,
-                SPECIES_VESPIQUEN,
+                SPECIES_ALTARIA,
             },
         },
         .hoennSoundSpecies = {
@@ -6928,8 +6928,8 @@ const EncounterData __data[] =
                 SPECIES_SLUGMA,
                 SPECIES_LARVITAR,
                 SPECIES_DUNSPARCE,
-                SPECIES_CHINGLING,
-                SPECIES_CHINGLING,
+                SPECIES_LARVITAR,
+                SPECIES_DUNSPARCE,
             },
             .speciesDay = {
                 SPECIES_GEODUDE,
@@ -6942,8 +6942,8 @@ const EncounterData __data[] =
                 SPECIES_SLUGMA,
                 SPECIES_LARVITAR,
                 SPECIES_DUNSPARCE,
-                SPECIES_CHINGLING,
-                SPECIES_CHINGLING,
+                SPECIES_LARVITAR,
+                SPECIES_DUNSPARCE,
             },
             .speciesNight = {
                 SPECIES_GEODUDE,
@@ -6956,8 +6956,8 @@ const EncounterData __data[] =
                 SPECIES_SLUGMA,
                 SPECIES_LARVITAR,
                 SPECIES_DUNSPARCE,
-                SPECIES_CHINGLING,
-                SPECIES_CHINGLING,
+                SPECIES_LARVITAR,
+                SPECIES_DUNSPARCE,
             },
         },
         .hoennSoundSpecies = {
@@ -7873,7 +7873,7 @@ const EncounterData __data[] =
             { 30, 40, SPECIES_TENTACOOL },
             { 35, 45, SPECIES_STARYU },
             { 50, 50, SPECIES_STARYU },
-            { 35, 45, SPECIES_LAPRAS },
+            { 35, 45, SPECIES_STARYU },
         },
         .rockSmashSlots = {
             { 0, 0, SPECIES_NONE },
@@ -8328,8 +8328,8 @@ const EncounterData __data[] =
                 SPECIES_QUAGSIRE,
                 SPECIES_HIPPOPOTAS,
                 SPECIES_HIPPOPOTAS,
-                SPECIES_STEELIX,
-                SPECIES_STEELIX,
+                SPECIES_HIPPOPOTAS,
+                SPECIES_HIPPOPOTAS,
             },
             .speciesDay = {
                 SPECIES_GRAVELER,
@@ -8342,8 +8342,8 @@ const EncounterData __data[] =
                 SPECIES_QUAGSIRE,
                 SPECIES_HIPPOPOTAS,
                 SPECIES_HIPPOPOTAS,
-                SPECIES_STEELIX,
-                SPECIES_STEELIX,
+                SPECIES_HIPPOPOTAS,
+                SPECIES_HIPPOPOTAS,
             },
             .speciesNight = {
                 SPECIES_GRAVELER,
@@ -8356,8 +8356,8 @@ const EncounterData __data[] =
                 SPECIES_QUAGSIRE,
                 SPECIES_HIPPOPOTAS,
                 SPECIES_HIPPOPOTAS,
-                SPECIES_STEELIX,
-                SPECIES_STEELIX,
+                SPECIES_HIPPOPOTAS,
+                SPECIES_HIPPOPOTAS,
             },
         },
         .hoennSoundSpecies = {
@@ -9473,7 +9473,7 @@ const EncounterData __data[] =
             { 30, 30, SPECIES_WINGULL },
             { 35, 35, SPECIES_PELIPPER },
             { 35, 35, SPECIES_TENTACRUEL },
-            { 35, 35, SPECIES_WAILORD },
+            { 35, 35, SPECIES_TENTACRUEL },
         },
         .rockSmashSlots = {
             { 0, 0, SPECIES_NONE },
@@ -10728,7 +10728,7 @@ const EncounterData __data[] =
                 SPECIES_LUNATONE,
                 SPECIES_GOLBAT,
                 SPECIES_GRAVELER,
-                SPECIES_CLEFABLE,
+                SPECIES_GOLBAT,
                 SPECIES_GOLBAT,
             },
             .speciesDay = {
@@ -10742,7 +10742,7 @@ const EncounterData __data[] =
                 SPECIES_LUNATONE,
                 SPECIES_GOLBAT,
                 SPECIES_GRAVELER,
-                SPECIES_CLEFABLE,
+                SPECIES_GOLBAT,
                 SPECIES_GOLBAT,
             },
             .speciesNight = {
@@ -10756,7 +10756,7 @@ const EncounterData __data[] =
                 SPECIES_LUNATONE,
                 SPECIES_GOLBAT,
                 SPECIES_GRAVELER,
-                SPECIES_CLEFABLE,
+                SPECIES_GOLBAT,
                 SPECIES_GOLBAT,
             },
         },
@@ -11429,7 +11429,7 @@ const EncounterData __data[] =
                 SPECIES_JIGGLYPUFF,
                 SPECIES_JIGGLYPUFF,
                 SPECIES_JIGGLYPUFF,
-                SPECIES_WIGGLYTUFF,
+                SPECIES_JIGGLYPUFF,
             },
             .speciesDay = {
                 SPECIES_FEAROW,
@@ -11443,7 +11443,7 @@ const EncounterData __data[] =
                 SPECIES_JIGGLYPUFF,
                 SPECIES_JIGGLYPUFF,
                 SPECIES_JIGGLYPUFF,
-                SPECIES_WIGGLYTUFF,
+                SPECIES_JIGGLYPUFF,
             },
             .speciesNight = {
                 SPECIES_FEAROW,
@@ -11457,7 +11457,7 @@ const EncounterData __data[] =
                 SPECIES_JIGGLYPUFF,
                 SPECIES_JIGGLYPUFF,
                 SPECIES_JIGGLYPUFF,
-                SPECIES_WIGGLYTUFF,
+                SPECIES_JIGGLYPUFF,
             },
         },
         .hoennSoundSpecies = {

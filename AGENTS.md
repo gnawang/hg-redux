@@ -124,4 +124,7 @@ Every picture costs tokens, so use the fewest that prove the result.
 - `team` and `bag` find their data from the party and Mom's two key items, and `bag` assumes
   `ITEM_POCKET_EXPANSION` is on. Update `POCKETS` in the script if bag sizes change.
 - Passing here means it works in DeSmuME. It doesn't prove real hardware or a saved and reloaded game.
+- To test a saved game, save from the in-game menu, wait about 2,400 frames for "Saving a lot of data" to finish,
+  then call `emu.reset()` in the same process and pick Continue. In-game saves go to `~/.config/desmume/test.dsv`
+  and outlast the run, so delete that file before and after.
 - Battle behaviour needs a real battle in the emulator or `scripts/run_tests.py`.

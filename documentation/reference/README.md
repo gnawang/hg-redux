@@ -11,6 +11,9 @@ because that information is in the game's event scripts.
 | [gift_static.md](gift_static.md) | Gift Pokémon, eggs, prizes, one-off battles and roaming Pokémon |
 | [pokemon.md](pokemon.md) | Every Pokémon in the roster: types, abilities, stats, evolutions, full movesets and egg cycles, with what changed from hg-engine |
 | [trainers.md](trainers.md) | Teams for the rival, Gym Leaders, Elite Four, Champion, Team Rocket's leaders and Red |
+| [other_trainers.md](other_trainers.md) | Teams for every other trainer, by trainer class |
+| [moves.md](moves.md) | Every move a Redux Pokémon can learn: type, power, accuracy, PP, where to buy its TM, and who learns it by level-up, TM, tutor or egg |
+| [items.md](items.md) | What every shop sells, with prices, badge requirements and descriptions |
 
-New items, shop stock, prices and game settings are in [REDUX_CHANGES.md](../REDUX_CHANGES.md), which also explains
+New items, prices and game settings are in [REDUX_CHANGES.md](../REDUX_CHANGES.md), which also explains
 why each change was made and lists the work still planned.

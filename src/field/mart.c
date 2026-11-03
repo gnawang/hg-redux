@@ -54,11 +54,31 @@ u16 sCherrygroveCityMart[] = {
 };
 
 u16 sVioletCityMart[] = {
-    ITEM_TUNNEL_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, 0xFFFF
+    ITEM_TUNNEL_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL,
+    // Redux: newer TMs, supporting and niche moves
+    ITEM_TM174, // Haze
+    ITEM_TM096, // Eerie Impulse
+    ITEM_TM223, // Metal Sound
+    ITEM_TM216, // Feather Dance
+    ITEM_TM213, // Coaching
+    ITEM_TM173, // Charge
+    0xFFFF
 };
 
 u16 sAzaleaCityMart[] = {
-    ITEM_BLOOM_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, 0xFFFF
+    ITEM_BLOOM_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL,
+    // Redux: newer TMs, low-damage and support moves, and the terrains
+    ITEM_TM176, // Sand Tomb
+    ITEM_TM179, // Smack Down
+    ITEM_TM193, // Weather Ball
+    ITEM_TM211, // Electroweb
+    ITEM_TM194, // Grassy Glide
+    ITEM_TM122, // Encore
+    ITEM_TM136, // Electric Terrain
+    ITEM_TM137, // Grassy Terrain
+    ITEM_TM139, // Misty Terrain
+    ITEM_TM138, // Psychic Terrain
+    0xFFFF
 };
 
 u16 sGoldenrodDepartmentUpper2F[] = {
@@ -122,6 +142,28 @@ u16 sGoldenrodDepartment4F[] = {
 
 u16 sGoldenrodDepartment5F[] = {
     ITEM_TM070, ITEM_TM017, ITEM_TM054, ITEM_TM083, ITEM_TM016, ITEM_TM033, ITEM_TM022, ITEM_TM052, ITEM_TM038, ITEM_TM025, ITEM_TM014, ITEM_TM015,
+    // Redux: newer TMs and TRs, medium-damage and niche moves, and the less useful TRs
+    ITEM_TM222, // Breaking Swipe
+    ITEM_TM219, // Skitter Smack
+    ITEM_TM215, // Scorching Sands
+    ITEM_TM228, // Psychic Noise
+    ITEM_TM207, // Temper Flare
+    ITEM_TM199, // Lash Out
+    ITEM_TM00, // Mega Punch
+    ITEM_TM134, // Reversal
+    ITEM_TM121, // Heavy Slam
+    ITEM_TM189, // Heat Crash
+    ITEM_TM132, // Baton Pass
+    ITEM_TR13, // Focus Energy
+    ITEM_TR14, // Metronome
+    ITEM_TR85, // Work Up
+    ITEM_TR44, // Cosmic Power
+    ITEM_TR91, // Venom Drench
+    ITEM_TR80, // Electro Ball
+    ITEM_TR82, // Stored Power
+    ITEM_TR19, // Tri Attack
+    ITEM_TR41, // Blaze Kick
+    ITEM_TR01, // Body Slam
     // Redux: evolution stones
     ITEM_FIRE_STONE,
     ITEM_WATER_STONE,
@@ -138,11 +180,33 @@ u16 sGoldenrodHerbs[] = {
 };
 
 u16 sEcruteakMart[] = {
-    ITEM_HEART_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, 0xFFFF
+    ITEM_HEART_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL,
+    // Redux: newer TMs, high-utility moves
+    ITEM_TM196, // Flip Turn
+    ITEM_TM188, // Scald
+    ITEM_TM095, // Leech Life
+    ITEM_TM187, // Icicle Spear
+    ITEM_TM200, // Scale Shot
+    ITEM_TM185, // Lunge
+    ITEM_TM124, // Ice Spinner
+    ITEM_TM221, // Throat Chop
+    0xFFFF
 };
 
 u16 sOlivineMart[] = {
-    ITEM_HEART_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, 0xFFFF
+    ITEM_HEART_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL,
+    // Redux: newer TMs, consistent, stronger attacks
+    ITEM_TM197, // Dual Wingbeat
+    ITEM_TM112, // Aura Sphere
+    ITEM_TM212, // Triple Axel
+    ITEM_TM162, // Bug Buzz
+    ITEM_TM108, // Crunch
+    ITEM_TM101, // Power Gem
+    ITEM_TM106, // Drill Run
+    ITEM_TM110, // Liquidation
+    ITEM_TM218, // Expanding Force
+    ITEM_TM131, // Pollen Puff
+    0xFFFF
 };
 
 u16 sCianwoodPharmacy[] = {
@@ -150,11 +214,27 @@ u16 sCianwoodPharmacy[] = {
 };
 
 u16 sBlackthornAndBattleFrontierMart[] = {
-    ITEM_AIR_MAIL, ITEM_NET_BALL, ITEM_DUSK_BALL, 0xFFFF
+    ITEM_AIR_MAIL, ITEM_NET_BALL, ITEM_DUSK_BALL,
+    // Redux: newer TMs, strong attacks
+    ITEM_TM186, // High Horsepower
+    ITEM_TM127, // Play Rough
+    ITEM_TM147, // Wild Charge
+    ITEM_TM151, // Phantom Force
+    ITEM_TM117, // Hyper Voice
+    ITEM_TM209, // Muddy Water
+    ITEM_TM214, // Sludge Wave
+    ITEM_TM206, // Petal Blizzard
+    0xFFFF
 };
 
 u16 sIndigoPlateau[] = {
-    ITEM_ULTRA_BALL, ITEM_MAX_REPEL, ITEM_HYPER_POTION, ITEM_MAX_POTION, ITEM_FULL_RESTORE, ITEM_REVIVE, ITEM_FULL_HEAL, 0xFFFF
+    ITEM_ULTRA_BALL, ITEM_MAX_REPEL, ITEM_HYPER_POTION, ITEM_MAX_POTION, ITEM_FULL_RESTORE, ITEM_REVIVE, ITEM_FULL_HEAL,
+    // Redux: newer TMs, strong attacks
+    ITEM_TM204, // Double Edge
+    ITEM_TM210, // Supercell Slam
+    ITEM_TM201, // Misty Explosion
+    ITEM_TM220, // Meteor Beam
+    0xFFFF
 };
 
 u16 sVermilionAndSafariMart[] = {
@@ -209,6 +289,29 @@ u16 sCeladonDepartmentLower2F[] = {
 
 u16 sCeladonDepartment3F[] = {
     ITEM_TM021, ITEM_TM027, ITEM_TM087, ITEM_TM078, ITEM_TM012, ITEM_TM041, ITEM_TM020, ITEM_TM028, ITEM_TM076, ITEM_TM055, ITEM_TM072, ITEM_TM079,
+    // Redux: newer TMs and TRs, the strongest attacks, and the stronger TRs
+    ITEM_TM167, // Close Combat
+    ITEM_TM164, // Brave Bird
+    ITEM_TM217, // Future Sight
+    ITEM_TM142, // Hydro Pump
+    ITEM_TM198, // Poltergeist
+    ITEM_TM159, // Leaf Storm
+    ITEM_TM165, // Flare Blitz
+    ITEM_TM160, // Hurricane
+    ITEM_TM190, // Solar Blade
+    ITEM_TM170, // Steel Beam
+    ITEM_TR12, // Agility
+    ITEM_TR23, // Spikes
+    ITEM_TR54, // Toxic Spikes
+    ITEM_TR25, // Psyshock
+    ITEM_TR97, // Psychic Fangs
+    ITEM_TR92, // Dazzling Gleam
+    ITEM_TR93, // Darkest Lariat
+    ITEM_TR81, // Foul Play
+    ITEM_TR50, // Leaf Blade
+    ITEM_TR99, // Body Press
+    ITEM_TR28, // Megahorn
+    ITEM_TR72, // Power Whip
     // Redux: late-game stones and items for later evolutions of Gen 1-4 Pokemon (Kleavor, Ursaluna)
     ITEM_SHINY_STONE,
     ITEM_DUSK_STONE,
@@ -251,7 +354,13 @@ u16 sMahoganyPreRocketHideout[] = {
 };
 
 u16 sMahoganyPostRocketHideout[] = {
-    ITEM_GREAT_BALL, ITEM_SUPER_POTION, ITEM_HYPER_POTION, ITEM_ANTIDOTE, ITEM_PARALYZE_HEAL, ITEM_SUPER_REPEL, ITEM_REVIVE, ITEM_AIR_MAIL, 0xFFFF
+    ITEM_GREAT_BALL, ITEM_SUPER_POTION, ITEM_HYPER_POTION, ITEM_ANTIDOTE, ITEM_PARALYZE_HEAL, ITEM_SUPER_REPEL, ITEM_REVIVE, ITEM_AIR_MAIL,
+    // Redux: newer TMs, setup moves
+    ITEM_TM100_SV, // Dragon Dance
+    ITEM_TM140, // Nasty Plot
+    ITEM_TM128, // Amnesia
+    ITEM_TM224, // Curse
+    0xFFFF
 };
 
 BOOL ScrCmd_MartBuy(SCRIPTCONTEXT *ctx)

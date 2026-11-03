@@ -4,7 +4,7 @@ Pokémon HeartGold Redux is a fork of [BluRosie/hg-engine](https://github.com/Bl
 This file lists every change Redux makes on top of upstream, the design rules behind them,
 and the work still planned. Keep it up to date in the same commit as each change.
 
-For what's in the game now (wild encounters, every Pokémon, key trainers' teams), see
+For what's in the game now (wild encounters, every Pokémon and move, trainers' teams, shop stock), see
 [the reference pages](reference/README.md).
 
 ## Design rules
@@ -108,14 +108,17 @@ otherwise keep their vanilla Headbutt areas, and Safari Zone entries are kept.
 python3 scripts/build_learnsets.py --generate data/learnsets/learnsets.json --cutoff custom --inherit-level --inherit-egg --inherit-machine --inherit-tutor --ignore-files 20_la.json 99_go.json
 ```
 
-- Level-up and egg moves come from the newest game with data for each species
-  (Legends Z-A, then Scarlet/Violet, then older games). The 8 retyped Pokémon get moves of
-  their new type from Z-A, e.g. Meganium learns Disarming Voice at level 9.
-- TM and tutor compatibility is the union of every game.
+- Level-up and egg moves are the union of hg-engine's sets, the learnset pass below, HeartGold/SoulSilver, Scarlet/Violet and Legends Z-A, so a
+  Pokémon learns everything it learns in any of them. A move already in hg-engine's set or the learnset pass keeps that level. A move only the other
+  games have takes its Scarlet/Violet level, else its Z-A level, else its HeartGold level, so evolved Pokémon also get newer games' level-1 moves.
+  The 8 retyped Pokémon get moves of their new type from Z-A, e.g. Meganium learns Disarming Voice at level 9.
+- Only moves hg-engine implements are kept. Moves flagged `FLAG_UNUSABLE_UNIMPLEMENTED` in `data/Moves.c`, such as Echoed Voice, Round and Ally Switch,
+  are left out of level-up and egg moves; with `BLOCK_LEARNING_UNIMPLEMENTED_MOVES` the game wouldn't teach them anyway.
+- TM and tutor compatibility is the union of every game. TM01–TM92, the HMs, the move tutors and the newer TMs and TRs sold in shops (see Shops) can be used in the game.
+  hg-engine's other expansion TMs and TRs exist as items but nothing gives or sells them; they teach moves already on a vanilla TM or a tutor, or unimplemented ones.
 - Legends: Arceus and Pokémon GO are ignored. Every Redux species has mainline data.
-- `data/learnsets/base/custom.json` applies last. It removes level-up moves hg-engine has not
-  implemented (the engine blocks learning them anyway) and replaces Rage Fist with Shadow Punch
-  for Primeape and Annihilape. To change one learnset, edit its entry there and rerun the command.
+- `data/learnsets/base/custom.json` applies last and holds every roster Pokémon's full level-up and egg moves, with the union above already applied.
+  Rage Fist, which hg-engine hasn't implemented, is replaced with Shadow Punch for Primeape and Annihilape. To change one learnset, edit its entry there and rerun the command.
 
 `custom.json` also holds a learnset pass over the roster, which adds moves or moves them earlier and removes nothing. Every added move is one the Pokémon or its
 pre-evolutions officially get in a mainline game, by level-up, TM, tutor or egg. The exceptions, all asked for by name, are Icicle Crash on Mamoswine and Piloswine, Spore on Breloom, and Moonblast on Meganium.
@@ -167,6 +170,7 @@ HeartGold Generations.
 | Goldenrod Dept. Store 3F | King's Rock, Metal Coat, Dragon Scale, Up-Grade, Dubious Disc, Protector, Electirizer, Magmarizer, Reaper Cloth, Prism Scale, Deep Sea Tooth/Scale, Razor Fang, Razor Claw, Oval Stone |
 | Goldenrod Dept. Store 5F | Fire, Water, Thunder, Leaf, Moon, Sun and Ice Stones |
 | Celadon Dept. Store 3F | Shiny, Dusk and Dawn Stones, Black Augurite (Kleavor), Peat Block (Ursaluna) |
+| Town Poké Marts, Goldenrod 5F and Celadon 3F | 71 newer TMs and 22 TRs, see Newer TMs below |
 
 Redux prices (selling to a shop gives half):
 
@@ -175,6 +179,36 @@ Redux prices (selling to a shop gives half):
 | Nature Mints | ₽1,000 |
 | Ability Capsule, Ability Patch | ₽2,000 |
 | All evolution items and stones listed above | ₽1,000 |
+| TM01–TM92 | HeartGold's own prices again (₽1,000–7,500). hg-engine had given them newer games' prices, e.g. Hyper Beam ₽1,600 and False Swipe ₽20,000 |
+| Newer TMs | By power, on the scale HeartGold already uses: ₽5,500 like Thunder, Blizzard and Fire Blast for 100–135 power, ₽7,500 like Hyper Beam for 140+, ₽3,000 for 70–99, ₽2,000 under 70 and for status moves, ₽1,500 for stat-raising moves like Swords Dance |
+| TRs | Cheaper than TMs because they're used up, by how useful the move is: ₽500 (Focus Energy, Metronome, Work Up, Cosmic Power, Venom Drench, Electro Ball, Stored Power), ₽1,000 (Tri Attack, Blaze Kick, Body Slam), ₽2,500 (Megahorn, Power Whip), ₽1,500 the rest |
+
+**Newer TMs.** Every newer move that a roster Pokémon can learn by TM in some game, and that the game otherwise can't teach, is sold as hg-engine's
+existing TM item, or its TR item when hg-engine has no TM for it. Moves already on TM01–TM92, an HM or a move tutor aren't sold, nor are Draco Meteor,
+Blast Burn, Hydro Cannon and Frenzy Plant, which the Blackthorn tutor teaches. Multi-hit and variable-power attacks are priced by their typical power, e.g. Icicle Spear as 75.
+The TMs are spread through the story's Poké Marts (the town's second clerk), growing in impact; none are sold before Violet City. The vanilla TMs stay where they were.
+
+| Shop | Badges | Kind | Newer TMs |
+|---|---|---|---|
+| Violet City | 0 | Supporting, niche | Haze, Eerie Impulse, Metal Sound, Feather Dance, Coaching, Charge |
+| Azalea Town | 1 | Low damage, support and the terrains | Sand Tomb, Smack Down, Weather Ball, Electroweb, Grassy Glide, Encore, Electric, Grassy, Misty and Psychic Terrain |
+| Goldenrod Dept. Store 5F | 2 | Medium damage, niche | Breaking Swipe, Skitter Smack, Scorching Sands, Psychic Noise, Temper Flare, Lash Out, Mega Punch, Reversal, Heavy Slam, Heat Crash, Baton Pass |
+| Ecruteak City | 3 | High utility | Flip Turn, Scald, Leech Life, Icicle Spear, Scale Shot, Lunge, Ice Spinner, Throat Chop |
+| Olivine City | 4 | Consistent, stronger | Dual Wingbeat, Aura Sphere, Triple Axel, Bug Buzz, Crunch, Power Gem, Drill Run, Liquidation, Expanding Force, Pollen Puff |
+| Mahogany Town shop, after the Rocket Hideout | 6 | Setup | Dragon Dance, Nasty Plot, Amnesia, Curse |
+| Blackthorn City (also the Battle Frontier's shop) | 7 | Strong | High Horsepower, Play Rough, Wild Charge, Phantom Force, Hyper Voice, Muddy Water, Sludge Wave, Petal Blizzard |
+| Indigo Plateau | 8 | Strong | Double-Edge, Supercell Slam, Misty Explosion, Meteor Beam |
+| Celadon Dept. Store 3F | Kanto | Strongest | Close Combat, Brave Bird, Future Sight, Hydro Pump, Poltergeist, Leaf Storm, Flare Blitz, Hurricane, Solar Blade, Steel Beam |
+
+TRs are the 22 moves with no TM item. Goldenrod 5F sells the niche ones (Focus Energy, Metronome, Work Up, Cosmic Power, Venom Drench, Electro Ball, Stored Power,
+Tri Attack, Blaze Kick, Body Slam) and Celadon 3F the stronger ones (Agility, Spikes, Toxic Spikes, Psyshock, Psychic Fangs, Dazzling Gleam, Darkest Lariat, Foul Play,
+Leaf Blade, Body Press, Megahorn, Power Whip). hg-engine's other 78 TRs teach moves already on a TM, an HM or a tutor, or Ally Switch, which isn't implemented, so they aren't sold.
+The full lists are on the [shops page](reference/items.md).
+
+- TMs are reusable (`REUSABLE_TMS`); TRs are used up, as in Sword and Shield.
+- The TM pocket holds 200 kinds of item instead of 101 (`NUM_BAG_TMS_HMS` in `include/constants/item.h`), so all 193 can be carried. This changes the save layout,
+  so saves from before this change don't load correctly. Tested in the emulator: a game with 96 TMs saved, reset and continued with the pocket intact.
+- `data/graphics/item/tm100_sv.png`, the Dragon Dance TM's icon, was hg-engine's "?" placeholder. It's now the Dragon-type disc, copied from TM02.
 
 ### Infinite items
 
@@ -237,7 +271,7 @@ Grass, cave, water, Rock Smash, swarm and radio-sound encounters follow Drayano'
 listed rate can't be made from the game's slots (for example 7% on a water table), the closest fit is used. Land levels are spread across
 the listed range. Water and rod levels keep upstream's values except in slots that were empty. Headbutt trees, the Safari Zone,
 the Bug-Catching Contest, Cerulean Cave and Mt. Silver are unchanged, and Bell Tower uses Storm Silver's levels because the list gives none for
-Sacred Gold. Gifts and static encounters from Sacred Gold aren't added. Roster Pokémon the list leaves out come from [the Collector](reference/gift_static.md).
+Sacred Gold. Gifts and static encounters from Sacred Gold aren't added. Redux has no 1% wild encounters: wherever a Pokémon filled only the 1% grass or surf slots, they hold the Pokémon from the 4% slot next to them instead (37 slots). Lapras, Phione and Wigglytuff left the wild this way; they come from Union Cave, breeding Manaphy and evolution. Roster Pokémon the list leaves out come from [the Collector](reference/gift_static.md).
 
 ### Trainers (`data/Trainers.c`)
 
@@ -323,7 +357,8 @@ Ability Capsules, Ability Patches and Mints are hg-engine features. Redux only a
 
 - `scripts/emu_test.py`: plays `test.nds` headlessly for testing. See `AGENTS.md`
 - `scripts/build_reference_docs.py`: generates `documentation/reference/`
-- `scripts/build_reference_site.py`: builds the [reference site](https://gnawang.github.io/hg-redux/) from `documentation/reference/`, using `scripts/reference_site.html`. `.github/workflows/reference-site.yml` publishes it to GitHub Pages when those pages change on `main`
+- `scripts/build_reference_site.py`: builds the [reference site](https://gnawang.github.io/hg-redux/) from `documentation/reference/`, using `scripts/reference_site.html`.
+  Its tabs are wild Pokémon, key trainers, all other trainers, Pokémon, moves (with who learns each and how) and shops. `.github/workflows/reference-site.yml` publishes it to GitHub Pages when those pages change on `main`
 - `scripts/build_title_logo.py`: converts the title logo PNG
 - `scripts/build_dex_areas.py`: updates `data/PokedexArea.c` from the wild encounters
 
