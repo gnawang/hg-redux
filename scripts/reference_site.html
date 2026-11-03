@@ -75,6 +75,12 @@ dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 12px;mar
 .chips{margin:0;font-size:14px;line-height:1.7}
 .chg{border-color:var(--gold);background:var(--gold-soft)}
 .chg ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:14px}.chg b{font-weight:600}
+.chg ol{margin:6px 0 2px;padding:0;list-style:none;columns:2 260px;column-gap:24px}
+.chg ol li{display:flex;gap:10px;padding:3px 0;border-bottom:1px solid rgba(148,108,8,.25);break-inside:avoid}
+.chg ol li b{font:500 13px var(--mono);width:52px;flex:none;color:var(--gold)}.chg ol li span{flex:1;min-width:0}.chg ol li em{font-style:normal;font-size:12px;color:var(--muted);flex:none}
+.chg ol li.rm span{text-decoration:line-through;color:var(--muted)}
+.mv{border:0;background:none;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.mv:hover{color:var(--gold);text-decoration-color:var(--gold)}
 .team{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
 .card{border:1px solid var(--line);border-radius:6px;padding:9px 11px;display:flex;flex-direction:column;gap:5px;min-width:0}
 .card .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}.card .top span{font:500 13px var(--mono);color:var(--gold)}
@@ -87,7 +93,7 @@ dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 12px;mar
 <body>
 <header><div class="wrap">
 <h1>HeartGold Redux Reference</h1>
-<p class="sub">Wild Pokémon, key trainer teams and every Pokémon in the game. Built from the current game data.</p>
+<p class="sub">Wild Pokémon, trainer teams, every Pokémon and move, and what the shops sell. Built from the current game data.</p>
 <nav role="tablist" id="tabs"></nav>
 </div></header>
 <main><div class="wrap cols">
@@ -111,24 +117,34 @@ AREAS.forEach(a=>a.s=(a.a+' '+a.m.flatMap(m=>m.r.map(r=>r[0])).join(' ')+' '+(a.
 const TG=[];D.T.forEach(t=>{const k=t.g+'|'+t.name;let e=TG.find(x=>x.k===k);if(!e){e={k,g:t.g,name:t.name,f:[]};TG.push(e)}e.f.push(t)});
 TG.forEach(e=>{e.top=Math.max(...e.f.flatMap(f=>f.t.map(r=>+r[1]||0)));e.s=(e.name+' '+e.g+' '+e.f.flatMap(f=>f.t.flatMap(r=>[r[0],r[2],r[3],r[4]])).join(' ')).toLowerCase()});
 D.P.forEach(p=>{p.s=(p.name+' '+p.types.join(' ')+' '+p.ab.join(' ')+' '+(p.hid||'')+' '+p.lvl.map(x=>x[1]).join(' ')+' '+p.tm.join(' ')+' '+p.tutor.join(' ')+' '+p.egg.join(' ')).toLowerCase();p.big=p.chg.some(c=>/^(Type|Abilities|Base stats|New evolution|Removed evolution)/.test(c[0]||c[1]))});
-const TABS={wild:'Wild Pokémon',trainers:'Key trainers',pokemon:'Pokémon'};
-const st={tab:'wild',q:{wild:'',trainers:'',pokemon:''},sel:{wild:AREAS.find(a=>a.a==='Route 29'),trainers:TG[0],pokemon:byName.get('Meganium')},type:'',big:false};
+const OG=[];D.O.forEach(t=>{const k=t.g+'|'+t.name;let e=OG.find(x=>x.k===k);if(!e){e={k,g:t.g,name:t.name,f:[]};OG.push(e)}e.f.push(t)});
+OG.forEach(e=>{e.top=Math.max(...e.f.flatMap(f=>f.t.map(r=>+r[1]||0)));e.s=(e.name+' '+e.g+' '+e.f.flatMap(f=>f.t.flatMap(r=>[r[0],r[2],r[3],r[4]])).join(' ')).toLowerCase()});
+const byMove=new Map(D.M.map(m=>[m.name,m]));
+D.M.forEach(m=>{m.s=(m.name+' '+m.type+' '+m.cat+' '+m.lvl.map(x=>x[0]).join(' ')+' '+m.tm.join(' ')+' '+m.tutor.join(' ')+' '+m.egg.join(' ')).toLowerCase()});
+D.I.forEach(i=>{i.s=(i.name+' '+i.r.map(r=>r[0]).join(' ')).toLowerCase()});
+const mvb=n=>byMove.has(n)?`<button class="mv" data-m="${esc(n)}">${esc(n)}</button>`:esc(n);
+const TABS={wild:'Wild Pokémon',trainers:'Key trainers',others:'Trainers',pokemon:'Pokémon',moves:'Moves',items:'Shops'};
+const st={tab:'wild',q:{wild:'',trainers:'',others:'',pokemon:'',moves:'',items:''},sel:{wild:AREAS.find(a=>a.a==='Route 29'),trainers:TG[0],others:OG[0],pokemon:byName.get('Meganium'),moves:byMove.get('Hurricane'),items:D.I.find(i=>/Goldenrod Dept. Store 5F/.test(i.name))},type:'',mtype:'',big:false};
 const $=id=>document.getElementById(id);
 function tabs(){$('tabs').innerHTML=Object.entries(TABS).map(([k,v])=>`<button role="tab" data-tab="${k}" aria-selected="${st.tab===k}">${v}</button>`).join('')}
 function controls(){
-  const ph={wild:'Search a place or Pokémon',trainers:'Search a trainer, Pokémon or move',pokemon:'Search a name, move or ability'}[st.tab];
+  const ph={wild:'Search a place or Pokémon',trainers:'Search a trainer, Pokémon or move',others:'Search a trainer, class or Pokémon',pokemon:'Search a name, move or ability',moves:'Search a move or a Pokémon that learns it',items:'Search a shop or item'}[st.tab];
   let h=`<input type="search" id="q" aria-label="${ph}" placeholder="${ph}" value="${esc(st.q[st.tab])}">`;
   if(st.tab==='pokemon')h+=`<select id="ty" aria-label="Filter by type"><option value="">All types</option>${Object.keys(TC).map(t=>`<option${st.type===t?' selected':''}>${t}</option>`).join('')}</select><label class="chk"><input type="checkbox" id="big"${st.big?' checked':''}>Type, ability or evolution changed</label>`;
+  if(st.tab==='moves')h+=`<select id="mty" aria-label="Filter by type"><option value="">All types</option>${Object.keys(TC).map(t=>`<option${st.mtype===t?' selected':''}>${t}</option>`).join('')}</select>`;
   h+='<div class="count" id="ct"></div>';$('ctl').innerHTML=h;
   $('q').oninput=e=>{st.q[st.tab]=e.target.value;list()};
   if(st.tab==='pokemon'){$('ty').onchange=e=>{st.type=e.target.value;list()};$('big').onchange=e=>{st.big=e.target.checked;list()}}
+  if(st.tab==='moves')$('mty').onchange=e=>{st.mtype=e.target.value;list()};
 }
 function grouped(items,render){let g=null,h='';items.forEach((x,i)=>{if(x.g!==g){g=x.g;h+=`<h3>${esc(g)}</h3>`}h+=render(x,i)});return h}
 let cur=[];
 function list(){
   const q=st.q[st.tab].trim().toLowerCase();let h='';
   if(st.tab==='wild'){cur=AREAS.filter(a=>!q||a.s.includes(q));h=grouped(cur,(a,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.wild===a}"><span class="nm">${esc(a.a)}</span></button>`)}
-  if(st.tab==='trainers'){cur=TG.filter(t=>!q||t.s.includes(q));h=grouped(cur,(t,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.trainers===t}"><span class="nm">${esc(t.name)}</span><span class="tag">Lv ${t.top}</span></button>`)}
+  if(st.tab==='trainers'||st.tab==='others'){cur=(st.tab==='trainers'?TG:OG).filter(t=>!q||t.s.includes(q));h=grouped(cur,(t,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel[st.tab]===t}"><span class="nm">${esc(t.name)}</span><span class="tag">Lv ${t.top}</span></button>`)}
+  if(st.tab==='moves'){cur=D.M.filter(m=>(!q||m.s.includes(q))&&(!st.mtype||m.type===st.mtype));h=cur.map((m,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.moves===m}"><span class="dots"><i style="background:${TC[m.type]||'#666'}" title="${m.type}"></i></span><span class="nm">${esc(m.name)}</span><span class="tag">${esc(m.cat.slice(0,4))}${m.pow!=='–'?' '+esc(m.pow):''}</span></button>`).join('')}
+  if(st.tab==='items'){cur=D.I.filter(i=>!q||i.s.includes(q));h=cur.map((s,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.items===s}"><span class="nm">${esc(s.name)}</span><span class="tag">${s.r.length}</span></button>`).join('')}
   if(st.tab==='pokemon'){cur=D.P.filter(p=>(!q||p.s.includes(q))&&(!st.type||p.types.includes(st.type))&&(!st.big||p.big));h=cur.map((p,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.pokemon===p}"><span class="no">${num(p.n)}</span><span class="nm">${esc(p.name)}</span><span class="dots">${p.types.map(t=>`<i style="background:${TC[t]}" title="${t}"></i>`).join('')}</span></button>`).join('')}
   $('list').innerHTML=h||'<div class="empty">Nothing matches that search.</div>';
   $('ct').textContent=cur.length+(cur.length===1?' entry':' entries');
@@ -137,23 +153,34 @@ function pct(c){if(c==='–'||c==='')return '<td class="none">–</td>';const m=
 function tbl(m){const hd=m.h;return `<div class="scroll"><table><thead><tr>${hd.map(x=>`<th scope="col">${esc(x)}</th>`).join('')}</tr></thead><tbody>${m.r.map(r=>'<tr>'+r.map((c,i)=>{if(i===0||/^Bonus/.test(hd[i]))return `<td>${mon(c)}</td>`;if(hd[i]==='Chance'||/Morning|Day|Night/.test(hd[i]))return pct(c);return `<td>${esc(c)}</td>`}).join('')+'</tr>').join('')}</tbody></table></div>`}
 function wild(a){const sp=a.sp?`<section class="sec"><h3>Special conditions</h3><dl>${a.sp.map(s=>{const i=s.indexOf(': ');return `<dt>${esc(s.slice(0,i))}</dt><dd>${s.slice(i+2).split(', ').map(mon).join(', ')}</dd>`}).join('')}</dl></section>`:'';
   return `<div class="eh"><h2>${esc(a.a)}</h2><p>${esc(a.g)}</p></div>`+a.m.map(m=>`<section class="sec"><h3>${esc(m.k||'Encounters')}</h3>${tbl(m)}</section>`).join('')+sp}
-function trainer(t){return `<div class="eh"><h2>${esc(t.name)}</h2><p>${esc(t.g)}${t.g==='Rival'?'. Silver has one set of fights for each starter you can pick.':''}</p></div>`+t.f.map((f,i)=>`<section class="sec"><h3>${t.f.length>1?`Fight ${i+1} of ${t.f.length}`:'Team'}<small>trainer ${f.id}</small></h3>${f.it?`<p class="note">Uses in battle: ${esc(f.it)}</p><br>`:''}<div class="team">${f.t.map(r=>{const p=byName.get(r[0]);const mv=r[4]==='Default'?'<li>Default moves for its level</li>':r[4].split(', ').map(x=>`<li>${esc(x)}</li>`).join('');return `<div class="card"><div class="top">${mon(r[0])}<span>Lv ${esc(r[1])}</span></div>${p?chips(p.types):''}<small>${esc(r[2])}${r[3]!=='–'?' · '+esc(r[3]):''}</small><ol>${mv}</ol></div>`}).join('')}</div></section>`).join('')}
+function trainer(t){return `<div class="eh"><h2>${esc(t.name)}</h2><p>${esc(t.g)}${t.g==='Rival'?'. Silver has one set of fights for each starter you can pick.':''}</p></div>`+t.f.map((f,i)=>`<section class="sec"><h3>${t.f.length>1?`Fight ${i+1} of ${t.f.length}`:'Team'}<small>trainer ${f.id}</small></h3>${f.it?`<p class="note">Uses in battle: ${esc(f.it)}</p><br>`:''}<div class="team">${f.t.map(r=>{const p=byName.get(r[0]);const mv=r[4]==='Default'?'<li>Default moves for its level</li>':r[4].split(', ').map(x=>`<li>${mvb(x)}</li>`).join('');return `<div class="card"><div class="top">${mon(r[0])}<span>Lv ${esc(r[1])}</span></div>${p?chips(p.types):''}<small>${esc(r[2])}${r[3]!=='–'?' · '+esc(r[3]):''}</small><ol>${mv}</ol></div>`}).join('')}</div></section>`).join('')}
 function pokemon(p){
   const tot=p.st.reduce((a,b)=>a+b,0);const where=FOUND.get(p.name);
   return `<div class="eh"><span class="no">${num(p.n)}</span><h2>${esc(p.name)}</h2><p>${chips(p.types)}</p></div>`+
-  (p.chg.length?`<section class="sec chg"><h3>Changed in Redux</h3><ul>${p.chg.map(c=>`<li>${c[0]?`<b>${esc(c[0])}:</b> `:''}${esc(c[1])}</li>`).join('')}</ul></section>`:'')+
+  (p.chg.length?`<section class="sec chg"><h3>Changed in Redux</h3><ul>${p.chg.map(c=>`<li>${c[0]?`<b>${esc(c[0])}:</b> `:''}${esc(c[1])}${c[2]&&c[2].length?`<ol>${c[2].map(chgRow).join('')}</ol>`:''}</li>`).join('')}</ul></section>`:'')+
   `<div class="grid2"><section class="sec"><h3>Base stats</h3>${p.st.map((v,i)=>`<div class="stat"><span>${STATS[i]}</span><span>${v}</span><span class="tr"><i style="width:${(v/255*100).toFixed(1)}%"></i></span></div>`).join('')}<div class="stat total"><span>Total</span><span>${tot}</span><span></span></div></section>
   <section class="sec"><h3>Details</h3><dl><dt>Abilities</dt><dd>${esc(p.ab.join(', ')||'None')}</dd><dt>Hidden</dt><dd>${esc(p.hid||'None')}</dd>${p.cyc?`<dt>Egg cycles</dt><dd>${p.cyc}</dd>`:''}<dt>Evolves</dt><dd>${p.evo.length?p.evo.map(esc).join('<br>'):'Does not evolve further'}</dd></dl></section></div>
-  <section class="sec"><h3>Level-up moves<small>${p.lvl.length}</small></h3><div class="lv">${p.lvl.map(x=>`<div><b>${x[0]==='evolve'?'Evolve':'Lv '+x[0]}</b><span>${esc(x[1])}</span></div>`).join('')}</div></section>
-  ${[['TMs and HMs',p.tm],['Tutor moves',p.tutor],['Egg moves',p.egg]].filter(x=>x[1].length).map(([k,v])=>`<section class="sec"><h3>${k}<small>${v.length}</small></h3><p class="chips">${v.map(esc).join(', ')}</p></section>`).join('')}
+  <section class="sec"><h3>Level-up moves<small>${p.lvl.length}</small></h3><div class="lv">${p.lvl.map(x=>`<div><b>${x[0]==='evolve'?'Evolve':'Lv '+x[0]}</b><span>${mvb(x[1])}</span></div>`).join('')}</div></section>
+  ${[['TMs and HMs',p.tm],['Tutor moves',p.tutor],['Egg moves',p.egg]].filter(x=>x[1].length).map(([k,v])=>`<section class="sec"><h3>${k}<small>${v.length}</small></h3><p class="chips">${v.map(mvb).join(', ')}</p></section>`).join('')}
   <section class="sec"><h3>Where to find it</h3>${where?`<dl>${[...where].map(([a,k])=>`<dt>${esc(a)}</dt><dd>${esc([...k].join(', '))}</dd>`).join('')}</dl>`:'<p class="note">Not in the wild. Evolve it, or check the gift list.</p>'}</section>`}
-function entry(){const s=st.sel[st.tab];$('entry').innerHTML=st.tab==='wild'?wild(s):st.tab==='trainers'?trainer(s):pokemon(s)}
+function chgRow(r){const m=r.match(/^(Evolve|Lv \d+): (.*) \((new|removed|was .*)\)$/);if(!m)return `<li><span>${esc(r)}</span></li>`;return `<li${m[3]==='removed'?' class="rm"':''}><b>${esc(m[1])}</b><span>${m[3]==='removed'?esc(m[2]):mvb(m[2])}</span><em>${esc(m[3]==='new'?'New':m[3]==='removed'?'Removed':m[3][0].toUpperCase()+m[3].slice(1))}</em></li>`}
+function lvNum(l){return l==='evolve'?0:+l.slice(3)}
+function move(m){
+  const lv=[...m.lvl].sort((a,b)=>lvNum(a[1])-lvNum(b[1]));
+  return `<div class="eh"><h2>${esc(m.name)}</h2><p>${chips([m.type])} ${esc(m.cat)}</p></div>
+  <div class="grid2"><section class="sec"><h3>Details</h3><dl><dt>Power</dt><dd>${esc(m.pow)}</dd><dt>Accuracy</dt><dd>${esc(m.acc)}</dd><dt>PP</dt><dd>${esc(m.pp)}</dd></dl><p class="note" style="margin-top:8px">${esc(m.desc)}</p></section>
+  <section class="sec"><h3>TM or HM</h3>${m.src.length?`<dl>${m.src.map(x=>{const k=x.match(/^(\S+) \((.*), (₽[\d,]+)\)$/);return k?`<dt>${esc(k[1])}</dt><dd>${esc(k[2])}, ${esc(k[3])}</dd>`:`<dt>${esc(x)}</dt><dd>Found or given in the game</dd>`}).join('')}</dl>`:'<p class="note">No TM or HM teaches this move.</p>'}</section></div>
+  ${lv.length?`<section class="sec"><h3>By level-up<small>${lv.length}</small></h3><div class="lv">${lv.map(x=>`<div><b>${x[1]==='evolve'?'Evolve':esc(x[1])}</b><span>${mon(x[0])}</span></div>`).join('')}</div></section>`:''}
+  ${[['By TM or HM',m.tm],['By move tutor',m.tutor],['As an egg move',m.egg]].filter(x=>x[1].length).map(([k,v])=>`<section class="sec"><h3>${k}<small>${v.length}</small></h3><p class="chips">${v.map(mon).join(', ')}</p></section>`).join('')}`}
+function shop(s){const b=s.h.includes('Badges');return `<div class="eh"><h2>${esc(s.name)}</h2><p>${s.r.length} items${b?'. Items appear once you have the listed number of badges.':''}</p></div><section class="sec"><div class="scroll"><table><thead><tr>${s.h.map(x=>`<th scope="col">${esc(x)}</th>`).join('')}</tr></thead><tbody>${s.r.map(r=>'<tr>'+r.map((c,i)=>{if(i===0){const k=c.match(/^((?:TM|HM|TR)\d+) (.*)$/);return `<td style="white-space:nowrap">${k?esc(k[1])+' '+mvb(k[2]):esc(c)}</td>`}if(s.h[i]==='Description')return `<td class="note">${esc(c)}</td>`;return `<td style="white-space:nowrap">${esc(c)}</td>`}).join('')+'</tr>').join('')}</tbody></table></div></section>`}
+function entry(){const s=st.sel[st.tab];$('entry').innerHTML=st.tab==='wild'?wild(s):(st.tab==='trainers'||st.tab==='others')?trainer(s):st.tab==='moves'?move(s):st.tab==='items'?shop(s):pokemon(s)}
 function show(){tabs();controls();list();entry()}
 function go(t){st.tab=t;try{history.replaceState(null,'','#'+t)}catch(e){}show()}
 document.addEventListener('click',e=>{
   const b=e.target.closest('button');if(!b)return;
   if(b.dataset.tab)return go(b.dataset.tab);
   if(b.dataset.p){st.sel.pokemon=D.P.find(p=>p.n==b.dataset.p);go('pokemon');const c=$('list').querySelector('[aria-current="true"]');if(c)c.scrollIntoView({block:'nearest'});window.scrollTo(0,0);return}
+  if(b.dataset.m){st.sel.moves=byMove.get(b.dataset.m);st.q.moves='';st.mtype='';go('moves');const c=$('list').querySelector('[aria-current="true"]');if(c)c.scrollIntoView({block:'nearest'});window.scrollTo(0,0);return}
   if(b.dataset.i!==undefined){st.sel[st.tab]=cur[+b.dataset.i];list();entry();window.scrollTo(0,0)}
 });
 const h=location.hash.slice(1);if(TABS[h])st.tab=h;show();

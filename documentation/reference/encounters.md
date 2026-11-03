@@ -178,19 +178,15 @@ Special: Land swarm: Pidgey; Surf swarm: Poliwag; Fishing swarm: Magikarp; Night
 | Shinx | 10% (Lv 7) | 10% (Lv 7) | 10% (Lv 7) |
 | Abra | 10% (Lv 7) | 10% (Lv 7) | 10% (Lv 7) |
 | Natu | 10% (Lv 8) | 10% (Lv 8) | 10% (Lv 8) |
-| Exeggcute | 5% (Lv 8) | 2% (Lv 10) | 5% (Lv 8) |
+| Exeggcute | 5% (Lv 8) | – | 5% (Lv 8) |
 | Psyduck | 5% (Lv 8) | 5% (Lv 8) | 10% (Lv 6) |
-| Metapod | 4% (Lv 9) | – | 4% (Lv 9) |
-| Kakuna | 4% (Lv 9) | – | 4% (Lv 9) |
-| Butterfree | 1% (Lv 10) | – | – |
-| Beedrill | 1% (Lv 10) | – | – |
+| Metapod | 5% (Lv 9–10) | – | 5% (Lv 9–10) |
+| Kakuna | 5% (Lv 9–10) | – | 5% (Lv 9–10) |
 | Wurmple | – | 20% (Lv 6) | – |
 | Budew | – | 5% (Lv 8) | – |
-| Silcoon | – | 4% (Lv 9) | – |
-| Cascoon | – | 4% (Lv 9) | – |
+| Silcoon | – | 5% (Lv 9–10) | – |
+| Cascoon | – | 5% (Lv 9–10) | – |
 | Spinarak | – | – | 20% (Lv 6) |
-| Beautifly | – | – | 1% (Lv 10) |
-| Dustox | – | – | 1% (Lv 10) |
 
 **Surfing**
 
@@ -784,9 +780,8 @@ Special: Land swarm: Caterpie; Surf swarm: Psyduck; Fishing swarm: Magikarp; Nig
 | Bonsly | 10% (Lv 16) | 10% (Lv 16) | 10% (Lv 16) |
 | Mime Jr. | 10% (Lv 16) | 10% (Lv 16) | 10% (Lv 16) |
 | Abra | 10% (Lv 17) | 10% (Lv 17) | 10% (Lv 17) |
-| Ditto | 9% (Lv 17–18) | 9% (Lv 17–18) | 9% (Lv 17–18) |
-| Snubbull | 9% (Lv 17–18) | 9% (Lv 17–18) | 9% (Lv 17–18) |
-| Kadabra | 2% (Lv 19) | 2% (Lv 19) | 2% (Lv 19) |
+| Ditto | 10% (Lv 17–19) | 10% (Lv 17–19) | 10% (Lv 17–19) |
+| Snubbull | 10% (Lv 17–19) | 10% (Lv 17–19) | 10% (Lv 17–19) |
 
 **Surfing**
 
@@ -1213,8 +1208,7 @@ Special: Surf swarm: Tentacool; Fishing swarm: Magikarp; Night fishing: Chinchou
 | Wingull | 60% | 15–25 |
 | Tentacool | 30% | 10–20 |
 | Pelipper | 5% | 15–25 |
-| Tentacruel | 4% | 15–25 |
-| Phione | 1% | 15–25 |
+| Tentacruel | 5% | 15–25 |
 
 **Old Rod**
 
@@ -1250,8 +1244,7 @@ Special: Surf swarm: Tentacool; Fishing swarm: Magikarp; Night fishing: Corsola
 | Wingull | 60% | 15–25 |
 | Mantyke | 30% | 15–25 |
 | Mantine | 5% | 15–25 |
-| Tentacruel | 4% | 15–25 |
-| Phione | 1% | 15–25 |
+| Tentacruel | 5% | 15–25 |
 
 **Old Rod**
 
@@ -1732,8 +1725,7 @@ Special: Surf swarm: Magikarp; Fishing swarm: Magikarp; Night fishing: Feebas
 | Skiploom | 10% (Lv 38) | 10% (Lv 38) | – |
 | Nuzleaf | 10% (Lv 39) | 10% (Lv 39) | 10% (Lv 39) |
 | Cherrim | 5% (Lv 39) | 5% (Lv 39) | – |
-| Altaria | 4% (Lv 39) | 4% (Lv 39) | 4% (Lv 39) |
-| Vespiquen | 1% (Lv 39) | 1% (Lv 39) | 1% (Lv 39) |
+| Altaria | 5% (Lv 39) | 5% (Lv 39) | 5% (Lv 39) |
 | Dustox | – | – | 10% (Lv 38) |
 | Venomoth | – | – | 10% (Lv 38) |
 | Snover | – | – | 5% (Lv 39) |
@@ -1979,9 +1971,8 @@ Special: Land swarm: Geodude; Hoenn Sound: Graveler, Fearow; Sinnoh Sound: Iggly
 | Sandshrew | 10% (Lv 9) | 10% (Lv 9) | 10% (Lv 9) |
 | Teddiursa | 10% (Lv 9) | 10% (Lv 9) | – |
 | Slugma | 10% (Lv 9) | 10% (Lv 9) | 10% (Lv 9) |
-| Larvitar | 4% (Lv 10) | 4% (Lv 10) | 4% (Lv 10) |
-| Dunsparce | 4% (Lv 10) | 4% (Lv 10) | 4% (Lv 10) |
-| Chingling | 2% (Lv 10) | 2% (Lv 10) | 2% (Lv 10) |
+| Larvitar | 5% (Lv 10) | 5% (Lv 10) | 5% (Lv 10) |
+| Dunsparce | 5% (Lv 10) | 5% (Lv 10) | 5% (Lv 10) |
 | Wynaut | – | – | 10% (Lv 9) |
 
 **Surfing**
@@ -2268,8 +2259,7 @@ Special: Land swarm: Dewgong; Hoenn Sound: Absol, Makuhita; Sinnoh Sound: Bronzo
 |---|---|---|
 | Spheal | 60% | 30–40 |
 | Tentacool | 30% | 30–40 |
-| Staryu | 9% | 35–50 |
-| Lapras | 1% | 35–45 |
+| Staryu | 10% | 35–50 |
 
 **Old Rod**
 
@@ -2479,8 +2469,7 @@ Special: Surf swarm: Wooper; Fishing swarm: Magikarp; Night fishing: Magikarp
 | Trapinch | 10% (Lv 31) | 10% (Lv 31) | 10% (Lv 31) |
 | Kingler | 10% (Lv 31) | 10% (Lv 31) | 10% (Lv 31) |
 | Quagsire | 10% (Lv 32) | 10% (Lv 32) | 10% (Lv 32) |
-| Hippopotas | 8% (Lv 32–33) | 8% (Lv 32–33) | 8% (Lv 32–33) |
-| Steelix | 2% (Lv 33) | 2% (Lv 33) | 2% (Lv 33) |
+| Hippopotas | 10% (Lv 32–33) | 10% (Lv 32–33) | 10% (Lv 32–33) |
 
 **Rock Smash**
 
@@ -2758,8 +2747,7 @@ Special: Surf swarm: Clamperl; Fishing swarm: Magikarp; Night fishing: Seaking
 | Tentacool | 60% | 35 |
 | Wingull | 30% | 30 |
 | Pelipper | 5% | 35 |
-| Tentacruel | 4% | 35 |
-| Wailord | 1% | 35 |
+| Tentacruel | 5% | 35 |
 
 **Old Rod**
 
@@ -3168,7 +3156,7 @@ Special: Land swarm: Zubat; Hoenn Sound: Absol, Makuhita; Sinnoh Sound: Bronzor,
 
 | Pokémon | Morning | Day | Night |
 |---|---|---|---|
-| Golbat | 25% (Lv 48–50) | 25% (Lv 48–50) | 25% (Lv 48–50) |
+| Golbat | 26% (Lv 48–50) | 26% (Lv 48–50) | 26% (Lv 48–50) |
 | Clefairy | 20% (Lv 48) | 20% (Lv 48) | 20% (Lv 48) |
 | Graveler | 14% (Lv 48–50) | 14% (Lv 48–50) | 14% (Lv 48–50) |
 | Sandslash | 10% (Lv 48) | 10% (Lv 48) | 10% (Lv 48) |
@@ -3176,7 +3164,6 @@ Special: Land swarm: Zubat; Hoenn Sound: Absol, Makuhita; Sinnoh Sound: Bronzor,
 | Chimecho | 10% (Lv 49) | 10% (Lv 49) | 10% (Lv 49) |
 | Solrock | 5% (Lv 49) | 5% (Lv 49) | 5% (Lv 49) |
 | Lunatone | 5% (Lv 49) | 5% (Lv 49) | 5% (Lv 49) |
-| Clefable | 1% (Lv 50) | 1% (Lv 50) | 1% (Lv 50) |
 
 Special: Land swarm: Zubat; Hoenn Sound: Absol, Makuhita; Sinnoh Sound: Bronzor, Chingling
 
@@ -3309,8 +3296,7 @@ Special: Land swarm: Baltoy; Hoenn Sound: Plusle, Minun; Sinnoh Sound: Shinx, Sh
 | Arbok | 20% (Lv 46–47) | 20% (Lv 46–47) | 20% (Lv 46–47) |
 | Purugly | 10% (Lv 47) | 10% (Lv 47) | 10% (Lv 47) |
 | Skuntank | 10% (Lv 48) | 10% (Lv 48) | 10% (Lv 48) |
-| Jigglypuff | 9% (Lv 49–50) | 9% (Lv 49–50) | 9% (Lv 49–50) |
-| Wigglytuff | 1% (Lv 50) | 1% (Lv 50) | 1% (Lv 50) |
+| Jigglypuff | 10% (Lv 49–50) | 10% (Lv 49–50) | 10% (Lv 49–50) |
 
 **Surfing**
 

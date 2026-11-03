@@ -33,7 +33,7 @@ EXP_MASK = 0x1FFFFF
 ABILITY_MSB = 1 << 31
 
 # slots per pocket in save order, from the ITEM_POCKET_EXPANSION branch of include/constants/item.h
-POCKETS = [("items", 245), ("key", 92), ("tms", 101), ("mail", 12), ("medicine", 40), ("berries", 64), ("balls", 26), ("battle", 30)]
+POCKETS = [("items", 245), ("key", 92), ("tms", 200), ("mail", 12), ("medicine", 40), ("berries", 64), ("balls", 26), ("battle", 30)]
 ITEM_SLOT_SIZE = 4
 
 KEYS = {"a": Keys.KEY_A, "b": Keys.KEY_B, "x": Keys.KEY_X, "y": Keys.KEY_Y, "l": Keys.KEY_L, "r": Keys.KEY_R,
