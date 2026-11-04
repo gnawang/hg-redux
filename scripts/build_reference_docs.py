@@ -21,6 +21,11 @@ ROCK_SMASH_RATES = [80, 20]
 HEADBUTT_RATES = [50, 15, 15, 10, 5, 5]
 SAFARI_SLOT_RATE = 10
 HEADBUTT_SLOTS_PER_TREE = 6
+TRAINER_LOCATIONS_FILE = "scripts/trainer_locations.json"  # from build_trainer_locations.py
+# Silver takes the starter strong against yours, so his starter's line tells which of his fights you get.
+RIVAL_STARTERS = {"CHIKORITA|BAYLEEF|MEGANIUM": "Totodile", "CYNDAQUIL|QUILAVA|TYPHLOSION": "Chikorita", "TOTODILE|CROCONAW|FERALIGATR": "Cyndaquil"}
+TRAINER_LOCATIONS = json.load(open(TRAINER_LOCATIONS_FILE, encoding="utf-8")) if os.path.exists(TRAINER_LOCATIONS_FILE) else {}
+
 # these tables are placeholders: the contest and the Safari Zone use their own data
 PLACEHOLDER_AREAS = ["ENCDATA_D22R0102_NATIONAL_PARK_BUG_CATCHING_CONTEST", "ENCDATA_D47R0102_SAFARI_ZONE_PLACEHOLDER_UNUSED"]
 
@@ -266,8 +271,19 @@ def slot_table(body, key, rates, names):
     return slot_rows(slots, rates, names)
 
 
+PLACE_FIXES = ((r"\bMt\b", "Mt."), (r"\bMount\b", "Mt."), (r"\bDragons Den\b", "Dragon's Den"), (r"\bDigletts\b", "Diglett's"),
+               (r"\bPokecenter\b", "Pokémon Center"), (r"\bPokemon\b", "Pokémon"), (r"\bSs Aqua\b", "S.S. Aqua"))
+
+
+def tidy_place(name):
+    """Spells a place name from a constant the way the game does, e.g. Mt Mortar as Mt. Mortar."""
+    for pattern, replacement in PLACE_FIXES:
+        name = re.sub(pattern, replacement, name)
+    return name
+
+
 def encounter_area_name(key):
-    return pretty(re.sub(r"^ENCDATA_[A-Z0-9]+_", "", key))
+    return tidy_place(pretty(re.sub(r"^ENCDATA_[A-Z0-9]+_", "", key)))
 
 
 def build_encounters(species):
@@ -466,6 +482,14 @@ def trainer_lines(number, body, names, species, hidden):
     name = re.search(r'\.name = "([^"]*)"', body).group(1)
     bag = [pretty(item) for item in re.findall(r"ITEM_\w+", re.search(r"\.items = \{([^}]*)\}", body).group(1)) if item != "ITEM_NONE"]
     lines = ["### %s (trainer %d)" % (name, number), ""]
+    where = TRAINER_LOCATIONS.get(str(number), {})
+    fight = where.get("fight")
+    if "TRAINERCLASS_RIVAL" in body:
+        starter = next((chosen for line, chosen in RIVAL_STARTERS.items() if re.search(r"\.species = SPECIES_(%s)," % line, party)), None)
+        if starter:
+            fight = "%s, if you chose %s" % (fight, starter) if fight else "If you chose %s" % starter
+    if where.get("location") or fight:
+        lines += ["Location: %s" % where.get("location", "Not found in the game")] + (["Fight: %s" % fight] if fight else []) + [""]
     if bag:
         lines += ["Uses in battle: %s" % ", ".join(bag), ""]
     lines += ["| Pokémon | Level | Ability | Held item | Moves |", "|---|---|---|---|---|"]
@@ -497,7 +521,7 @@ def build_other_trainers(species):
             continue
         fights = [line for number, body in trainers[trainer_class] for line in trainer_lines(number, body, names, species, hidden)]
         if fights:
-            lines += ["## %s" % pretty(trainer_class), ""] + fights
+            lines += ["## %s" % re.sub(r" Gs$", "", pretty(trainer_class)), ""] + fights
     return lines
 
 

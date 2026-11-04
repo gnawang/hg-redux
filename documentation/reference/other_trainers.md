@@ -10,12 +10,17 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Joyce (trainer 36)
 
+Location: Route 26
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Jumpluff | 48 | Chlorophyll | – | Default |
+| Charizard | 48 | Blaze | – | Default |
 | Raichu | 49 | Static | – | Default |
 
 ### Jamie (trainer 113)
+
+Location: Route 26
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -23,6 +28,9 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 | Rapidash | 51 | Run Away | – | Default |
 
 ### Reena (trainer 114)
+
+Location: Route 27
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -32,13 +40,17 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Megan (trainer 115)
 
+Location: Route 27
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Jumpluff | 47 | Chlorophyll | – | Default |
-| Quagsire | 47 | Damp | – | Default |
+| Exeggutor | 47 | Chlorophyll | – | Default |
 | Venusaur | 48 | Overgrow | – | Default |
 
 ### Lois (trainer 116)
+
+Location: Lake of Rage
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -47,12 +59,16 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Lola (trainer 117)
 
+Location: Blackthorn Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Gabite | 46 | Sand Veil | – | Default |
 | Dragonair | 47 | Shed Skin | – | Default |
 
 ### Kate (trainer 118)
+
+Location: Route 34
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -61,12 +77,15 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Fran (trainer 119)
 
+Location: Blackthorn Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Flygon | 47 | Levitate | – | Default |
 | Kingdra | 48 | Swift Swim | – | Default |
 
 ### Irene (trainer 120)
+
+Location: Route 34
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -74,6 +93,8 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 | Lanturn | 32 | Volt Absorb | – | Default |
 
 ### Kelly (trainer 121)
+
+Location: Route 45
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -83,14 +104,17 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Gwen (trainer 206)
 
+Location: Union Cave B2F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Quagsire | 29 | Damp | – | Default |
 | Lickilicky | 29 | Own Tempo | – | Default |
 | Crobat | 29 | Inner Focus | – | Default |
 | Eevee | 30 | Run Away | – | Default |
 
 ### Carol (trainer 237)
+
+Location: S.S. Aqua 1F Southwest Rooms
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -100,6 +124,8 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Quinn (trainer 362)
 
+Location: Route 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Furret | 63 | Run Away | – | Default |
@@ -107,18 +133,24 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Emma (trainer 363)
 
+Location: Union Cave B2F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Poliwhirl | 30 | Water Absorb | – | Default |
 
 ### Cybil (trainer 408)
 
+Location: Route 44
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Octillery | 45 | Suction Cups | – | Default |
+| Bellossom | 45 | Chlorophyll | – | Default |
 | Ampharos | 46 | Static | – | Default |
 
 ### Jenn (trainer 417)
+
+Location: Route 34
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -126,6 +158,9 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 | Starmie | 32 | Illuminate | – | Default |
 
 ### Reena (trainer 444)
+
+Location: Route 27
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -135,6 +170,9 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Reena (trainer 445)
 
+Location: Route 27
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Forretress | 52 | Sturdy | – | Default |
@@ -143,6 +181,9 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Jamie (trainer 458)
 
+Location: Route 26
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ampharos | 52 | Static | – | Default |
@@ -150,12 +191,17 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Jamie (trainer 459)
 
+Location: Route 26
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ampharos | 55 | Static | – | Default |
 | Rapidash | 56 | Run Away | – | Default |
 
 ### Piper (trainer 501)
+
+Location: Dragon's Den
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -165,6 +211,9 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Reena (trainer 607)
 
+Location: Route 27
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Forretress | 67 | Sturdy | – | Default |
@@ -173,12 +222,17 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Jamie (trainer 609)
 
+Location: Route 26
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Rapidash | 71 | Run Away | – | Default |
 | Ampharos | 72 | Static | – | Default |
 
 ### Salma (trainer 683)
+
+Location: Viridian Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -189,13 +243,18 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Jake (trainer 28)
 
+Location: Route 26
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Lanturn | 49 | Volt Absorb | – | Default |
+| Ludicolo | 49 | Swift Swim | – | Default |
 | Jumpluff | 49 | Chlorophyll | – | Default |
 | Golduck | 50 | Damp | – | Default |
 
 ### Gaven (trainer 102)
+
+Location: Route 26
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -205,13 +264,17 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Blake (trainer 103)
 
+Location: Route 27
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Quagsire | 48 | Damp | – | Default |
-| Jumpluff | 48 | Chlorophyll | – | Default |
+| Lanturn | 48 | Volt Absorb | – | Default |
 | Magnezone | 49 | Magnet Pull | – | Default |
 
 ### Brian (trainer 104)
+
+Location: Route 27
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -243,12 +306,16 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Ryan (trainer 108)
 
+Location: Route 45
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gliscor | 46 | Hyper Cutter | – | Default |
+| Swellow | 46 | Guts | – | Default |
 | Electivire | 47 | Motor Drive | – | Default |
 
 ### Alton (trainer 109)
+
+Location: Lake of Rage
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -258,6 +325,8 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Paulo (trainer 110)
 
+Location: Blackthorn Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Kingdra | 45 | Swift Swim | – | Default |
@@ -266,11 +335,15 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Mike (trainer 111)
 
+Location: Blackthorn Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Dragonair | 48 | Shed Skin | – | Default |
 
 ### Cody (trainer 112)
+
+Location: Blackthorn Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -278,6 +351,8 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 | Kingdra | 47 | Swift Swim | – | Default |
 
 ### Nick (trainer 205)
+
+Location: Union Cave B2F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -287,6 +362,8 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Shaye (trainer 236)
 
+Location: S.S. Aqua 1F Southwest Rooms
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Tauros | 54 | Intimidate | – | Default |
@@ -294,6 +371,8 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 | Jolteon | 55 | Volt Absorb | – | Default |
 
 ### Kevin (trainer 361)
+
+Location: Route 25
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -311,12 +390,17 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Allen (trainer 407)
 
+Location: Route 44
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Octillery | 44 | Suction Cups | – | Default |
+| Quagsire | 44 | Damp | – | Default |
 | Charizard | 45 | Blaze | – | Default |
 
 ### Gaven (trainer 456)
+
+Location: Route 26
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -326,6 +410,9 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Gaven (trainer 457)
 
+Location: Route 26
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ampharos | 52 | Static | – | Default |
@@ -334,11 +421,15 @@ Every trainer not in [trainers.md](trainers.md), grouped by trainer class and li
 
 ### Kobe (trainer 500)
 
+Location: Dragon's Den
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Dragonair | 47 | Shed Skin | – | Default |
 
 ### French (trainer 545)
+
+Location: Route 1
 
 Uses in battle: Dire Hit
 
@@ -349,6 +440,9 @@ Uses in battle: Dire Hit
 
 ### Gaven (trainer 604)
 
+Location: Route 26
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ambipom | 67 | Technician | – | Default |
@@ -357,12 +451,16 @@ Uses in battle: Dire Hit
 
 ### Arabella (trainer 681)
 
+Location: Viridian Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Quagsire | 65 | Damp | – | Default |
 | Wyrdeer | 66 | Intimidate | – | Default |
 
 ### Bonita (trainer 682)
+
+Location: Viridian Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -381,6 +479,8 @@ Uses in battle: Dire Hit
 
 ### Victoria (trainer 5)
 
+Location: Goldenrod Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Teddiursa | 19 | Pickup | – | Default |
@@ -388,6 +488,8 @@ Uses in battle: Dire Hit
 | Furret | 20 | Run Away | – | Default |
 
 ### Samantha (trainer 70)
+
+Location: Goldenrod Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -413,6 +515,8 @@ Uses in battle: Dire Hit
 | Furret | 16 | Run Away | – | Default |
 
 ### Cassie (trainer 209)
+
+Location: S.S. Aqua 1F Northeast Rooms
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -465,6 +569,8 @@ Uses in battle: Dire Hit
 
 ### Julia (trainer 346)
 
+Location: Celadon Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Carnivine | 61 | Levitate | – | Default |
@@ -477,6 +583,8 @@ Uses in battle: Dire Hit
 | Sentret | 15 | Run Away | – | Default |
 
 ### Valerie (trainer 398)
+
+Location: Route 38
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -491,6 +599,8 @@ Uses in battle: Dire Hit
 
 ### Callie (trainer 679)
 
+Location: Route 37
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Stantler | 24 | Intimidate | – | Default |
@@ -498,12 +608,16 @@ Uses in battle: Dire Hit
 
 ### Kassandra (trainer 680)
 
+Location: Route 37
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Stantler | 24 | Intimidate | – | Default |
 | Jigglypuff | 25 | Cute Charm | – | Default |
 
 ### Charlotte (trainer 728)
+
+Location: Olivine Pokémon Center 1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -529,14 +643,18 @@ Uses in battle: Dire Hit
 
 ### Dwayne (trainer 309)
 
+Location: Route 8
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gengar | 56 | Cursed Body | – | Default |
+| Swalot | 56 | Liquid Ooze | – | Default |
 | Muk | 56 | Stench | – | Default |
 | Arbok | 56 | Intimidate | – | Default |
 | Weezing | 57 | Levitate | – | Default |
 
 ### Harris (trainer 310)
+
+Location: Route 8
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -544,12 +662,16 @@ Uses in battle: Dire Hit
 
 ### Zeke (trainer 311)
 
+Location: Route 8
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gengar | 57 | Cursed Body | – | Default |
+| Pinsir | 57 | Hyper Cutter | – | Default |
 | Weezing | 58 | Levitate | – | Default |
 
 ### Charles (trainer 312)
+
+Location: Route 18
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -559,11 +681,16 @@ Uses in battle: Dire Hit
 
 ### Reese (trainer 313)
 
+Location: Route 17
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Weezing | 59 | Levitate | – | Default |
 
 ### Joel (trainer 314)
+
+Location: Route 17
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -571,6 +698,8 @@ Uses in battle: Dire Hit
 | Magmortar | 60 | Flame Body | – | Default |
 
 ### Glenn (trainer 315)
+
+Location: Route 17
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -580,12 +709,15 @@ Uses in battle: Dire Hit
 
 ### Dale (trainer 572)
 
+Location: Route 17
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Muk | 58 | Stench | – | Default |
 | Swalot | 59 | Liquid Ooze | – | Default |
 
 ### Jacob (trainer 573)
+
+Location: Route 17
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -594,12 +726,16 @@ Uses in battle: Dire Hit
 
 ### Aiden (trainer 574)
 
+Location: Route 17
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Muk | 60 | Stench | – | Default |
 | Tentacruel | 61 | Clear Body | – | Default |
 
 ### Dan (trainer 575)
+
+Location: Route 17
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -609,11 +745,15 @@ Uses in battle: Dire Hit
 
 ### Theron (trainer 576)
 
+Location: Route 17
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Toxicroak | 60 | Anticipation | – | Default |
 
 ### Markey (trainer 577)
+
+Location: Route 17
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -621,11 +761,16 @@ Uses in battle: Dire Hit
 
 ### Teddy (trainer 578)
 
+Location: Route 17
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Seviper | 61 | Shed Skin | – | Default |
 
 ### Ernest (trainer 579)
+
+Location: Route 17
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -634,12 +779,18 @@ Uses in battle: Dire Hit
 
 ### Reese (trainer 628)
 
+Location: Route 17
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Arbok | 61 | Intimidate | – | Default |
 | Weezing | 62 | Levitate | – | Default |
 
 ### Reese (trainer 629)
+
+Location: Route 17
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -648,12 +799,18 @@ Uses in battle: Dire Hit
 
 ### Reese (trainer 630)
 
+Location: Route 17
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Weezing | 68 | Levitate | – | Default |
 | Arbok | 69 | Intimidate | – | Default |
 
 ### Aiden (trainer 631)
+
+Location: Route 17
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -662,12 +819,18 @@ Uses in battle: Dire Hit
 
 ### Aiden (trainer 632)
 
+Location: Route 17
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Tentacruel | 65 | Clear Body | – | Default |
 | Hypno | 66 | Insomnia | – | Default |
 
 ### Aiden (trainer 633)
+
+Location: Route 17
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -677,12 +840,18 @@ Uses in battle: Dire Hit
 
 ### Ernest (trainer 634)
 
+Location: Route 17
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Muk | 61 | Stench | – | Default |
 | Azumarill | 62 | Thick Fat | – | Default |
 
 ### Ernest (trainer 635)
+
+Location: Route 17
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -691,14 +860,19 @@ Uses in battle: Dire Hit
 
 ### Ernest (trainer 636)
 
+Location: Route 17
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Muk | 68 | Stench | – | Default |
 | Ursaluna | 69 | Guts | – | Default |
 
-## Bird Keeper Gs
+## Bird Keeper
 
 ### Rod (trainer 29)
+
+Location: Violet Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -707,11 +881,15 @@ Uses in battle: Dire Hit
 
 ### Abe (trainer 50)
 
+Location: Violet Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Spearow | 11 | Keen Eye | – | Default |
 
 ### Bryan (trainer 72)
+
+Location: Route 35
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -720,15 +898,15 @@ Uses in battle: Dire Hit
 
 ### Theo (trainer 73)
 
+Location: Olivine Lighthouse 3F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Togetic | 31 | Hustle | – | Default |
-| Xatu | 31 | Synchronize | – | Default |
-| Yanma | 31 | Speed Boost | – | Default |
-| Noctowl | 31 | Insomnia | – | Default |
 | Pidgeotto | 32 | Keen Eye | – | Default |
 
 ### Toby (trainer 82)
+
+Location: Route 38
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -738,12 +916,17 @@ Uses in battle: Dire Hit
 
 ### Vance (trainer 137)
 
+Location: Route 44
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Jumpluff | 44 | Chlorophyll | – | Default |
 | Noctowl | 45 | Insomnia | – | Default |
 
 ### Denis (trainer 217)
+
+Location: Olivine Lighthouse 3F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -752,6 +935,8 @@ Uses in battle: Dire Hit
 
 ### Hank (trainer 299)
 
+Location: Route 4
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Fearow | 57 | Keen Eye | – | Default |
@@ -759,12 +944,16 @@ Uses in battle: Dire Hit
 
 ### Roy (trainer 300)
 
+Location: Route 14
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Jumpluff | 58 | Chlorophyll | – | Default |
 | Fearow | 59 | Keen Eye | – | Default |
 
 ### Boris (trainer 301)
+
+Location: Route 18
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -774,17 +963,24 @@ Uses in battle: Dire Hit
 
 ### Bob (trainer 302)
 
+Location: Route 18
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Noctowl | 61 | Insomnia | – | Default |
 
 ### Jose (trainer 303)
 
+Location: Route 27
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Farfetch’d | 48 | Keen Eye | – | Default |
 
 ### Peter (trainer 383)
+
+Location: Route 32
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -794,17 +990,24 @@ Uses in battle: Dire Hit
 
 ### Jose (trainer 414)
 
+Location: Route 27
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Farfetch’d | 44 | Keen Eye | – | Default |
 
 ### Perry (trainer 420)
 
+Location: Route 13
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Farfetch’d | 61 | Keen Eye | – | Default |
 
 ### Bret (trainer 421)
+
+Location: Route 13
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -813,6 +1016,9 @@ Uses in battle: Dire Hit
 
 ### Jose (trainer 446)
 
+Location: Route 27
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Chatot | 54 | Keen Eye | – | Default |
@@ -820,12 +1026,18 @@ Uses in battle: Dire Hit
 
 ### Vance (trainer 447)
 
+Location: Route 44
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Pidgeot | 47 | Keen Eye | – | Default |
 | Noctowl | 48 | Insomnia | – | Default |
 
 ### Vance (trainer 448)
+
+Location: Route 44
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -835,6 +1047,8 @@ Uses in battle: Dire Hit
 
 ### Justin (trainer 555)
 
+Location: Route 12
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Noctowl | 58 | Insomnia | – | Default |
@@ -842,18 +1056,25 @@ Uses in battle: Dire Hit
 
 ### Gail (trainer 556)
 
+Location: Route 12
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gyarados | 57 | Intimidate | – | Default |
+| Chatot | 57 | Keen Eye | – | Default |
 | Fearow | 58 | Keen Eye | – | Default |
 
 ### Josh (trainer 565)
+
+Location: Route 14
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Fearow | 60 | Keen Eye | – | Default |
 
 ### Bert (trainer 583)
+
+Location: Route 20
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -862,11 +1083,15 @@ Uses in battle: Dire Hit
 
 ### Ernie (trainer 584)
 
+Location: Route 20
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Staraptor | 65 | Intimidate | – | Default |
 
 ### Kinsley (trainer 596)
+
+Location: Route 21
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -876,6 +1101,8 @@ Uses in battle: Dire Hit
 
 ### Easton (trainer 597)
 
+Location: Route 21
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Gyarados | 62 | Intimidate | – | Default |
@@ -884,6 +1111,9 @@ Uses in battle: Dire Hit
 | Dodrio | 63 | Run Away | – | Default |
 
 ### Jose (trainer 602)
+
+Location: Route 27
+Fight: Rematch 3
 
 Uses in battle: X Attack
 
@@ -895,6 +1125,9 @@ Uses in battle: X Attack
 
 ### Vance (trainer 612)
 
+Location: Route 44
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Noctowl | 66 | Insomnia | – | Default |
@@ -903,6 +1136,9 @@ Uses in battle: X Attack
 
 ### Josh (trainer 646)
 
+Location: Route 14
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Skarmory | 63 | Keen Eye | – | Default |
@@ -910,12 +1146,18 @@ Uses in battle: X Attack
 
 ### Josh (trainer 647)
 
+Location: Route 14
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Skarmory | 65 | Keen Eye | – | Default |
 | Fearow | 66 | Keen Eye | – | Default |
 
 ### Josh (trainer 648)
+
+Location: Route 14
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -926,11 +1168,16 @@ Uses in battle: X Attack
 
 ### Kenji (trainer 17)
 
+Location: Route 45
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Machamp | 46 | Guts | – | Default |
 
 ### Yoshi (trainer 156)
+
+Location: Cianwood Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -938,11 +1185,15 @@ Uses in battle: X Attack
 
 ### Lao (trainer 157)
 
+Location: Cianwood Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Hitmonchan | 32 | Keen Eye | – | Default |
 
 ### Kiyo (trainer 158)
+
+Location: Mt. Mortar B1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -950,12 +1201,17 @@ Uses in battle: X Attack
 
 ### Lung (trainer 159)
 
+Location: Cianwood Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Hitmontop | 31 | Intimidate | – | Default |
 | Primeape | 32 | Vital Spirit | – | Default |
 
 ### Kenji (trainer 250)
+
+Location: Route 45
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -965,12 +1221,17 @@ Uses in battle: X Attack
 
 ### Nob (trainer 251)
 
+Location: Cianwood Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Heracross | 30 | Swarm | – | Default |
 | Machop | 31 | Guts | – | Default |
 
 ### Kenji (trainer 278)
+
+Location: Route 45
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -981,6 +1242,8 @@ Uses in battle: X Attack
 
 ### Wai (trainer 339)
 
+Location: S.S. Aqua B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Machamp | 52 | Guts | – | Default |
@@ -988,11 +1251,15 @@ Uses in battle: X Attack
 
 ### Manford (trainer 548)
 
+Location: Route 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Poliwrath | 58 | Water Absorb | – | Default |
 
 ### Ander (trainer 550)
+
+Location: Route 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1001,6 +1268,9 @@ Uses in battle: X Attack
 | Machamp | 57 | Guts | – | Default |
 
 ### Kenji (trainer 605)
+
+Location: Route 45
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1014,6 +1284,8 @@ Uses in battle: X Attack
 
 ### Deandre (trainer 482)
 
+Location: Mahogany Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Mamoswine | 41 | Oblivious | – | Default |
@@ -1022,6 +1294,8 @@ Uses in battle: X Attack
 
 ### Patton (trainer 483)
 
+Location: Mahogany Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Jynx | 40 | Oblivious | – | Default |
@@ -1029,13 +1303,16 @@ Uses in battle: X Attack
 
 ### Gerardo (trainer 484)
 
+Location: Mahogany Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Weavile | 42 | Pressure | – | Default |
 | Dewgong | 42 | Thick Fat | – | Default |
 | Cloyster | 43 | Shell Armor | – | Default |
 
 ### Bryce (trainer 686)
+
+Location: Seafoam Islands B2F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1043,6 +1320,8 @@ Uses in battle: X Attack
 | Dewgong | 63 | Thick Fat | – | Default |
 
 ### Shaun (trainer 687)
+
+Location: Seafoam Islands B2F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1053,6 +1332,9 @@ Uses in battle: X Attack
 
 ### Wade (trainer 4)
 
+Location: Route 31
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Metapod | 6 | Shed Skin | – | Default |
@@ -1061,12 +1343,17 @@ Uses in battle: X Attack
 
 ### Rob (trainer 48)
 
+Location: Route 2 South Below Viridian Forest
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Butterfree | 59 | CompoundEyes | – | Default |
 | Beedrill | 60 | Swarm | – | Default |
 
 ### Benny (trainer 67)
+
+Location: Azalea Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1076,6 +1363,8 @@ Uses in battle: X Attack
 
 ### Al (trainer 68)
 
+Location: Azalea Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Pineco | 16 | Sturdy | – | Default |
@@ -1083,18 +1372,24 @@ Uses in battle: X Attack
 
 ### Josh (trainer 69)
 
+Location: Azalea Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Wormadam | 19 | Anticipation | – | Default |
 | Paras | 20 | Effect Spore | – | Default |
 
 ### Arnie (trainer 78)
+
+Location: Route 35
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Venonat | 21 | CompoundEyes | – | Default |
 
 ### Ken (trainer 79)
+
+Location: S.S. Aqua 1F Northeast Rooms
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1103,12 +1398,16 @@ Uses in battle: X Attack
 
 ### Doug (trainer 140)
 
+Location: Route 2 South Below Viridian Forest
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Ariados | 62 | Swarm | – | Default |
 | Butterfree | 63 | CompoundEyes | – | Default |
 
 ### Ed (trainer 248)
+
+Location: Route 2 North Above Viridian Forest
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1118,6 +1417,8 @@ Uses in battle: X Attack
 
 ### Don (trainer 249)
 
+Location: Route 30
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ledyba | 5 | Swarm | – | Default |
@@ -1125,17 +1426,26 @@ Uses in battle: X Attack
 
 ### Arnie (trainer 360)
 
+Location: Route 35
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Venomoth | 47 | Shield Dust | – | Default |
 
 ### Arnie (trainer 449)
 
+Location: Route 35
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Venomoth | 54 | Shield Dust | – | Default |
 
 ### Wade (trainer 460)
+
+Location: Route 31
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1146,6 +1456,9 @@ Uses in battle: X Attack
 
 ### Wade (trainer 461)
 
+Location: Route 31
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ledian | 45 | Swarm | – | Default |
@@ -1155,6 +1468,9 @@ Uses in battle: X Attack
 
 ### Wade (trainer 512)
 
+Location: Route 31
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ariados | 67 | Swarm | – | Default |
@@ -1163,6 +1479,9 @@ Uses in battle: X Attack
 | Butterfree | 68 | CompoundEyes | – | Default |
 
 ### Arnie (trainer 513)
+
+Location: Route 35
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1193,12 +1512,18 @@ Uses in battle: X Attack
 
 ### Doug (trainer 622)
 
+Location: Route 2 South Below Viridian Forest
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ariados | 64 | Swarm | – | Default |
 | Butterfree | 65 | CompoundEyes | – | Default |
 
 ### Doug (trainer 623)
+
+Location: Route 2 South Below Viridian Forest
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1207,12 +1532,18 @@ Uses in battle: X Attack
 
 ### Doug (trainer 624)
 
+Location: Route 2 South Below Viridian Forest
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ariados | 68 | Swarm | – | Default |
 | Butterfree | 69 | CompoundEyes | – | Default |
 
 ### Rob (trainer 625)
+
+Location: Route 2 South Below Viridian Forest
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1221,12 +1552,18 @@ Uses in battle: X Attack
 
 ### Rob (trainer 626)
 
+Location: Route 2 South Below Viridian Forest
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Butterfree | 64 | CompoundEyes | – | Default |
 | Beedrill | 65 | Swarm | – | Default |
 
 ### Rob (trainer 627)
+
+Location: Route 2 South Below Viridian Forest
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1235,18 +1572,24 @@ Uses in battle: X Attack
 
 ### Dane (trainer 695)
 
+Location: Viridian Forest
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Heracross | 74 | Swarm | – | Default |
+| Togekiss | 74 | Hustle | – | Default |
 | Butterfree | 75 | CompoundEyes | – | Default |
 
 ### Dion (trainer 696)
+
+Location: Viridian Forest
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ariados | 75 | Swarm | – | Default |
 
 ### Stacey (trainer 697)
+
+Location: Viridian Forest
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1256,6 +1599,8 @@ Uses in battle: X Attack
 
 ### Ellis (trainer 698)
 
+Location: Viridian Forest
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Heracross | 74 | Swarm | – | Default |
@@ -1263,6 +1608,8 @@ Uses in battle: X Attack
 | Beedrill | 75 | Swarm | – | Default |
 
 ### Abner (trainer 699)
+
+Location: Viridian Forest
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1274,6 +1621,8 @@ Uses in battle: X Attack
 
 ### Duncan (trainer 14)
 
+Location: Goldenrod Tunnel B2F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Magcargo | 43 | Magma Armor | – | Default |
@@ -1282,6 +1631,8 @@ Uses in battle: X Attack
 
 ### Orson (trainer 283)
 
+Location: Goldenrod Tunnel B2F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Weezing | 43 | Levitate | – | Default |
@@ -1289,9 +1640,10 @@ Uses in battle: X Attack
 
 ### Corey (trainer 284)
 
+Location: S.S. Aqua 1F Southeast Rooms
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Magmortar | 52 | Flame Body | – | Default |
 | Houndoom | 52 | Early Bird | – | Default |
 | Weavile | 52 | Pressure | – | Default |
 | Weezing | 53 | Levitate | – | Default |
@@ -1300,17 +1652,24 @@ Uses in battle: X Attack
 
 ### Roland (trainer 26)
 
+Location: Route 32
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Nidoran♂ | 14 | Poison Point | – | Default |
 
 ### Todd (trainer 66)
 
+Location: Route 34
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Psyduck | 20 | Damp | – | Default |
 
 ### Ivan (trainer 74)
+
+Location: Route 35
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1320,12 +1679,16 @@ Uses in battle: X Attack
 
 ### Elliot (trainer 75)
 
+Location: Route 35
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Noctowl | 19 | Insomnia | – | Default |
 | Marill | 20 | Thick Fat | – | Default |
 
 ### Barry (trainer 84)
+
+Location: Fuchsia Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1345,11 +1708,15 @@ Uses in battle: X Attack
 
 ### Ted (trainer 147)
 
+Location: Route 46
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Mankey | 24 | Vital Spirit | – | Default |
 
 ### Lloyd (trainer 148)
+
+Location: Route 25
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1357,12 +1724,16 @@ Uses in battle: X Attack
 
 ### Dean (trainer 149)
 
+Location: Route 9
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Nidoqueen | 57 | Poison Point | – | Default |
 | Golduck | 58 | Damp | – | Default |
 
 ### Sid (trainer 150)
+
+Location: Route 9
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1372,6 +1743,9 @@ Uses in battle: X Attack
 
 ### Todd (trainer 274)
 
+Location: Route 34
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Golem | 47 | Rock Head | – | Default |
@@ -1379,6 +1753,9 @@ Uses in battle: X Attack
 | Golduck | 48 | Damp | – | Default |
 
 ### Todd (trainer 275)
+
+Location: Route 34
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1425,11 +1802,15 @@ Uses in battle: X Attack
 
 ### Jerry (trainer 308)
 
+Location: Pewter Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Rhyperior | 54 | Lightning Rod | – | Default |
 
 ### Spencer (trainer 403)
+
+Location: Route 43
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1438,6 +1819,9 @@ Uses in battle: X Attack
 | Crobat | 38 | Inner Focus | – | Default |
 
 ### Todd (trainer 525)
+
+Location: Route 34
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1465,11 +1849,16 @@ Uses in battle: X Attack
 
 ### Clark (trainer 560)
 
+Location: Route 13
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Floatzel | 60 | Swift Swim | – | Default |
 
 ### Tanner (trainer 561)
+
+Location: Route 13
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1477,11 +1866,15 @@ Uses in battle: X Attack
 
 ### Pedro (trainer 580)
 
+Location: Route 20
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Linoone | 65 | Pickup | – | Default |
 
 ### Virgil (trainer 599)
+
+Location: Route 6
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1489,12 +1882,18 @@ Uses in battle: X Attack
 
 ### Tanner (trainer 658)
 
+Location: Route 13
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Miltank | 62 | Thick Fat | – | Default |
 | Sudowoodo | 63 | Sturdy | – | Default |
 
 ### Tanner (trainer 659)
+
+Location: Route 13
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1504,6 +1903,9 @@ Uses in battle: X Attack
 
 ### Tanner (trainer 660)
 
+Location: Route 13
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Jumpluff | 68 | Chlorophyll | – | Default |
@@ -1511,6 +1913,8 @@ Uses in battle: X Attack
 | Sudowoodo | 69 | Sturdy | – | Default |
 
 ### Grant (trainer 732)
+
+Location: Route 47
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1529,6 +1933,8 @@ Uses in battle: X Attack
 
 ### Zac & Jen (trainer 549)
 
+Location: Route 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Noctowl | 58 | Insomnia | – | Default |
@@ -1536,12 +1942,16 @@ Uses in battle: X Attack
 
 ### Elan & Ida (trainer 684)
 
+Location: Viridian Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Claydol | 67 | Levitate | – | Default |
 | Porygon-Z | 68 | Adaptability | – | Default |
 
 ### Thom & Kae (trainer 730)
+
+Location: Route 47
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1551,6 +1961,8 @@ Uses in battle: X Attack
 ## Elder
 
 ### Li (trainer 290)
+
+Location: Sprout Tower 3F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1570,6 +1982,8 @@ Uses in battle: X Attack
 
 ### Otis (trainer 15)
 
+Location: Route 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Magmortar | 55 | Flame Body | – | Default |
@@ -1578,11 +1992,15 @@ Uses in battle: X Attack
 
 ### Richard (trainer 281)
 
+Location: Burned Tower 1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Charmeleon | 25 | Blaze | – | Default |
 
 ### Ned (trainer 282)
+
+Location: Burned Tower 1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1592,12 +2010,16 @@ Uses in battle: X Attack
 
 ### Burt (trainer 318)
 
+Location: Route 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Nidoking | 56 | Poison Point | – | Default |
 | Magcargo | 57 | Magma Armor | – | Default |
 
 ### Bill (trainer 319)
+
+Location: Union Cave 1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1606,6 +2028,9 @@ Uses in battle: X Attack
 
 ### Walt (trainer 388)
 
+Location: Route 35
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Nidorina | 20 | Poison Point | – | Default |
@@ -1613,19 +2038,24 @@ Uses in battle: X Attack
 
 ### Ray (trainer 390)
 
+Location: Union Cave 1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Vulpix | 16 | Flash Fire | – | Default |
 
 ### Lyle (trainer 399)
 
+Location: S.S. Aqua 1F Northeast Rooms
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Typhlosion | 54 | Blaze | – | Default |
-| Weezing | 54 | Levitate | – | Default |
 | Flareon | 55 | Flash Fire | – | Default |
 
 ### Walt (trainer 619)
+
+Location: Route 35
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1634,12 +2064,18 @@ Uses in battle: X Attack
 
 ### Walt (trainer 620)
 
+Location: Route 35
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Skuntank | 52 | Stench | – | Default |
 | Magmortar | 53 | Flame Body | – | Default |
 
 ### Walt (trainer 621)
+
+Location: Route 35
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1651,6 +2087,8 @@ Uses in battle: X Attack
 
 ### Justin (trainer 18)
 
+Location: Route 32
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Qwilfish | 14 | Poison Point | – | Default |
@@ -1660,17 +2098,25 @@ Uses in battle: X Attack
 
 ### Ralph (trainer 57)
 
+Location: Route 32
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Goldeen | 14 | Swift Swim | – | Default |
 
 ### Arnold (trainer 58)
 
+Location: Route 21
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Cloyster | 64 | Shell Armor | – | Default |
 
 ### Kyle (trainer 59)
+
+Location: Route 12
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1680,12 +2126,16 @@ Uses in battle: X Attack
 
 ### Henry (trainer 60)
 
+Location: Route 32
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Qwilfish | 13 | Poison Point | – | Default |
 | Poliwag | 14 | Water Absorb | – | Default |
 
 ### Marvin (trainer 122)
+
+Location: Route 43
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1695,11 +2145,17 @@ Uses in battle: X Attack
 
 ### Tully (trainer 123)
 
+Location: Route 42
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Qwilfish | 37 | Poison Point | – | Default |
 
 ### Wilton (trainer 124)
+
+Location: Route 44
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1709,6 +2165,8 @@ Uses in battle: X Attack
 
 ### Edgar (trainer 125)
 
+Location: Route 44
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Poliwrath | 44 | Water Absorb | – | Default |
@@ -1716,11 +2174,15 @@ Uses in battle: X Attack
 
 ### Andre (trainer 126)
 
+Location: Lake of Rage
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Gyarados | 38 | Intimidate | – | Default |
 
 ### Raymond (trainer 127)
+
+Location: Lake of Rage
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1731,6 +2193,8 @@ Uses in battle: X Attack
 
 ### Jonah (trainer 128)
 
+Location: S.S. Aqua B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Cloyster | 51 | Shell Armor | – | Default |
@@ -1740,21 +2204,26 @@ Uses in battle: X Attack
 
 ### Martin (trainer 320)
 
+Location: Route 12
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Qwilfish | 59 | Poison Point | – | Default |
+| Mantine | 59 | Swift Swim | – | Default |
 | Octillery | 60 | Suction Cups | – | Default |
 
 ### Stephen (trainer 321)
 
+Location: Route 12
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Qwilfish | 57 | Poison Point | – | Default |
 | Tentacruel | 57 | Clear Body | – | Default |
 | Slowking | 57 | Oblivious | – | Default |
 | Quagsire | 58 | Damp | – | Default |
 
 ### Barney (trainer 322)
+
+Location: Route 12
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1764,6 +2233,9 @@ Uses in battle: X Attack
 
 ### Tully (trainer 323)
 
+Location: Route 42
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Octillery | 45 | Suction Cups | – | Default |
@@ -1771,13 +2243,18 @@ Uses in battle: X Attack
 
 ### Tully (trainer 324)
 
+Location: Route 42
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Octillery | 53 | Suction Cups | – | Default |
 | Seaking | 53 | Swift Swim | – | Default |
 | Qwilfish | 54 | Poison Point | – | Default |
 
 ### Wilton (trainer 325)
+
+Location: Route 44
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1787,13 +2264,18 @@ Uses in battle: X Attack
 
 ### Scott (trainer 413)
 
+Location: Route 26
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Qwilfish | 46 | Poison Point | – | Default |
-| Lanturn | 46 | Volt Absorb | – | Default |
+| Gyarados | 46 | Intimidate | – | Default |
 | Seaking | 47 | Swift Swim | – | Default |
 
 ### Wilton (trainer 450)
+
+Location: Route 44
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1803,11 +2285,17 @@ Uses in battle: X Attack
 
 ### Ralph (trainer 462)
 
+Location: Route 32
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Seaking | 46 | Swift Swim | – | Default |
 
 ### Ralph (trainer 463)
+
+Location: Route 32
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1815,6 +2303,9 @@ Uses in battle: X Attack
 | Qwilfish | 53 | Poison Point | – | Default |
 
 ### Ralph (trainer 515)
+
+Location: Route 32
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1830,6 +2321,9 @@ Uses in battle: X Attack
 
 ### Tully (trainer 517)
 
+Location: Route 42
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Seaking | 67 | Swift Swim | – | Default |
@@ -1838,6 +2332,9 @@ Uses in battle: X Attack
 
 ### Kyler (trainer 558)
 
+Location: Route 12
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Qwilfish | 56 | Poison Point | – | Default |
@@ -1845,6 +2342,8 @@ Uses in battle: X Attack
 | Gyarados | 57 | Intimidate | – | Default |
 
 ### Murphy (trainer 589)
+
+Location: Route 21
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1855,11 +2354,15 @@ Uses in battle: X Attack
 
 ### Liam (trainer 590)
 
+Location: Route 21
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Kingdra | 65 | Swift Swim | – | Default |
 
 ### Gideon (trainer 591)
+
+Location: Route 21
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1867,6 +2370,9 @@ Uses in battle: X Attack
 | Lanturn | 63 | Volt Absorb | – | Default |
 
 ### Wilton (trainer 608)
+
+Location: Route 44
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1876,6 +2382,9 @@ Uses in battle: X Attack
 
 ### Kyle (trainer 661)
 
+Location: Route 12
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Qwilfish | 61 | Poison Point | – | Default |
@@ -1883,6 +2392,9 @@ Uses in battle: X Attack
 | Seaking | 62 | Swift Swim | – | Default |
 
 ### Kyle (trainer 662)
+
+Location: Route 12
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1893,6 +2405,9 @@ Uses in battle: X Attack
 
 ### Kyle (trainer 663)
 
+Location: Route 12
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Qwilfish | 67 | Poison Point | – | Default |
@@ -1901,6 +2416,9 @@ Uses in battle: X Attack
 | Seaking | 68 | Swift Swim | – | Default |
 
 ### Kyler (trainer 664)
+
+Location: Route 12
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1911,6 +2429,9 @@ Uses in battle: X Attack
 
 ### Kyler (trainer 665)
 
+Location: Route 12
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Corsola | 64 | Hustle | – | Default |
@@ -1919,6 +2440,9 @@ Uses in battle: X Attack
 | Gyarados | 65 | Intimidate | – | Default |
 
 ### Kyler (trainer 666)
+
+Location: Route 12
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -1931,6 +2455,8 @@ Uses in battle: X Attack
 
 ### Preston (trainer 37)
 
+Location: Olivine Lighthouse 4F
+
 Uses in battle: Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -1940,6 +2466,8 @@ Uses in battle: Full Restore
 
 ### Edward (trainer 231)
 
+Location: S.S. Aqua 1F Southeast Rooms
+
 Uses in battle: Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -1948,11 +2476,12 @@ Uses in battle: Full Restore
 
 ### Gregory (trainer 337)
 
+Location: Vermilion Gym
+
 Uses in battle: Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Ampharos | 59 | Static | – | Default |
 | Manectric | 59 | Static | – | Default |
 | Raichu | 60 | Static | – | Default |
 
@@ -1966,6 +2495,9 @@ Uses in battle: Full Restore
 
 ### Alfred (trainer 401)
 
+Location: Olivine Lighthouse 2F
+Fight: First battle
+
 Uses in battle: Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -1974,14 +2506,18 @@ Uses in battle: Full Restore
 
 ### Milton (trainer 554)
 
+Location: Route 8
+
 Uses in battle: Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Ninetales | 59 | Flash Fire | – | Default |
 | Arcanine | 60 | Intimidate | – | Default |
 
 ### Alfred (trainer 672)
+
+Location: Olivine Lighthouse 2F
+Fight: Rematch 1
 
 Uses in battle: Full Restore
 
@@ -1991,6 +2527,9 @@ Uses in battle: Full Restore
 
 ### Alfred (trainer 673)
 
+Location: Olivine Lighthouse 2F
+Fight: Rematch 2
+
 Uses in battle: Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -1998,6 +2537,9 @@ Uses in battle: Full Restore
 | Noctowl | 52 | Insomnia | – | Default |
 
 ### Alfred (trainer 674)
+
+Location: Olivine Lighthouse 2F
+Fight: Rematch 3
 
 Uses in battle: Full Restore
 
@@ -2009,11 +2551,15 @@ Uses in battle: Full Restore
 
 ### Clyde (trainer 41)
 
+Location: S.S. Aqua 1F Northeast Rooms
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Electivire | 55 | Motor Drive | – | Default |
 
 ### Vincent (trainer 232)
+
+Location: Vermilion Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2033,20 +2579,26 @@ Uses in battle: Full Restore
 
 ### Russel (trainer 25)
 
+Location: Union Cave 1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Wooper | 14 | Damp | – | Default |
 | Cubone | 14 | Rock Head | – | Default |
 | Geodude | 15 | Rock Head | – | Default |
 
 ### Anthony (trainer 61)
 
+Location: Route 33
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Machop | 15 | Guts | – | Default |
 | Geodude | 16 | Rock Head | – | Default |
 
 ### Anthony (trainer 100)
+
+Location: Route 33
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2054,6 +2606,8 @@ Uses in battle: Full Restore
 | Golem | 46 | Rock Head | – | Default |
 
 ### Benjamin (trainer 134)
+
+Location: Route 42
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2063,21 +2617,25 @@ Uses in battle: Full Restore
 
 ### Erik (trainer 143)
 
+Location: Route 45
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gliscor | 45 | Hyper Cutter | – | Default |
 | Donphan | 45 | Sturdy | – | Default |
 | Golem | 46 | Rock Head | – | Default |
 
 ### Michael (trainer 144)
 
+Location: Route 45
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Gliscor | 46 | Hyper Cutter | – | Default |
-| Donphan | 46 | Sturdy | – | Default |
 | Golem | 47 | Rock Head | – | Default |
 
 ### Parry (trainer 145)
+
+Location: Route 45
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2085,12 +2643,16 @@ Uses in battle: Full Restore
 
 ### Timothy (trainer 146)
 
+Location: Route 45
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Gliscor | 45 | Hyper Cutter | – | Default |
 | Dugtrio | 46 | Sand Veil | – | Default |
 
 ### Bailey (trainer 154)
+
+Location: Route 46
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2101,6 +2663,9 @@ Uses in battle: Full Restore
 
 ### Anthony (trainer 155)
 
+Location: Route 33
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Golem | 51 | Rock Head | – | Default |
@@ -2108,6 +2673,8 @@ Uses in battle: Full Restore
 | Machamp | 52 | Guts | – | Default |
 
 ### Phillip (trainer 203)
+
+Location: Union Cave B1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2117,12 +2684,16 @@ Uses in battle: Full Restore
 
 ### Leonard (trainer 204)
 
+Location: Union Cave B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Graveler | 28 | Rock Head | – | Default |
 | Machop | 29 | Guts | – | Default |
 
 ### Eoin (trainer 234)
+
+Location: Route 9
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2132,12 +2703,16 @@ Uses in battle: Full Restore
 
 ### Noland (trainer 235)
 
+Location: S.S. Aqua 1F Southwest Rooms
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Sudowoodo | 52 | Sturdy | – | Default |
 | Golem | 53 | Rock Head | – | Default |
 
 ### Clarke (trainer 357)
+
+Location: Route 9
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2146,14 +2721,18 @@ Uses in battle: Full Restore
 
 ### Kenny (trainer 358)
 
+Location: Route 13
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Quagsire | 58 | Damp | – | Default |
 | Nidoking | 58 | Poison Point | – | Default |
 | Nidoqueen | 58 | Poison Point | – | Default |
 | Golem | 59 | Rock Head | – | Default |
 
 ### Jim (trainer 359)
+
+Location: Route 10
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2161,11 +2740,16 @@ Uses in battle: Full Restore
 
 ### Daniel (trainer 384)
 
+Location: Union Cave 1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Onix | 16 | Rock Head | – | Default |
 
 ### Parry (trainer 451)
+
+Location: Route 45
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2174,13 +2758,18 @@ Uses in battle: Full Restore
 
 ### Parry (trainer 452)
 
+Location: Route 45
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Golem | 54 | Rock Head | – | Default |
 | Pupitar | 54 | Shed Skin | – | Default |
 | Steelix | 55 | Rock Head | – | Default |
 
 ### Anthony (trainer 523)
+
+Location: Route 33
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2198,6 +2787,8 @@ Uses in battle: Full Restore
 
 ### Bruce (trainer 547)
 
+Location: Route 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Nidoking | 55 | Poison Point | – | Default |
@@ -2206,6 +2797,8 @@ Uses in battle: Full Restore
 
 ### Dwight (trainer 551)
 
+Location: Route 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Nidoking | 55 | Poison Point | – | Default |
@@ -2213,13 +2806,18 @@ Uses in battle: Full Restore
 
 ### Parry (trainer 606)
 
+Location: Route 45
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Golem | 71 | Rock Head | – | Default |
 | Tyranitar | 71 | Sand Stream | – | Default |
 | Steelix | 72 | Rock Head | – | Default |
 
 ### Kenny (trainer 655)
+
+Location: Route 13
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2230,6 +2828,9 @@ Uses in battle: Full Restore
 
 ### Kenny (trainer 656)
 
+Location: Route 13
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Sandslash | 64 | Sand Veil | – | Default |
@@ -2238,6 +2839,9 @@ Uses in battle: Full Restore
 | Steelix | 65 | Rock Head | – | Default |
 
 ### Kenny (trainer 657)
+
+Location: Route 13
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2248,21 +2852,27 @@ Uses in battle: Full Restore
 
 ### Edwin (trainer 685)
 
+Location: Pewter Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Golem | 54 | Rock Head | – | Default |
 
 ### Devin (trainer 731)
 
+Location: Route 47
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Pupitar | 37 | Shed Skin | – | Default |
 | Donphan | 37 | Sturdy | – | Default |
 | Dudunspars | 38 | Serene Grace | – | Default |
 
 ## Juggler
 
 ### Irwin (trainer 7)
+
+Location: Route 35
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2273,6 +2883,8 @@ Uses in battle: Full Restore
 
 ### Fritz (trainer 242)
 
+Location: S.S. Aqua B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Jynx | 52 | Oblivious | – | Default |
@@ -2281,6 +2893,8 @@ Uses in battle: Full Restore
 
 ### Horton (trainer 396)
 
+Location: Vermilion Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Wyrdeer | 56 | Intimidate | – | Default |
@@ -2288,6 +2902,9 @@ Uses in battle: Full Restore
 | Electrode | 57 | Soundproof | – | Default |
 
 ### Irwin (trainer 454)
+
+Location: Route 35
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2298,6 +2915,9 @@ Uses in battle: Full Restore
 
 ### Irwin (trainer 455)
 
+Location: Route 35
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Raichu | 55 | Static | – | Default |
@@ -2306,6 +2926,9 @@ Uses in battle: Full Restore
 | Electrode | 56 | Soundproof | – | Default |
 
 ### Irwin (trainer 527)
+
+Location: Route 35
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2327,11 +2950,15 @@ Uses in battle: Full Restore
 
 ### Naoko (trainer 160)
 
+Location: Ecruteak Dance Theater
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Espeon | 48 | Synchronize | Sitrus Berry | Psychic, Shadow Ball, Dazzling Gleam, Calm Mind |
 
 ### Sayo (trainer 161)
+
+Location: Ecruteak Dance Theater
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2339,17 +2966,23 @@ Uses in battle: Full Restore
 
 ### Zuki (trainer 162)
 
+Location: Ecruteak Dance Theater
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Umbreon | 48 | Synchronize | Leftovers | Foul Play, Toxic, Moonlight, Confuse Ray |
 
 ### Kuni (trainer 163)
 
+Location: Ecruteak Dance Theater
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Vaporeon | 48 | Water Absorb | Leftovers | Surf, Ice Beam, Acid Armor, Wish |
 
 ### Miki (trainer 164)
+
+Location: Ecruteak Dance Theater
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2359,11 +2992,15 @@ Uses in battle: Full Restore
 
 ### Carrie (trainer 22)
 
+Location: Goldenrod Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Snubbull | 20 | Intimidate | – | Default |
 
 ### Cathy (trainer 71)
+
+Location: Goldenrod Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2373,6 +3010,8 @@ Uses in battle: Full Restore
 
 ### Linda (trainer 136)
 
+Location: Fuchsia Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Victreebel | 59 | Chlorophyll | – | Default |
@@ -2380,6 +3019,8 @@ Uses in battle: Full Restore
 | Venusaur | 60 | Overgrow | – | Default |
 
 ### Alice (trainer 183)
+
+Location: Fuchsia Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2389,6 +3030,9 @@ Uses in battle: Full Restore
 
 ### Krise (trainer 184)
 
+Location: National Park
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Sunkern | 20 | Chlorophyll | – | Default |
@@ -2396,12 +3040,15 @@ Uses in battle: Full Restore
 
 ### Connie (trainer 215)
 
+Location: Olivine Lighthouse 4F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Girafarig | 30 | Inner Focus | – | Default |
 | Azumarill | 31 | Thick Fat | – | Default |
 
 ### Laura (trainer 354)
+
+Location: Route 25
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2411,13 +3058,15 @@ Uses in battle: Full Restore
 
 ### Shannon (trainer 355)
 
+Location: Route 25
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Sunflora | 59 | Chlorophyll | – | Default |
-| Jumpluff | 59 | Chlorophyll | – | Default |
 | Parasect | 60 | Effect Spore | – | Default |
 
 ### Michelle (trainer 356)
+
+Location: Celadon Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2427,6 +3076,9 @@ Uses in battle: Full Restore
 
 ### Dana (trainer 400)
 
+Location: Route 38
+Fight: First battle
+
 Uses in battle: Moomoo Milk
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -2435,6 +3087,8 @@ Uses in battle: Moomoo Milk
 | Flaaffy | 30 | Static | – | Default |
 
 ### Ellen (trainer 419)
+
+Location: Route 25
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2455,6 +3109,9 @@ Uses in battle: Moomoo Milk
 
 ### Dana (trainer 464)
 
+Location: Route 38
+Fight: Rematch 1
+
 Uses in battle: Moomoo Milk
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -2463,6 +3120,9 @@ Uses in battle: Moomoo Milk
 | Ampharos | 48 | Static | – | Default |
 
 ### Dana (trainer 465)
+
+Location: Route 38
+Fight: Rematch 2
 
 Uses in battle: Moomoo Milk
 
@@ -2473,11 +3133,13 @@ Uses in battle: Moomoo Milk
 
 ### Dana (trainer 528)
 
+Location: Route 38
+Fight: Rematch 3
+
 Uses in battle: Moomoo Milk
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Miltank | 68 | Thick Fat | – | Default |
 | Granbull | 68 | Intimidate | – | Default |
 | Ampharos | 69 | Static | – | Default |
 
@@ -2490,6 +3152,9 @@ Uses in battle: Moomoo Milk
 
 ### Krise (trainer 613)
 
+Location: National Park
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Bellossom | 47 | Chlorophyll | – | Default |
@@ -2497,12 +3162,18 @@ Uses in battle: Moomoo Milk
 
 ### Krise (trainer 614)
 
+Location: National Park
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Vileplume | 52 | Chlorophyll | – | Default |
 | Marowak | 53 | Rock Head | – | Default |
 
 ### Krise (trainer 615)
+
+Location: National Park
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2513,12 +3184,15 @@ Uses in battle: Moomoo Milk
 
 ### Martha (trainer 46)
 
+Location: Ecruteak Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Drifblim | 27 | Aftermath | – | Default |
 | Haunter | 28 | Levitate | – | Default |
 
 ### Grace (trainer 89)
+
+Location: Ecruteak Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2545,12 +3219,16 @@ Uses in battle: Moomoo Milk
 
 ### Rebecca (trainer 368)
 
+Location: Saffron Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Hypno | 61 | Insomnia | – | Default |
 | Bronzong | 62 | Levitate | – | Default |
 
 ### Darcy (trainer 369)
+
+Location: Saffron Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2559,15 +3237,18 @@ Uses in battle: Moomoo Milk
 
 ### Edith (trainer 493)
 
+Location: Ecruteak Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Haunter | 26 | Levitate | – | Default |
 
 ### Georgina (trainer 494)
 
+Location: Ecruteak Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Girafarig | 25 | Inner Focus | – | Default |
 | Xatu | 25 | Synchronize | – | Default |
 | Misdreavus | 25 | Levitate | – | Default |
 | Gastly | 26 | Levitate | – | Default |
@@ -2575,6 +3256,8 @@ Uses in battle: Moomoo Milk
 ## Mystery Man
 
 ### Eusine (trainer 498)
+
+Location: Cianwood City
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2586,17 +3269,23 @@ Uses in battle: Moomoo Milk
 
 ### Boy (trainer 495)
 
+Location: Cherrygrove City
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Chikorita | 5 | Overgrow | – | Default |
 
 ### Boy (trainer 496)
 
+Location: Cherrygrove City
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Cyndaquil | 5 | Blaze | – | Default |
 
 ### Boy (trainer 497)
+
+Location: Cherrygrove City
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2606,11 +3295,17 @@ Uses in battle: Moomoo Milk
 
 ### Liz (trainer 27)
 
+Location: Route 32
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Nidoran♀ | 14 | Poison Point | – | Default |
 
 ### Gina (trainer 65)
+
+Location: Route 34
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2620,11 +3315,15 @@ Uses in battle: Moomoo Milk
 
 ### Brooke (trainer 76)
 
+Location: Route 35
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Pikachu | 20 | Static | – | Default |
 
 ### Kim (trainer 77)
+
+Location: Route 35
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2632,17 +3331,24 @@ Uses in battle: Moomoo Milk
 
 ### Cindy (trainer 83)
 
+Location: Fuchsia Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Nidoqueen | 62 | Poison Point | – | Default |
 
 ### Debra (trainer 139)
 
+Location: S.S. Aqua B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Seaking | 55 | Swift Swim | – | Default |
 
 ### Gina (trainer 142)
+
+Location: Route 34
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2652,6 +3358,9 @@ Uses in battle: Moomoo Milk
 
 ### Erin (trainer 151)
 
+Location: Route 46
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Igglybuff | 21 | Cute Charm | – | Default |
@@ -2659,11 +3368,15 @@ Uses in battle: Moomoo Milk
 
 ### Hope (trainer 152)
 
+Location: Route 4
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ampharos | 57 | Static | – | Default |
 
 ### Sharon (trainer 153)
+
+Location: Route 4
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2672,12 +3385,18 @@ Uses in battle: Moomoo Milk
 
 ### Liz (trainer 276)
 
+Location: Route 32
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Granbull | 46 | Intimidate | – | Default |
 | Nidoqueen | 47 | Poison Point | – | Default |
 
 ### Liz (trainer 277)
+
+Location: Route 32
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2687,6 +3406,8 @@ Uses in battle: Moomoo Milk
 
 ### Heidi (trainer 332)
 
+Location: Route 9
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Fearow | 57 | Keen Eye | – | Default |
@@ -2694,12 +3415,17 @@ Uses in battle: Moomoo Milk
 
 ### Edna (trainer 333)
 
+Location: Route 9
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Fearow | 57 | Keen Eye | – | Default |
 | Raichu | 58 | Static | – | Default |
 
 ### Gina (trainer 334)
+
+Location: Route 34
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2709,6 +3435,9 @@ Uses in battle: Moomoo Milk
 
 ### Erin (trainer 335)
 
+Location: Route 46
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Raichu | 44 | Static | – | Default |
@@ -2716,17 +3445,25 @@ Uses in battle: Moomoo Milk
 
 ### Tanya (trainer 336)
 
+Location: Celadon Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Exeggutor | 61 | Chlorophyll | – | Default |
 
 ### Tiffany (trainer 402)
 
+Location: Route 43
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Clefable | 39 | Cute Charm | – | Default |
 
 ### Erin (trainer 453)
+
+Location: Route 46
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2736,17 +3473,26 @@ Uses in battle: Moomoo Milk
 
 ### Tiffany (trainer 466)
 
+Location: Route 43
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Clefable | 48 | Cute Charm | – | Default |
 
 ### Tiffany (trainer 467)
 
+Location: Route 43
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Clefable | 52 | Cute Charm | – | Default |
 
 ### Liz (trainer 518)
+
+Location: Route 32
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2764,6 +3510,9 @@ Uses in battle: Moomoo Milk
 
 ### Gina (trainer 520)
 
+Location: Route 34
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Jumpluff | 67 | Chlorophyll | – | Default |
@@ -2780,11 +3529,16 @@ Uses in battle: Moomoo Milk
 
 ### Tiffany (trainer 522)
 
+Location: Route 43
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Clefable | 68 | Cute Charm | – | Default |
 
 ### Piper (trainer 562)
+
+Location: Route 13
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2792,11 +3546,15 @@ Uses in battle: Moomoo Milk
 
 ### Ginger (trainer 563)
 
+Location: Route 13
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Exploud | 60 | Soundproof | – | Default |
 
 ### Adrian (trainer 581)
+
+Location: Route 20
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2804,17 +3562,24 @@ Uses in battle: Moomoo Milk
 
 ### Cheyenne (trainer 582)
 
+Location: Route 20
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Luxray | 63 | Rivalry | – | Default |
 
 ### Selina (trainer 600)
 
+Location: Route 6
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Cherrim | 54 | Flower Gift | – | Default |
 
 ### Erin (trainer 603)
+
+Location: Route 46
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2897,11 +3662,15 @@ Uses in battle: Full Restore, Full Restore
 
 ### Larry (trainer 23)
 
+Location: Union Cave 1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Slowpoke | 15 | Oblivious | – | Default |
 
 ### Shane (trainer 129)
+
+Location: Route 42
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2910,11 +3679,16 @@ Uses in battle: Full Restore, Full Restore
 
 ### Beckett (trainer 130)
 
+Location: Route 43
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Slowbro | 38 | Oblivious | – | Default |
 
 ### Brent (trainer 131)
+
+Location: Route 43
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2923,11 +3697,15 @@ Uses in battle: Full Restore, Full Restore
 
 ### Ron (trainer 132)
 
+Location: Route 43
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Nidoking | 40 | Poison Point | – | Default |
 
 ### Morgan (trainer 133)
+
+Location: S.S. Aqua 1F Southwest Rooms
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2936,6 +3714,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Brent (trainer 172)
 
+Location: Route 43
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Nidoqueen | 45 | Poison Point | – | Default |
@@ -2943,6 +3724,9 @@ Uses in battle: Full Restore, Full Restore
 | Nidoking | 46 | Poison Point | – | Default |
 
 ### Brent (trainer 173)
+
+Location: Route 43
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2953,6 +3737,8 @@ Uses in battle: Full Restore, Full Restore
 
 ### Andrew (trainer 201)
 
+Location: Union Cave B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Quagsire | 28 | Damp | – | Default |
@@ -2960,17 +3746,23 @@ Uses in battle: Full Restore, Full Restore
 
 ### Calvin (trainer 202)
 
+Location: Union Cave B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Kangaskhan | 30 | Early Bird | – | Default |
 
 ### Issac (trainer 391)
 
+Location: Goldenrod Tunnel B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Lickitung | 22 | Own Tempo | – | Default |
 
 ### Donald (trainer 392)
+
+Location: Goldenrod Tunnel B1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2979,11 +3771,16 @@ Uses in battle: Full Restore, Full Restore
 
 ### Zach (trainer 406)
 
+Location: Route 44
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Rhyperior | 47 | Lightning Rod | – | Default |
 
 ### Brent (trainer 530)
+
+Location: Route 43
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -2994,6 +3791,8 @@ Uses in battle: Full Restore, Full Restore
 
 ### Harrison (trainer 537)
 
+Location: Mt. Mortar Central Room
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Rhyhorn | 37 | Lightning Rod | – | Default |
@@ -3003,17 +3802,24 @@ Uses in battle: Full Restore, Full Restore
 
 ### Ruth (trainer 45)
 
+Location: Route 39
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Pikachu | 28 | Static | – | Default |
 
 ### Beverly (trainer 182)
 
+Location: National Park
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Snubbull | 23 | Intimidate | – | Default |
 
 ### Georgia (trainer 352)
+
+Location: S.S. Aqua 1F Northwest Rooms
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3025,6 +3831,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Beverly (trainer 436)
 
+Location: National Park
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Clefairy | 46 | Cute Charm | – | Default |
@@ -3032,6 +3841,9 @@ Uses in battle: Full Restore, Full Restore
 | Granbull | 47 | Intimidate | – | Default |
 
 ### Beverly (trainer 437)
+
+Location: National Park
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3047,12 +3859,17 @@ Uses in battle: Full Restore, Full Restore
 
 ### Eleanor (trainer 571)
 
+Location: Route 15
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ditto | 58 | Limber | – | Default |
 | Spinda | 59 | Own Tempo | – | Default |
 
 ### Beverly (trainer 611)
+
+Location: National Park
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3065,11 +3882,16 @@ Uses in battle: Full Restore, Full Restore
 
 ### Derek (trainer 44)
 
+Location: Route 39
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Pikachu | 28 | Static | – | Default |
 
 ### William (trainer 181)
+
+Location: National Park
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3077,11 +3899,15 @@ Uses in battle: Full Restore, Full Restore
 
 ### Robert (trainer 348)
 
+Location: Route 10
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Quagsire | 60 | Damp | – | Default |
 
 ### Joshua (trainer 349)
+
+Location: Route 13
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3093,6 +3919,8 @@ Uses in battle: Full Restore, Full Restore
 
 ### Carter (trainer 350)
 
+Location: Route 14
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ursaluna | 59 | Guts | – | Default |
@@ -3101,11 +3929,15 @@ Uses in battle: Full Restore, Full Restore
 
 ### Trevor (trainer 351)
 
+Location: Route 14
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Golduck | 61 | Damp | – | Default |
 
 ### Brandon (trainer 409)
+
+Location: Route 34
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3113,6 +3945,8 @@ Uses in battle: Full Restore, Full Restore
 | Snubbull | 20 | Intimidate | – | Default |
 
 ### Jeremy (trainer 423)
+
+Location: S.S. Aqua 1F Northwest Rooms
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3122,11 +3956,16 @@ Uses in battle: Full Restore, Full Restore
 
 ### Colin (trainer 424)
 
+Location: S.S. Aqua 1F Northwest Rooms
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Delibird | 55 | Vital Spirit | – | Default |
 
 ### Derek (trainer 438)
+
+Location: Route 39
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3136,6 +3975,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Derek (trainer 439)
 
+Location: Route 39
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Pikachu | 54 | Static | – | Default |
@@ -3143,6 +3985,8 @@ Uses in battle: Full Restore, Full Restore
 | Raichu | 55 | Static | – | Default |
 
 ### Alex (trainer 492)
+
+Location: Route 13
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3164,12 +4008,17 @@ Uses in battle: Full Restore, Full Restore
 
 ### Boone (trainer 570)
 
+Location: Route 15
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ditto | 58 | Limber | – | Default |
 | Spinda | 59 | Own Tempo | – | Default |
 
 ### Derek (trainer 610)
+
+Location: Route 39
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3182,11 +4031,15 @@ Uses in battle: Full Restore, Full Restore
 
 ### Keith (trainer 6)
 
+Location: Route 34
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Growlithe | 20 | Intimidate | – | Default |
 
 ### Dirk (trainer 80)
+
+Location: Route 35
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3197,11 +4050,15 @@ Uses in battle: Full Restore, Full Restore
 
 ### Nathan (trainer 42)
 
+Location: Ruins of Alph Outside
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Girafarig | 30 | Inner Focus | – | Default |
 
 ### Franklin (trainer 230)
+
+Location: Saffron Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3209,6 +4066,8 @@ Uses in battle: Full Restore, Full Restore
 | Farigiraf | 64 | Cud Chew | – | Default |
 
 ### Herman (trainer 316)
+
+Location: Route 11
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3218,11 +4077,15 @@ Uses in battle: Full Restore, Full Restore
 
 ### Fidel (trainer 317)
 
+Location: Route 11
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Xatu | 60 | Synchronize | – | Default |
 
 ### Greg (trainer 386)
+
+Location: Route 37
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3230,12 +4093,16 @@ Uses in battle: Full Restore, Full Restore
 
 ### Nelson (trainer 389)
 
+Location: Route 39
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Xatu | 27 | Synchronize | – | Default |
 | Slowpoke | 28 | Oblivious | – | Default |
 
 ### Mark (trainer 395)
+
+Location: Route 36
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3245,6 +4112,8 @@ Uses in battle: Full Restore, Full Restore
 
 ### Phil (trainer 405)
 
+Location: Route 44
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Xatu | 44 | Synchronize | – | Default |
@@ -3252,11 +4121,15 @@ Uses in battle: Full Restore, Full Restore
 
 ### Vernon (trainer 411)
 
+Location: Route 26
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Espeon | 48 | Synchronize | – | Default |
 
 ### Eli (trainer 412)
+
+Location: Route 27
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3266,6 +4139,8 @@ Uses in battle: Full Restore, Full Restore
 
 ### Jared (trainer 415)
 
+Location: Saffron Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Farigiraf | 62 | Cud Chew | – | Default |
@@ -3273,6 +4148,8 @@ Uses in battle: Full Restore, Full Restore
 | Exeggutor | 63 | Chlorophyll | – | Default |
 
 ### Rodney (trainer 422)
+
+Location: S.S. Aqua 1F Northwest Rooms
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3283,6 +4160,8 @@ Uses in battle: Full Restore, Full Restore
 
 ### Chow (trainer 43)
 
+Location: Sprout Tower 1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Natu | 8 | Synchronize | – | Default |
@@ -3290,6 +4169,8 @@ Uses in battle: Full Restore, Full Restore
 | Bellsprout | 9 | Chlorophyll | – | Default |
 
 ### Nico (trainer 51)
+
+Location: Sprout Tower 2F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3299,6 +4180,8 @@ Uses in battle: Full Restore, Full Restore
 
 ### Edmond (trainer 52)
 
+Location: Sprout Tower 2F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Gastly | 9 | Levitate | – | Default |
@@ -3307,11 +4190,15 @@ Uses in battle: Full Restore, Full Restore
 
 ### Jin (trainer 53)
 
+Location: Sprout Tower 3F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Bellsprout | 12 | Chlorophyll | – | Default |
 
 ### Troy (trainer 54)
+
+Location: Sprout Tower 3F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3319,6 +4206,8 @@ Uses in battle: Full Restore, Full Restore
 | Bellsprout | 12 | Chlorophyll | – | Default |
 
 ### Neal (trainer 55)
+
+Location: Sprout Tower 3F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3366,26 +4255,33 @@ Uses in battle: Full Restore, Full Restore
 
 ### Eugene (trainer 39)
 
+Location: Route 39
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Primeape | 28 | Vital Spirit | – | Default |
 | Poliwhirl | 28 | Water Absorb | – | Default |
 | Krabby | 29 | Hyper Cutter | – | Default |
 
 ### Huey (trainer 211)
 
+Location: Olivine Lighthouse 2F
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Crawdaunt | 30 | Hyper Cutter | – | Default |
 | Poliwhirl | 31 | Water Absorb | – | Default |
 
 ### Terrell (trainer 212)
+
+Location: Olivine Lighthouse 5F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Poliwhirl | 32 | Water Absorb | – | Default |
 
 ### Kent (trainer 213)
+
+Location: Olivine Lighthouse 3F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3394,21 +4290,25 @@ Uses in battle: Full Restore, Full Restore
 
 ### Roberto (trainer 214)
 
+Location: Olivine Lighthouse 5F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Poliwhirl | 28 | Water Absorb | – | Default |
 | Pelipper | 28 | Keen Eye | – | Default |
 | Machop | 29 | Guts | – | Default |
 
 ### Stanly (trainer 238)
 
+Location: S.S. Aqua 1F Southeast Rooms
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Golduck | 53 | Damp | – | Default |
 | Kingdra | 53 | Swift Swim | – | Default |
 | Machamp | 54 | Guts | – | Default |
 
 ### Jeff (trainer 239)
+
+Location: S.S. Aqua B1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3417,26 +4317,32 @@ Uses in battle: Full Restore, Full Restore
 
 ### Garrett (trainer 240)
 
+Location: S.S. Aqua B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Kingler | 55 | Hyper Cutter | – | Default |
 
 ### Kenneth (trainer 241)
 
+Location: S.S. Aqua B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Politoed | 54 | Water Absorb | – | Default |
-| Octillery | 54 | Suction Cups | – | Default |
-| Quagsire | 54 | Damp | – | Default |
 | Machamp | 55 | Guts | – | Default |
 
 ### Harry (trainer 410)
+
+Location: Route 38
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Quagsire | 29 | Damp | – | Default |
 
 ### Huey (trainer 440)
+
+Location: Olivine Lighthouse 2F
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3445,12 +4351,18 @@ Uses in battle: Full Restore, Full Restore
 
 ### Huey (trainer 441)
 
+Location: Olivine Lighthouse 2F
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Crawdaunt | 51 | Hyper Cutter | – | Default |
 | Poliwrath | 52 | Water Absorb | – | Default |
 
 ### Huey (trainer 509)
+
+Location: Olivine Lighthouse 2F
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3459,12 +4371,16 @@ Uses in battle: Full Restore, Full Restore
 
 ### Parker (trainer 676)
 
+Location: Cerulean Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Quagsire | 56 | Damp | – | Default |
 | Kingdra | 57 | Swift Swim | – | Default |
 
 ### Eddie (trainer 677)
+
+Location: Cerulean Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3474,19 +4390,27 @@ Uses in battle: Full Restore, Full Restore
 
 ### Alan (trainer 24)
 
+Location: Route 36
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Tangela | 21 | Chlorophyll | – | Default |
 
 ### Johnny (trainer 135)
 
+Location: Route 15
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Jumpluff | 57 | Chlorophyll | – | Default |
-| Ditto | 57 | Limber | – | Default |
+| Exeggutor | 57 | Chlorophyll | – | Default |
 | Victreebel | 58 | Chlorophyll | – | Default |
 
 ### Jack (trainer 178)
+
+Location: National Park
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3495,22 +4419,28 @@ Uses in battle: Full Restore, Full Restore
 
 ### Kipp (trainer 179)
 
+Location: Route 15
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Jumpluff | 56 | Chlorophyll | – | Default |
-| Ditto | 56 | Limber | – | Default |
+| Haunter | 56 | Levitate | – | Default |
 | Magnezone | 56 | Magnet Pull | – | Default |
 | Electrode | 57 | Soundproof | – | Default |
 
 ### Danny (trainer 327)
 
+Location: Route 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Furret | 61 | Run Away | – | Default |
+| Mr. Mime | 61 | Soundproof | – | Default |
 | Noctowl | 61 | Insomnia | – | Default |
 | Jynx | 62 | Oblivious | – | Default |
 
 ### Tommy (trainer 328)
+
+Location: Route 15
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3519,11 +4449,15 @@ Uses in battle: Full Restore, Full Restore
 
 ### Dudley (trainer 329)
 
+Location: Route 25
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Bellossom | 59 | Chlorophyll | – | Default |
 
 ### Joe (trainer 330)
+
+Location: Route 25
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3532,20 +4466,27 @@ Uses in battle: Full Restore, Full Restore
 
 ### Billy (trainer 331)
 
+Location: Route 15
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Ditto | 57 | Limber | – | Default |
 | Jumpluff | 57 | Chlorophyll | – | Default |
 | Swellow | 57 | Guts | – | Default |
 | Parasect | 58 | Effect Spore | – | Default |
 
 ### Chad (trainer 397)
 
+Location: Route 38
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Mime Jr. | 28 | Soundproof | – | Default |
 
 ### Nate (trainer 428)
+
+Location: S.S. Aqua B1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3554,12 +4495,17 @@ Uses in battle: Full Restore, Full Restore
 
 ### Ricky (trainer 429)
 
+Location: S.S. Aqua B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ditto | 53 | Limber | – | Default |
 | Ambipom | 54 | Technician | – | Default |
 
 ### Jack (trainer 430)
+
+Location: National Park
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3568,6 +4514,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Jack (trainer 431)
 
+Location: National Park
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Electrode | 53 | Soundproof | – | Default |
@@ -3575,12 +4524,18 @@ Uses in battle: Full Restore, Full Restore
 
 ### Alan (trainer 432)
 
+Location: Route 36
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Farigiraf | 46 | Cud Chew | – | Default |
 | Tangrowth | 47 | Chlorophyll | – | Default |
 
 ### Alan (trainer 433)
+
+Location: Route 36
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3591,6 +4546,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Chad (trainer 434)
 
+Location: Route 38
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Mr. Mime | 45 | Soundproof | – | Default |
@@ -3598,12 +4556,18 @@ Uses in battle: Full Restore, Full Restore
 
 ### Chad (trainer 435)
 
+Location: Route 38
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Magnezone | 52 | Magnet Pull | – | Default |
 | Mr. Mime | 53 | Soundproof | – | Default |
 
 ### Jack (trainer 503)
+
+Location: National Park
+Fight: Rematch 3
 
 Uses in battle: Hyper Potion
 
@@ -3623,6 +4587,9 @@ Uses in battle: Hyper Potion
 
 ### Alan (trainer 505)
 
+Location: Route 36
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Xatu | 67 | Synchronize | – | Default |
@@ -3641,6 +4608,9 @@ Uses in battle: Hyper Potion
 
 ### Chad (trainer 507)
 
+Location: Route 38
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Mr. Mime | 67 | Soundproof | – | Default |
@@ -3655,6 +4625,8 @@ Uses in battle: Hyper Potion
 
 ### Sherman (trainer 546)
 
+Location: Route 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Pidgeot | 62 | Keen Eye | – | Default |
@@ -3662,11 +4634,16 @@ Uses in battle: Hyper Potion
 
 ### Connor (trainer 566)
 
+Location: Route 14
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Linoone | 62 | Pickup | – | Default |
 
 ### Torin (trainer 567)
+
+Location: Route 14
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3675,29 +4652,38 @@ Uses in battle: Hyper Potion
 
 ### Travis (trainer 568)
 
+Location: Route 14
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Roserade | 58 | Natural Cure | – | Default |
 
 ### Billy (trainer 640)
 
+Location: Route 15
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Parasect | 62 | Effect Spore | – | Default |
 | Ditto | 62 | Limber | – | Default |
 | Jumpluff | 62 | Chlorophyll | – | Default |
 | Poliwrath | 63 | Water Absorb | – | Default |
 
 ### Billy (trainer 641)
 
+Location: Route 15
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Parasect | 64 | Effect Spore | – | Default |
 | Ditto | 64 | Limber | – | Default |
 | Jumpluff | 64 | Chlorophyll | – | Default |
 | Poliwrath | 65 | Water Absorb | – | Default |
 
 ### Billy (trainer 642)
+
+Location: Route 15
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3708,6 +4694,9 @@ Uses in battle: Hyper Potion
 
 ### Torin (trainer 649)
 
+Location: Route 14
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Jumpluff | 61 | Chlorophyll | – | Default |
@@ -3715,6 +4704,9 @@ Uses in battle: Hyper Potion
 | Sandslash | 62 | Sand Veil | – | Default |
 
 ### Torin (trainer 650)
+
+Location: Route 14
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3724,15 +4716,20 @@ Uses in battle: Hyper Potion
 
 ### Torin (trainer 651)
 
+Location: Route 14
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Miltank | 67 | Thick Fat | – | Default |
 | Jumpluff | 67 | Chlorophyll | – | Default |
 | Crobat | 68 | Inner Focus | – | Default |
 
-## Scientist Gs
+## Scientist
 
 ### Ross (trainer 468)
+
+Location: Team Rocket Headquarters B3F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3741,12 +4738,15 @@ Uses in battle: Hyper Potion
 
 ### Mitch (trainer 469)
 
+Location: Team Rocket Headquarters B3F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Wyrdeer | 42 | Intimidate | – | Default |
 | Ditto | 43 | Limber | – | Default |
 
 ### Gregg (trainer 470)
+
+Location: Team Rocket Headquarters B1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3756,6 +4756,8 @@ Uses in battle: Hyper Potion
 
 ### Garett (trainer 471)
 
+Location: Goldenrod Radio Tower 3F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Alakazam | 42 | Synchronize | – | Default |
@@ -3764,11 +4766,15 @@ Uses in battle: Hyper Potion
 
 ### Trenton (trainer 472)
 
+Location: Goldenrod Radio Tower 4F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Porygon-Z | 44 | Adaptability | – | Default |
 
 ### Lowell (trainer 692)
+
+Location: Cinnabar Gym (Seafoam Islands)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3776,11 +4782,15 @@ Uses in battle: Hyper Potion
 
 ### Linden (trainer 693)
 
+Location: Cinnabar Gym (Seafoam Islands)
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Magmortar | 65 | Flame Body | – | Default |
 
 ### Daniel (trainer 694)
+
+Location: Cinnabar Gym (Seafoam Islands)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3790,17 +4800,23 @@ Uses in battle: Hyper Potion
 
 ### Diana (trainer 480)
 
+Location: Mahogany Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Jynx | 58 | Oblivious | – | Default |
 
 ### Jill (trainer 481)
 
+Location: Mahogany Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Dewgong | 42 | Thick Fat | – | Default |
 
 ### Cady (trainer 688)
+
+Location: Seafoam Islands B2F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3816,6 +4832,8 @@ Uses in battle: Hyper Potion
 
 ### Eric (trainer 233)
 
+Location: Goldenrod Tunnel B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Bronzor | 19 | Levitate | – | Default |
@@ -3823,12 +4841,16 @@ Uses in battle: Hyper Potion
 
 ### Sam (trainer 364)
 
+Location: Route 8
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Gengar | 59 | Cursed Body | – | Default |
 | Muk | 60 | Stench | – | Default |
 
 ### Tyrone (trainer 365)
+
+Location: Route 8
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3838,11 +4860,15 @@ Uses in battle: Hyper Potion
 
 ### Pat (trainer 366)
 
+Location: Route 25
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Porygon-Z | 60 | Adaptability | – | Default |
 
 ### Shawn (trainer 367)
+
+Location: S.S. Aqua 1F Northwest Rooms
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3852,9 +4878,10 @@ Uses in battle: Hyper Potion
 
 ### Teru (trainer 393)
 
+Location: Goldenrod Tunnel B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Magnemite | 18 | Magnet Pull | – | Default |
 | Spinarak | 18 | Swarm | – | Default |
 | Flaaffy | 18 | Static | – | Default |
 | Voltorb | 19 | Soundproof | – | Default |
@@ -3896,11 +4923,15 @@ Uses in battle: Hyper Potion
 
 ### Hugh (trainer 538)
 
+Location: Mt. Mortar Room Above Waterfall
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Kingdra | 48 | Swift Swim | – | Default |
 
 ### Markus (trainer 539)
+
+Location: Mt. Mortar Central Room
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3908,17 +4939,23 @@ Uses in battle: Hyper Potion
 
 ### Cary (trainer 689)
 
+Location: Cinnabar Gym (Seafoam Islands)
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Torkoal | 65 | White Smoke | – | Default |
 
 ### Waldo (trainer 690)
 
+Location: Cinnabar Gym (Seafoam Islands)
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Camerupt | 65 | Magma Armor | – | Default |
 
 ### Merle (trainer 691)
+
+Location: Cinnabar Gym (Seafoam Islands)
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3928,11 +4965,15 @@ Uses in battle: Hyper Potion
 
 ### Elaine (trainer 9)
 
+Location: Route 40
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Staryu | 29 | Illuminate | – | Default |
 
 ### Paula (trainer 85)
+
+Location: Route 40
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3941,20 +4982,24 @@ Uses in battle: Hyper Potion
 
 ### Kaylee (trainer 90)
 
+Location: Route 41
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Seadra | 31 | Poison Point | – | Default |
 | Corsola | 31 | Hustle | – | Default |
 | Goldeen | 32 | Swift Swim | – | Default |
 
 ### Susie (trainer 91)
 
+Location: Route 41
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Corsola | 33 | Hustle | – | Default |
 | Goldeen | 34 | Swift Swim | – | Default |
 
 ### Denise (trainer 92)
+
+Location: Route 41
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -3962,12 +5007,15 @@ Uses in battle: Hyper Potion
 
 ### Kara (trainer 93)
 
+Location: Route 41
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Corsola | 32 | Hustle | – | Default |
 | Staryu | 33 | Illuminate | – | Default |
 
 ### Wendy (trainer 94)
+
+Location: Route 41
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4000,6 +5048,8 @@ Uses in battle: Hyper Potion
 
 ### Debbie (trainer 291)
 
+Location: Route 19
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Gorebyss | 65 | Swift Swim | – | Default |
@@ -4012,6 +5062,8 @@ Uses in battle: Hyper Potion
 
 ### Nicole (trainer 293)
 
+Location: Route 20
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Seaking | 61 | Swift Swim | – | Default |
@@ -4019,6 +5071,8 @@ Uses in battle: Hyper Potion
 | Lapras | 62 | Water Absorb | – | Default |
 
 ### Lori (trainer 294)
+
+Location: Route 20
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4034,20 +5088,24 @@ Uses in battle: Hyper Potion
 
 ### Nikki (trainer 296)
 
+Location: Route 21
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Lanturn | 63 | Volt Absorb | – | Default |
-| Tentacruel | 63 | Clear Body | – | Default |
 | Cloyster | 63 | Shell Armor | – | Default |
 | Dewgong | 64 | Thick Fat | – | Default |
 
 ### Diana (trainer 297)
+
+Location: Cerulean Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Golduck | 42 | Damp | – | Default |
 
 ### Briana (trainer 298)
+
+Location: Cerulean Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4056,11 +5114,15 @@ Uses in battle: Hyper Potion
 
 ### Leona (trainer 587)
 
+Location: Route 20
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Bibarel | 65 | Simple | – | Default |
 
 ### Mina (trainer 588)
+
+Location: Route 20
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4070,17 +5132,23 @@ Uses in battle: Hyper Potion
 
 ### Chelan (trainer 592)
 
+Location: Route 21
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Azumarill | 65 | Thick Fat | – | Default |
 
 ### Kendra (trainer 593)
 
+Location: Route 21
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Slowking | 64 | Oblivious | – | Default |
 
 ### Joy (trainer 678)
+
+Location: Cerulean Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4090,12 +5158,16 @@ Uses in battle: Hyper Potion
 
 ### Simon (trainer 16)
 
+Location: Route 40
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Corsola | 27 | Hustle | – | Default |
+| Qwilfish | 27 | Poison Point | – | Default |
 | Tentacool | 28 | Clear Body | – | Default |
 
 ### Randall (trainer 86)
+
+Location: Route 40
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4105,6 +5177,8 @@ Uses in battle: Hyper Potion
 
 ### Charlie (trainer 95)
 
+Location: Route 41
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Tentacruel | 29 | Clear Body | – | Default |
@@ -4113,15 +5187,15 @@ Uses in battle: Hyper Potion
 
 ### George (trainer 96)
 
+Location: Route 41
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Tentacool | 32 | Clear Body | – | Default |
-| Corsola | 32 | Hustle | – | Default |
-| Lanturn | 32 | Volt Absorb | – | Default |
-| Gyarados | 32 | Intimidate | – | Default |
 | Staryu | 33 | Illuminate | – | Default |
 
 ### Berke (trainer 97)
+
+Location: Route 41
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4129,12 +5203,16 @@ Uses in battle: Hyper Potion
 
 ### Ronald (trainer 98)
 
+Location: Route 41
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Corsola | 30 | Hustle | – | Default |
 | Gyarados | 31 | Intimidate | – | Default |
 
 ### Matthew (trainer 99)
+
+Location: Route 41
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4173,9 +5251,11 @@ Uses in battle: Hyper Potion
 
 ### Harold (trainer 252)
 
+Location: Route 19
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Seaking | 63 | Swift Swim | – | Default |
+| Kingler | 63 | Hyper Cutter | – | Default |
 | Octillery | 64 | Suction Cups | – | Default |
 
 ### Mickey (trainer 273)
@@ -4188,6 +5268,8 @@ Uses in battle: Hyper Potion
 
 ### Jerome (trainer 370)
 
+Location: Route 19
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Seaking | 62 | Swift Swim | – | Default |
@@ -4196,6 +5278,8 @@ Uses in battle: Hyper Potion
 | Tentacruel | 63 | Clear Body | – | Default |
 
 ### Tucker (trainer 371)
+
+Location: Route 19
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4212,16 +5296,19 @@ Uses in battle: Hyper Potion
 
 ### Frankie (trainer 373)
 
+Location: Route 20
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Azumarill | 64 | Thick Fat | – | Default |
 
 ### Tyson (trainer 374)
 
+Location: Route 21
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Octillery | 63 | Suction Cups | – | Default |
-| Lanturn | 63 | Volt Absorb | – | Default |
 | Quagsire | 64 | Damp | – | Default |
 
 ### Mickey (trainer 375)
@@ -4249,12 +5336,16 @@ Uses in battle: Hyper Potion
 
 ### Elmo (trainer 585)
 
+Location: Route 20
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Tentacruel | 62 | Clear Body | – | Default |
 | Poliwrath | 63 | Water Absorb | – | Default |
 
 ### Luis (trainer 586)
+
+Location: Route 20
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4263,12 +5354,16 @@ Uses in battle: Hyper Potion
 
 ### Esteban (trainer 594)
 
+Location: Route 21
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Lanturn | 63 | Volt Absorb | – | Default |
 | Golduck | 64 | Damp | – | Default |
 
 ### Duane (trainer 595)
+
+Location: Route 21
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4279,19 +5374,25 @@ Uses in battle: Hyper Potion
 
 ### Colette (trainer 38)
 
+Location: Route 15
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Clefable | 60 | Cute Charm | – | Default |
 
 ### Hillary (trainer 382)
 
+Location: Route 15
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Ambipom | 59 | Technician | – | Default |
 | Ditto | 59 | Limber | – | Default |
 | Sunflora | 60 | Chlorophyll | – | Default |
 
 ### Shirley (trainer 427)
+
+Location: S.S. Aqua B1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4300,6 +5401,8 @@ Uses in battle: Hyper Potion
 
 ### Clarice (trainer 564)
 
+Location: Route 14
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Jumpluff | 59 | Chlorophyll | – | Default |
@@ -4307,31 +5410,39 @@ Uses in battle: Hyper Potion
 
 ### Hillary (trainer 637)
 
+Location: Route 15
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Ditto | 62 | Limber | – | Default |
 | Ursaluna | 62 | Guts | – | Default |
 | Ambipom | 63 | Technician | – | Default |
 
 ### Hillary (trainer 638)
 
+Location: Route 15
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Ursaluna | 65 | Guts | – | Default |
 | Ditto | 65 | Limber | – | Default |
 | Ambipom | 66 | Technician | – | Default |
 
 ### Hillary (trainer 639)
 
+Location: Route 15
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Ursaluna | 67 | Guts | – | Default |
 | Ditto | 67 | Limber | – | Default |
 | Ambipom | 68 | Technician | – | Default |
 
 ## Team Rocket
 
 ### Grunt (trainer 12)
+
+Location: Slowpoke Well 1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4347,12 +5458,16 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 101)
 
+Location: Slowpoke Well 1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Gastly | 16 | Levitate | – | Default |
 | Rattata | 17 | Run Away | – | Default |
 
 ### Grunt (trainer 185)
+
+Location: Goldenrod Radio Tower 1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4361,23 +5476,27 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 186)
 
+Location: Goldenrod Radio Tower 2F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Weezing | 42 | Levitate | – | Default |
 | Arbok | 42 | Intimidate | – | Default |
 | Muk | 43 | Stench | – | Default |
 
 ### Grunt (trainer 187)
 
+Location: Goldenrod Radio Tower 2F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Dudunspars | 40 | Serene Grace | – | Default |
 | Houndoom | 40 | Early Bird | – | Default |
 | Mightyena | 40 | Intimidate | – | Default |
 | Swalot | 40 | Liquid Ooze | – | Default |
 | Raticate | 41 | Run Away | – | Default |
 
 ### Grunt (trainer 188)
+
+Location: Goldenrod Radio Tower 2F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4386,14 +5505,16 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 189)
 
+Location: Goldenrod Radio Tower 3F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Raticate | 41 | Run Away | – | Default |
-| Muk | 41 | Stench | – | Default |
 | Crobat | 41 | Inner Focus | – | Default |
 | Weezing | 42 | Levitate | – | Default |
 
 ### Grunt (trainer 190)
+
+Location: Goldenrod Radio Tower 3F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4401,12 +5522,16 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 191)
 
+Location: Goldenrod Radio Tower 3F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Raticate | 42 | Run Away | – | Default |
 | Weezing | 43 | Levitate | – | Default |
 
 ### Grunt (trainer 192)
+
+Location: Goldenrod Radio Tower 4F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4416,9 +5541,10 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 193)
 
+Location: Goldenrod Tunnel B2F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Muk | 43 | Stench | – | Default |
 | Weezing | 43 | Levitate | – | Default |
 | Raticate | 44 | Run Away | – | Default |
 
@@ -4430,11 +5556,15 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 195)
 
+Location: Goldenrod Tunnel B2F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Raticate | 45 | Run Away | – | Default |
 
 ### Grunt (trainer 196)
+
+Location: Goldenrod Tunnel Warehouse
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4443,21 +5573,25 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 197)
 
+Location: Goldenrod Tunnel Warehouse
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Weezing | 44 | Levitate | – | Default |
 | Muk | 45 | Stench | – | Default |
 
 ### Grunt (trainer 216)
 
+Location: Team Rocket Headquarters B1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Dudunspars | 37 | Serene Grace | – | Default |
 | Houndoom | 37 | Early Bird | – | Default |
 | Crobat | 37 | Inner Focus | – | Default |
 | Raticate | 38 | Run Away | – | Default |
 
 ### Grunt (trainer 218)
+
+Location: Team Rocket Headquarters B2F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4465,13 +5599,16 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 219)
 
+Location: Team Rocket Headquarters B2F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Crobat | 38 | Inner Focus | – | Default |
 | Muk | 38 | Stench | – | Default |
 | Raticate | 39 | Run Away | – | Default |
 
 ### Grunt (trainer 220)
+
+Location: Team Rocket Headquarters B2F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4486,11 +5623,15 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 222)
 
+Location: Team Rocket Headquarters B3F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Raticate | 42 | Run Away | – | Default |
 
 ### Grunt (trainer 223)
+
+Location: Team Rocket Headquarters B1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4498,6 +5639,8 @@ Uses in battle: Hyper Potion
 | Crobat | 34 | Inner Focus | – | Default |
 
 ### Grunt (trainer 224)
+
+Location: Team Rocket Headquarters B1F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4519,12 +5662,16 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 227)
 
+Location: Goldenrod Tunnel Warehouse
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Dudunspars | 43 | Serene Grace | – | Default |
 | Weezing | 44 | Levitate | – | Default |
 
 ### Grunt (trainer 228)
+
+Location: Goldenrod Tunnel B2F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4548,11 +5695,15 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 353)
 
+Location: Route 24
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Crobat | 36 | Inner Focus | – | Default |
 
 ### Grunt (trainer 499)
+
+Location: Team Rocket Headquarters B2F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4560,6 +5711,8 @@ Uses in battle: Hyper Potion
 | Grimer | 34 | Stench | – | Default |
 
 ### Grunt (trainer 601)
+
+Location: Ecruteak Dance Theater
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4569,6 +5722,8 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 13)
 
+Location: Slowpoke Well 1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Zubat | 17 | Inner Focus | – | Default |
@@ -4576,11 +5731,15 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 198)
 
+Location: Goldenrod Radio Tower 2F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Arbok | 43 | Intimidate | – | Default |
 
 ### Grunt (trainer 199)
+
+Location: Goldenrod Tunnel B2F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4589,14 +5748,17 @@ Uses in battle: Hyper Potion
 
 ### Grunt (trainer 200)
 
+Location: Goldenrod Radio Tower 4F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Arbok | 34 | Intimidate | – | Default |
 | Crobat | 34 | Inner Focus | – | Default |
 | Tauros | 34 | Intimidate | – | Default |
 | Bellossom | 35 | Chlorophyll | – | Default |
 
 ### Grunt (trainer 404)
+
+Location: Team Rocket Headquarters B3F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4615,6 +5777,8 @@ Uses in battle: Hyper Potion
 
 ### Amy & Mimi (trainer 10)
 
+Location: Azalea Gym
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Snubbull | 17 | Intimidate | – | Default |
@@ -4622,12 +5786,16 @@ Uses in battle: Hyper Potion
 
 ### Tori & Til (trainer 81)
 
+Location: Route 37
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Stantler | 23 | Intimidate | – | Default |
+| Plusle | 23 | Plus | – | Default |
 | Azumarill | 24 | Thick Fat | – | Default |
 
 ### Jo & Zoe (trainer 326)
+
+Location: Celadon Gym
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4657,6 +5825,8 @@ Uses in battle: Hyper Potion
 
 ### Meg & Peg (trainer 425)
 
+Location: S.S. Aqua 1F Northwest Rooms
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Raichu | 53 | Static | – | Default |
@@ -4670,6 +5840,8 @@ Uses in battle: Hyper Potion
 | Teddiursa | 39 | Quick Feet | – | Default |
 
 ### Clea & Gil (trainer 502)
+
+Location: Dragon's Den
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4685,12 +5857,17 @@ Uses in battle: Hyper Potion
 
 ### Kay & Tia (trainer 569)
 
+Location: Route 15
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ditto | 59 | Limber | – | Default |
 | Quagsire | 60 | Damp | – | Default |
 
 ### Day & Dani (trainer 598)
+
+Location: Route 6
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4699,6 +5876,9 @@ Uses in battle: Hyper Potion
 
 ### Kay & Tia (trainer 643)
 
+Location: Route 15
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ditto | 61 | Limber | – | Default |
@@ -4706,12 +5886,18 @@ Uses in battle: Hyper Potion
 
 ### Kay & Tia (trainer 644)
 
+Location: Route 15
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ditto | 65 | Limber | – | Default |
 | Quagsire | 66 | Damp | – | Default |
 
 ### Kay & Tia (trainer 645)
+
+Location: Route 15
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4722,12 +5908,16 @@ Uses in battle: Hyper Potion
 
 ### Moe & Lulu (trainer 553)
 
+Location: Route 8
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Pidgeot | 57 | Keen Eye | – | Default |
 | Ludicolo | 58 | Swift Swim | – | Default |
 
 ### Vic & Tara (trainer 557)
+
+Location: Route 12
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4736,12 +5926,18 @@ Uses in battle: Hyper Potion
 
 ### Tim & Sue (trainer 559)
 
+Location: Route 13
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Noctowl | 58 | Insomnia | – | Default |
 | Golduck | 59 | Damp | – | Default |
 
 ### Tim & Sue (trainer 652)
+
+Location: Route 13
+Fight: Rematch 1
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4750,6 +5946,9 @@ Uses in battle: Hyper Potion
 
 ### Tim & Sue (trainer 653)
 
+Location: Route 13
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Noctowl | 65 | Insomnia | – | Default |
@@ -4757,12 +5956,17 @@ Uses in battle: Hyper Potion
 
 ### Tim & Sue (trainer 654)
 
+Location: Route 13
+Fight: Rematch 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Noctowl | 68 | Insomnia | – | Default |
 | Golduck | 69 | Damp | – | Default |
 
 ### Duff & Eda (trainer 729)
+
+Location: Route 47
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4773,11 +5977,16 @@ Uses in battle: Hyper Potion
 
 ### Joey (trainer 8)
 
+Location: Route 30
+Fight: First battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Rattata | 7 | Run Away | – | Default |
 
 ### Mikey (trainer 47)
+
+Location: Route 30
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4786,6 +5995,8 @@ Uses in battle: Hyper Potion
 
 ### Albert (trainer 49)
 
+Location: Route 32
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Qwilfish | 13 | Poison Point | – | Default |
@@ -4793,20 +6004,25 @@ Uses in battle: Hyper Potion
 
 ### Gordon (trainer 56)
 
+Location: Route 32
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Wooper | 14 | Damp | – | Default |
 
 ### Samuel (trainer 62)
 
+Location: Route 34
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Ditto | 19 | Limber | – | Default |
-| Tentacool | 19 | Clear Body | – | Default |
 | Rattata | 19 | Run Away | – | Default |
 | Sandshrew | 20 | Sand Veil | – | Default |
 
 ### Ian (trainer 64)
+
+Location: Route 34
+Fight: First battle
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4815,11 +6031,17 @@ Uses in battle: Hyper Potion
 
 ### Joey (trainer 279)
 
+Location: Route 30
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Raticate | 48 | Run Away | – | Default |
 
 ### Joey (trainer 280)
+
+Location: Route 30
+Fight: Rematch 2
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4827,12 +6049,16 @@ Uses in battle: Hyper Potion
 
 ### Warren (trainer 378)
 
+Location: Route 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Noctowl | 53 | Insomnia | – | Default |
 | Raticate | 54 | Run Away | – | Default |
 
 ### Jimmy (trainer 379)
+
+Location: Route 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4842,12 +6068,15 @@ Uses in battle: Hyper Potion
 
 ### Owen (trainer 380)
 
+Location: Route 11
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Raticate | 59 | Run Away | – | Default |
 | Arcanine | 60 | Intimidate | – | Default |
 
 ### Jason (trainer 381)
+
+Location: Route 11
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4855,6 +6084,9 @@ Uses in battle: Hyper Potion
 | Sandslash | 59 | Sand Veil | – | Default |
 
 ### Joey (trainer 510)
+
+Location: Route 30
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -4868,6 +6100,8 @@ Uses in battle: Hyper Potion
 
 ### Regis (trainer 552)
 
+Location: Route 3
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Noctowl | 56 | Insomnia | – | Default |
@@ -4875,19 +6109,26 @@ Uses in battle: Hyper Potion
 
 ### Ian (trainer 616)
 
+Location: Route 34
+Fight: Rematch 1
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Ditto | 45 | Limber | – | Default |
 | Dugtrio | 46 | Sand Veil | – | Default |
 
 ### Ian (trainer 617)
 
+Location: Route 34
+Fight: Rematch 2
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
-| Ditto | 51 | Limber | – | Default |
 | Dugtrio | 52 | Sand Veil | – | Default |
 
 ### Ian (trainer 618)
+
+Location: Route 34
+Fight: Rematch 3
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
