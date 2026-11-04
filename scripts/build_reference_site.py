@@ -106,10 +106,14 @@ def read_trainers(name):
             group = line[3:]
         elif line.startswith("### "):
             match = re.match(r"### (.*) \(trainer (\d+)\)", line)
-            trainer = {"g": group, "name": match.group(1), "id": int(match.group(2)), "it": None, "t": []}
+            trainer = {"g": group, "name": match.group(1), "id": int(match.group(2)), "it": None, "loc": None, "fight": None, "t": []}
             trainers.append(trainer)
         elif trainer is not None and line.startswith("Uses in battle: "):
             trainer["it"] = line[16:]
+        elif trainer is not None and line.startswith("Location: "):
+            trainer["loc"] = line[10:]
+        elif trainer is not None and line.startswith("Fight: "):
+            trainer["fight"] = line[7:]
         elif trainer is not None and line.startswith("|"):
             _, trainer["t"], index = read_table(lines, index)
             continue
@@ -143,18 +147,42 @@ def read_shops():
     return shops
 
 
+def read_events():
+    # gift_static.md: each ## or ### section becomes one entry with its notes and tables. The page intro is skipped.
+    lines = read_lines("gift_static.md")
+    events = []
+    index = 0
+    while index < len(lines):
+        line = lines[index]
+        if line.startswith("## ") or line.startswith("### "):
+            events.append({"name": line.lstrip("# "), "p": [], "t": []})
+        elif events and line.startswith("|"):
+            header, rows, index = read_table(lines, index)
+            events[-1]["t"].append({"h": header, "r": rows})
+            continue
+        elif events and line.strip():
+            text = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", line.strip())
+            if events[-1]["p"] and not events[-1]["t"] and lines[index - 1].strip():
+                events[-1]["p"][-1] += " " + text
+            else:
+                events[-1]["p"].append(text)
+        index += 1
+    return events
+
+
 def main():
     output = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_OUTPUT
     data = {"P": read_pokemon(), "E": read_areas("encounters.md", "## "), "S": read_areas("special_encounters.md", "### ", "## "),
-            "T": read_trainers("trainers.md"), "O": read_trainers("other_trainers.md"), "M": read_moves(), "I": read_shops()}
+            "T": read_trainers("trainers.md"), "O": read_trainers("other_trainers.md"), "M": read_moves(), "I": read_shops(),
+            "G": read_events()}
     with open(TEMPLATE, encoding="utf-8") as source:
         page = source.read()
     text = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     os.makedirs(output, exist_ok=True)
     with open(os.path.join(output, "index.html"), "w", encoding="utf-8") as target:
         target.write(page.replace("__DATA__", text))
-    print("Wrote %s with %d Pokémon, %d areas, %d trainer fights, %d moves and %d shops" % (os.path.join(output, "index.html"), len(data["P"]),
-          len(data["E"]) + len(data["S"]), len(data["T"]) + len(data["O"]), len(data["M"]), len(data["I"])))
+    print("Wrote %s with %d Pokémon, %d areas, %d trainer fights, %d moves, %d shops and %d event lists" % (os.path.join(output, "index.html"),
+          len(data["P"]), len(data["E"]) + len(data["S"]), len(data["T"]) + len(data["O"]), len(data["M"]), len(data["I"]), len(data["G"])))
 
 
 if __name__ == "__main__":

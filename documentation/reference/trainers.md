@@ -10,6 +10,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 ### Silver (trainer 1)
 
+Location: Azalea Town
+Fight: If you chose Totodile
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Teddiursa | 19 | Pickup | – | Fury Swipes, Lick, Fake Tears, Baby-Doll Eyes |
@@ -18,17 +21,26 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 ### Silver (trainer 2)
 
+Location: Cherrygrove City
+Fight: If you chose Chikorita
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Cyndaquil | 5 | Blaze | – | Default |
 
 ### Silver (trainer 3)
 
+Location: Cherrygrove City
+Fight: If you chose Cyndaquil
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Totodile | 5 | Torrent | – | Default |
 
 ### Silver (trainer 263)
+
+Location: Burned Tower 1F
+Fight: If you chose Totodile
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -38,6 +50,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 | Bayleef | 27 | Overgrow | Oran Berry | Razor Leaf, Reflect, Synthesis, Headbutt |
 
 ### Silver (trainer 264)
+
+Location: Victory Road 3F
+Fight: If you chose Totodile
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -50,11 +65,17 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 ### Silver (trainer 265)
 
+Location: Cherrygrove City
+Fight: If you chose Totodile
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Chikorita | 5 | Overgrow | – | Default |
 
 ### Silver (trainer 266)
+
+Location: Azalea Town
+Fight: If you chose Chikorita
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -64,6 +85,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 ### Silver (trainer 267)
 
+Location: Burned Tower 1F
+Fight: If you chose Chikorita
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Teddiursa | 25 | Pickup | – | Fury Swipes, Lick, Fake Tears, Baby-Doll Eyes |
@@ -72,6 +96,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 | Quilava | 27 | Blaze | Oran Berry | Flame Wheel, Quick Attack, Smokescreen, Swift |
 
 ### Silver (trainer 268)
+
+Location: Victory Road 3F
+Fight: If you chose Chikorita
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -84,6 +111,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 ### Silver (trainer 269)
 
+Location: Azalea Town
+Fight: If you chose Cyndaquil
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Teddiursa | 19 | Pickup | – | Fury Swipes, Lick, Fake Tears, Baby-Doll Eyes |
@@ -91,6 +121,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 | Croconaw | 21 | Torrent | Oran Berry | Water Pulse, Bite, Ice Fang, Scary Face |
 
 ### Silver (trainer 270)
+
+Location: Burned Tower 1F
+Fight: If you chose Cyndaquil
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -101,6 +134,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 ### Silver (trainer 271)
 
+Location: Goldenrod Tunnel B2F
+Fight: If you chose Cyndaquil
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ursaring | 44 | Guts | – | Slash, Crunch, Close Combat, Rest |
@@ -110,6 +146,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 | Feraligatr | 46 | Torrent | Sitrus Berry | Waterfall, Dragon Claw, Crunch, Ice Fang |
 
 ### Silver (trainer 272)
+
+Location: Victory Road 3F
+Fight: If you chose Cyndaquil
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -122,6 +161,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 ### Silver (trainer 285)
 
+Location: Mt. Moon 1F
+Fight: If you chose Totodile
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ursaluna | 58 | Guts | – | Earthquake, Crunch, Close Combat, Rest |
@@ -132,6 +174,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 | Tyranitar | 59 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
 
 ### Silver (trainer 286)
+
+Location: Mt. Moon 1F
+Fight: If you chose Chikorita
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -144,6 +189,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 ### Silver (trainer 287)
 
+Location: Mt. Moon 1F
+Fight: If you chose Cyndaquil
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ursaluna | 58 | Guts | – | Earthquake, Crunch, Close Combat, Rest |
@@ -155,6 +203,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 ### Silver (trainer 288)
 
+Location: Goldenrod Tunnel B2F
+Fight: If you chose Totodile
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ursaring | 44 | Guts | – | Slash, Crunch, Close Combat, Rest |
@@ -165,6 +216,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 
 ### Silver (trainer 289)
 
+Location: Goldenrod Tunnel B2F
+Fight: If you chose Chikorita
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Ursaring | 44 | Guts | – | Slash, Crunch, Close Combat, Rest |
@@ -174,6 +228,9 @@ Teams are listed in trainer ID order, which is roughly the order you meet them. 
 | Typhlosion | 46 | Blaze | Sitrus Berry | Flamethrower, Thunder Punch, Swift, Smokescreen |
 
 ### Silver (trainer 489)
+
+Location: Indigo Plateau
+Fight: Weekly rematch, if you chose Totodile
 
 Uses in battle: Full Restore, Full Restore
 
@@ -188,6 +245,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Silver (trainer 490)
 
+Location: Indigo Plateau
+Fight: Weekly rematch, if you chose Chikorita
+
 Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -200,6 +260,9 @@ Uses in battle: Full Restore, Full Restore
 | Tyranitar | 78 | Sand Stream | Sitrus Berry | Crunch, Earthquake, Stone Edge, Fire Punch |
 
 ### Silver (trainer 491)
+
+Location: Indigo Plateau
+Fight: Weekly rematch, if you chose Cyndaquil
 
 Uses in battle: Full Restore, Full Restore
 
@@ -214,6 +277,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Silver (trainer 735)
 
+Location: Dragon's Den
+Fight: Your partner in the tag battle against Lance and Clair, if you chose Totodile
+
 Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -224,6 +290,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Silver (trainer 736)
 
+Location: Dragon's Den
+Fight: Your partner in the tag battle against Lance and Clair, if you chose Chikorita
+
 Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -233,6 +302,9 @@ Uses in battle: Full Restore, Full Restore
 | Typhlosion | 78 | Blaze | Sitrus Berry | Flamethrower, Thunder Punch, Swift, Smokescreen |
 
 ### Silver (trainer 737)
+
+Location: Dragon's Den
+Fight: Your partner in the tag battle against Lance and Clair, if you chose Cyndaquil
 
 Uses in battle: Full Restore, Full Restore
 
@@ -246,6 +318,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Falkner (trainer 20)
 
+Location: Violet Gym
+Fight: Gym battle
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Pidgey | 13 | Keen Eye | – | Quick Attack, Gust, Tackle, Feather Dance |
@@ -253,6 +328,9 @@ Uses in battle: Full Restore, Full Restore
 | Pidgeotto | 15 | Keen Eye | Oran Berry | Roost, Aerial Ace, Quick Attack, Mud-Slap |
 
 ### Falkner (trainer 712)
+
+Location: Fighting Dojo
+Fight: Rematch
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -267,6 +345,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Bugsy (trainer 21)
 
+Location: Azalea Gym
+Fight: Gym battle
+
 Uses in battle: Super Potion
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -277,6 +358,9 @@ Uses in battle: Super Potion
 | Scyther | 21 | Technician | Sitrus Berry | U-turn, Quick Attack, Wing Attack, Swords Dance |
 
 ### Bugsy (trainer 713)
+
+Location: Fighting Dojo
+Fight: Rematch
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -291,6 +375,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Whitney (trainer 30)
 
+Location: Goldenrod Gym
+Fight: Gym battle
+
 Uses in battle: Super Potion, Super Potion
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -300,6 +387,9 @@ Uses in battle: Super Potion, Super Potion
 | Miltank | 22 | Scrappy | Lum Berry | Rollout, Attract, Stomp, Milk Drink |
 
 ### Whitney (trainer 714)
+
+Location: Fighting Dojo
+Fight: Rematch
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -314,6 +404,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Morty (trainer 31)
 
+Location: Ecruteak Gym
+Fight: Gym battle
+
 Uses in battle: Hyper Potion, Hyper Potion
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -324,6 +417,9 @@ Uses in battle: Hyper Potion, Hyper Potion
 | Gengar | 29 | Cursed Body | Sitrus Berry | Hypnosis, Shadow Ball, Thunderbolt, Dream Eater |
 
 ### Morty (trainer 715)
+
+Location: Fighting Dojo
+Fight: Rematch
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -338,6 +434,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Chuck (trainer 34)
 
+Location: Cianwood Gym
+Fight: Gym battle
+
 Uses in battle: Hyper Potion, Hyper Potion
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -348,6 +447,9 @@ Uses in battle: Hyper Potion, Hyper Potion
 | Poliwrath | 35 | Water Absorb | Sitrus Berry | Hypnosis, Dynamic Punch, Surf, Ice Punch |
 
 ### Chuck (trainer 718)
+
+Location: Fighting Dojo
+Fight: Rematch
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -362,6 +464,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Jasmine (trainer 33)
 
+Location: Olivine Gym
+Fight: Gym battle
+
 Uses in battle: Hyper Potion, Hyper Potion
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -372,6 +477,9 @@ Uses in battle: Hyper Potion, Hyper Potion
 | Steelix | 40 | Sturdy | Sitrus Berry | Earthquake, Iron Tail, Stone Edge, Crunch |
 
 ### Jasmine (trainer 717)
+
+Location: Fighting Dojo
+Fight: Rematch
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -386,6 +494,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Pryce (trainer 32)
 
+Location: Mahogany Gym
+Fight: Gym battle
+
 Uses in battle: Hyper Potion, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -397,6 +508,9 @@ Uses in battle: Hyper Potion, Full Restore
 | Mamoswine | 43 | Oblivious | Sitrus Berry | Earthquake, Ice Shard, Stone Edge, Superpower |
 
 ### Pryce (trainer 716)
+
+Location: Fighting Dojo
+Fight: Rematch
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -411,6 +525,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Clair (trainer 35)
 
+Location: Blackthorn Gym
+Fight: Gym battle
+
 Uses in battle: Hyper Potion, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -422,6 +539,9 @@ Uses in battle: Hyper Potion, Full Restore
 | Kingdra | 50 | Sniper | Sitrus Berry | Dragon Pulse, Surf, Ice Beam, Focus Energy |
 
 ### Clair (trainer 719)
+
+Location: Fighting Dojo
+Fight: Rematch
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -436,6 +556,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Clair (trainer 734)
 
+Location: Dragon's Den
+Fight: Tag battle, with Lance
+
 Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -448,6 +571,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Will (trainer 245)
 
+Location: Pokémon League
+Fight: First round
+
 Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -459,6 +585,9 @@ Uses in battle: Full Restore, Full Restore
 | Xatu | 55 | Synchronize | Sitrus Berry | Air Slash, Psychic, Heat Wave, Thunder Wave |
 
 ### Will (trainer 702)
+
+Location: Pokémon League
+Fight: Second round
 
 Uses in battle: Full Restore, Full Restore
 
@@ -473,6 +602,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Koga (trainer 247)
 
+Location: Pokémon League
+Fight: First round
+
 Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -484,6 +616,9 @@ Uses in battle: Full Restore, Full Restore
 | Crobat | 55 | Inner Focus | Sitrus Berry | Brave Bird, Cross Poison, Double Team, Toxic |
 
 ### Koga (trainer 703)
+
+Location: Pokémon League
+Fight: Second round
 
 Uses in battle: Full Restore, Full Restore
 
@@ -498,6 +633,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Bruno (trainer 418)
 
+Location: Pokémon League
+Fight: First round
+
 Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -509,6 +647,9 @@ Uses in battle: Full Restore, Full Restore
 | Machamp | 55 | No Guard | Sitrus Berry | Dynamic Punch, Stone Edge, Earthquake, Bullet Punch |
 
 ### Bruno (trainer 704)
+
+Location: Pokémon League
+Fight: Second round
 
 Uses in battle: Full Restore, Full Restore
 
@@ -523,6 +664,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Karen (trainer 246)
 
+Location: Pokémon League
+Fight: First round
+
 Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -534,6 +678,9 @@ Uses in battle: Full Restore, Full Restore
 | Houndoom | 55 | Flash Fire | Sitrus Berry | Dark Pulse, Flamethrower, Nasty Plot, Solar Beam |
 
 ### Karen (trainer 705)
+
+Location: Pokémon League
+Fight: Second round
 
 Uses in battle: Full Restore, Full Restore
 
@@ -548,6 +695,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Lance (trainer 244)
 
+Location: Pokémon League
+Fight: First round
+
 Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -560,6 +710,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 | Dragonite | 60 | Multiscale | Sitrus Berry | Dragon Dance, Outrage, Extreme Speed, Earthquake |
 
 ### Lance (trainer 701)
+
+Location: Pokémon League
+Fight: Second round
 
 Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
@@ -574,6 +727,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 ### Lance (trainer 733)
 
+Location: Dragon's Den
+Fight: Tag battle, with Clair
+
 Uses in battle: Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -584,6 +740,9 @@ Uses in battle: Full Restore, Full Restore
 
 ### Lance (trainer 675)
 
+Location: Team Rocket Headquarters B2F
+Fight: Your partner in the Rocket Hideout
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Aerodactyl | 43 | Rock Head | – | Stone Edge, Aerial Ace, Crunch, Earthquake |
@@ -592,6 +751,9 @@ Uses in battle: Full Restore, Full Restore
 ## Kanto Gym Leaders
 
 ### Brock (trainer 253)
+
+Location: Pewter Gym
+Fight: Gym battle
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -606,6 +768,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Brock (trainer 720)
 
+Location: Fighting Dojo
+Fight: Rematch
+
 Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -618,6 +783,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 | Steelix | 73 | Sturdy | Sitrus Berry | Earthquake, Iron Head, Crunch, Stone Edge |
 
 ### Misty (trainer 254)
+
+Location: Cerulean Gym
+Fight: Gym battle
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -632,6 +800,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Misty (trainer 721)
 
+Location: Fighting Dojo
+Fight: Rematch
+
 Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -644,6 +815,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 | Starmie | 72 | Natural Cure | Sitrus Berry | Hydro Pump, Psychic, Thunderbolt, Recover |
 
 ### Lt. Surge (trainer 255)
+
+Location: Vermilion Gym
+Fight: Gym battle
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -658,6 +832,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Lt. Surge (trainer 722)
 
+Location: Fighting Dojo
+Fight: Rematch
+
 Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -670,6 +847,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 | Raichu | 74 | Lightning Rod | Sitrus Berry | Thunderbolt, Surf, Focus Blast, Nasty Plot |
 
 ### Erika (trainer 256)
+
+Location: Celadon Gym
+Fight: Gym battle
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -684,6 +864,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Erika (trainer 723)
 
+Location: Fighting Dojo
+Fight: Rematch
+
 Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -696,6 +879,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 | Tangrowth | 76 | Chlorophyll | Sitrus Berry | Power Whip, Earthquake, Focus Blast, Sleep Powder |
 
 ### Janine (trainer 257)
+
+Location: Fuchsia Gym
+Fight: Gym battle
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -710,6 +896,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Janine (trainer 724)
 
+Location: Fighting Dojo
+Fight: Rematch
+
 Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -722,6 +911,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 | Venomoth | 72 | Tinted Lens | Sitrus Berry | Bug Buzz, Psychic, Sleep Powder, Quiver Dance |
 
 ### Sabrina (trainer 258)
+
+Location: Saffron Gym
+Fight: Gym battle
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -736,6 +928,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Sabrina (trainer 725)
 
+Location: Fighting Dojo
+Fight: Rematch
+
 Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -748,6 +943,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 | Alakazam | 76 | Magic Guard | Sitrus Berry | Psychic, Focus Blast, Shadow Ball, Recover |
 
 ### Blaine (trainer 259)
+
+Location: Cinnabar Gym (Seafoam Islands)
+Fight: First battle
 
 Uses in battle: Full Restore, Full Restore, Full Restore
 
@@ -762,6 +960,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Blaine (trainer 726)
 
+Location: Fighting Dojo
+Fight: Rematch
+
 Uses in battle: Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -775,6 +976,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore
 
 ### Blue (trainer 261)
 
+Location: Viridian Gym
+Fight: Gym battle
+
 Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 | Pokémon | Level | Ability | Held item | Moves |
@@ -787,6 +991,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 | Pidgeot | 70 | Keen Eye | Sitrus Berry | Hurricane, Heat Wave, U-turn, Roost |
 
 ### Blue (trainer 727)
+
+Location: Fighting Dojo
+Fight: Rematch
 
 Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
@@ -803,6 +1010,8 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 ### Archer (trainer 485)
 
+Location: Goldenrod Radio Tower Observation Deck
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Weezing | 46 | Levitate | – | Sludge Bomb, Will-O-Wisp, Pain Split, Fire Blast |
@@ -812,6 +1021,8 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 | Houndoom | 48 | Flash Fire | Focus Sash | Flamethrower, Dark Pulse, Will-O-Wisp, Sludge Bomb |
 
 ### Ariana (trainer 478)
+
+Location: Goldenrod Radio Tower 5F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -823,6 +1034,8 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 ### Ariana (trainer 479)
 
+Location: Team Rocket Headquarters B2F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Arbok | 42 | Intimidate | – | Glare, Crunch, Gunk Shot, Earthquake |
@@ -832,6 +1045,8 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 ### Proton (trainer 486)
 
+Location: Slowpoke Well 1F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Qwilfish | 17 | Poison Point | – | Poison Jab, Water Pulse, Pin Missile, Toxic |
@@ -839,6 +1054,8 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 | Golbat | 18 | Inner Focus | Oran Berry | Air Cutter, Poison Fang, Confuse Ray, Bite |
 
 ### Proton (trainer 706)
+
+Location: Goldenrod Radio Tower 4F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -848,6 +1065,8 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 | Crobat | 46 | Inner Focus | Sitrus Berry | Cross Poison, Brave Bird, Super Fang, Confuse Ray |
 
 ### Petrel (trainer 487)
+
+Location: Goldenrod Radio Tower 5F
 
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
@@ -859,6 +1078,8 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 
 ### Petrel (trainer 488)
 
+Location: Team Rocket Headquarters B3F
+
 | Pokémon | Level | Ability | Held item | Moves |
 |---|---|---|---|---|
 | Skuntank | 41 | Aftermath | – | Poison Jab, Crunch, Flamethrower, Toxic |
@@ -867,6 +1088,9 @@ Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 | Weezing | 43 | Levitate | Sitrus Berry | Sludge Bomb, Will-O-Wisp, Explosion, Fire Blast |
 
 ### Giovanni (trainer 700)
+
+Location: Tohjo Falls Hidden Room
+Fight: Celebi event
 
 Uses in battle: Full Restore
 
@@ -881,6 +1105,8 @@ Uses in battle: Full Restore
 ## Red
 
 ### Red (trainer 260)
+
+Location: Mt. Silver Summit
 
 Uses in battle: Full Restore, Full Restore, Full Restore, Full Restore
 

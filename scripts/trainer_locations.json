@@ -1,0 +1,2165 @@
+{
+ "1": {
+  "location": "Azalea Town"
+ },
+ "2": {
+  "location": "Cherrygrove City"
+ },
+ "3": {
+  "location": "Cherrygrove City"
+ },
+ "4": {
+  "location": "Route 31",
+  "fight": "First battle"
+ },
+ "5": {
+  "location": "Goldenrod Gym"
+ },
+ "6": {
+  "location": "Route 34"
+ },
+ "7": {
+  "location": "Route 35",
+  "fight": "First battle"
+ },
+ "8": {
+  "location": "Route 30",
+  "fight": "First battle"
+ },
+ "9": {
+  "location": "Route 40"
+ },
+ "10": {
+  "location": "Azalea Gym"
+ },
+ "12": {
+  "location": "Slowpoke Well 1F"
+ },
+ "13": {
+  "location": "Slowpoke Well 1F"
+ },
+ "14": {
+  "location": "Goldenrod Tunnel B2F"
+ },
+ "15": {
+  "location": "Route 3"
+ },
+ "16": {
+  "location": "Route 40"
+ },
+ "17": {
+  "location": "Route 45",
+  "fight": "First battle"
+ },
+ "18": {
+  "location": "Route 32"
+ },
+ "20": {
+  "location": "Violet Gym",
+  "fight": "Gym battle"
+ },
+ "21": {
+  "location": "Azalea Gym",
+  "fight": "Gym battle"
+ },
+ "22": {
+  "location": "Goldenrod Gym"
+ },
+ "23": {
+  "location": "Union Cave 1F"
+ },
+ "24": {
+  "location": "Route 36",
+  "fight": "First battle"
+ },
+ "25": {
+  "location": "Union Cave 1F"
+ },
+ "26": {
+  "location": "Route 32"
+ },
+ "27": {
+  "location": "Route 32",
+  "fight": "First battle"
+ },
+ "28": {
+  "location": "Route 26"
+ },
+ "29": {
+  "location": "Violet Gym"
+ },
+ "30": {
+  "location": "Goldenrod Gym",
+  "fight": "Gym battle"
+ },
+ "31": {
+  "location": "Ecruteak Gym",
+  "fight": "Gym battle"
+ },
+ "32": {
+  "location": "Mahogany Gym",
+  "fight": "Gym battle"
+ },
+ "33": {
+  "location": "Olivine Gym",
+  "fight": "Gym battle"
+ },
+ "34": {
+  "location": "Cianwood Gym",
+  "fight": "Gym battle"
+ },
+ "35": {
+  "location": "Blackthorn Gym",
+  "fight": "Gym battle"
+ },
+ "36": {
+  "location": "Route 26"
+ },
+ "37": {
+  "location": "Olivine Lighthouse 4F"
+ },
+ "38": {
+  "location": "Route 15"
+ },
+ "39": {
+  "location": "Route 39"
+ },
+ "41": {
+  "location": "S.S. Aqua 1F Northeast Rooms"
+ },
+ "42": {
+  "location": "Ruins of Alph Outside"
+ },
+ "43": {
+  "location": "Sprout Tower 1F"
+ },
+ "44": {
+  "location": "Route 39",
+  "fight": "First battle"
+ },
+ "45": {
+  "location": "Route 39"
+ },
+ "46": {
+  "location": "Ecruteak Gym"
+ },
+ "47": {
+  "location": "Route 30"
+ },
+ "48": {
+  "location": "Route 2 South Below Viridian Forest",
+  "fight": "First battle"
+ },
+ "49": {
+  "location": "Route 32"
+ },
+ "50": {
+  "location": "Violet Gym"
+ },
+ "51": {
+  "location": "Sprout Tower 2F"
+ },
+ "52": {
+  "location": "Sprout Tower 2F"
+ },
+ "53": {
+  "location": "Sprout Tower 3F"
+ },
+ "54": {
+  "location": "Sprout Tower 3F"
+ },
+ "55": {
+  "location": "Sprout Tower 3F"
+ },
+ "56": {
+  "location": "Route 32"
+ },
+ "57": {
+  "location": "Route 32",
+  "fight": "First battle"
+ },
+ "58": {
+  "location": "Route 21"
+ },
+ "59": {
+  "location": "Route 12",
+  "fight": "First battle"
+ },
+ "60": {
+  "location": "Route 32"
+ },
+ "61": {
+  "location": "Route 33",
+  "fight": "First battle"
+ },
+ "62": {
+  "location": "Route 34"
+ },
+ "64": {
+  "location": "Route 34",
+  "fight": "First battle"
+ },
+ "65": {
+  "location": "Route 34",
+  "fight": "First battle"
+ },
+ "66": {
+  "location": "Route 34",
+  "fight": "First battle"
+ },
+ "67": {
+  "location": "Azalea Gym"
+ },
+ "68": {
+  "location": "Azalea Gym"
+ },
+ "69": {
+  "location": "Azalea Gym"
+ },
+ "70": {
+  "location": "Goldenrod Gym"
+ },
+ "71": {
+  "location": "Goldenrod Gym"
+ },
+ "72": {
+  "location": "Route 35"
+ },
+ "73": {
+  "location": "Olivine Lighthouse 3F"
+ },
+ "74": {
+  "location": "Route 35"
+ },
+ "75": {
+  "location": "Route 35"
+ },
+ "76": {
+  "location": "Route 35"
+ },
+ "77": {
+  "location": "Route 35"
+ },
+ "78": {
+  "location": "Route 35",
+  "fight": "First battle"
+ },
+ "79": {
+  "location": "S.S. Aqua 1F Northeast Rooms"
+ },
+ "80": {
+  "location": "Route 35"
+ },
+ "81": {
+  "location": "Route 37"
+ },
+ "82": {
+  "location": "Route 38"
+ },
+ "83": {
+  "location": "Fuchsia Gym"
+ },
+ "84": {
+  "location": "Fuchsia Gym"
+ },
+ "85": {
+  "location": "Route 40"
+ },
+ "86": {
+  "location": "Route 40"
+ },
+ "89": {
+  "location": "Ecruteak Gym"
+ },
+ "90": {
+  "location": "Route 41"
+ },
+ "91": {
+  "location": "Route 41"
+ },
+ "92": {
+  "location": "Route 41"
+ },
+ "93": {
+  "location": "Route 41"
+ },
+ "94": {
+  "location": "Route 41"
+ },
+ "95": {
+  "location": "Route 41"
+ },
+ "96": {
+  "location": "Route 41"
+ },
+ "97": {
+  "location": "Route 41"
+ },
+ "98": {
+  "location": "Route 41"
+ },
+ "99": {
+  "location": "Route 41"
+ },
+ "100": {
+  "location": "Route 33",
+  "fight": "Rematch 1"
+ },
+ "101": {
+  "location": "Slowpoke Well 1F"
+ },
+ "102": {
+  "location": "Route 26",
+  "fight": "First battle"
+ },
+ "103": {
+  "location": "Route 27"
+ },
+ "104": {
+  "location": "Route 27"
+ },
+ "108": {
+  "location": "Route 45"
+ },
+ "109": {
+  "location": "Lake of Rage"
+ },
+ "110": {
+  "location": "Blackthorn Gym"
+ },
+ "111": {
+  "location": "Blackthorn Gym"
+ },
+ "112": {
+  "location": "Blackthorn Gym"
+ },
+ "113": {
+  "location": "Route 26",
+  "fight": "First battle"
+ },
+ "114": {
+  "location": "Route 27",
+  "fight": "First battle"
+ },
+ "115": {
+  "location": "Route 27"
+ },
+ "116": {
+  "location": "Lake of Rage"
+ },
+ "117": {
+  "location": "Blackthorn Gym"
+ },
+ "118": {
+  "location": "Route 34"
+ },
+ "119": {
+  "location": "Blackthorn Gym"
+ },
+ "120": {
+  "location": "Route 34"
+ },
+ "121": {
+  "location": "Route 45"
+ },
+ "122": {
+  "location": "Route 43"
+ },
+ "123": {
+  "location": "Route 42",
+  "fight": "First battle"
+ },
+ "124": {
+  "location": "Route 44",
+  "fight": "First battle"
+ },
+ "125": {
+  "location": "Route 44"
+ },
+ "126": {
+  "location": "Lake of Rage"
+ },
+ "127": {
+  "location": "Lake of Rage"
+ },
+ "128": {
+  "location": "S.S. Aqua B1F"
+ },
+ "129": {
+  "location": "Route 42"
+ },
+ "130": {
+  "location": "Route 43"
+ },
+ "131": {
+  "location": "Route 43",
+  "fight": "First battle"
+ },
+ "132": {
+  "location": "Route 43"
+ },
+ "133": {
+  "location": "S.S. Aqua 1F Southwest Rooms"
+ },
+ "134": {
+  "location": "Route 42"
+ },
+ "135": {
+  "location": "Route 15"
+ },
+ "136": {
+  "location": "Fuchsia Gym"
+ },
+ "137": {
+  "location": "Route 44",
+  "fight": "First battle"
+ },
+ "139": {
+  "location": "S.S. Aqua B1F"
+ },
+ "140": {
+  "location": "Route 2 South Below Viridian Forest",
+  "fight": "First battle"
+ },
+ "142": {
+  "location": "Route 34",
+  "fight": "Rematch 1"
+ },
+ "143": {
+  "location": "Route 45"
+ },
+ "144": {
+  "location": "Route 45"
+ },
+ "145": {
+  "location": "Route 45",
+  "fight": "First battle"
+ },
+ "146": {
+  "location": "Route 45"
+ },
+ "147": {
+  "location": "Route 46"
+ },
+ "148": {
+  "location": "Route 25"
+ },
+ "149": {
+  "location": "Route 9"
+ },
+ "150": {
+  "location": "Route 9"
+ },
+ "151": {
+  "location": "Route 46",
+  "fight": "First battle"
+ },
+ "152": {
+  "location": "Route 4"
+ },
+ "153": {
+  "location": "Route 4"
+ },
+ "154": {
+  "location": "Route 46"
+ },
+ "155": {
+  "location": "Route 33",
+  "fight": "Rematch 2"
+ },
+ "156": {
+  "location": "Cianwood Gym"
+ },
+ "157": {
+  "location": "Cianwood Gym"
+ },
+ "158": {
+  "location": "Mt. Mortar B1F"
+ },
+ "159": {
+  "location": "Cianwood Gym"
+ },
+ "160": {
+  "location": "Ecruteak Dance Theater"
+ },
+ "161": {
+  "location": "Ecruteak Dance Theater"
+ },
+ "162": {
+  "location": "Ecruteak Dance Theater"
+ },
+ "163": {
+  "location": "Ecruteak Dance Theater"
+ },
+ "164": {
+  "location": "Ecruteak Dance Theater"
+ },
+ "172": {
+  "location": "Route 43",
+  "fight": "Rematch 1"
+ },
+ "173": {
+  "location": "Route 43",
+  "fight": "Rematch 2"
+ },
+ "178": {
+  "location": "National Park",
+  "fight": "First battle"
+ },
+ "179": {
+  "location": "Route 15"
+ },
+ "181": {
+  "location": "National Park"
+ },
+ "182": {
+  "location": "National Park",
+  "fight": "First battle"
+ },
+ "183": {
+  "location": "Fuchsia Gym"
+ },
+ "184": {
+  "location": "National Park",
+  "fight": "First battle"
+ },
+ "185": {
+  "location": "Goldenrod Radio Tower 1F"
+ },
+ "186": {
+  "location": "Goldenrod Radio Tower 2F"
+ },
+ "187": {
+  "location": "Goldenrod Radio Tower 2F"
+ },
+ "188": {
+  "location": "Goldenrod Radio Tower 2F"
+ },
+ "189": {
+  "location": "Goldenrod Radio Tower 3F"
+ },
+ "190": {
+  "location": "Goldenrod Radio Tower 3F"
+ },
+ "191": {
+  "location": "Goldenrod Radio Tower 3F"
+ },
+ "192": {
+  "location": "Goldenrod Radio Tower 4F"
+ },
+ "193": {
+  "location": "Goldenrod Tunnel B2F"
+ },
+ "195": {
+  "location": "Goldenrod Tunnel B2F"
+ },
+ "196": {
+  "location": "Goldenrod Tunnel Warehouse"
+ },
+ "197": {
+  "location": "Goldenrod Tunnel Warehouse"
+ },
+ "198": {
+  "location": "Goldenrod Radio Tower 2F"
+ },
+ "199": {
+  "location": "Goldenrod Tunnel B2F"
+ },
+ "200": {
+  "location": "Goldenrod Radio Tower 4F"
+ },
+ "201": {
+  "location": "Union Cave B1F"
+ },
+ "202": {
+  "location": "Union Cave B1F"
+ },
+ "203": {
+  "location": "Union Cave B1F"
+ },
+ "204": {
+  "location": "Union Cave B1F"
+ },
+ "205": {
+  "location": "Union Cave B2F"
+ },
+ "206": {
+  "location": "Union Cave B2F"
+ },
+ "209": {
+  "location": "S.S. Aqua 1F Northeast Rooms"
+ },
+ "211": {
+  "location": "Olivine Lighthouse 2F",
+  "fight": "First battle"
+ },
+ "212": {
+  "location": "Olivine Lighthouse 5F"
+ },
+ "213": {
+  "location": "Olivine Lighthouse 3F"
+ },
+ "214": {
+  "location": "Olivine Lighthouse 5F"
+ },
+ "215": {
+  "location": "Olivine Lighthouse 4F"
+ },
+ "216": {
+  "location": "Team Rocket Headquarters B1F"
+ },
+ "217": {
+  "location": "Olivine Lighthouse 3F"
+ },
+ "218": {
+  "location": "Team Rocket Headquarters B2F"
+ },
+ "219": {
+  "location": "Team Rocket Headquarters B2F"
+ },
+ "220": {
+  "location": "Team Rocket Headquarters B2F"
+ },
+ "222": {
+  "location": "Team Rocket Headquarters B3F"
+ },
+ "223": {
+  "location": "Team Rocket Headquarters B1F"
+ },
+ "224": {
+  "location": "Team Rocket Headquarters B1F"
+ },
+ "227": {
+  "location": "Goldenrod Tunnel Warehouse"
+ },
+ "228": {
+  "location": "Goldenrod Tunnel B2F"
+ },
+ "230": {
+  "location": "Saffron Gym"
+ },
+ "231": {
+  "location": "S.S. Aqua 1F Southeast Rooms"
+ },
+ "232": {
+  "location": "Vermilion Gym"
+ },
+ "233": {
+  "location": "Goldenrod Tunnel B1F"
+ },
+ "234": {
+  "location": "Route 9"
+ },
+ "235": {
+  "location": "S.S. Aqua 1F Southwest Rooms"
+ },
+ "236": {
+  "location": "S.S. Aqua 1F Southwest Rooms"
+ },
+ "237": {
+  "location": "S.S. Aqua 1F Southwest Rooms"
+ },
+ "238": {
+  "location": "S.S. Aqua 1F Southeast Rooms"
+ },
+ "239": {
+  "location": "S.S. Aqua B1F"
+ },
+ "240": {
+  "location": "S.S. Aqua B1F"
+ },
+ "241": {
+  "location": "S.S. Aqua B1F"
+ },
+ "242": {
+  "location": "S.S. Aqua B1F"
+ },
+ "244": {
+  "location": "Pokémon League",
+  "fight": "First round"
+ },
+ "245": {
+  "location": "Pokémon League",
+  "fight": "First round"
+ },
+ "246": {
+  "location": "Pokémon League",
+  "fight": "First round"
+ },
+ "247": {
+  "location": "Pokémon League",
+  "fight": "First round"
+ },
+ "248": {
+  "location": "Route 2 North Above Viridian Forest"
+ },
+ "249": {
+  "location": "Route 30"
+ },
+ "250": {
+  "location": "Route 45",
+  "fight": "Rematch 1"
+ },
+ "251": {
+  "location": "Cianwood Gym"
+ },
+ "252": {
+  "location": "Route 19"
+ },
+ "253": {
+  "location": "Pewter Gym",
+  "fight": "Gym battle"
+ },
+ "254": {
+  "location": "Cerulean Gym",
+  "fight": "Gym battle"
+ },
+ "255": {
+  "location": "Vermilion Gym",
+  "fight": "Gym battle"
+ },
+ "256": {
+  "location": "Celadon Gym",
+  "fight": "Gym battle"
+ },
+ "257": {
+  "location": "Fuchsia Gym",
+  "fight": "Gym battle"
+ },
+ "258": {
+  "location": "Saffron Gym",
+  "fight": "Gym battle"
+ },
+ "259": {
+  "location": "Cinnabar Gym (Seafoam Islands)",
+  "fight": "First battle"
+ },
+ "260": {
+  "location": "Mt. Silver Summit"
+ },
+ "261": {
+  "location": "Viridian Gym",
+  "fight": "Gym battle"
+ },
+ "263": {
+  "location": "Burned Tower 1F"
+ },
+ "264": {
+  "location": "Victory Road 3F"
+ },
+ "265": {
+  "location": "Cherrygrove City"
+ },
+ "266": {
+  "location": "Azalea Town"
+ },
+ "267": {
+  "location": "Burned Tower 1F"
+ },
+ "268": {
+  "location": "Victory Road 3F"
+ },
+ "269": {
+  "location": "Azalea Town"
+ },
+ "270": {
+  "location": "Burned Tower 1F"
+ },
+ "271": {
+  "location": "Goldenrod Tunnel B2F"
+ },
+ "272": {
+  "location": "Victory Road 3F"
+ },
+ "274": {
+  "location": "Route 34",
+  "fight": "Rematch 1"
+ },
+ "275": {
+  "location": "Route 34",
+  "fight": "Rematch 2"
+ },
+ "276": {
+  "location": "Route 32",
+  "fight": "Rematch 1"
+ },
+ "277": {
+  "location": "Route 32",
+  "fight": "Rematch 2"
+ },
+ "278": {
+  "location": "Route 45",
+  "fight": "Rematch 2"
+ },
+ "279": {
+  "location": "Route 30",
+  "fight": "Rematch 1"
+ },
+ "280": {
+  "location": "Route 30",
+  "fight": "Rematch 2"
+ },
+ "281": {
+  "location": "Burned Tower 1F"
+ },
+ "282": {
+  "location": "Burned Tower 1F"
+ },
+ "283": {
+  "location": "Goldenrod Tunnel B2F"
+ },
+ "284": {
+  "location": "S.S. Aqua 1F Southeast Rooms"
+ },
+ "285": {
+  "location": "Mt. Moon 1F"
+ },
+ "286": {
+  "location": "Mt. Moon 1F"
+ },
+ "287": {
+  "location": "Mt. Moon 1F"
+ },
+ "288": {
+  "location": "Goldenrod Tunnel B2F"
+ },
+ "289": {
+  "location": "Goldenrod Tunnel B2F"
+ },
+ "290": {
+  "location": "Sprout Tower 3F"
+ },
+ "291": {
+  "location": "Route 19"
+ },
+ "293": {
+  "location": "Route 20"
+ },
+ "294": {
+  "location": "Route 20"
+ },
+ "296": {
+  "location": "Route 21"
+ },
+ "297": {
+  "location": "Cerulean Gym"
+ },
+ "298": {
+  "location": "Cerulean Gym"
+ },
+ "299": {
+  "location": "Route 4"
+ },
+ "300": {
+  "location": "Route 14"
+ },
+ "301": {
+  "location": "Route 18"
+ },
+ "302": {
+  "location": "Route 18"
+ },
+ "303": {
+  "location": "Route 27",
+  "fight": "Rematch 1"
+ },
+ "308": {
+  "location": "Pewter Gym"
+ },
+ "309": {
+  "location": "Route 8"
+ },
+ "310": {
+  "location": "Route 8"
+ },
+ "311": {
+  "location": "Route 8"
+ },
+ "312": {
+  "location": "Route 18"
+ },
+ "313": {
+  "location": "Route 17",
+  "fight": "First battle"
+ },
+ "314": {
+  "location": "Route 17"
+ },
+ "315": {
+  "location": "Route 17"
+ },
+ "316": {
+  "location": "Route 11"
+ },
+ "317": {
+  "location": "Route 11"
+ },
+ "318": {
+  "location": "Route 3"
+ },
+ "319": {
+  "location": "Union Cave 1F"
+ },
+ "320": {
+  "location": "Route 12"
+ },
+ "321": {
+  "location": "Route 12"
+ },
+ "322": {
+  "location": "Route 12"
+ },
+ "323": {
+  "location": "Route 42",
+  "fight": "Rematch 1"
+ },
+ "324": {
+  "location": "Route 42",
+  "fight": "Rematch 2"
+ },
+ "325": {
+  "location": "Route 44",
+  "fight": "Rematch 1"
+ },
+ "326": {
+  "location": "Celadon Gym"
+ },
+ "327": {
+  "location": "Route 1"
+ },
+ "328": {
+  "location": "Route 15"
+ },
+ "329": {
+  "location": "Route 25"
+ },
+ "330": {
+  "location": "Route 25"
+ },
+ "331": {
+  "location": "Route 15",
+  "fight": "First battle"
+ },
+ "332": {
+  "location": "Route 9"
+ },
+ "333": {
+  "location": "Route 9"
+ },
+ "334": {
+  "location": "Route 34",
+  "fight": "Rematch 2"
+ },
+ "335": {
+  "location": "Route 46",
+  "fight": "Rematch 1"
+ },
+ "336": {
+  "location": "Celadon Gym"
+ },
+ "337": {
+  "location": "Vermilion Gym"
+ },
+ "339": {
+  "location": "S.S. Aqua B1F"
+ },
+ "346": {
+  "location": "Celadon Gym"
+ },
+ "348": {
+  "location": "Route 10"
+ },
+ "349": {
+  "location": "Route 13"
+ },
+ "350": {
+  "location": "Route 14"
+ },
+ "351": {
+  "location": "Route 14"
+ },
+ "352": {
+  "location": "S.S. Aqua 1F Northwest Rooms"
+ },
+ "353": {
+  "location": "Route 24"
+ },
+ "354": {
+  "location": "Route 25"
+ },
+ "355": {
+  "location": "Route 25"
+ },
+ "356": {
+  "location": "Celadon Gym"
+ },
+ "357": {
+  "location": "Route 9"
+ },
+ "358": {
+  "location": "Route 13",
+  "fight": "First battle"
+ },
+ "359": {
+  "location": "Route 10"
+ },
+ "360": {
+  "location": "Route 35",
+  "fight": "Rematch 1"
+ },
+ "361": {
+  "location": "Route 25"
+ },
+ "362": {
+  "location": "Route 1"
+ },
+ "363": {
+  "location": "Union Cave B2F"
+ },
+ "364": {
+  "location": "Route 8"
+ },
+ "365": {
+  "location": "Route 8"
+ },
+ "366": {
+  "location": "Route 25"
+ },
+ "367": {
+  "location": "S.S. Aqua 1F Northwest Rooms"
+ },
+ "368": {
+  "location": "Saffron Gym"
+ },
+ "369": {
+  "location": "Saffron Gym"
+ },
+ "370": {
+  "location": "Route 19"
+ },
+ "371": {
+  "location": "Route 19"
+ },
+ "373": {
+  "location": "Route 20"
+ },
+ "374": {
+  "location": "Route 21"
+ },
+ "378": {
+  "location": "Route 3"
+ },
+ "379": {
+  "location": "Route 3"
+ },
+ "380": {
+  "location": "Route 11"
+ },
+ "381": {
+  "location": "Route 11"
+ },
+ "382": {
+  "location": "Route 15",
+  "fight": "First battle"
+ },
+ "383": {
+  "location": "Route 32"
+ },
+ "384": {
+  "location": "Union Cave 1F"
+ },
+ "386": {
+  "location": "Route 37"
+ },
+ "388": {
+  "location": "Route 35",
+  "fight": "First battle"
+ },
+ "389": {
+  "location": "Route 39"
+ },
+ "390": {
+  "location": "Union Cave 1F"
+ },
+ "391": {
+  "location": "Goldenrod Tunnel B1F"
+ },
+ "392": {
+  "location": "Goldenrod Tunnel B1F"
+ },
+ "393": {
+  "location": "Goldenrod Tunnel B1F"
+ },
+ "395": {
+  "location": "Route 36"
+ },
+ "396": {
+  "location": "Vermilion Gym"
+ },
+ "397": {
+  "location": "Route 38",
+  "fight": "First battle"
+ },
+ "398": {
+  "location": "Route 38"
+ },
+ "399": {
+  "location": "S.S. Aqua 1F Northeast Rooms"
+ },
+ "400": {
+  "location": "Route 38",
+  "fight": "First battle"
+ },
+ "401": {
+  "location": "Olivine Lighthouse 2F",
+  "fight": "First battle"
+ },
+ "402": {
+  "location": "Route 43",
+  "fight": "First battle"
+ },
+ "403": {
+  "location": "Route 43"
+ },
+ "404": {
+  "location": "Team Rocket Headquarters B3F"
+ },
+ "405": {
+  "location": "Route 44"
+ },
+ "406": {
+  "location": "Route 44"
+ },
+ "407": {
+  "location": "Route 44"
+ },
+ "408": {
+  "location": "Route 44"
+ },
+ "409": {
+  "location": "Route 34"
+ },
+ "410": {
+  "location": "Route 38"
+ },
+ "411": {
+  "location": "Route 26"
+ },
+ "412": {
+  "location": "Route 27"
+ },
+ "413": {
+  "location": "Route 26"
+ },
+ "414": {
+  "location": "Route 27",
+  "fight": "First battle"
+ },
+ "415": {
+  "location": "Saffron Gym"
+ },
+ "417": {
+  "location": "Route 34"
+ },
+ "418": {
+  "location": "Pokémon League",
+  "fight": "First round"
+ },
+ "419": {
+  "location": "Route 25"
+ },
+ "420": {
+  "location": "Route 13"
+ },
+ "421": {
+  "location": "Route 13"
+ },
+ "422": {
+  "location": "S.S. Aqua 1F Northwest Rooms"
+ },
+ "423": {
+  "location": "S.S. Aqua 1F Northwest Rooms"
+ },
+ "424": {
+  "location": "S.S. Aqua 1F Northwest Rooms"
+ },
+ "425": {
+  "location": "S.S. Aqua 1F Northwest Rooms"
+ },
+ "427": {
+  "location": "S.S. Aqua B1F"
+ },
+ "428": {
+  "location": "S.S. Aqua B1F"
+ },
+ "429": {
+  "location": "S.S. Aqua B1F"
+ },
+ "430": {
+  "location": "National Park",
+  "fight": "Rematch 1"
+ },
+ "431": {
+  "location": "National Park",
+  "fight": "Rematch 2"
+ },
+ "432": {
+  "location": "Route 36",
+  "fight": "Rematch 1"
+ },
+ "433": {
+  "location": "Route 36",
+  "fight": "Rematch 2"
+ },
+ "434": {
+  "location": "Route 38",
+  "fight": "Rematch 1"
+ },
+ "435": {
+  "location": "Route 38",
+  "fight": "Rematch 2"
+ },
+ "436": {
+  "location": "National Park",
+  "fight": "Rematch 1"
+ },
+ "437": {
+  "location": "National Park",
+  "fight": "Rematch 2"
+ },
+ "438": {
+  "location": "Route 39",
+  "fight": "Rematch 1"
+ },
+ "439": {
+  "location": "Route 39",
+  "fight": "Rematch 2"
+ },
+ "440": {
+  "location": "Olivine Lighthouse 2F",
+  "fight": "Rematch 1"
+ },
+ "441": {
+  "location": "Olivine Lighthouse 2F",
+  "fight": "Rematch 2"
+ },
+ "444": {
+  "location": "Route 27",
+  "fight": "Rematch 1"
+ },
+ "445": {
+  "location": "Route 27",
+  "fight": "Rematch 2"
+ },
+ "446": {
+  "location": "Route 27",
+  "fight": "Rematch 2"
+ },
+ "447": {
+  "location": "Route 44",
+  "fight": "Rematch 1"
+ },
+ "448": {
+  "location": "Route 44",
+  "fight": "Rematch 2"
+ },
+ "449": {
+  "location": "Route 35",
+  "fight": "Rematch 2"
+ },
+ "450": {
+  "location": "Route 44",
+  "fight": "Rematch 2"
+ },
+ "451": {
+  "location": "Route 45",
+  "fight": "Rematch 1"
+ },
+ "452": {
+  "location": "Route 45",
+  "fight": "Rematch 2"
+ },
+ "453": {
+  "location": "Route 46",
+  "fight": "Rematch 2"
+ },
+ "454": {
+  "location": "Route 35",
+  "fight": "Rematch 1"
+ },
+ "455": {
+  "location": "Route 35",
+  "fight": "Rematch 2"
+ },
+ "456": {
+  "location": "Route 26",
+  "fight": "Rematch 1"
+ },
+ "457": {
+  "location": "Route 26",
+  "fight": "Rematch 2"
+ },
+ "458": {
+  "location": "Route 26",
+  "fight": "Rematch 1"
+ },
+ "459": {
+  "location": "Route 26",
+  "fight": "Rematch 2"
+ },
+ "460": {
+  "location": "Route 31",
+  "fight": "Rematch 2"
+ },
+ "461": {
+  "location": "Route 31",
+  "fight": "Rematch 1"
+ },
+ "462": {
+  "location": "Route 32",
+  "fight": "Rematch 1"
+ },
+ "463": {
+  "location": "Route 32",
+  "fight": "Rematch 2"
+ },
+ "464": {
+  "location": "Route 38",
+  "fight": "Rematch 1"
+ },
+ "465": {
+  "location": "Route 38",
+  "fight": "Rematch 2"
+ },
+ "466": {
+  "location": "Route 43",
+  "fight": "Rematch 1"
+ },
+ "467": {
+  "location": "Route 43",
+  "fight": "Rematch 2"
+ },
+ "468": {
+  "location": "Team Rocket Headquarters B3F"
+ },
+ "469": {
+  "location": "Team Rocket Headquarters B3F"
+ },
+ "470": {
+  "location": "Team Rocket Headquarters B1F"
+ },
+ "471": {
+  "location": "Goldenrod Radio Tower 3F"
+ },
+ "472": {
+  "location": "Goldenrod Radio Tower 4F"
+ },
+ "478": {
+  "location": "Goldenrod Radio Tower 5F"
+ },
+ "479": {
+  "location": "Team Rocket Headquarters B2F"
+ },
+ "480": {
+  "location": "Mahogany Gym"
+ },
+ "481": {
+  "location": "Mahogany Gym"
+ },
+ "482": {
+  "location": "Mahogany Gym"
+ },
+ "483": {
+  "location": "Mahogany Gym"
+ },
+ "484": {
+  "location": "Mahogany Gym"
+ },
+ "485": {
+  "location": "Goldenrod Radio Tower Observation Deck"
+ },
+ "486": {
+  "location": "Slowpoke Well 1F"
+ },
+ "487": {
+  "location": "Goldenrod Radio Tower 5F"
+ },
+ "488": {
+  "location": "Team Rocket Headquarters B3F"
+ },
+ "489": {
+  "location": "Indigo Plateau",
+  "fight": "Weekly rematch"
+ },
+ "490": {
+  "location": "Indigo Plateau",
+  "fight": "Weekly rematch"
+ },
+ "491": {
+  "location": "Indigo Plateau",
+  "fight": "Weekly rematch"
+ },
+ "492": {
+  "location": "Route 13"
+ },
+ "493": {
+  "location": "Ecruteak Gym"
+ },
+ "494": {
+  "location": "Ecruteak Gym"
+ },
+ "495": {
+  "location": "Cherrygrove City"
+ },
+ "496": {
+  "location": "Cherrygrove City"
+ },
+ "497": {
+  "location": "Cherrygrove City"
+ },
+ "498": {
+  "location": "Cianwood City"
+ },
+ "499": {
+  "location": "Team Rocket Headquarters B2F"
+ },
+ "500": {
+  "location": "Dragon's Den"
+ },
+ "501": {
+  "location": "Dragon's Den"
+ },
+ "502": {
+  "location": "Dragon's Den"
+ },
+ "503": {
+  "location": "National Park",
+  "fight": "Rematch 3"
+ },
+ "505": {
+  "location": "Route 36",
+  "fight": "Rematch 3"
+ },
+ "507": {
+  "location": "Route 38",
+  "fight": "Rematch 3"
+ },
+ "509": {
+  "location": "Olivine Lighthouse 2F",
+  "fight": "Rematch 3"
+ },
+ "510": {
+  "location": "Route 30",
+  "fight": "Rematch 3"
+ },
+ "512": {
+  "location": "Route 31",
+  "fight": "Rematch 3"
+ },
+ "513": {
+  "location": "Route 35",
+  "fight": "Rematch 3"
+ },
+ "515": {
+  "location": "Route 32",
+  "fight": "Rematch 3"
+ },
+ "517": {
+  "location": "Route 42",
+  "fight": "Rematch 3"
+ },
+ "518": {
+  "location": "Route 32",
+  "fight": "Rematch 3"
+ },
+ "520": {
+  "location": "Route 34",
+  "fight": "Rematch 3"
+ },
+ "522": {
+  "location": "Route 43",
+  "fight": "Rematch 3"
+ },
+ "523": {
+  "location": "Route 33",
+  "fight": "Rematch 3"
+ },
+ "525": {
+  "location": "Route 34",
+  "fight": "Rematch 3"
+ },
+ "527": {
+  "location": "Route 35",
+  "fight": "Rematch 3"
+ },
+ "528": {
+  "location": "Route 38",
+  "fight": "Rematch 3"
+ },
+ "530": {
+  "location": "Route 43",
+  "fight": "Rematch 3"
+ },
+ "537": {
+  "location": "Mt. Mortar Central Room"
+ },
+ "538": {
+  "location": "Mt. Mortar Room Above Waterfall"
+ },
+ "539": {
+  "location": "Mt. Mortar Central Room"
+ },
+ "545": {
+  "location": "Route 1"
+ },
+ "546": {
+  "location": "Route 1"
+ },
+ "547": {
+  "location": "Route 3"
+ },
+ "548": {
+  "location": "Route 3"
+ },
+ "549": {
+  "location": "Route 3"
+ },
+ "550": {
+  "location": "Route 3"
+ },
+ "551": {
+  "location": "Route 3"
+ },
+ "552": {
+  "location": "Route 3"
+ },
+ "553": {
+  "location": "Route 8"
+ },
+ "554": {
+  "location": "Route 8"
+ },
+ "555": {
+  "location": "Route 12"
+ },
+ "556": {
+  "location": "Route 12"
+ },
+ "557": {
+  "location": "Route 12"
+ },
+ "558": {
+  "location": "Route 12",
+  "fight": "First battle"
+ },
+ "559": {
+  "location": "Route 13",
+  "fight": "First battle"
+ },
+ "560": {
+  "location": "Route 13"
+ },
+ "561": {
+  "location": "Route 13",
+  "fight": "First battle"
+ },
+ "562": {
+  "location": "Route 13"
+ },
+ "563": {
+  "location": "Route 13"
+ },
+ "564": {
+  "location": "Route 14"
+ },
+ "565": {
+  "location": "Route 14",
+  "fight": "First battle"
+ },
+ "566": {
+  "location": "Route 14"
+ },
+ "567": {
+  "location": "Route 14",
+  "fight": "First battle"
+ },
+ "568": {
+  "location": "Route 14"
+ },
+ "569": {
+  "location": "Route 15",
+  "fight": "First battle"
+ },
+ "570": {
+  "location": "Route 15"
+ },
+ "571": {
+  "location": "Route 15"
+ },
+ "572": {
+  "location": "Route 17"
+ },
+ "573": {
+  "location": "Route 17"
+ },
+ "574": {
+  "location": "Route 17",
+  "fight": "First battle"
+ },
+ "575": {
+  "location": "Route 17"
+ },
+ "576": {
+  "location": "Route 17"
+ },
+ "577": {
+  "location": "Route 17"
+ },
+ "578": {
+  "location": "Route 17"
+ },
+ "579": {
+  "location": "Route 17",
+  "fight": "First battle"
+ },
+ "580": {
+  "location": "Route 20"
+ },
+ "581": {
+  "location": "Route 20"
+ },
+ "582": {
+  "location": "Route 20"
+ },
+ "583": {
+  "location": "Route 20"
+ },
+ "584": {
+  "location": "Route 20"
+ },
+ "585": {
+  "location": "Route 20"
+ },
+ "586": {
+  "location": "Route 20"
+ },
+ "587": {
+  "location": "Route 20"
+ },
+ "588": {
+  "location": "Route 20"
+ },
+ "589": {
+  "location": "Route 21"
+ },
+ "590": {
+  "location": "Route 21"
+ },
+ "591": {
+  "location": "Route 21"
+ },
+ "592": {
+  "location": "Route 21"
+ },
+ "593": {
+  "location": "Route 21"
+ },
+ "594": {
+  "location": "Route 21"
+ },
+ "595": {
+  "location": "Route 21"
+ },
+ "596": {
+  "location": "Route 21"
+ },
+ "597": {
+  "location": "Route 21"
+ },
+ "598": {
+  "location": "Route 6"
+ },
+ "599": {
+  "location": "Route 6"
+ },
+ "600": {
+  "location": "Route 6"
+ },
+ "601": {
+  "location": "Ecruteak Dance Theater"
+ },
+ "602": {
+  "location": "Route 27",
+  "fight": "Rematch 3"
+ },
+ "603": {
+  "location": "Route 46",
+  "fight": "Rematch 3"
+ },
+ "604": {
+  "location": "Route 26",
+  "fight": "Rematch 3"
+ },
+ "605": {
+  "location": "Route 45",
+  "fight": "Rematch 3"
+ },
+ "606": {
+  "location": "Route 45",
+  "fight": "Rematch 3"
+ },
+ "607": {
+  "location": "Route 27",
+  "fight": "Rematch 3"
+ },
+ "608": {
+  "location": "Route 44",
+  "fight": "Rematch 3"
+ },
+ "609": {
+  "location": "Route 26",
+  "fight": "Rematch 3"
+ },
+ "610": {
+  "location": "Route 39",
+  "fight": "Rematch 3"
+ },
+ "611": {
+  "location": "National Park",
+  "fight": "Rematch 3"
+ },
+ "612": {
+  "location": "Route 44",
+  "fight": "Rematch 3"
+ },
+ "613": {
+  "location": "National Park",
+  "fight": "Rematch 1"
+ },
+ "614": {
+  "location": "National Park",
+  "fight": "Rematch 2"
+ },
+ "615": {
+  "location": "National Park",
+  "fight": "Rematch 3"
+ },
+ "616": {
+  "location": "Route 34",
+  "fight": "Rematch 1"
+ },
+ "617": {
+  "location": "Route 34",
+  "fight": "Rematch 2"
+ },
+ "618": {
+  "location": "Route 34",
+  "fight": "Rematch 3"
+ },
+ "619": {
+  "location": "Route 35",
+  "fight": "Rematch 1"
+ },
+ "620": {
+  "location": "Route 35",
+  "fight": "Rematch 2"
+ },
+ "621": {
+  "location": "Route 35",
+  "fight": "Rematch 3"
+ },
+ "622": {
+  "location": "Route 2 South Below Viridian Forest",
+  "fight": "Rematch 1"
+ },
+ "623": {
+  "location": "Route 2 South Below Viridian Forest",
+  "fight": "Rematch 2"
+ },
+ "624": {
+  "location": "Route 2 South Below Viridian Forest",
+  "fight": "Rematch 3"
+ },
+ "625": {
+  "location": "Route 2 South Below Viridian Forest",
+  "fight": "Rematch 1"
+ },
+ "626": {
+  "location": "Route 2 South Below Viridian Forest",
+  "fight": "Rematch 2"
+ },
+ "627": {
+  "location": "Route 2 South Below Viridian Forest",
+  "fight": "Rematch 3"
+ },
+ "628": {
+  "location": "Route 17",
+  "fight": "Rematch 1"
+ },
+ "629": {
+  "location": "Route 17",
+  "fight": "Rematch 2"
+ },
+ "630": {
+  "location": "Route 17",
+  "fight": "Rematch 3"
+ },
+ "631": {
+  "location": "Route 17",
+  "fight": "Rematch 1"
+ },
+ "632": {
+  "location": "Route 17",
+  "fight": "Rematch 2"
+ },
+ "633": {
+  "location": "Route 17",
+  "fight": "Rematch 3"
+ },
+ "634": {
+  "location": "Route 17",
+  "fight": "Rematch 1"
+ },
+ "635": {
+  "location": "Route 17",
+  "fight": "Rematch 2"
+ },
+ "636": {
+  "location": "Route 17",
+  "fight": "Rematch 3"
+ },
+ "637": {
+  "location": "Route 15",
+  "fight": "Rematch 1"
+ },
+ "638": {
+  "location": "Route 15",
+  "fight": "Rematch 2"
+ },
+ "639": {
+  "location": "Route 15",
+  "fight": "Rematch 3"
+ },
+ "640": {
+  "location": "Route 15",
+  "fight": "Rematch 1"
+ },
+ "641": {
+  "location": "Route 15",
+  "fight": "Rematch 2"
+ },
+ "642": {
+  "location": "Route 15",
+  "fight": "Rematch 3"
+ },
+ "643": {
+  "location": "Route 15",
+  "fight": "Rematch 1"
+ },
+ "644": {
+  "location": "Route 15",
+  "fight": "Rematch 2"
+ },
+ "645": {
+  "location": "Route 15",
+  "fight": "Rematch 3"
+ },
+ "646": {
+  "location": "Route 14",
+  "fight": "Rematch 1"
+ },
+ "647": {
+  "location": "Route 14",
+  "fight": "Rematch 2"
+ },
+ "648": {
+  "location": "Route 14",
+  "fight": "Rematch 3"
+ },
+ "649": {
+  "location": "Route 14",
+  "fight": "Rematch 1"
+ },
+ "650": {
+  "location": "Route 14",
+  "fight": "Rematch 2"
+ },
+ "651": {
+  "location": "Route 14",
+  "fight": "Rematch 3"
+ },
+ "652": {
+  "location": "Route 13",
+  "fight": "Rematch 1"
+ },
+ "653": {
+  "location": "Route 13",
+  "fight": "Rematch 2"
+ },
+ "654": {
+  "location": "Route 13",
+  "fight": "Rematch 3"
+ },
+ "655": {
+  "location": "Route 13",
+  "fight": "Rematch 1"
+ },
+ "656": {
+  "location": "Route 13",
+  "fight": "Rematch 2"
+ },
+ "657": {
+  "location": "Route 13",
+  "fight": "Rematch 3"
+ },
+ "658": {
+  "location": "Route 13",
+  "fight": "Rematch 1"
+ },
+ "659": {
+  "location": "Route 13",
+  "fight": "Rematch 2"
+ },
+ "660": {
+  "location": "Route 13",
+  "fight": "Rematch 3"
+ },
+ "661": {
+  "location": "Route 12",
+  "fight": "Rematch 1"
+ },
+ "662": {
+  "location": "Route 12",
+  "fight": "Rematch 2"
+ },
+ "663": {
+  "location": "Route 12",
+  "fight": "Rematch 3"
+ },
+ "664": {
+  "location": "Route 12",
+  "fight": "Rematch 1"
+ },
+ "665": {
+  "location": "Route 12",
+  "fight": "Rematch 2"
+ },
+ "666": {
+  "location": "Route 12",
+  "fight": "Rematch 3"
+ },
+ "672": {
+  "location": "Olivine Lighthouse 2F",
+  "fight": "Rematch 1"
+ },
+ "673": {
+  "location": "Olivine Lighthouse 2F",
+  "fight": "Rematch 2"
+ },
+ "674": {
+  "location": "Olivine Lighthouse 2F",
+  "fight": "Rematch 3"
+ },
+ "675": {
+  "location": "Team Rocket Headquarters B2F",
+  "fight": "Your partner in the Rocket Hideout"
+ },
+ "676": {
+  "location": "Cerulean Gym"
+ },
+ "677": {
+  "location": "Cerulean Gym"
+ },
+ "678": {
+  "location": "Cerulean Gym"
+ },
+ "679": {
+  "location": "Route 37"
+ },
+ "680": {
+  "location": "Route 37"
+ },
+ "681": {
+  "location": "Viridian Gym"
+ },
+ "682": {
+  "location": "Viridian Gym"
+ },
+ "683": {
+  "location": "Viridian Gym"
+ },
+ "684": {
+  "location": "Viridian Gym"
+ },
+ "685": {
+  "location": "Pewter Gym"
+ },
+ "686": {
+  "location": "Seafoam Islands B2F"
+ },
+ "687": {
+  "location": "Seafoam Islands B2F"
+ },
+ "688": {
+  "location": "Seafoam Islands B2F"
+ },
+ "689": {
+  "location": "Cinnabar Gym (Seafoam Islands)"
+ },
+ "690": {
+  "location": "Cinnabar Gym (Seafoam Islands)"
+ },
+ "691": {
+  "location": "Cinnabar Gym (Seafoam Islands)"
+ },
+ "692": {
+  "location": "Cinnabar Gym (Seafoam Islands)"
+ },
+ "693": {
+  "location": "Cinnabar Gym (Seafoam Islands)"
+ },
+ "694": {
+  "location": "Cinnabar Gym (Seafoam Islands)"
+ },
+ "695": {
+  "location": "Viridian Forest"
+ },
+ "696": {
+  "location": "Viridian Forest"
+ },
+ "697": {
+  "location": "Viridian Forest"
+ },
+ "698": {
+  "location": "Viridian Forest"
+ },
+ "699": {
+  "location": "Viridian Forest"
+ },
+ "700": {
+  "location": "Tohjo Falls Hidden Room",
+  "fight": "Celebi event"
+ },
+ "701": {
+  "location": "Pokémon League",
+  "fight": "Second round"
+ },
+ "702": {
+  "location": "Pokémon League",
+  "fight": "Second round"
+ },
+ "703": {
+  "location": "Pokémon League",
+  "fight": "Second round"
+ },
+ "704": {
+  "location": "Pokémon League",
+  "fight": "Second round"
+ },
+ "705": {
+  "location": "Pokémon League",
+  "fight": "Second round"
+ },
+ "706": {
+  "location": "Goldenrod Radio Tower 4F"
+ },
+ "712": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "713": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "714": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "715": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "716": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "717": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "718": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "719": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "720": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "721": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "722": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "723": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "724": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "725": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "726": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "727": {
+  "location": "Fighting Dojo",
+  "fight": "Rematch"
+ },
+ "728": {
+  "location": "Olivine Pokémon Center 1F"
+ },
+ "729": {
+  "location": "Route 47"
+ },
+ "730": {
+  "location": "Route 47"
+ },
+ "731": {
+  "location": "Route 47"
+ },
+ "732": {
+  "location": "Route 47"
+ },
+ "733": {
+  "location": "Dragon's Den",
+  "fight": "Tag battle, with Clair"
+ },
+ "734": {
+  "location": "Dragon's Den",
+  "fight": "Tag battle, with Lance"
+ },
+ "735": {
+  "location": "Dragon's Den",
+  "fight": "Your partner in the tag battle against Lance and Clair"
+ },
+ "736": {
+  "location": "Dragon's Den",
+  "fight": "Your partner in the tag battle against Lance and Clair"
+ },
+ "737": {
+  "location": "Dragon's Den",
+  "fight": "Your partner in the tag battle against Lance and Clair"
+ }
+}

@@ -273,6 +273,19 @@ the listed range. Water and rod levels keep upstream's values except in slots th
 the Bug-Catching Contest, Cerulean Cave and Mt. Silver are unchanged, and Bell Tower uses Storm Silver's levels because the list gives none for
 Sacred Gold. Gifts and static encounters from Sacred Gold aren't added. Redux has no 1% wild encounters: wherever a Pokémon filled only the 1% grass or surf slots, they hold the Pokémon from the 4% slot next to them instead (37 slots). Lapras, Phione and Wigglytuff left the wild this way; they come from Union Cave, breeding Manaphy and evolution. Roster Pokémon the list leaves out come from [the Collector](reference/gift_static.md).
 
+Johto and Kanto Pokémon are the common finds, as in HeartGold, and Hoenn and Sinnoh Pokémon are uncommon. A Pokémon counts as Johto or Kanto when any
+member of its evolution family is #1–251, so Azurill, Munchlax and Magnezone do. In each grass, cave, surf, rod and Rock Smash table:
+
+- Every Pokémon stays in the table it was in, so nothing became harder to obtain than "uncommon".
+- Hoenn and Sinnoh Pokémon hold one slot each, taken from the rarest up, and together at most 20% where the table has room: usually 5–10% each.
+  A table with more than four of them goes over 20%; Sprout Tower and Routes 30 and 31 are about 40%, spread over six Pokémon.
+- Johto and Kanto Pokémon fill the rest, most common first, taking turns so none takes several big slots. Where a table had too few of them
+  (fewer than 4 on land, 2 on water), it gets upstream's vanilla HeartGold Pokémon for that table, e.g. Tentacool on the Route 26, 27 and Cianwood waters,
+  Magikarp and Krabby in Cianwood's rods and Geodude in Rock Tunnel B1F's rocks.
+- Slot levels are unchanged, so a Pokémon moved to a rarer slot takes that slot's level. Swarms, radio sounds and Headbutt trees are unchanged.
+
+Overall the Hoenn and Sinnoh share fell from 20% to 15% of grass and cave encounters, and from about 15% to 3–6% of water encounters.
+
 ### Trainers (`data/Trainers.c`)
 
 Key trainers are rebuilt with team design drawn equally from Sacred Gold, Crystal Legacy and Polished Crystal, on top of vanilla rosters.
@@ -297,6 +310,15 @@ Generic trainers are generated from rules, using Sacred Gold as a reference rath
 - Species favour the class's type, then Pokémon on that route, then Johto species. Vanilla's strongest Pokémon stays as the ace.
 - Gen 3 and 4 Pokémon appear only where Sacred Gold used them or they live on the route, and fill at most half a team.
 - Rematches keep the same lines, evolved for the level. Moves come from level-up learnsets and generic trainers hold no items.
+- No generic trainer has more Pokémon than the same fight in Sacred Gold. 59 teams that did, such as Swimmer George on Route 41 (5 against 1), lost their
+  extra Pokémon from the front of the team, which is where route Pokémon were added to pad it. Double battles keep at least 2.
+- Within an area, one species fills at most about a third of the trainers' teams, apart from themed sets (Sprout Tower's Bellsprout, Rocket Grunts, Blackthorn
+  and Dragon's Den). 20 extra copies of padding species, such as Ditto on Route 15 and Lanturn on Route 26, became a species from the same trainer's Sacred Gold team.
+  Trainers with rematches were left alone so their rematches still match.
+
+The result is a small step below Sacred Gold: the same level curve and ace levels, but generic teams are never bigger and usually smaller (2.0 Pokémon on average
+against Sacred Gold's 2.5), generic trainers hold no items, the Johto Gym Leaders use 3 to 5 Pokémon instead of 6, and bosses hold one or two items rather than
+one on every Pokémon. AI flags and IVs are vanilla.
 
 ### Egg hatching and evolution friendship (`data/Species.c`, `include/config.h`)
 
@@ -358,7 +380,14 @@ Ability Capsules, Ability Patches and Mints are hg-engine features. Redux only a
 - `scripts/emu_test.py`: plays `test.nds` headlessly for testing. See `AGENTS.md`
 - `scripts/build_reference_docs.py`: generates `documentation/reference/`
 - `scripts/build_reference_site.py`: builds the [reference site](https://gnawang.github.io/hg-redux/) from `documentation/reference/`, using `scripts/reference_site.html`.
-  Its tabs are wild Pokémon, key trainers, all other trainers, Pokémon, moves (with who learns each and how) and shops. `.github/workflows/reference-site.yml` publishes it to GitHub Pages when those pages change on `main`
+  Its tabs are Pokémon, moves (with who learns each and how), locations, trainers, key trainers, shops, and events and gifts (from the hand-written
+  `gift_static.md`). Locations holds every wild area plus the places that only have trainers, such as Gyms, and lists the trainers fought in each. Place names
+  elsewhere link to their location. Each tab opens on its first entry and keeps its search, selection and scroll position when you switch away and back. Hovering a move
+  outside the Moves tab shows its type, power, accuracy, PP and description. `.github/workflows/reference-site.yml` publishes it to GitHub Pages when those pages change on `main`
+- `scripts/build_trainer_locations.py`: writes `scripts/trainer_locations.json`, where each trainer is fought and what the fight is (Gym battle, rematch, the
+  rival's fight for your starter and so on), which `build_reference_docs.py` adds to the trainer pages. It reads a [pret/pokeheartgold](https://github.com/pret/pokeheartgold)
+  checkout: the map objects and scripts that start each battle, and the phone rematch table. That checkout isn't in the repo, so the JSON is committed. Fights the
+  map data can't place or name, such as the Cherrygrove rival and the tag battles, are set by hand in the script. Rerun it if trainers move or the area names change
 - `scripts/build_title_logo.py`: converts the title logo PNG
 - `scripts/build_dex_areas.py`: updates `data/PokedexArea.c` from the wild encounters
 
