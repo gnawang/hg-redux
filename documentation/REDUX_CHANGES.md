@@ -394,7 +394,8 @@ Ability Capsules, Ability Patches and Mints are hg-engine features. Redux only a
 ## Dropped
 
 - **PC anywhere** (L button, from HeartGold Generations): it hooks overworld input and uses an arbitrary game flag. Not worth the risk.
+- **Coach Trainers giving TMs:** not needed, because every TM can be bought (see Shops).
 
 ## Planned, not started
 
-- **Coach Trainers giving TMs:** needs a decision on who these NPCs are.
+Nothing.
