@@ -538,7 +538,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Poison
 - Abilities: Intimidate, Shed Skin (hidden: Unnerve)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 60/95/69/65/79/80
-- Level-up moves: Crunch (evolve), Wrap (1), Poison Sting (1), Leer (1), Bite (1), Fire Fang (1), Ice Fang (1), Thunder Fang (1), Tackle (1), Glare (12), Brutal Swing (15), Screech (17), Acid (20), Toxic (25), Swallow (27), Stockpile (27), Spit Up (27), Acid Spray (32), Leech Life (33), Mud Bomb (34), Poison Jab (36), Sludge Bomb (39), Haze (41), Gunk Shot (42), Gastro Acid (44), Belch (48), Iron Tail (48), Coil (56)
+- Level-up moves: Crunch (evolve), Wrap (1), Poison Sting (1), Leer (1), Bite (1), Fire Fang (1), Ice Fang (1), Thunder Fang (1), Tackle (1), Glare (12), Brutal Swing (15), Screech (17), Acid (20), Toxic (25), Swallow (27), Stockpile (27), Spit Up (27), Acid Spray (32), Sucker Punch (32), Leech Life (33), Mud Bomb (34), Poison Jab (36), Sludge Bomb (39), Haze (41), Gunk Shot (42), Gastro Acid (44), Belch (48), Iron Tail (48), Coil (56)
 - TMs/HMs: Attract, Body Slam, Breaking Swipe, Captivate, Crunch, Curse, Dark Pulse, Dig, Double Team, Double-Edge, Earthquake, Endure, Facade, Frustration, Giga Drain, Giga Impact, Haze, Hidden Power, Hyper Beam, Iron Tail, Lash Out, Leech Life, Natural Gift, Payback, Poison Jab, Protect, Psychic Fangs, Rain Dance, Rest, Return, Rock Slide, Rock Tomb, Scale Shot, Secret Power, Skitter Smack, Sleep Talk, Sludge Bomb, Sludge Wave, Snatch, Strength, Substitute, Sunny Day, Swagger, Thief, Throat Chop, Torment, Toxic, Toxic Spikes
 - Tutor moves: Aqua Tail, Gastro Acid, Gunk Shot, Headbutt, Seed Bomb, Snore, Spite
 - Egg moves: Beat Up, Disable, Poison Fang, Poison Tail, Pursuit, Scary Face, Slam, Spite, Sucker Punch, Switcheroo
@@ -548,6 +548,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
     - Lv 1: Tackle (new)
     - Lv 15: Brutal Swing (new)
     - Lv 25: Toxic (new)
+    - Lv 32: Sucker Punch (new)
     - Lv 33: Leech Life (new)
     - Lv 34: Mud Bomb (new)
     - Lv 36: Poison Jab (new)
@@ -587,7 +588,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Electric
 - Abilities: Static (hidden: Lightning Rod)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 60/90/55/90/80/110
-- Level-up moves: Thunder Punch (evolve), Electro Ball (1), Discharge (1), Nasty Plot (1), Feint (1), Iron Tail (1), Spark (1), Charm (1), Sweet Kiss (1), Play Nice (1), Nuzzle (1), Quick Attack (1), Agility (1), Thunder (1), Thunder Wave (1), Thunder Shock (1), Growl (1), Tail Whip (1), Double Team (1), Light Screen (1), Draining Kiss (1), Eerie Impulse (1), Thunderbolt (5), Charge (30), Volt Tackle (99)
+- Level-up moves: Thunder Punch (evolve), Electro Ball (1), Discharge (1), Nasty Plot (1), Feint (1), Iron Tail (1), Spark (1), Charm (1), Sweet Kiss (1), Play Nice (1), Nuzzle (1), Quick Attack (1), Agility (1), Thunder (1), Thunder Wave (1), Thunder Shock (1), Growl (1), Tail Whip (1), Double Team (1), Light Screen (1), Draining Kiss (1), Eerie Impulse (1), Fake Out (1), Thunderbolt (5), Charge (30), Volt Tackle (99)
 - TMs/HMs: Agility, Attract, Body Slam, Brick Break, Calm Mind, Captivate, Charge, Charge Beam, Curse, Dazzling Gleam, Dig, Double Team, Double-Edge, Drain Punch, Eerie Impulse, ElectricTerrain, Electro Ball, Electroweb, Encore, Endure, Facade, Flash, Fling, Focus Blast, Focus Punch, Frustration, Giga Impact, Grass Knot, Hidden Power, Hyper Beam, Iron Tail, Light Screen, Mega Punch, Nasty Plot, Natural Gift, Play Rough, Protect, Rain Dance, Reflect, Rest, Return, Reversal, Rock Smash, Safeguard, Secret Power, Shock Wave, Sleep Talk, Strength, Substitute, Surf, Swagger, Thief, Thunder, Thunder Wave, Thunderbolt, Toxic, Wild Charge
 - Tutor moves: Headbutt, Helping Hand, Knock Off, Magnet Rise, Mud-Slap, Rollout, Signal Beam, Snore, Swift, Thunder Punch
 - Egg moves: Bide, Charge, Disarming Voice, Double Slap, Encore, Fake Out, Flail, Present, Reversal, Thunder Punch, Tickle, Wish
@@ -596,6 +597,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - Level-up moves:
     - Lv 1: Draining Kiss (new)
     - Lv 1: Eerie Impulse (new)
+    - Lv 1: Fake Out (new)
     - Lv 30: Charge (new)
     - Lv 99: Volt Tackle (new)
   - TMs/HMs: added Dazzling Gleam, Drain Punch
@@ -785,7 +787,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Fairy
 - Abilities: Cute Charm, Magic Guard (hidden: Unaware)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 95/70/73/95/90/60
-- Level-up moves: Metronome (1), Meteor Mash (1), Moonblast (1), Life Dew (1), Tackle (1), Splash (1), Sing (1), Double Slap (1), Minimize (1), Fairy Wind (5), Disarming Voice (8), Charm (13), Draining Kiss (16), Magical Leaf (18), Bubble Beam (22), Moonlight (24), Amnesia (28), Dazzling Gleam (32), Mystical Fire (42), Soft-Boiled (50), Air Slash (52), Double-Edge (55)
+- Level-up moves: Metronome (1), Meteor Mash (1), Moonblast (1), Life Dew (1), Tackle (1), Splash (1), Sing (1), Double Slap (1), Minimize (1), Wish (1), Fairy Wind (5), Disarming Voice (8), Charm (13), Draining Kiss (16), Magical Leaf (18), Bubble Beam (22), Moonlight (24), Amnesia (28), Dazzling Gleam (32), Mystical Fire (42), Soft-Boiled (50), Air Slash (52), Double-Edge (55)
 - TMs/HMs: Amnesia, Attract, Baton Pass, Blizzard, Body Slam, Brick Break, Calm Mind, Captivate, Charge Beam, Cosmic Power, Curse, Dazzling Gleam, Dig, Double Team, Double-Edge, Drain Punch, Dream Eater, Dual Wingbeat, Encore, Endure, Facade, Fire Blast, Flamethrower, Flash, Fling, Focus Blast, Focus Punch, Frustration, Future Sight, Giga Impact, Grass Knot, Hidden Power, Hyper Beam, Hyper Voice, Ice Beam, Iron Tail, Light Screen, Mega Punch, Meteor Beam, Metronome, Misty Explosion, Misty Terrain, Natural Gift, Play Rough, Protect, Psych Up, Psychic, Psyshock, Rain Dance, Recycle, Reflect, Rest, Return, Rock Smash, Safeguard, Secret Power, Shadow Ball, Shock Wave, Skill Swap, Sleep Talk, Snatch, Solar Beam, Stealth Rock, Stored Power, Strength, Substitute, Sunny Day, Swagger, Thief, Thunder, Thunder Wave, Thunderbolt, Toxic, Tri Attack, Water Pulse, Work Up
 - Tutor moves: Bounce, Endeavor, Fire Punch, Gravity, Headbutt, Heal Bell, Helping Hand, Ice Punch, Icy Wind, Knock Off, Last Resort, Magic Coat, Mud-Slap, Role Play, Rollout, Signal Beam, Snore, Thunder Punch, Trick, Zen Headbutt
 - Egg moves: After You, Amnesia, Aromatherapy, Belly Drum, Charm, Copycat, Cosmic Power, Covet, Defense Curl, Disarming Voice, Encore, Fake Tears, Follow Me, Gravity, Growl, Heal Pulse, Healing Wish, Metronome, Mimic, Moonlight, Pound, Present, Sing, Splash, Stored Power, Substitute, Sweet Kiss, Tickle, Wish
@@ -797,6 +799,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
     - Lv 1: Sing (new)
     - Lv 1: Double Slap (new)
     - Lv 1: Minimize (new)
+    - Lv 1: Wish (new)
     - Lv 5: Fairy Wind (new)
     - Lv 8: Disarming Voice (new)
     - Lv 13: Charm (new)
@@ -1020,7 +1023,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Grass/Poison
 - Abilities: Chlorophyll (hidden: Effect Spore)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 75/80/85/110/90/50
-- Level-up moves: Petal Blizzard (evolve), Acid (1), Absorb (1), Mega Drain (1), Growth (1), Poison Powder (1), Stun Spore (1), Sleep Powder (1), Petal Dance (1), Toxic (1), Giga Drain (1), Sweet Scent (1), Moonlight (1), Grassy Terrain (1), Moonblast (1), Aromatherapy (1), Sludge Bomb (42), Solar Beam (65)
+- Level-up moves: Petal Blizzard (evolve), Acid (1), Absorb (1), Mega Drain (1), Growth (1), Poison Powder (1), Stun Spore (1), Sleep Powder (1), Petal Dance (1), Toxic (1), Giga Drain (1), Sweet Scent (1), Moonlight (1), Grassy Terrain (1), Moonblast (1), Aromatherapy (1), Strength Sap (1), Sludge Bomb (42), Solar Beam (65)
 - TMs/HMs: Attract, Body Slam, Bullet Seed, Captivate, Curse, Cut, Dazzling Gleam, Double Team, Double-Edge, Drain Punch, Endure, Energy Ball, Facade, Flash, Fling, Frustration, Giga Drain, Giga Impact, Grass Knot, Grassy Glide, Grassy Terrain, Hidden Power, Hyper Beam, Leaf Storm, Natural Gift, Petal Blizzard, Pollen Puff, Protect, Reflect, Rest, Return, Safeguard, Secret Power, Sleep Talk, Sludge Bomb, Sludge Wave, Solar Beam, Solar Blade, Substitute, Sunny Day, Swagger, Swords Dance, Toxic, Weather Ball
 - Tutor moves: Gastro Acid, Seed Bomb, Snore, Synthesis, Worry Seed
 - Egg moves: After You, Charm, Flail, Ingrain, Leech Seed, Razor Leaf, Strength Sap, Swords Dance, Synthesis, Teeter Dance, Tickle
@@ -1028,6 +1031,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Changes from hg-engine:
   - Level-up moves:
     - Lv 1: Aromatherapy (new)
+    - Lv 1: Strength Sap (new)
     - Lv 42: Sludge Bomb (new)
     - Lv 65: Solar Beam (new)
   - Egg moves: added Charm, Swords Dance
@@ -1096,7 +1100,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Bug/Poison
 - Abilities: Shield Dust, Tinted Lens (hidden: Wonder Skin)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 70/65/60/90/75/90
-- Level-up moves: Air Slash (evolve), Tackle (1), Supersonic (1), Disable (1), Quiver Dance (1), Silver Wind (1), Foresight (1), Confusion (11), Poison Powder (13), Psybeam (17), Stun Spore (23), Bug Buzz (25), Sleep Powder (29), Gust (31), Leech Life (37), Signal Beam (37), Sludge Bomb (40), Zen Headbutt (41), Poison Fang (47), Psychic (55)
+- Level-up moves: Air Slash (evolve), Tackle (1), Supersonic (1), Disable (1), Quiver Dance (1), Silver Wind (1), Foresight (1), Confusion (11), Poison Powder (13), Psybeam (17), Stun Spore (23), Bug Buzz (25), Sleep Powder (29), Gust (31), Leech Life (37), Signal Beam (37), Morning Sun (37), Sludge Bomb (40), Zen Headbutt (41), Poison Fang (47), Psychic (55)
 - TMs/HMs: Aerial Ace, Agility, Attract, Baton Pass, Bug Buzz, Captivate, Curse, Double Team, Double-Edge, Dream Eater, Endure, Energy Ball, Facade, Flash, Frustration, Giga Drain, Giga Impact, Hidden Power, Hyper Beam, Leech Life, Lunge, Natural Gift, Protect, Psychic, Psychic Noise, Reflect, Rest, Return, Roost, Secret Power, Silver Wind, Skill Swap, Skitter Smack, Sleep Talk, Sludge Bomb, Sludge Wave, Solar Beam, Substitute, Sunny Day, Swagger, Thief, Toxic, Toxic Spikes, U-turn
 - Tutor moves: Air Cutter, Bug Bite, Ominous Wind, Signal Beam, Snore, String Shot, Swift, Tailwind, Twister, Zen Headbutt
 - Egg moves: Agility, Baton Pass, Bug Bite, Giga Drain, Morning Sun, Rage Powder, Screech, Signal Beam, Toxic Spikes, Venoshock
@@ -1107,6 +1111,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
     - Lv 1: Foresight (new)
     - Lv 31: Gust (new)
     - Lv 37: Signal Beam (new)
+    - Lv 37: Morning Sun (new)
     - Lv 40: Sludge Bomb (new)
   - Egg moves: added Giga Drain, Signal Beam
   - Egg cycles: 20 → 10
@@ -1350,7 +1355,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Fire
 - Abilities: Intimidate, Flash Fire (hidden: Justified)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 90/110/80/100/80/95
-- Level-up moves: Extreme Speed (evolve), Play Rough (1), Fire Fang (1), Flare Blitz (1), Howl (1), Helping Hand (1), Crunch (1), Retaliate (1), Reversal (1), Agility (1), Ember (1), Roar (1), Bite (1), Leer (1), Flame Wheel (1), Take Down (1), Thunder Fang (1), Odor Sleuth (1), Flamethrower (5)
+- Level-up moves: Extreme Speed (evolve), Play Rough (1), Fire Fang (1), Flare Blitz (1), Howl (1), Helping Hand (1), Crunch (1), Retaliate (1), Reversal (1), Agility (1), Ember (1), Roar (1), Bite (1), Leer (1), Flame Wheel (1), Take Down (1), Thunder Fang (1), Odor Sleuth (1), Morning Sun (1), Flamethrower (5)
 - TMs/HMs: Aerial Ace, Agility, Attract, Body Slam, Captivate, Close Combat, Crunch, Curse, Dig, Double Team, Double-Edge, Dragon Pulse, Endure, Facade, Fire Blast, Flamethrower, Flare Blitz, Frustration, Giga Impact, Heat Crash, Hidden Power, Hyper Beam, Hyper Voice, Iron Tail, Natural Gift, Overheat, Play Rough, Protect, Psychic Fangs, Reflect, Rest, Return, Reversal, Roar, Rock Climb, Rock Smash, Safeguard, Scorching Sands, Secret Power, Sleep Talk, Solar Beam, Strength, Substitute, Sunny Day, Swagger, Temper Flare, Thief, Toxic, Wild Charge, Will-O-Wisp
 - Tutor moves: Headbutt, Heat Wave, Helping Hand, Iron Head, Mud-Slap, Outrage, Snore, Swift
 - Egg moves: Body Slam, Covet, Crunch, Double Kick, Double-Edge, Fire Spin, Flare Blitz, Heat Wave, Howl, Morning Sun, Raging Fury, Safeguard, Thrash
@@ -1359,6 +1364,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - Level-up moves:
     - Lv 1: Thunder Fang (new)
     - Lv 1: Odor Sleuth (new)
+    - Lv 1: Morning Sun (new)
   - Egg moves: added Body Slam, Crunch, Fire Spin, Flare Blitz, Heat Wave, Howl, Safeguard
   - Egg cycles: 20 → 10
 
@@ -1650,7 +1656,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Grass/Poison
 - Abilities: Chlorophyll (hidden: Gluttony)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 80/105/65/100/70/70
-- Level-up moves: Leaf Storm (evolve), Sludge Bomb (evolve), Vine Whip (1), Razor Leaf (1), Sleep Powder (1), Sweet Scent (1), Swords Dance (1), Growth (1), Lunge (1), Stockpile (1), Swallow (1), Spit Up (1), Infestation (8), Poison Powder (15), Stun Spore (17), Knock Off (19), Magical Leaf (23), Toxic Spikes (26), Poison Jab (30), Leech Life (33), Leaf Blade (40), Sludge Wave (40), Power Whip (44), Synthesis (44)
+- Level-up moves: Leaf Storm (evolve), Sludge Bomb (evolve), Vine Whip (1), Razor Leaf (1), Sleep Powder (1), Sweet Scent (1), Swords Dance (1), Growth (1), Lunge (1), Stockpile (1), Swallow (1), Spit Up (1), Strength Sap (1), Infestation (8), Poison Powder (15), Stun Spore (17), Knock Off (19), Magical Leaf (23), Toxic Spikes (26), Poison Jab (30), Leech Life (33), Leaf Blade (40), Sludge Wave (40), Power Whip (44), Synthesis (44)
 - TMs/HMs: Attract, Body Slam, Bullet Seed, Captivate, Curse, Cut, Double Team, Double-Edge, Encore, Endure, Energy Ball, Facade, Flash, Frustration, Giga Drain, Giga Impact, Grass Knot, Grassy Glide, Grassy Terrain, Hidden Power, Hyper Beam, Leaf Storm, Leech Life, Lunge, Natural Gift, Poison Jab, Power Whip, Protect, Reflect, Rest, Return, Secret Power, Sleep Talk, Sludge Bomb, Sludge Wave, Solar Beam, Substitute, Sunny Day, Swagger, Swords Dance, Thief, Toxic, Toxic Spikes, Weather Ball
 - Tutor moves: Bug Bite, Gastro Acid, Knock Off, Seed Bomb, Snore, Sucker Punch, Synthesis, Worry Seed
 - Egg moves: Clear Smog, Encore, Gastro Acid, Ingrain, Leech Life, Magical Leaf, Power Whip, Reflect, Spit Up, Stockpile, Strength Sap, Sucker Punch, Swallow, Swords Dance, Synthesis, Tickle, Weather Ball, Worry Seed
@@ -1664,6 +1670,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
     - Lv 1: Stockpile (new)
     - Lv 1: Swallow (new)
     - Lv 1: Spit Up (new)
+    - Lv 1: Strength Sap (new)
     - Lv 8: Infestation (new)
     - Lv 15: Poison Powder (new)
     - Lv 17: Stun Spore (new)
@@ -1707,7 +1714,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Water/Poison
 - Abilities: Clear Body, Liquid Ooze (hidden: Rain Dish)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 80/70/65/80/120/100
-- Level-up moves: Wrap (1), Poison Sting (1), Acid (1), Water Gun (1), Constrict (1), Supersonic (12), Toxic Spikes (13), Water Pulse (16), Screech (20), Bubble Beam (24), Barrier (26), Hex (28), Poison Jab (32), Acid Armor (34), Venoshock (36), Sludge Wave (42), Surf (46), Sludge Bomb (48), Wring Out (55), Hydro Pump (58)
+- Level-up moves: Wrap (1), Poison Sting (1), Acid (1), Water Gun (1), Constrict (1), Rapid Spin (1), Supersonic (12), Toxic Spikes (13), Water Pulse (16), Screech (20), Bubble Beam (24), Barrier (26), Hex (28), Poison Jab (32), Acid Armor (34), Venoshock (36), Sludge Wave (42), Surf (46), Sludge Bomb (48), Wring Out (55), Hydro Pump (58)
 - TMs/HMs: Attract, Blizzard, Brine, Captivate, Curse, Cut, Dazzling Gleam, Dive, Double Team, Double-Edge, Endure, Facade, Flip Turn, Frustration, Giga Drain, Giga Impact, Hail, Haze, Hidden Power, Hydro Pump, Hyper Beam, Ice Beam, Liquidation, Muddy Water, Natural Gift, Payback, Poison Jab, Protect, Rain Dance, Reflect, Rest, Return, Safeguard, Scald, Secret Power, Skitter Smack, Sleep Talk, Sludge Bomb, Sludge Wave, Substitute, Surf, Swagger, Swords Dance, Thief, Throat Chop, Toxic, Toxic Spikes, Venom Drench, Water Pulse, Waterfall, Weather Ball, Whirlpool
 - Tutor moves: Dive, Icy Wind, Knock Off, Magic Coat, Snore
 - Egg moves: Acupressure, Aqua Ring, Aurora Beam, Confuse Ray, Haze, Knock Off, Mirror Coat, Muddy Water, Rapid Spin, Safeguard, Tickle
@@ -1715,6 +1722,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Changes from hg-engine:
   - Level-up moves:
     - Lv 1: Constrict (new)
+    - Lv 1: Rapid Spin (new)
     - Lv 1: Reflect Type (removed)
     - Lv 13: Toxic Spikes (new)
     - Lv 26: Barrier (new)
@@ -1811,13 +1819,14 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Fire
 - Abilities: Run Away, Flash Fire (hidden: Flame Body)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 65/100/70/80/80/105
-- Level-up moves: Smart Strike (evolve), Ember (1), Growl (1), Megahorn (1), Poison Jab (1), Quick Attack (1), Tackle (1), Tail Whip (1), Flame Charge (15), Agility (20), Flame Wheel (25), Take Down (29), Stomp (30), Fire Spin (35), Fury Attack (40), Flare Blitz (44), Bounce (47), Inferno (49), Fire Blast (56)
+- Level-up moves: Smart Strike (evolve), Ember (1), Growl (1), Megahorn (1), Poison Jab (1), Quick Attack (1), Tackle (1), Tail Whip (1), Morning Sun (1), Flame Charge (15), Agility (20), Flame Wheel (25), Take Down (29), Stomp (30), Fire Spin (35), Fury Attack (40), Flare Blitz (44), Bounce (47), Inferno (49), Fire Blast (56)
 - TMs/HMs: Agility, Attract, Baton Pass, Body Slam, Captivate, Curse, Double Team, Double-Edge, Drill Run, Endure, Facade, Fire Blast, Flamethrower, Flare Blitz, Frustration, Giga Impact, Hidden Power, High Horsepower, Hyper Beam, Iron Tail, Megahorn, Natural Gift, Overheat, Play Rough, Poison Jab, Protect, Reflect, Rest, Return, Scorching Sands, Secret Power, Sleep Talk, Solar Beam, Solar Blade, Strength, Substitute, Sunny Day, Swagger, Swords Dance, Throat Chop, Toxic, Wild Charge, Will-O-Wisp
 - Tutor moves: Bounce, Headbutt, Heat Wave, Low Kick, Snore, Swift
 - Egg moves: Charm, Double Kick, Double-Edge, Flame Wheel, High Horsepower, Horn Drill, Hypnosis, Low Kick, Morning Sun, Thrash
 - Egg cycles: 10
 - Changes from hg-engine:
   - Level-up moves:
+    - Lv 1: Morning Sun (new)
     - Lv 29: Take Down (was Lv 43)
     - Lv 40: Fury Attack (new)
     - Lv 44: Flare Blitz (was Lv 63)
@@ -2077,13 +2086,15 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Water/Ice
 - Abilities: Shell Armor, Skill Link (hidden: Overcoat)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 50/95/180/85/45/70
-- Level-up moves: Icicle Spear (evolve), Icicle Crash (1), Shell Smash (1), Ice Shard (1), Toxic Spikes (1), Iron Defense (1), Whirlpool (1), Spikes (1), Protect (1), Withdraw (1), Aurora Beam (1), Ice Beam (1), Hydro Pump (1), Water Gun (1), Supersonic (1), Leer (1), Tackle (1), Razor Shell (5), Spike Cannon (40)
+- Level-up moves: Icicle Spear (evolve), Icicle Crash (1), Shell Smash (1), Ice Shard (1), Toxic Spikes (1), Iron Defense (1), Whirlpool (1), Spikes (1), Protect (1), Withdraw (1), Aurora Beam (1), Ice Beam (1), Hydro Pump (1), Water Gun (1), Supersonic (1), Leer (1), Tackle (1), Rapid Spin (1), Rock Blast (1), Razor Shell (5), Spike Cannon (40)
 - TMs/HMs: Attract, Avalanche, Blizzard, Body Slam, Brine, Captivate, Curse, Dive, Double Team, Double-Edge, Drill Run, Endure, Explosion, Facade, Frustration, Giga Impact, Hail, Hidden Power, Hydro Pump, Hyper Beam, Ice Beam, Ice Spinner, Icicle Spear, Light Screen, Liquidation, Natural Gift, Payback, Poison Jab, Protect, Rain Dance, Reflect, Rest, Return, Secret Power, Sleep Talk, Spikes, Substitute, Surf, Swagger, Torment, Toxic, Toxic Spikes, Tri Attack, Water Pulse, Waterfall, Weather Ball, Whirlpool
 - Tutor moves: Dive, Icy Wind, Iron Defense, Signal Beam, Snore, Swift
 - Egg moves: Aqua Ring, Barrier, Bubble Beam, Icicle Spear, Life Dew, Mud Shot, Rapid Spin, Rock Blast, Screech, Take Down, Water Pulse
 - Egg cycles: 10
 - Changes from hg-engine:
   - Level-up moves:
+    - Lv 1: Rapid Spin (new)
+    - Lv 1: Rock Blast (new)
     - Lv 40: Spike Cannon (new)
   - Egg moves: added Barrier, Icicle Spear, Mud Shot, Rapid Spin, Rock Blast, Screech, Take Down
   - Egg cycles: 20 → 10
@@ -2344,7 +2355,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Grass/Psychic
 - Abilities: Chlorophyll (hidden: Harvest)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 95/95/85/125/75/55
-- Level-up moves: Stomp (evolve), Leaf Storm (1), Seed Bomb (1), Worry Seed (1), Bullet Seed (1), Extrasensory (1), Uproar (1), Synthesis (1), Psyshock (1), Reflect (1), Hypnosis (1), Confusion (1), Solar Beam (1), Leech Seed (1), Mega Drain (1), Absorb (1), Wood Hammer (1), Giga Drain (1), Barrage (1), Egg Bomb (27), Sleep Powder (30)
+- Level-up moves: Stomp (evolve), Leaf Storm (1), Seed Bomb (1), Worry Seed (1), Bullet Seed (1), Extrasensory (1), Uproar (1), Synthesis (1), Psyshock (1), Reflect (1), Hypnosis (1), Confusion (1), Solar Beam (1), Leech Seed (1), Mega Drain (1), Absorb (1), Wood Hammer (1), Giga Drain (1), Barrage (1), Moonlight (1), Egg Bomb (27), Sleep Powder (30)
 - TMs/HMs: Attract, Body Slam, Bullet Seed, Calm Mind, Captivate, Curse, Double Team, Double-Edge, Dream Eater, Earthquake, Endure, Energy Ball, Expanding Force, Explosion, Facade, Flash, Frustration, Future Sight, Giga Drain, Giga Impact, Grass Knot, Grassy Glide, Grassy Terrain, Hidden Power, Hyper Beam, Leaf Storm, Light Screen, Natural Gift, Protect, Psych Up, Psychic, Psychic Noise, Psychic Terrain, Psyshock, Reflect, Rest, Return, Secret Power, Skill Swap, Sleep Talk, Sludge Bomb, Solar Beam, Stored Power, Strength, Substitute, Sunny Day, Swagger, Swords Dance, Thief, Toxic, Trick Room
 - Tutor moves: Ancient Power, Block, Gravity, Headbutt, Low Kick, Rollout, Seed Bomb, Snore, Synthesis, Worry Seed, Zen Headbutt
 - Egg moves: Ancient Power, Block, Curse, Ingrain, Leaf Storm, Lucky Chant, Moonlight, Nature Power, Poison Powder, Power Swap, Psych Up, Reflect, Sleep Powder, Stun Spore, Synthesis
@@ -2352,6 +2363,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Changes from hg-engine:
   - Level-up moves:
     - Lv 1: Barrage (new)
+    - Lv 1: Moonlight (new)
     - Lv 27: Egg Bomb (new)
     - Lv 30: Sleep Powder (new)
   - Egg moves: added Leaf Storm, Lucky Chant, Nature Power, Power Swap, Psych Up, Reflect, Synthesis
@@ -2964,7 +2976,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Water/Ice
 - Abilities: Water Absorb, Shell Armor (hidden: Hydration)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 130/85/80/85/95/60
-- Level-up moves: Growl (1), Water Gun (1), Sing (5), Mist (10), Life Dew (15), Body Slam (18), Ice Shard (20), Rain Dance (22), Confuse Ray (25), Water Pulse (30), Ice Beam (32), Brine (35), Future Sight (37), Surf (38), Safeguard (43), Hydro Pump (55), Perish Song (60), Sheer Cold (65)
+- Level-up moves: Growl (1), Water Gun (1), Sing (5), Mist (10), Life Dew (15), Body Slam (18), Ice Shard (20), Rain Dance (22), Confuse Ray (25), Water Pulse (30), Ice Beam (32), Brine (35), Future Sight (37), Surf (38), Freeze-Dry (42), Safeguard (43), Hydro Pump (55), Perish Song (60), Sheer Cold (65)
 - TMs/HMs: Attract, Avalanche, Blizzard, Body Press, Body Slam, Brine, Captivate, Curse, Dive, Double Team, Double-Edge, Dragon Dance, Dragon Pulse, Dream Eater, Drill Run, Earthquake, Endure, Facade, Frustration, Future Sight, Giga Impact, Hail, Haze, Hidden Power, Hydro Pump, Hyper Beam, Hyper Voice, Ice Beam, Icicle Spear, Iron Tail, Liquidation, Megahorn, Muddy Water, Natural Gift, Protect, Psychic, Psychic Noise, Rain Dance, Reflect, Rest, Return, Roar, Rock Smash, Safeguard, Secret Power, Shock Wave, Sleep Talk, Solar Beam, Strength, Substitute, Surf, Swagger, Thunder, Thunderbolt, Toxic, Water Pulse, Waterfall, Weather Ball, Whirlpool
 - Tutor moves: Ancient Power, Aqua Tail, Block, Dive, Headbutt, Heal Bell, Icy Wind, Iron Head, Outrage, Signal Beam, Snore, Zen Headbutt
 - Egg moves: Ancient Power, Curse, Dragon Dance, Fissure, Foresight, Freeze-Dry, Horn Drill, Refresh, Sleep Talk, Sparkling Aria, Substitute, Tickle, Whirlpool
@@ -2976,6 +2988,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
     - Lv 32: Ice Beam (was Lv 45)
     - Lv 37: Future Sight (new)
     - Lv 38: Surf (new)
+    - Lv 42: Freeze-Dry (new)
     - Lv 43: Safeguard (new)
   - Egg moves: added Dragon Dance, Foresight, Refresh, Sleep Talk, Substitute, Whirlpool
   - Egg cycles: 40 → 20
@@ -3182,13 +3195,14 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Rock/Water
 - Abilities: Swift Swim, Battle Armor (hidden: Weak Armor)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 60/115/105/65/70/80
-- Level-up moves: Slash (evolve), Absorb (1), Feint (1), Harden (1), Night Slash (1), Sand Attack (1), Scratch (1), Aqua Jet (15), Leer (20), Mud Shot (25), Razor Shell (26), Endure (26), Ancient Power (30), Brine (35), Mega Drain (36), Rock Slide (42), Protect (43), Stone Edge (48), Leech Life (49), Liquidation (56), Metal Sound (63), Wring Out (63)
+- Level-up moves: Slash (evolve), Absorb (1), Feint (1), Harden (1), Night Slash (1), Sand Attack (1), Scratch (1), Rapid Spin (1), Aqua Jet (15), Leer (20), Mud Shot (25), Razor Shell (26), Endure (26), Ancient Power (30), Brine (35), Mega Drain (36), Rock Slide (42), Protect (43), Stone Edge (48), Leech Life (49), Liquidation (56), Metal Sound (63), Wring Out (63)
 - TMs/HMs: Aerial Ace, Attract, Blizzard, Body Slam, Brick Break, Brine, Captivate, Curse, Cut, Dig, Dive, Double Team, Double-Edge, Endure, Facade, Flip Turn, Frustration, Giga Drain, Giga Impact, Hail, Hidden Power, Hydro Pump, Hyper Beam, Ice Beam, Leech Life, Liquidation, Metal Sound, Meteor Beam, Natural Gift, Protect, Rain Dance, Reflect, Rest, Return, Rock Climb, Rock Polish, Rock Slide, Rock Smash, Rock Tomb, Sandstorm, Scald, Secret Power, Sleep Talk, Smack Down, Stealth Rock, Stone Edge, Substitute, Surf, Swagger, Swords Dance, Thief, Toxic, Water Pulse, Waterfall, Whirlpool, X-Scissor
 - Tutor moves: Ancient Power, Aqua Tail, Dive, Earth Power, Fury Cutter, Headbutt, Icy Wind, Iron Defense, Knock Off, Low Kick, Mud-Slap, Rollout, Snore, Superpower
 - Egg moves: Aurora Beam, Bubble Beam, Confuse Ray, Dig, Flail, Icy Wind, Knock Off, Mega Drain, Mud Shot, Rapid Spin, Screech, Take Down
 - Egg cycles: 15
 - Changes from hg-engine:
   - Level-up moves:
+    - Lv 1: Rapid Spin (new)
     - Lv 26: Razor Shell (new)
     - Lv 26: Endure (new)
     - Lv 36: Mega Drain (new)
@@ -4122,7 +4136,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Grass
 - Abilities: Chlorophyll (hidden: Healer)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 75/80/95/90/100/50
-- Level-up moves: Petal Blizzard (evolve), Acid (1), Absorb (1), Mega Drain (1), Growth (1), Poison Powder (1), Stun Spore (1), Sleep Powder (1), Petal Dance (1), Toxic (1), Giga Drain (1), Sweet Scent (1), Moonlight (1), Quiver Dance (1), Grassy Terrain (1), Moonblast (1), Leaf Blade (1), Sunny Day (1), Magical Leaf (23), Synthesis (44), Leaf Storm (53)
+- Level-up moves: Petal Blizzard (evolve), Acid (1), Absorb (1), Mega Drain (1), Growth (1), Poison Powder (1), Stun Spore (1), Sleep Powder (1), Petal Dance (1), Toxic (1), Giga Drain (1), Sweet Scent (1), Moonlight (1), Quiver Dance (1), Grassy Terrain (1), Moonblast (1), Leaf Blade (1), Sunny Day (1), Strength Sap (1), Magical Leaf (23), Synthesis (44), Leaf Storm (53)
 - TMs/HMs: Attract, Baton Pass, Bullet Seed, Captivate, Curse, Cut, Dazzling Gleam, Double Team, Drain Punch, Encore, Endure, Energy Ball, Facade, Flash, Fling, Frustration, Giga Drain, Giga Impact, Grass Knot, Grassy Glide, Grassy Terrain, Hidden Power, Hyper Beam, Leaf Blade, Leaf Storm, Natural Gift, Petal Blizzard, Play Rough, Pollen Puff, Protect, Rest, Return, Safeguard, Secret Power, Sleep Talk, Sludge Bomb, Solar Beam, Solar Blade, Substitute, Sunny Day, Swagger, Swords Dance, Toxic, Triple Axel, Weather Ball
 - Tutor moves: Gastro Acid, Seed Bomb, Snore, Synthesis, Uproar, Worry Seed
 - Egg moves: After You, Charm, Flail, Ingrain, Leech Seed, Razor Leaf, Strength Sap, Swords Dance, Synthesis, Teeter Dance, Tickle
@@ -4131,6 +4145,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - Level-up moves:
     - Lv 1: Leaf Blade (new)
     - Lv 1: Sunny Day (new)
+    - Lv 1: Strength Sap (new)
     - Lv 23: Magical Leaf (new)
     - Lv 44: Synthesis (new)
     - Lv 53: Leaf Storm (new)
@@ -4157,7 +4172,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Water/Fairy
 - Abilities: Thick Fat, Huge Power (hidden: Sap Sipper)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 100/50/80/60/80/50
-- Level-up moves: Tackle (1), Helping Hand (1), Tail Whip (1), Water Gun (1), Rollout (1), Defense Curl (1), Bubble Beam (6), Charm (9), Slam (12), Bounce (15), Aqua Tail (21), Aqua Jet (24), Play Rough (25), Aqua Ring (30), Rain Dance (35), Hydro Pump (40), Double-Edge (45), Superpower (50)
+- Level-up moves: Tackle (1), Helping Hand (1), Tail Whip (1), Water Gun (1), Rollout (1), Defense Curl (1), Bubble Beam (6), Charm (9), Slam (12), Bounce (15), Aqua Tail (21), Aqua Jet (24), Play Rough (25), Aqua Ring (30), Rain Dance (35), Hydro Pump (40), Double-Edge (45), Superpower (50), Belly Drum (50)
 - TMs/HMs: Amnesia, Attract, Blizzard, Body Slam, Brick Break, Captivate, Curse, Dig, Dive, Double Team, Double-Edge, Encore, Endure, Facade, Fling, Focus Blast, Focus Punch, Frustration, Future Sight, Giga Impact, Grass Knot, Hail, Hidden Power, Hydro Pump, Hyper Beam, Hyper Voice, Ice Beam, Ice Spinner, Iron Tail, Light Screen, Liquidation, Mega Punch, Metronome, Misty Explosion, Misty Terrain, Muddy Water, Natural Gift, Play Rough, Protect, Rain Dance, Rest, Return, Rock Smash, Scald, Secret Power, Sleep Talk, Strength, Substitute, Surf, Swagger, Toxic, Water Pulse, Waterfall, Whirlpool, Work Up
 - Tutor moves: Aqua Tail, Bounce, Dive, Headbutt, Helping Hand, Ice Punch, Icy Wind, Knock Off, Mud-Slap, Rollout, Snore, Superpower, Swift
 - Egg moves: Aqua Jet, Belly Drum, Body Slam, Copycat, Encore, Fake Tears, Perish Song, Present, Refresh, Sing, Slam, Soak, Supersonic, Tickle
@@ -4165,6 +4180,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Changes from hg-engine:
   - Level-up moves:
     - Lv 24: Aqua Jet (new)
+    - Lv 50: Belly Drum (new)
   - Egg moves: added Body Slam, Encore, Fake Tears, Refresh, Slam
   - Egg cycles: 10 → 5
 
@@ -4253,13 +4269,14 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Grass/Flying
 - Abilities: Chlorophyll, Leaf Guard (hidden: Infiltrator)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 75/55/70/55/95/110
-- Level-up moves: Splash (1), Tail Whip (1), Absorb (1), Synthesis (1), Tackle (8), Fairy Wind (10), Poison Powder (12), Stun Spore (12), Sleep Powder (12), Bullet Seed (15), Leech Seed (20), Mega Drain (24), Acrobatics (30), Cotton Spore (35), U-turn (39), Worry Seed (40), Giga Drain (43), Bounce (49), Memento (55)
+- Level-up moves: Splash (1), Tail Whip (1), Absorb (1), Synthesis (1), Strength Sap (1), Tackle (8), Fairy Wind (10), Poison Powder (12), Stun Spore (12), Sleep Powder (12), Bullet Seed (15), Leech Seed (20), Mega Drain (24), Acrobatics (30), Cotton Spore (35), U-turn (39), Worry Seed (40), Giga Drain (43), Bounce (49), Memento (55)
 - TMs/HMs: Aerial Ace, Attract, Baton Pass, Bullet Seed, Captivate, Curse, Dazzling Gleam, Double Team, Double-Edge, Encore, Endure, Energy Ball, Facade, Flash, Fling, Frustration, Giga Drain, Giga Impact, Grass Knot, Grassy Terrain, Hidden Power, Hyper Beam, Leaf Storm, Light Screen, Lunge, Natural Gift, Pollen Puff, Protect, Psych Up, Rain Dance, Reflect, Rest, Return, Secret Power, Silver Wind, Sleep Talk, Solar Beam, Substitute, Sunny Day, Swagger, Swords Dance, Thief, Toxic, U-turn
 - Tutor moves: Bounce, Headbutt, Helping Hand, Seed Bomb, Snore, Synthesis, Worry Seed
 - Egg moves: Amnesia, Aromatherapy, Confusion, Cotton Guard, Double-Edge, Encore, Grassy Terrain, Helping Hand, Psych Up, Rage Powder, Reflect, Seed Bomb, Strength Sap, Switcheroo, Worry Seed
 - Egg cycles: 10
 - Changes from hg-engine:
   - Level-up moves:
+    - Lv 1: Strength Sap (new)
     - Lv 40: Worry Seed (new)
   - Egg moves: added Amnesia, Aromatherapy, Confusion, Double-Edge, Helping Hand, Psych Up, Reflect
   - Egg cycles: 20 → 10
@@ -4308,13 +4325,14 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Grass
 - Abilities: Chlorophyll, Solar Power (hidden: Early Bird)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 75/75/55/105/85/30
-- Level-up moves: Pound (1), Tackle (1), Growth (1), Ingrain (4), Absorb (7), Mega Drain (10), Leech Seed (13), Grass Whistle (13), Razor Leaf (16), Worry Seed (19), Giga Drain (22), Bullet Seed (25), Petal Dance (28), Solar Beam (31), Earth Power (31), Double-Edge (34), Sunny Day (39), Synthesis (40), Leaf Storm (43), Petal Blizzard (50)
+- Level-up moves: Pound (1), Tackle (1), Growth (1), Morning Sun (1), Ingrain (4), Absorb (7), Mega Drain (10), Leech Seed (13), Grass Whistle (13), Razor Leaf (16), Worry Seed (19), Giga Drain (22), Bullet Seed (25), Petal Dance (28), Solar Beam (31), Earth Power (31), Double-Edge (34), Sunny Day (39), Synthesis (40), Leaf Storm (43), Petal Blizzard (50)
 - TMs/HMs: Attract, Bullet Seed, Captivate, Curse, Cut, Dazzling Gleam, Double Team, Double-Edge, Encore, Endure, Energy Ball, Facade, Flash, Frustration, Giga Drain, Giga Impact, Grass Knot, Grassy Glide, Grassy Terrain, Hidden Power, Hyper Beam, Leaf Storm, Light Screen, Natural Gift, Petal Blizzard, Protect, Rain Dance, Rest, Return, Safeguard, Secret Power, Sleep Talk, Sludge Bomb, Solar Beam, Substitute, Sunny Day, Swagger, Swords Dance, Toxic, Weather Ball
 - Tutor moves: Earth Power, Endeavor, Helping Hand, Seed Bomb, Snore, Synthesis, Uproar, Worry Seed
 - Egg moves: Curse, Encore, Grass Whistle, Grassy Terrain, Helping Hand, Ingrain, Leech Seed, Morning Sun, Nature Power, Sweet Scent
 - Egg cycles: 10
 - Changes from hg-engine:
   - Level-up moves:
+    - Lv 1: Morning Sun (new)
     - Lv 13: Grass Whistle (new)
     - Lv 31: Earth Power (new)
     - Lv 40: Synthesis (new)
@@ -5162,7 +5180,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Ground
 - Abilities: Sturdy (hidden: Sand Veil)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 90/120/120/60/60/50
-- Level-up moves: Fury Attack (evolve), Horn Attack (1), Growl (1), Defense Curl (1), Thunder Fang (1), Fire Fang (1), Bulldoze (1), Flail (1), Rapid Spin (6), Rollout (10), Assurance (15), Knock Off (19), Magnitude (19), Slam (24), StompingTantrum (30), Iron Tail (34), Scary Face (37), Earthquake (43), High Horsepower (46), Giga Impact (50)
+- Level-up moves: Fury Attack (evolve), Horn Attack (1), Growl (1), Defense Curl (1), Thunder Fang (1), Fire Fang (1), Bulldoze (1), Flail (1), Ice Shard (1), Rapid Spin (6), Rollout (10), Assurance (15), Knock Off (19), Magnitude (19), Slam (24), StompingTantrum (30), Iron Tail (34), Scary Face (37), Earthquake (43), High Horsepower (46), Giga Impact (50)
 - TMs/HMs: Attract, Body Press, Body Slam, Captivate, Curse, Dig, Double Team, Double-Edge, Earthquake, Encore, Endure, Facade, Frustration, Giga Impact, Gyro Ball, Heavy Slam, Hidden Power, High Horsepower, Hyper Beam, Hyper Voice, Ice Spinner, Iron Tail, Natural Gift, Play Rough, Poison Jab, Protect, Rain Dance, Rest, Return, Roar, Rock Polish, Rock Slide, Rock Smash, Rock Tomb, Sand Tomb, Sandstorm, Secret Power, Sleep Talk, Smack Down, Stealth Rock, Stone Edge, Strength, Substitute, Sunny Day, Swagger, Thief, Throat Chop, Toxic
 - Tutor moves: Ancient Power, Block, Bounce, Earth Power, Endeavor, Gunk Shot, Headbutt, Iron Defense, Knock Off, Last Resort, Mud-Slap, Rollout, Seed Bomb, Snore, Superpower
 - Egg moves: Ancient Power, Body Slam, Counter, Endeavor, Fissure, Focus Energy, Head Smash, Heavy Slam, High Horsepower, Ice Shard, Play Rough, Snore
@@ -5170,6 +5188,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Changes from hg-engine:
   - Level-up moves:
     - Lv 1: Flail (new)
+    - Lv 1: Ice Shard (new)
     - Lv 19: Magnitude (new)
     - Lv 34: Iron Tail (new)
     - Lv 46: High Horsepower (new)
@@ -5262,7 +5281,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Fighting
 - Abilities: Intimidate, Technician (hidden: Steadfast)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 50/95/95/35/110/70
-- Level-up moves: Triple Kick (evolve), Tackle (1), Feint (1), Helping Hand (1), Focus Energy (1), Fake Out (1), Rolling Kick (1), Quick Attack (4), Gyro Ball (8), Pursuit (10), Detect (12), Rapid Spin (16), Revenge (16), Wide Guard (21), Quick Guard (21), Sucker Punch (24), Agility (28), Dig (32), Close Combat (36), Counter (40), Endeavor (44)
+- Level-up moves: Triple Kick (evolve), Tackle (1), Feint (1), Helping Hand (1), Focus Energy (1), Fake Out (1), Rolling Kick (1), Mach Punch (1), Bullet Punch (1), Quick Attack (4), Gyro Ball (8), Pursuit (10), Detect (12), Rapid Spin (16), Revenge (16), Wide Guard (21), Quick Guard (21), Sucker Punch (24), Agility (28), Dig (32), Close Combat (36), Counter (40), Endeavor (44)
 - TMs/HMs: Aerial Ace, Agility, Attract, Baton Pass, Body Slam, Brick Break, Bulk Up, Captivate, Close Combat, Coaching, Curse, Dig, Double Team, Double-Edge, Drill Run, Earthquake, Endure, Facade, Focus Blast, Focus Energy, Frustration, Giga Impact, Gyro Ball, Hidden Power, Ice Spinner, Mega Punch, Natural Gift, Protect, Rain Dance, Rest, Return, Reversal, Rock Slide, Rock Smash, Sandstorm, Secret Power, Sleep Talk, Stone Edge, Strength, Substitute, Sunny Day, Swagger, Thief, Toxic, Triple Axel, Work Up
 - Tutor moves: Endeavor, Headbutt, Helping Hand, Low Kick, Mud-Slap, Role Play, Rollout, Snore, Sucker Punch, Swift, Twister, Vacuum Wave
 - Egg moves: Bullet Punch, Counter, Feint, Helping Hand, High Jump Kick, Mach Punch, Mind Reader, Rapid Spin, Vacuum Wave
@@ -5270,6 +5289,8 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Changes from hg-engine:
   - Level-up moves:
     - Lv 1: Rolling Kick (new)
+    - Lv 1: Mach Punch (new)
+    - Lv 1: Bullet Punch (new)
     - Lv 10: Pursuit (new)
     - Lv 16: Revenge (new)
   - Egg moves: added Helping Hand, Mind Reader
@@ -6512,13 +6533,14 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Fighting
 - Abilities: Thick Fat, Guts (hidden: Sheer Force)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 144/120/60/40/60/50
-- Level-up moves: Sand Attack (1), Tackle (1), Focus Energy (1), Brine (1), Arm Thrust (1), Fake Out (10), Vital Throw (10), Force Palm (13), Whirlwind (16), Knock Off (19), Bulk Up (22), Smelling Salts (22), Belly Drum (26), Detect (30), Seismic Toss (34), Focus Punch (38), Endure (42), Wake-Up Slap (42), Close Combat (46), Cross Chop (46), Reversal (50), Heavy Slam (54), Headlong Rush (60)
+- Level-up moves: Sand Attack (1), Tackle (1), Focus Energy (1), Brine (1), Arm Thrust (1), Bullet Punch (1), Fake Out (10), Vital Throw (10), Force Palm (13), Whirlwind (16), Knock Off (19), Bulk Up (22), Smelling Salts (22), Belly Drum (26), Detect (30), Seismic Toss (34), Focus Punch (38), Endure (42), Wake-Up Slap (42), Close Combat (46), Cross Chop (46), Reversal (50), Heavy Slam (54), Headlong Rush (60)
 - TMs/HMs: Attract, Body Press, Body Slam, Brick Break, Brine, Bulk Up, Captivate, Close Combat, Coaching, Curse, Dig, Double Team, Double-Edge, Drain Punch, Earthquake, Endure, Facade, Fling, Focus Blast, Focus Energy, Focus Punch, Frustration, Giga Impact, Heavy Slam, Hidden Power, Hyper Beam, Lash Out, Metronome, Natural Gift, Payback, Poison Jab, Protect, Rain Dance, Rest, Return, Reversal, Rock Climb, Rock Slide, Rock Smash, Rock Tomb, Secret Power, Sleep Talk, Smack Down, Stone Edge, Strength, Substitute, Sunny Day, Surf, Swagger, Taunt, Thief, Throat Chop, Toxic, Whirlpool, Work Up
 - Tutor moves: Fire Punch, Headbutt, Helping Hand, Ice Punch, Iron Head, Knock Off, Low Kick, Mud-Slap, Role Play, Snore, Superpower, Thunder Punch, Vacuum Wave
 - Egg moves: Bullet Punch, Counter, Cross Chop, Detect, Dynamic Punch, Feint, Feint Attack, Foresight, Helping Hand, Revenge, Wake-Up Slap, Wide Guard
 - Egg cycles: 10
 - Changes from hg-engine:
   - Level-up moves:
+    - Lv 1: Bullet Punch (new)
     - Lv 10: Vital Throw (new)
     - Lv 22: Smelling Salts (new)
     - Lv 42: Wake-Up Slap (new)
@@ -6757,7 +6779,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Fighting/Psychic
 - Abilities: Pure Power (hidden: Telepathy)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 60/60/75/60/75/80
-- Level-up moves: Fire Punch (1), Ice Punch (1), Thunder Punch (1), Work Up (1), Detect (1), Confusion (1), Bide (1), Meditate (1), Endure (12), Rock Smash (14), Feint (15), Hidden Power (15), Bullet Punch (16), Force Palm (17), Mind Reader (18), Psybeam (20), Calm Mind (23), Zen Headbutt (25), High Jump Kick (28), Take Down (30), Psych Up (31), Acupressure (33), Agility (34), Power Trick (36), Drain Punch (39), Recover (41), Reversal (49), Close Combat (50), Dynamic Punch (52), Counter (53), Axe Kick (53)
+- Level-up moves: Fire Punch (1), Ice Punch (1), Thunder Punch (1), Work Up (1), Detect (1), Confusion (1), Bide (1), Meditate (1), Fake Out (1), Endure (12), Rock Smash (14), Feint (15), Hidden Power (15), Bullet Punch (16), Force Palm (17), Mind Reader (18), Psybeam (20), Calm Mind (23), Zen Headbutt (25), High Jump Kick (28), Take Down (30), Psych Up (31), Acupressure (33), Agility (34), Power Trick (36), Drain Punch (39), Recover (41), Reversal (49), Close Combat (50), Dynamic Punch (52), Counter (53), Axe Kick (53)
 - TMs/HMs: Aerial Ace, Agility, Attract, Aura Sphere, Baton Pass, Blaze Kick, Body Slam, Brick Break, Bulk Up, Calm Mind, Captivate, Close Combat, Double Team, Drain Punch, Dream Eater, Endure, Energy Ball, Expanding Force, Facade, Flash, Fling, Focus Blast, Focus Punch, Frustration, Giga Impact, Grass Knot, Hidden Power, Hyper Beam, Light Screen, Metronome, Natural Gift, Poison Jab, Protect, Psych Up, Psychic, Psychic Terrain, Psyshock, Rain Dance, Recycle, Reflect, Rest, Return, Reversal, Rock Slide, Rock Smash, Rock Tomb, Secret Power, Shadow Ball, Skill Swap, Sleep Talk, Stored Power, Strength, Substitute, Sunny Day, Swagger, Taunt, Thief, Toxic, Trick Room, Work Up
 - Tutor moves: Fire Punch, Gravity, Headbutt, Helping Hand, Ice Punch, Low Kick, Magic Coat, Mud-Slap, Pain Split, Role Play, Signal Beam, Snore, Swift, Thunder Punch, Trick, Vacuum Wave, Zen Headbutt
 - Egg moves: Baton Pass, Bullet Punch, Dynamic Punch, Fake Out, Fire Punch, Foresight, Guard Swap, Ice Punch, Power Swap, Psycho Cut, Quick Guard, Thunder Punch
@@ -6766,6 +6788,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - Level-up moves:
     - Lv 1: Bide (new)
     - Lv 1: Meditate (new)
+    - Lv 1: Fake Out (new)
     - Lv 14: Rock Smash (new)
     - Lv 15: Hidden Power (new)
     - Lv 16: Bullet Punch (new)
@@ -7509,7 +7532,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Water/Dark
 - Abilities: Hyper Cutter, Shell Armor (hidden: Adaptability)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 63/120/85/90/55/55
-- Level-up moves: Swift (evolve), Leer (1), Water Gun (1), Harden (1), Taunt (1), Bubble (1), Vise Grip (1), Bubble Beam (12), Knock Off (16), Double Hit (20), Protect (24), Night Slash (28), Razor Shell (34), Swords Dance (40), Crabhammer (42), Crunch (46), Endeavor (58), Guillotine (64)
+- Level-up moves: Swift (evolve), Leer (1), Water Gun (1), Harden (1), Taunt (1), Bubble (1), Vise Grip (1), Aqua Jet (1), Bubble Beam (12), Knock Off (16), Double Hit (20), Protect (24), Night Slash (28), Razor Shell (34), Swords Dance (40), Crabhammer (42), Crunch (46), Endeavor (58), Guillotine (64)
 - TMs/HMs: Aerial Ace, Attract, Avalanche, Blizzard, Body Slam, Brick Break, Captivate, Close Combat, Crunch, Cut, Dark Pulse, Dig, Dive, Double Team, Double-Edge, Dragon Dance, Endure, Facade, False Swipe, Fling, Frustration, Giga Impact, Hail, Hidden Power, Hydro Pump, Hyper Beam, Ice Beam, Lash Out, Liquidation, Muddy Water, Nasty Plot, Natural Gift, Payback, Protect, Rain Dance, Rest, Return, Rock Slide, Rock Smash, Rock Tomb, Scald, Secret Power, Sleep Talk, Sludge Bomb, Sludge Wave, Strength, Substitute, Surf, Swagger, Swords Dance, Taunt, Thief, Toxic, Water Pulse, Waterfall, Whirlpool, X-Scissor
 - Tutor moves: Ancient Power, Dive, Endeavor, Fury Cutter, Icy Wind, Iron Defense, Knock Off, Mud-Slap, Snore, Spite, Superpower, Swift
 - Egg moves: Ancient Power, Aqua Jet, Body Slam, Double-Edge, Dragon Dance, Endeavor, Knock Off, Metal Claw, Mud Sport, Slash, Superpower, Switcheroo
@@ -7518,6 +7541,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - Level-up moves:
     - Lv 1: Bubble (new)
     - Lv 1: Vise Grip (new)
+    - Lv 1: Aqua Jet (new)
     - Lv 42: Crabhammer (was Lv 52)
   - Egg moves: added Body Slam, Dragon Dance, Endeavor, Knock Off, Mud Sport, Superpower
   - Egg cycles: 15 → 7
@@ -7618,7 +7642,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Rock/Bug
 - Abilities: Battle Armor (hidden: Swift Swim)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 75/125/100/70/80/45
-- Level-up moves: Fury Cutter (1), Harden (1), Smack Down (1), Water Gun (1), Scratch (1), Mud Sport (1), Metal Claw (12), Ancient Power (16), Bug Bite (20), Brine (24), Slash (28), Crush Claw (32), Rock Blast (36), X-Scissor (40), Rock Slide (42), Protect (43), Stone Edge (52)
+- Level-up moves: Fury Cutter (1), Harden (1), Smack Down (1), Water Gun (1), Scratch (1), Mud Sport (1), Rapid Spin (1), Metal Claw (12), Ancient Power (16), Bug Bite (20), Brine (24), Slash (28), Crush Claw (32), Rock Blast (36), X-Scissor (40), Rock Slide (42), Protect (43), Stone Edge (52)
 - TMs/HMs: Aerial Ace, Attract, Body Slam, Brick Break, Brine, Captivate, Cut, Dig, Double Team, Earthquake, Endure, Facade, False Swipe, Flash Cannon, Frustration, Giga Impact, Hidden Power, Hyper Beam, Iron Tail, Liquidation, Meteor Beam, Natural Gift, Protect, Rest, Return, Rock Polish, Rock Slide, Rock Smash, Rock Tomb, Sandstorm, Secret Power, Shadow Claw, Sleep Talk, Smack Down, Stealth Rock, Stone Edge, Strength, Substitute, Sunny Day, Swagger, Swords Dance, Toxic, Water Pulse, X-Scissor
 - Tutor moves: Ancient Power, Aqua Tail, Block, Bug Bite, Earth Power, Fury Cutter, Headbutt, Iron Defense, Knock Off, Low Kick, Mud-Slap, Snore, String Shot, Superpower
 - Egg moves: Aqua Jet, Cross Poison, Curse, Iron Defense, Knock Off, Rapid Spin, Rock Slide, Sand Attack, Screech, Swords Dance
@@ -7627,6 +7651,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - Level-up moves:
     - Lv 1: Scratch (new)
     - Lv 1: Mud Sport (new)
+    - Lv 1: Rapid Spin (new)
     - Lv 40: X-Scissor (was Lv 48)
     - Lv 42: Rock Slide (new)
     - Lv 52: Stone Edge (new)
@@ -8467,12 +8492,14 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Grass/Ground
 - Abilities: Overgrow (hidden: Shell Armor)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 95/109/105/75/85/56
-- Level-up moves: Earthquake (evolve), Tackle (1), Absorb (1), Razor Leaf (1), Withdraw (1), Wood Hammer (1), Curse (17), Bite (22), Mega Drain (27), Leech Seed (33), Synthesis (39), Crunch (45), Giga Drain (51), Leaf Storm (57), Headlong Rush (63)
+- Level-up moves: Earthquake (evolve), Tackle (1), Absorb (1), Razor Leaf (1), Withdraw (1), Wood Hammer (1), Curse (17), Bite (22), Mega Drain (27), Leech Seed (33), Synthesis (39), Crunch (45), Shell Smash (50), Giga Drain (51), Leaf Storm (57), Headlong Rush (63)
 - TMs/HMs: Amnesia, Attract, Body Press, Body Slam, Bullet Seed, Captivate, Crunch, Curse, Cut, Double Team, Double-Edge, Earthquake, Endure, Energy Ball, Facade, Flash, Frustration, Giga Drain, Giga Impact, Grass Knot, Grassy Glide, Grassy Terrain, Heavy Slam, Hidden Power, High Horsepower, Hyper Beam, Hyper Voice, Iron Tail, Leaf Storm, Light Screen, Natural Gift, Protect, Reflect, Rest, Return, Roar, Rock Climb, Rock Polish, Rock Slide, Rock Smash, Rock Tomb, Safeguard, Sand Tomb, Sandstorm, Scorching Sands, Secret Power, Skitter Smack, Sleep Talk, Smack Down, Solar Beam, Stealth Rock, Stone Edge, Strength, Substitute, Sunny Day, Swagger, Swords Dance, Toxic, Work Up
 - Tutor moves: Block, Earth Power, Headbutt, Iron Head, Mud-Slap, Outrage, Seed Bomb, Snore, Superpower, Synthesis, Worry Seed
 - Egg moves: Amnesia, Body Slam, Double-Edge, Growth, Sand Tomb, Seed Bomb, Shell Smash, Spit Up, Stockpile, Superpower, Swallow, Thrash, Tickle, Wide Guard, Worry Seed
 - Egg cycles: 10
 - Changes from hg-engine:
+  - Level-up moves:
+    - Lv 50: Shell Smash (new)
   - TMs/HMs: added Skitter Smack
   - Egg moves: added Amnesia, Body Slam, Sand Tomb, Seed Bomb
   - Egg cycles: 20 → 10
@@ -8514,7 +8541,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Fire/Fighting
 - Abilities: Blaze (hidden: Iron Fist)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 76/104/71/104/71/108
-- Level-up moves: Close Combat (evolve), Scratch (1), Leer (1), Ember (1), Mach Punch (1), Taunt (1), Fury Swipes (16), Flame Wheel (19), Feint (26), Torment (29), Punishment (29), Fire Spin (42), Flare Blitz (47), Acrobatics (52), Calm Mind (58), Raging Fury (65)
+- Level-up moves: Close Combat (evolve), Scratch (1), Leer (1), Ember (1), Mach Punch (1), Taunt (1), Fake Out (1), Fury Swipes (16), Flame Wheel (19), Feint (26), Torment (29), Punishment (29), Fire Spin (42), Flare Blitz (47), Acrobatics (52), Calm Mind (58), Raging Fury (65)
 - TMs/HMs: Aerial Ace, Agility, Attract, Aura Sphere, Blaze Kick, Body Slam, Brick Break, Bulk Up, Calm Mind, Captivate, Close Combat, Coaching, Cut, Dig, Double Team, Double-Edge, Drain Punch, Earthquake, Encore, Endure, Facade, Fire Blast, Flamethrower, Flare Blitz, Fling, Focus Blast, Focus Energy, Focus Punch, Frustration, Giga Impact, Grass Knot, Hidden Power, Hyper Beam, Iron Tail, Lash Out, Metronome, Nasty Plot, Natural Gift, Overheat, Poison Jab, Protect, Psych Up, Rest, Return, Reversal, Roar, Rock Climb, Rock Slide, Rock Smash, Rock Tomb, Scorching Sands, Secret Power, Shadow Claw, Sleep Talk, Smack Down, Solar Beam, Stealth Rock, Stone Edge, Strength, Substitute, Sunny Day, Swagger, Swords Dance, Taunt, Temper Flare, Thief, Throat Chop, Torment, Toxic, U-turn, Will-O-Wisp, Work Up
 - Tutor moves: Endeavor, Fire Punch, Gunk Shot, Headbutt, Heat Wave, Helping Hand, Low Kick, Mud-Slap, Role Play, Rollout, Snore, Swift, Thunder Punch, Vacuum Wave
 - Egg moves: Assist, Blaze Kick, Counter, Double Kick, Encore, Fake Out, Fire Punch, Focus Energy, Heat Wave, Helping Hand, Slack Off, Switcheroo, Taunt, Thunder Punch
@@ -8522,6 +8549,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Changes from hg-engine:
   - Level-up moves:
     - Lv 1: Taunt (new)
+    - Lv 1: Fake Out (new)
     - Lv 29: Punishment (new)
   - TMs/HMs: added Blaze Kick, Focus Energy
   - Egg moves: added Assist, Blaze Kick
@@ -8751,13 +8779,15 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Electric
 - Abilities: Rivalry, Intimidate (hidden: Guts)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 80/120/79/95/79/70
-- Level-up moves: Tackle (1), Leer (1), Thunder Shock (1), Charge (1), ElectricTerrain (1), Bite (12), Spark (18), Roar (24), Volt Switch (33), Thunder Fang (35), Scary Face (40), Wild Charge (42), Thunder Wave (48), Crunch (56), Discharge (64), Swagger (72)
+- Level-up moves: Tackle (1), Leer (1), Thunder Shock (1), Charge (1), ElectricTerrain (1), Fire Fang (1), Ice Fang (1), Bite (12), Spark (18), Roar (24), Volt Switch (33), Thunder Fang (35), Scary Face (40), Wild Charge (42), Thunder Wave (48), Crunch (56), Discharge (64), Swagger (72)
 - TMs/HMs: Agility, Attract, Body Slam, Captivate, Charge, Charge Beam, Crunch, Double Team, Double-Edge, Eerie Impulse, ElectricTerrain, Electro Ball, Electroweb, Endure, Facade, Flash, Frustration, Giga Impact, Hidden Power, Hyper Beam, Iron Tail, Light Screen, Natural Gift, Play Rough, Protect, Psychic Fangs, Rain Dance, Rest, Return, Roar, Secret Power, Shock Wave, Sleep Talk, Strength, Substitute, Sunny Day, Supercell Slam, Swagger, Thief, Throat Chop, Thunder, Thunder Wave, Thunderbolt, Toxic, Wild Charge
 - Tutor moves: Fury Cutter, Headbutt, Helping Hand, Magnet Rise, Mud-Slap, Signal Beam, Snore, Superpower, Swift
 - Egg moves: Baby-Doll Eyes, Double Kick, Fire Fang, Howl, Ice Fang, Night Slash, Quick Attack, Shock Wave, Take Down, Thunder Fang
 - Egg cycles: 10
 - Changes from hg-engine:
   - Level-up moves:
+    - Lv 1: Fire Fang (new)
+    - Lv 1: Ice Fang (new)
     - Lv 35: Thunder Fang (new)
     - Lv 42: Wild Charge (was Lv 80)
   - Egg moves: added Fire Fang, Ice Fang, Thunder Fang
@@ -9101,7 +9131,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Normal
 - Abilities: Technician, Pickup (hidden: Skill Link)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 75/100/66/60/66/115
-- Level-up moves: Scratch (1), Sand Attack (1), Tail Whip (1), Astonish (1), Dual Chop (1), Baton Pass (11), Tickle (15), Fury Swipes (18), Swift (22), Screech (25), Facade (26), Agility (29), Double Hit (32), Fling (36), Nasty Plot (39), Last Resort (43), Double-Edge (43)
+- Level-up moves: Scratch (1), Sand Attack (1), Tail Whip (1), Astonish (1), Dual Chop (1), Fake Out (1), Baton Pass (11), Tickle (15), Fury Swipes (18), Swift (22), Screech (25), Facade (26), Agility (29), Double Hit (32), Fling (36), Nasty Plot (39), Last Resort (43), Double-Edge (43)
 - TMs/HMs: Aerial Ace, Agility, Attract, Baton Pass, Body Slam, Brick Break, Captivate, Cut, Dig, Double Team, Double-Edge, Dream Eater, Encore, Endure, Facade, Fling, Focus Punch, Foul Play, Frustration, Giga Impact, Grass Knot, Hidden Power, Hyper Beam, Iron Tail, Mega Punch, Metronome, Nasty Plot, Natural Gift, Payback, Protect, Rain Dance, Rest, Return, Rock Smash, Secret Power, Shadow Ball, Shadow Claw, Shock Wave, Sleep Talk, Smack Down, Snatch, Solar Beam, Strength, Substitute, Sunny Day, Swagger, Taunt, Thief, Throat Chop, Thunder, Thunder Wave, Thunderbolt, Toxic, Triple Axel, U-turn, Water Pulse, Work Up
 - Tutor moves: Bounce, Fire Punch, Fury Cutter, Gunk Shot, Headbutt, Ice Punch, Knock Off, Last Resort, Low Kick, Mud-Slap, Role Play, Seed Bomb, Snore, Spite, Swift, Thunder Punch, Uproar
 - Egg moves: Agility, Beat Up, Bounce, Counter, Covet, Double Slap, Fake Out, Iron Tail, Pursuit, Quick Guard, Screech, Slam, Spite, Switcheroo
@@ -9109,6 +9139,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Changes from hg-engine:
   - Level-up moves:
     - Lv 1: Dual Chop (new)
+    - Lv 1: Fake Out (new)
     - Lv 26: Facade (new)
     - Lv 43: Double-Edge (new)
   - TMs/HMs: added Body Slam, Encore, Mega Punch
@@ -9185,7 +9216,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Normal/Fighting
 - Abilities: Cute Charm, Klutz (hidden: Limber)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 65/76/84/54/96/105
-- Level-up moves: Baby-Doll Eyes (1), Defense Curl (1), Magic Coat (1), Mirror Coat (1), Pound (1), Splash (1), Tackle (1), Foresight (1), Power-Up Punch (6), Endure (6), Mach Punch (9), After You (12), Double Team (12), Return (13), Draining Kiss (14), Quick Attack (16), Double Kick (20), Agility (20), Jump Kick (23), Charm (24), Drain Punch (26), Baton Pass (28), Brutal Swing (28), Headbutt (32), High Jump Kick (36), Iron Tail (36), Dizzy Punch (36), Entrainment (40), Cotton Guard (42), Close Combat (42), Flatter (44), Bounce (48), Healing Wish (52), Dynamic Punch (52)
+- Level-up moves: Baby-Doll Eyes (1), Defense Curl (1), Magic Coat (1), Mirror Coat (1), Pound (1), Splash (1), Tackle (1), Foresight (1), Fake Out (1), Power-Up Punch (6), Endure (6), Mach Punch (9), After You (12), Double Team (12), Return (13), Draining Kiss (14), Quick Attack (16), Double Kick (20), Agility (20), Jump Kick (23), Charm (24), Drain Punch (26), Baton Pass (28), Brutal Swing (28), Headbutt (32), High Jump Kick (36), Iron Tail (36), Dizzy Punch (36), Entrainment (40), Cotton Guard (42), Close Combat (42), Flatter (44), Bounce (48), Healing Wish (52), Dynamic Punch (52)
 - TMs/HMs: Agility, Attract, Aura Sphere, Baton Pass, Blizzard, Captivate, Charge Beam, Close Combat, Cosmic Power, Cut, Dig, Double Team, Drain Punch, Encore, Endure, Facade, Fling, Focus Blast, Focus Punch, Frustration, Giga Impact, Grass Knot, Hidden Power, Hyper Beam, Hyper Voice, Ice Beam, Iron Tail, Mega Punch, Natural Gift, Payback, Play Rough, Protect, Rain Dance, Rest, Return, Reversal, Rock Smash, Secret Power, Shadow Ball, Shock Wave, Sleep Talk, Solar Beam, Strength, Substitute, Sunny Day, Swagger, Swords Dance, Thunder, Thunder Wave, Thunderbolt, Toxic, Triple Axel, U-turn, Water Pulse, Work Up
 - Tutor moves: Bounce, Endeavor, Fire Punch, Fury Cutter, Headbutt, Heal Bell, Helping Hand, Ice Punch, Last Resort, Low Kick, Magic Coat, Mud-Slap, Snore, Swift, Thunder Punch, Uproar
 - Egg moves: Attract, Circle Throw, Copycat, Cosmic Power, Double Hit, Encore, Fake Out, Fake Tears, Fire Punch, Flail, Ice Punch, Low Kick, Power-Up Punch, Sky Uppercut, Sweet Kiss, Switcheroo, Teeter Dance, Thunder Punch
@@ -9195,6 +9226,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - Level-up moves:
     - Lv 1: Tackle (new)
     - Lv 1: Foresight (new)
+    - Lv 1: Fake Out (new)
     - Lv 6: Power-Up Punch (new)
     - Lv 6: Endure (new)
     - Lv 9: Mach Punch (new)
@@ -9740,13 +9772,14 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Poison/Fighting
 - Abilities: Anticipation, Dry Skin (hidden: Poison Touch)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 83/106/65/86/65/85
-- Level-up moves: Poison Sting (1), Mud-Slap (1), Taunt (1), Astonish (1), Flatter (12), Pursuit (15), Low Kick (16), Feint Attack (17), Venoshock (20), Revenge (22), Sucker Punch (24), Brick Break (26), Swagger (28), Mud Bomb (29), Poison Jab (32), Toxic (36), Cross Chop (38), Nasty Plot (42), Sludge Bomb (48), Gunk Shot (50), Belch (54)
+- Level-up moves: Poison Sting (1), Mud-Slap (1), Taunt (1), Astonish (1), Fake Out (1), Flatter (12), Pursuit (15), Low Kick (16), Feint Attack (17), Venoshock (20), Revenge (22), Sucker Punch (24), Brick Break (26), Swagger (28), Mud Bomb (29), Poison Jab (32), Toxic (36), Cross Chop (38), Nasty Plot (42), Sludge Bomb (48), Gunk Shot (50), Belch (54)
 - TMs/HMs: Aerial Ace, Attract, Baton Pass, Brick Break, Bulk Up, Captivate, Close Combat, Coaching, Cut, Dark Pulse, Dig, Double Team, Drain Punch, Earthquake, Embargo, Encore, Endure, Facade, Fling, Focus Blast, Focus Punch, Foul Play, Frustration, Giga Impact, Hidden Power, Hyper Beam, Lash Out, Mega Punch, Nasty Plot, Natural Gift, Payback, Poison Jab, Protect, Rain Dance, Rest, Return, Reversal, Rock Climb, Rock Slide, Rock Smash, Rock Tomb, Secret Power, Shadow Ball, Shadow Claw, Sleep Talk, Sludge Bomb, Sludge Wave, Snatch, Stone Edge, Strength, Substitute, Sunny Day, Swagger, Swords Dance, Taunt, Thief, Throat Chop, Torment, Toxic, Venom Drench, Work Up, X-Scissor
 - Tutor moves: Bounce, Fury Cutter, Gunk Shot, Headbutt, Helping Hand, Ice Punch, Icy Wind, Knock Off, Low Kick, Mud-Slap, Role Play, Snore, Spite, Sucker Punch, Super Fang, Thunder Punch, Vacuum Wave
 - Egg moves: Bullet Punch, Counter, Cross Chop, Dynamic Punch, Fake Out, Feint, Headbutt, Me First, Meditate, Quick Guard, Smelling Salts, Vacuum Wave, Wake-Up Slap
 - Egg cycles: 10
 - Changes from hg-engine:
   - Level-up moves:
+    - Lv 1: Fake Out (new)
     - Lv 15: Pursuit (new)
     - Lv 17: Feint Attack (new)
     - Lv 22: Revenge (new)
@@ -9879,7 +9912,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
 - Type: Dark/Ice
 - Abilities: Pressure (hidden: Pickpocket)
 - Base stats (HP/Atk/Def/SpA/SpD/Spe): 70/120/65/45/85/125
-- Level-up moves: Scratch (1), Leer (1), Agility (1), Quick Attack (1), Assurance (1), Taunt (1), Slash (1), Beat Up (1), Ice Shard (1), Embargo (1), Revenge (1), Feint Attack (10), Metal Claw (18), Icy Wind (24), Fury Swipes (30), Night Slash (35), Hone Claws (36), Icicle Crash (36), Fling (42), Triple Axel (46), Nasty Plot (48), Screech (54), Dark Pulse (66)
+- Level-up moves: Scratch (1), Leer (1), Agility (1), Quick Attack (1), Assurance (1), Taunt (1), Slash (1), Beat Up (1), Ice Shard (1), Embargo (1), Revenge (1), Fake Out (1), Feint Attack (10), Metal Claw (18), Icy Wind (24), Fury Swipes (30), Night Slash (35), Hone Claws (36), Icicle Crash (36), Fling (42), Triple Axel (46), Nasty Plot (48), Screech (54), Dark Pulse (66)
 - TMs/HMs: Aerial Ace, Agility, Attract, Avalanche, Baton Pass, Blizzard, Brick Break, Calm Mind, Captivate, Cut, Dark Pulse, Dig, Double Team, Dream Eater, Embargo, Endure, Facade, False Swipe, Fling, Focus Blast, Focus Punch, Foul Play, Frustration, Giga Impact, Hail, Hidden Power, Hyper Beam, Ice Beam, Ice Spinner, Icicle Spear, Iron Tail, Lash Out, Mega Punch, Metronome, Nasty Plot, Natural Gift, Payback, Poison Jab, Protect, Psych Up, Rain Dance, Reflect, Rest, Return, Rock Smash, Secret Power, Shadow Ball, Shadow Claw, Sleep Talk, Snatch, Strength, Substitute, Sunny Day, Surf, Swagger, Swords Dance, Taunt, Thief, Throat Chop, Torment, Toxic, Triple Axel, Water Pulse, Whirlpool, X-Scissor
 - Tutor moves: Fury Cutter, Headbutt, Ice Punch, Icy Wind, Knock Off, Low Kick, Mud-Slap, Snore, Spite, Swift
 - Egg moves: Assist, Bite, Counter, Crush Claw, Double Hit, Fake Out, Feint, Foresight, Ice Punch, Ice Shard, Icicle Crash, Punishment, Pursuit, Reflect, Spite
@@ -9888,6 +9921,7 @@ This table covers types, abilities, stats and evolutions. Each Pokémon's entry 
   - Level-up moves:
     - Lv 1: Embargo (new)
     - Lv 1: Revenge (new)
+    - Lv 1: Fake Out (new)
     - Lv 10: Feint Attack (new)
     - Lv 35: Night Slash (was Lv 60)
     - Lv 36: Icicle Crash (new)

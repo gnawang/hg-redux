@@ -182,7 +182,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: 100
 - PP: 20
 - Description: The user lunges at the foe at a speed that makes it almost invisible. It is sure to strike first.
-- Level-up: Squirtle (Lv 35), Wartortle (Lv 35), Blastoise (Lv 35), Golduck (Lv 1), Seel (Lv 31), Dewgong (Lv 31), Staryu (Lv 12), Starmie (Lv 12), Kabuto (Lv 15), Kabutops (Lv 15), Totodile (Lv 21), Croconaw (Lv 21), Feraligatr (Lv 21), Azumarill (Lv 24), Qwilfish (Lv 17), Carvanha (Lv 1), Sharpedo (Lv 1), Empoleon (evolve), Bibarel (Lv 1), Buizel (Lv 24), Floatzel (Lv 24)
+- Level-up: Squirtle (Lv 35), Wartortle (Lv 35), Blastoise (Lv 35), Golduck (Lv 1), Seel (Lv 31), Dewgong (Lv 31), Staryu (Lv 12), Starmie (Lv 12), Kabuto (Lv 15), Kabutops (Lv 15), Totodile (Lv 21), Croconaw (Lv 21), Feraligatr (Lv 21), Azumarill (Lv 24), Qwilfish (Lv 17), Carvanha (Lv 1), Sharpedo (Lv 1), Crawdaunt (Lv 1), Empoleon (evolve), Bibarel (Lv 1), Buizel (Lv 24), Floatzel (Lv 24)
 - Egg: Squirtle, Wartortle, Blastoise, Dratini, Dragonair, Dragonite, Totodile, Croconaw, Feraligatr, Marill, Azumarill, Qwilfish, Surskit, Masquerain, Azurill, Corphish, Crawdaunt, Anorith, Armaldo, Luvdisc
 
 ## Aqua Ring
@@ -437,7 +437,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: –
 - PP: 10
 - Description: The user maximizes its Attack stat in exchange for HP equal to half its max HP.
-- Level-up: Poliwag (Lv 48), Poliwhirl (Lv 56), Poliwrath (Lv 1), Lickitung (Lv 60), Snorlax (Lv 48), Politoed (Lv 1), Zigzagoon (Lv 33), Linoone (Lv 43), Makuhita (Lv 25), Hariyama (Lv 26), Munchlax (Lv 48), Lickilicky (Lv 60)
+- Level-up: Poliwag (Lv 48), Poliwhirl (Lv 56), Poliwrath (Lv 1), Lickitung (Lv 60), Snorlax (Lv 48), Azumarill (Lv 50), Politoed (Lv 1), Zigzagoon (Lv 33), Linoone (Lv 43), Makuhita (Lv 25), Hariyama (Lv 26), Munchlax (Lv 48), Lickilicky (Lv 60)
 - Egg: Charmander, Charmeleon, Charizard, Clefairy, Clefable, Poliwrath, Slowpoke, Slowbro, Cubone, Marowak, Lickitung, Magmar, Cleffa, Marill, Azumarill, Slowking, Teddiursa, Ursaring, Magby, Azurill, Zangoose, Spheal, Sealeo, Walrein, Lickilicky, Magmortar, Ursaluna
 
 ## Bestow
@@ -734,7 +734,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: 100
 - PP: 30
 - Description: The user strikes with a tough punch as fast as a bullet. This move always goes first.
-- Level-up: Machop (Lv 16), Machoke (Lv 16), Machamp (Lv 16), Hitmonchan (Lv 16), Scizor (evolve), Meditite (Lv 16), Medicham (Lv 16), Metang (Lv 1), Metagross (Lv 1), Riolu (Lv 1), Lucario (Lv 1)
+- Level-up: Machop (Lv 16), Machoke (Lv 16), Machamp (Lv 16), Hitmonchan (Lv 16), Scizor (evolve), Hitmontop (Lv 1), Hariyama (Lv 1), Meditite (Lv 16), Medicham (Lv 16), Metang (Lv 1), Metagross (Lv 1), Riolu (Lv 1), Lucario (Lv 1)
 - Egg: Machop, Machoke, Machamp, Hitmonlee, Hitmonchan, Tyrogue, Hitmontop, Makuhita, Hariyama, Meditite, Medicham, Riolu, Lucario, Croagunk, Toxicroak
 
 ## Bullet Seed
@@ -1826,7 +1826,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: 100
 - PP: 10
 - Description: An attack that hits first and makes the target flinch. It only works the first turn the user is in battle.
-- Level-up: Meowth (Lv 1), Persian (Lv 1), Hitmonlee (Lv 1), Hitmonchan (Lv 1), Kangaskhan (Lv 8), Tyrogue (Lv 1), Hitmontop (Lv 1), Lombre (Lv 1), Ludicolo (Lv 1), Nuzleaf (Lv 1), Shiftry (Lv 1), Makuhita (Lv 10), Hariyama (Lv 10), Skitty (Lv 1), Delcatty (Lv 1), Sableye (Lv 12), Glameow (Lv 1), Purugly (Lv 1)
+- Level-up: Raichu (Lv 1), Meowth (Lv 1), Persian (Lv 1), Hitmonlee (Lv 1), Hitmonchan (Lv 1), Kangaskhan (Lv 8), Tyrogue (Lv 1), Hitmontop (Lv 1), Lombre (Lv 1), Ludicolo (Lv 1), Nuzleaf (Lv 1), Shiftry (Lv 1), Makuhita (Lv 10), Hariyama (Lv 10), Skitty (Lv 1), Delcatty (Lv 1), Sableye (Lv 12), Medicham (Lv 1), Infernape (Lv 1), Ambipom (Lv 1), Lopunny (Lv 1), Glameow (Lv 1), Purugly (Lv 1), Toxicroak (Lv 1), Weavile (Lv 1)
 - Egg: Squirtle, Wartortle, Blastoise, Pikachu, Raichu, Seel, Dewgong, Mr. Mime, Jynx, Pichu, Aipom, Sneasel, Delibird, Smoochum, Shiftry, Skitty, Delcatty, Meditite, Medicham, Spinda, Kecleon, Chimchar, Monferno, Infernape, Ambipom, Buneary, Lopunny, Mime Jr., Croagunk, Toxicroak, Weavile
 
 ## Fake Tears
@@ -1930,7 +1930,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: 95
 - PP: 15
 - Description: The user bites with flame-cloaked fangs. It may also make the foe flinch or sustain a burn.
-- Level-up: Charmander (Lv 17), Charmeleon (Lv 17), Charizard (Lv 17), Arbok (Lv 1), Growlithe (Lv 24), Arcanine (Lv 1), Flareon (Lv 30), Aerodactyl (Lv 1), Steelix (Lv 1), Snubbull (Lv 1), Granbull (Lv 1), Houndour (Lv 28), Houndoom (Lv 28), Donphan (Lv 1), Entei (Lv 30), Tyranitar (Lv 1), Mightyena (Lv 1), Exploud (Lv 1), Manectric (Lv 1), Salamence (Lv 1), Garchomp (Lv 1), Hippowdon (Lv 1), Drapion (Lv 1), Gliscor (Lv 1), Heatran (Lv 18)
+- Level-up: Charmander (Lv 17), Charmeleon (Lv 17), Charizard (Lv 17), Arbok (Lv 1), Growlithe (Lv 24), Arcanine (Lv 1), Flareon (Lv 30), Aerodactyl (Lv 1), Steelix (Lv 1), Snubbull (Lv 1), Granbull (Lv 1), Houndour (Lv 28), Houndoom (Lv 28), Donphan (Lv 1), Entei (Lv 30), Tyranitar (Lv 1), Mightyena (Lv 1), Exploud (Lv 1), Manectric (Lv 1), Salamence (Lv 1), Luxray (Lv 1), Garchomp (Lv 1), Hippowdon (Lv 1), Drapion (Lv 1), Gliscor (Lv 1), Heatran (Lv 18)
 - Egg: Rhyhorn, Rhydon, Snubbull, Granbull, Houndour, Houndoom, Poochyena, Mightyena, Mawile, Electrike, Manectric, Bagon, Shelgon, Salamence, Shinx, Luxio, Luxray, Rhyperior
 
 ## Fire Punch
@@ -2208,7 +2208,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: 100
 - PP: 20
 - Description: The user rapidly cools the target, possibly leaving them frozen. This move is super effective on Water.
-- Level-up: Articuno (Lv 35), Delibird (Lv 37), Glalie (evolve), Glaceon (Lv 40)
+- Level-up: Lapras (Lv 42), Articuno (Lv 35), Delibird (Lv 37), Glalie (evolve), Glaceon (Lv 40)
 - Egg: Lapras, Swinub, Piloswine, Delibird, Mamoswine
 
 ## Frost Breath
@@ -2882,7 +2882,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: 95
 - PP: 15
 - Description: The user bites with cold-infused fangs. It may also make the foe flinch or freeze. 
-- Level-up: Arbok (Lv 1), Gyarados (Lv 8), Aerodactyl (Lv 1), Totodile (Lv 19), Croconaw (Lv 21), Feraligatr (Lv 21), Steelix (Lv 1), Snubbull (Lv 1), Granbull (Lv 1), Piloswine (evolve), Suicune (Lv 30), Tyranitar (Lv 1), Mightyena (Lv 1), Exploud (Lv 1), Carvanha (Lv 20), Sharpedo (Lv 20), Snorunt (Lv 30), Glalie (Lv 30), Walrein (Lv 1), Huntail (Lv 16), Floatzel (Lv 1), Hippowdon (Lv 1), Drapion (Lv 1), Glaceon (Lv 27), Gliscor (Lv 1), Mamoswine (Lv 1), Froslass (Lv 1)
+- Level-up: Arbok (Lv 1), Gyarados (Lv 8), Aerodactyl (Lv 1), Totodile (Lv 19), Croconaw (Lv 21), Feraligatr (Lv 21), Steelix (Lv 1), Snubbull (Lv 1), Granbull (Lv 1), Piloswine (evolve), Suicune (Lv 30), Tyranitar (Lv 1), Mightyena (Lv 1), Exploud (Lv 1), Carvanha (Lv 20), Sharpedo (Lv 20), Snorunt (Lv 30), Glalie (Lv 30), Walrein (Lv 1), Huntail (Lv 16), Luxray (Lv 1), Floatzel (Lv 1), Hippowdon (Lv 1), Drapion (Lv 1), Glaceon (Lv 27), Gliscor (Lv 1), Mamoswine (Lv 1), Froslass (Lv 1)
 - Egg: Rhyhorn, Rhydon, Snubbull, Granbull, Poochyena, Mightyena, Mawile, Electrike, Manectric, Shinx, Luxio, Luxray, Rhyperior
 
 ## Ice Hammer
@@ -2915,7 +2915,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: 100
 - PP: 30
 - Description: The user flash freezes chunks of ice and hurls them. This move always goes first.
-- Level-up: Seel (Lv 17), Dewgong (Lv 17), Shellder (Lv 8), Cloyster (Lv 1), Lapras (Lv 20), Articuno (Lv 15), Sneasel (Lv 49), Swinub (Lv 15), Piloswine (Lv 15), Delibird (Lv 25), Snorunt (Lv 10), Glalie (Lv 10), Snover (Lv 15), Abomasnow (Lv 15), Weavile (Lv 1), Glaceon (Lv 20), Mamoswine (Lv 15), Froslass (Lv 10)
+- Level-up: Seel (Lv 17), Dewgong (Lv 17), Shellder (Lv 8), Cloyster (Lv 1), Lapras (Lv 20), Articuno (Lv 15), Sneasel (Lv 49), Swinub (Lv 15), Piloswine (Lv 15), Delibird (Lv 25), Donphan (Lv 1), Snorunt (Lv 10), Glalie (Lv 10), Snover (Lv 15), Abomasnow (Lv 15), Weavile (Lv 1), Glaceon (Lv 20), Mamoswine (Lv 15), Froslass (Lv 10)
 - Egg: Sneasel, Delibird, Phanpy, Donphan, Weavile
 
 ## Ice Spinner
@@ -3375,7 +3375,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: 100
 - PP: 30
 - Description: The user throws a punch at blinding speed. It is certain to strike first.
-- Level-up: Hitmonchan (Lv 4), Ledyba (Lv 15), Ledian (Lv 15), Breloom (evolve), Monferno (evolve), Infernape (Lv 1), Lopunny (Lv 9)
+- Level-up: Hitmonchan (Lv 4), Ledyba (Lv 15), Ledian (Lv 15), Hitmontop (Lv 1), Breloom (evolve), Monferno (evolve), Infernape (Lv 1), Lopunny (Lv 9)
 - Egg: Hitmonlee, Hitmonchan, Magmar, Tyrogue, Hitmontop, Magby, Magmortar
 
 ## Magic Coat
@@ -3751,7 +3751,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: –
 - PP: 5
 - Description: The user restores its own HP. The amount of HP regained varies with the weather.
-- Level-up: Clefairy (Lv 24), Clefable (Lv 24), Oddish (Lv 36), Gloom (Lv 44), Vileplume (Lv 1), Cleffa (Lv 24), Bellossom (Lv 1), Umbreon (Lv 30), Dustox (Lv 17), Volbeat (Lv 19), Illumise (Lv 19), Lunatone (Lv 1), Cresselia (Lv 42)
+- Level-up: Clefairy (Lv 24), Clefable (Lv 24), Oddish (Lv 36), Gloom (Lv 44), Vileplume (Lv 1), Exeggutor (Lv 1), Cleffa (Lv 24), Bellossom (Lv 1), Umbreon (Lv 30), Dustox (Lv 17), Volbeat (Lv 19), Illumise (Lv 19), Lunatone (Lv 1), Cresselia (Lv 42)
 - Egg: Clefable, Exeggcute, Exeggutor, Sableye
 
 ## Morning Sun
@@ -3762,7 +3762,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: –
 - PP: 5
 - Description: The user restores its own HP. The amount of HP regained varies with the weather.
-- Level-up: Espeon (Lv 30), Beautifly (Lv 17), Solrock (Lv 1), Cherubi (Lv 1), Cherrim (Lv 1)
+- Level-up: Venomoth (Lv 37), Arcanine (Lv 1), Rapidash (Lv 1), Sunflora (Lv 1), Espeon (Lv 30), Beautifly (Lv 17), Solrock (Lv 1), Cherubi (Lv 1), Cherrim (Lv 1)
 - Egg: Venonat, Venomoth, Growlithe, Arcanine, Ponyta, Rapidash, Togepi, Togetic, Sunkern, Sunflora, Togekiss
 
 ## Mortal Spin
@@ -4676,7 +4676,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: 100
 - PP: 40
 - Description: A spin attack that can also eliminate such moves as Bind, Wrap, Leech Seed, and Spikes.
-- Level-up: Squirtle (Lv 9), Wartortle (Lv 9), Blastoise (Lv 9), Sandshrew (Lv 15), Sandslash (Lv 15), Staryu (Lv 12), Starmie (Lv 1), Pineco (Lv 17), Forretress (Lv 17), Donphan (Lv 6), Hitmontop (Lv 16), Torkoal (Lv 8), Baltoy (Lv 3), Claydol (Lv 1)
+- Level-up: Squirtle (Lv 9), Wartortle (Lv 9), Blastoise (Lv 9), Sandshrew (Lv 15), Sandslash (Lv 15), Tentacruel (Lv 1), Cloyster (Lv 1), Staryu (Lv 12), Starmie (Lv 1), Kabutops (Lv 1), Pineco (Lv 17), Forretress (Lv 17), Donphan (Lv 6), Hitmontop (Lv 16), Torkoal (Lv 8), Baltoy (Lv 3), Claydol (Lv 1), Armaldo (Lv 1)
 - Egg: Sandshrew, Sandslash, Tentacool, Tentacruel, Shellder, Cloyster, Hitmonlee, Hitmonchan, Kabuto, Kabutops, Delibird, Tyrogue, Hitmontop, Spinda, Anorith, Armaldo
 
 ## Razor Leaf
@@ -4859,7 +4859,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: 90
 - PP: 10
 - Description: The user hurls hard rocks at the foe. Two to five rocks are launched in quick succession.
-- Level-up: Geodude (Lv 30), Graveler (Lv 34), Golem (Lv 34), Onix (Lv 1), Rhyhorn (Lv 30), Rhydon (Lv 30), Omanyte (Lv 45), Omastar (Lv 49), Aerodactyl (Lv 15), Steelix (Lv 1), Heracross (Lv 28), Corsola (Lv 20), Octillery (Lv 1), Larvitar (Lv 40), Pupitar (Lv 40), Tyranitar (Lv 40), Nosepass (Lv 28), Anorith (Lv 36), Armaldo (Lv 36), Groudon (Lv 28), Rhyperior (Lv 30), Probopass (Lv 28), Heatran (Lv 12), Kleavor (Lv 50)
+- Level-up: Geodude (Lv 30), Graveler (Lv 34), Golem (Lv 34), Cloyster (Lv 1), Onix (Lv 1), Rhyhorn (Lv 30), Rhydon (Lv 30), Omanyte (Lv 45), Omastar (Lv 49), Aerodactyl (Lv 15), Steelix (Lv 1), Heracross (Lv 28), Corsola (Lv 20), Octillery (Lv 1), Larvitar (Lv 40), Pupitar (Lv 40), Tyranitar (Lv 40), Nosepass (Lv 28), Anorith (Lv 36), Armaldo (Lv 36), Groudon (Lv 28), Rhyperior (Lv 30), Probopass (Lv 28), Heatran (Lv 12), Kleavor (Lv 50)
 - Egg: Shellder, Cloyster, Onix, Steelix, Shuckle, Remoraid, Octillery, Shieldon, Bastiodon
 
 ## Rock Climb
@@ -5280,7 +5280,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: –
 - PP: 15
 - Description: Sharply raises Attack, Sp. Atk, and Speed, but lowers Defense and Sp. Def.
-- Level-up: Squirtle (Lv 27), Wartortle (Lv 35), Blastoise (Lv 35), Shellder (Lv 44), Cloyster (Lv 1), Omanyte (Lv 55), Omastar (Lv 63), Shuckle (Lv 65), Magcargo (evolve), Torkoal (Lv 60), Clamperl (Lv 50), Huntail (Lv 1), Gorebyss (Lv 1)
+- Level-up: Squirtle (Lv 27), Wartortle (Lv 35), Blastoise (Lv 35), Shellder (Lv 44), Cloyster (Lv 1), Omanyte (Lv 55), Omastar (Lv 63), Shuckle (Lv 65), Magcargo (evolve), Torkoal (Lv 60), Clamperl (Lv 50), Huntail (Lv 1), Gorebyss (Lv 1), Torterra (Lv 50)
 - Egg: Turtwig, Grotle, Torterra
 
 ## Shock Wave
@@ -5928,7 +5928,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: 100
 - PP: 10
 - Description: The user restores its HP by the same amount as the target’s Attack stat. It also lowers the target’s Attack stat.
-- Level-up: Drifblim (Lv 1)
+- Level-up: Vileplume (Lv 1), Victreebel (Lv 1), Bellossom (Lv 1), Jumpluff (Lv 1), Drifblim (Lv 1)
 - Egg: Oddish, Gloom, Vileplume, Bellsprout, Weepinbell, Victreebel, Bellossom, Hoppip, Skiploom, Jumpluff
 
 ## String Shot
@@ -6005,7 +6005,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: 100
 - PP: 5
 - Description: This move enables the user to attack first. It fails if the foe is not readying an attack, however.
-- Level-up: Rattata (Lv 25), Raticate (Lv 29), Diglett (Lv 20), Dugtrio (Lv 20), Gastly (Lv 32), Haunter (Lv 36), Gengar (Lv 36), Hitmonlee (Lv 16), Kangaskhan (Lv 28), Mr. Mime (Lv 40), Sentret (Lv 31), Furret (Lv 36), Spinarak (Lv 26), Ariados (Lv 28), Sudowoodo (Lv 28), Umbreon (Lv 37), Murkrow (Lv 50), Hitmontop (Lv 24), Poochyena (Lv 40), Mightyena (Lv 52), Seedot (Lv 30), Nuzleaf (Lv 50), Shiftry (Lv 1), Slaking (Lv 1), Mawile (Lv 20), Spinda (Lv 28), Cacnea (Lv 34), Cacturne (Lv 35), Kecleon (Lv 46), Shuppet (Lv 38), Banette (Lv 40), Absol (Lv 34), Huntail (Lv 23), Wormadam (Lv 1), Honchkrow (Lv 1), Glameow (Lv 41), Purugly (Lv 1), Stunky (Lv 30), Skuntank (Lv 30), Bonsly (Lv 28), Mime Jr. (Lv 40), Spiritomb (Lv 35), Croagunk (Lv 24), Toxicroak (Lv 24), Darkrai (Lv 29)
+- Level-up: Rattata (Lv 25), Raticate (Lv 29), Arbok (Lv 32), Diglett (Lv 20), Dugtrio (Lv 20), Gastly (Lv 32), Haunter (Lv 36), Gengar (Lv 36), Hitmonlee (Lv 16), Kangaskhan (Lv 28), Mr. Mime (Lv 40), Sentret (Lv 31), Furret (Lv 36), Spinarak (Lv 26), Ariados (Lv 28), Sudowoodo (Lv 28), Umbreon (Lv 37), Murkrow (Lv 50), Hitmontop (Lv 24), Poochyena (Lv 40), Mightyena (Lv 52), Seedot (Lv 30), Nuzleaf (Lv 50), Shiftry (Lv 1), Slaking (Lv 1), Mawile (Lv 20), Spinda (Lv 28), Cacnea (Lv 34), Cacturne (Lv 35), Kecleon (Lv 46), Shuppet (Lv 38), Banette (Lv 40), Absol (Lv 34), Huntail (Lv 23), Wormadam (Lv 1), Honchkrow (Lv 1), Glameow (Lv 41), Purugly (Lv 1), Stunky (Lv 30), Skuntank (Lv 30), Bonsly (Lv 28), Mime Jr. (Lv 40), Spiritomb (Lv 35), Croagunk (Lv 24), Toxicroak (Lv 24), Darkrai (Lv 29)
 - Tutor: Rattata, Raticate, Nidoran♂, Nidorino, Nidoking, Diglett, Dugtrio, Bellsprout, Weepinbell, Victreebel, Geodude, Graveler, Golem, Gastly, Haunter, Gengar, Voltorb, Electrode, Hitmonlee, Kangaskhan, Mew, Sentret, Furret, Spinarak, Ariados, Chinchou, Lanturn, Natu, Xatu, Sudowoodo, Umbreon, Murkrow, Misdreavus, Girafarig, Corsola, Houndour, Houndoom, Stantler, Hitmontop, Celebi, Poochyena, Mightyena, Shiftry, Slakoth, Vigoroth, Slaking, Shedinja, Skitty, Delcatty, Sableye, Mawile, Spinda, Cacnea, Cacturne, Seviper, Kecleon, Shuppet, Banette, Duskull, Dusclops, Absol, Huntail, Latias, Wormadam, Drifloon, Drifblim, Mismagius, Honchkrow, Glameow, Purugly, Stunky, Skuntank, Bonsly, Spiritomb, Croagunk, Toxicroak, Dusknoir, Froslass, Rotom, Darkrai
 - Egg: Ekans, Arbok, Nidoran♂, Nidorino, Nidoking, Bellsprout, Weepinbell, Victreebel, Chinchou, Lanturn, Natu, Xatu, Misdreavus, Houndour, Houndoom, Poochyena, Mightyena, Shiftry, Skitty, Delcatty, Sableye, Mawile, Absol, Mismagius
 
@@ -6862,7 +6862,7 @@ Every move a Redux Pokémon can learn, with who learns it and how. Power and acc
 - Accuracy: –
 - PP: 10
 - Description: A self-healing move. The user restores its own HP by up to half of its maximum HP in the next turn.
-- Level-up: Jigglypuff (Lv 40), Wigglytuff (Lv 40), Eevee (Lv 30), Vaporeon (Lv 1), Jolteon (Lv 1), Flareon (Lv 1), Igglybuff (Lv 40), Togepi (Lv 52), Togetic (Lv 52), Natu (Lv 40), Xatu (Lv 48), Espeon (Lv 1), Umbreon (Lv 1), Gardevoir (Lv 28), Illumise (Lv 22), Chimecho (Lv 25), Luvdisc (Lv 13), Latias (Lv 30), Latios (Lv 30), Jirachi (Lv 1), Chingling (Lv 25), Togekiss (Lv 1), Leafeon (Lv 1), Glaceon (Lv 1), Sylveon (Lv 1)
+- Level-up: Clefable (Lv 1), Jigglypuff (Lv 40), Wigglytuff (Lv 40), Eevee (Lv 30), Vaporeon (Lv 1), Jolteon (Lv 1), Flareon (Lv 1), Igglybuff (Lv 40), Togepi (Lv 52), Togetic (Lv 52), Natu (Lv 40), Xatu (Lv 48), Espeon (Lv 1), Umbreon (Lv 1), Gardevoir (Lv 28), Illumise (Lv 22), Chimecho (Lv 25), Luvdisc (Lv 13), Latias (Lv 30), Latios (Lv 30), Jirachi (Lv 1), Chingling (Lv 25), Togekiss (Lv 1), Leafeon (Lv 1), Glaceon (Lv 1), Sylveon (Lv 1)
 - Egg: Pikachu, Raichu, Clefairy, Clefable, Jigglypuff, Wigglytuff, Jynx, Eevee, Vaporeon, Jolteon, Flareon, Pichu, Cleffa, Igglybuff, Espeon, Umbreon, Girafarig, Smoochum, Skitty, Delcatty, Plusle, Minun, Spinda, Chimecho, Chingling, Leafeon, Glaceon, Sylveon, Farigiraf
 
 ## Withdraw

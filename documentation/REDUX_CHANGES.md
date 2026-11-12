@@ -133,6 +133,13 @@ pre-evolutions officially get in a mainline game, by level-up, TM, tutor or egg.
   Vespiquen and Gliscor.
 - Extreme Speed keeps its official placement, except that Linoone learns it at level 52, from its official egg move. Strong setup moves such as Dragon Dance and Swords Dance stay at their official level, or at level 50 or later if they aren't
   officially learned by level-up.
+- Egg moves that are key to a final evolution's moveset, and that no TM, TR or tutor in the game teaches, are added to its level-up moves. Level 1 means the
+  Pokémon gets it on evolving or from the Move Relearner:
+  - Morning Sun: Arcanine, Rapidash, Sunflora (1), Venomoth (37). Moonlight: Exeggutor (1). Strength Sap: Vileplume, Bellossom, Victreebel, Jumpluff (1). Wish: Clefable (1).
+  - Rapid Spin: Tentacruel, Kabutops, Armaldo, Cloyster (1). Rock Blast: Cloyster (1).
+  - Fake Out: Raichu, Medicham, Infernape, Ambipom, Lopunny, Toxicroak, Weavile (1). Mach Punch and Bullet Punch: Hitmontop (1). Bullet Punch: Hariyama (1).
+    Ice Shard: Donphan (1). Aqua Jet: Crawdaunt (1). Sucker Punch: Arbok (32).
+  - Fire Fang and Ice Fang: Luxray (1). Freeze-Dry: Lapras (42). Belly Drum: Azumarill (50). Shell Smash: Torterra (50).
 
 To compile-check without a ROM, generate the header with:
 
@@ -300,6 +307,17 @@ the Rocket Executives and Silver's fights from Azalea on, except the Cherrygrove
 - Proton's ace is the Zubat line and Petrel's is Weezing; neither uses the other's line.
 - Fighting Dojo rematches, the League second round, the tag battles, Kimono Girls and Eusine use Redux's own teams, set by each trainer's theme and place in the
   story. Levels for the Dojo and second round follow Sacred Gold's range.
+- Later team changes:
+  - Whitney's rematch has Wyrdeer instead of Stantler. Pryce's Sneasel is a Weavile. Chuck's Poliwrath uses Close Combat instead of Dynamic Punch.
+  - Brock leads with Onix and ends with Golem. In his rematch Tyranitar leads, holding Smooth Rock, in place of Steelix.
+  - Janine is set apart from Koga: Roserade and Tentacruel, both with Toxic Spikes, replace Ariados and Qwilfish, and her rematch has Weezing instead of Drapion.
+  - Blue's rematch has Machamp instead of Tyranitar. Sabrina's rematch Espeon has Magic Bounce. Koga's Ariados sets Sticky Web instead of using Sucker Punch.
+  - Will leads with a Trick Room Farigiraf in both rounds, replacing Jynx and then Espeon, and his Xatu has Magic Bounce.
+  - Clair's rematch and tag battle have Flygon instead of Salamence; the tag battle Flygon uses Dragon Claw and Rock Slide so it doesn't lock into Outrage.
+    Lance's first round has Flygon and his second round Salamence instead of the weaker Dragonite.
+  - Proton adds Toxicroak. Archer has Drapion instead of Raticate, and adds a Magnezone with Sturdy.
+  - Some key trainers use the egg moves added to level-up above: Pryce's Lapras (Freeze-Dry), Karen's rematch Vileplume (Strength Sap), Blaine's rematch
+    Arcanine (Morning Sun) and Ariana's Arbok (Sucker Punch).
 - Bug Catcher Wade's first two rematches are swapped, because the rematch table calls them in reverse order.
 
 Generic trainers are generated from rules, using Sacred Gold as a reference rather than a template:
