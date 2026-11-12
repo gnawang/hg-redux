@@ -402,7 +402,7 @@ Ability Capsules, Ability Patches and Mints are hg-engine features. Redux only a
   `gift_static.md`). Locations holds every wild area plus the places that only have trainers, such as Gyms, and lists the trainers fought in each. Place names
   elsewhere link to their location. Each tab opens on its first entry and keeps its search, selection and scroll position when you switch away and back. Hovering a move
   outside the Moves tab shows its type, power, accuracy, PP and description. Every listed move shows its type to its left. Hovering a Pokémon's name shows its
-  number, types and abilities beside a hexagon of its base stats, which the Pokémon page also shows next to the stat bars. `.github/workflows/reference-site.yml` publishes it to GitHub Pages when those pages change on `main`
+  number, types and abilities beside a hexagon of its base stats. `.github/workflows/reference-site.yml` publishes it to GitHub Pages when those pages change on `main`
 - `scripts/build_trainer_locations.py`: writes `scripts/trainer_locations.json`, where each trainer is fought and what the fight is (Gym battle, rematch, the
   rival's fight for your starter and so on), which `build_reference_docs.py` adds to the trainer pages. It reads a [pret/pokeheartgold](https://github.com/pret/pokeheartgold)
   checkout: the map objects and scripts that start each battle, and the phone rematch table. That checkout isn't in the repo, so the JSON is committed. Fights the

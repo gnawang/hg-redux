@@ -96,7 +96,7 @@ dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 12px;mar
 .hex .spoke{stroke:var(--line);stroke-width:1}
 .hex .ax{font:500 11px var(--display);fill:var(--muted)}
 .hex .val{font:600 11px var(--mono);fill:var(--fg);paint-order:stroke;stroke:var(--panel);stroke-width:3px;stroke-linejoin:round}
-.stats{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}.stats .bars{flex:1 1 220px;min-width:0}.stats .hex{flex:0 1 260px;width:260px;margin-inline:auto}
+
 .note{color:var(--muted);font-size:13.5px;margin:0}
 .tip{position:fixed;z-index:20;width:290px;max-width:calc(100vw - 24px);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;box-shadow:0 6px 24px rgba(0,0,0,.18);pointer-events:none;font-size:13.5px}
 .tip[hidden]{display:none}.tip h4{font:700 17px/1.2 var(--display);margin:0 0 6px}.tip .ts{margin-bottom:8px}.tip .cat{color:var(--muted);font-size:13px;margin-left:6px}
@@ -224,7 +224,7 @@ function pokemon(p){
   const tot=p.st.reduce((a,b)=>a+b,0);const where=FOUND.get(p.name);
   return `<div class="eh"><span class="no">${num(p.n)}</span><h2>${esc(p.name)}</h2><p>${chips(p.types)}</p></div>`+
   (p.chg.length?`<section class="sec chg"><h3>Changed in Redux</h3><ul>${p.chg.map(c=>`<li>${c[0]?`<b>${esc(c[0])}:</b> `:''}${esc(c[1])}${c[2]&&c[2].length?`<ol>${c[2].map(chgRow).join('')}</ol>`:''}</li>`).join('')}</ul></section>`:'')+
-  `<div class="grid2"><section class="sec"><h3>Base stats</h3><div class="stats"><div class="bars">${p.st.map((v,i)=>`<div class="stat"><span>${STATS[i]}</span><span>${v}</span><span class="tr"><i style="width:${(v/255*100).toFixed(1)}%"></i></span></div>`).join('')}<div class="stat total"><span>Total</span><span>${tot}</span><span></span></div></div>${hex(p.st,TC[p.types[0]]||'#666')}</div></section>
+  `<div class="grid2"><section class="sec"><h3>Base stats</h3>${p.st.map((v,i)=>`<div class="stat"><span>${STATS[i]}</span><span>${v}</span><span class="tr"><i style="width:${(v/255*100).toFixed(1)}%"></i></span></div>`).join('')}<div class="stat total"><span>Total</span><span>${tot}</span><span></span></div></section>
   <section class="sec"><h3>Details</h3><dl><dt>Abilities</dt><dd>${esc(p.ab.join(', ')||'None')}</dd><dt>Hidden</dt><dd>${esc(p.hid||'None')}</dd>${p.cyc?`<dt>Egg cycles</dt><dd>${p.cyc}</dd>`:''}<dt>Evolves</dt><dd>${p.evo.length?p.evo.map(esc).join('<br>'):'Does not evolve further'}</dd></dl></section></div>
   <section class="sec"><h3>Level-up moves<small>${p.lvl.length}</small></h3><div class="lv">${p.lvl.map(x=>`<div><b>${x[0]==='evolve'?'Evolve':'Lv '+x[0]}</b>${mvt(x[1])}</div>`).join('')}</div></section>
   ${p.tm.length?`<section class="sec"><h3>TMs and HMs<small>${p.tm.length}</small></h3><div class="lv">${[...p.tm].sort((a,b)=>machKey(a)-machKey(b)||a.localeCompare(b)).map(x=>`<div><b>${esc(MACH.get(x)||'–')}</b>${mvt(x)}</div>`).join('')}</div></section>`:''}
