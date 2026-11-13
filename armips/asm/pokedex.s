@@ -954,16 +954,16 @@ get_dex_num_patch:
     ldr r0, =493
     cmp r1, r0
     ble @@_return_r1 // if not a new mon
-    add r0, #1 // the Redux list below takes the numbers straight after Arceus
-    ldr r2, =redux_dex_species
-@@_redux_loop:
+    add r0, #1 // the Encore list below takes the numbers straight after Arceus
+    ldr r2, =encore_dex_species
+@@_encore_loop:
     ldrh r3, [r2] // get_dex_num saves r3
     cmp r3, r1
     beq @@_return
     add r0, #1
     add r2, #2
     cmp r3, #0
-    bne @@_redux_loop
+    bne @@_encore_loop
     sub r1, #50
 @@_return_r1:
     mov r0, r1
@@ -972,7 +972,7 @@ get_dex_num_patch:
 
 .pool
 
-redux_dex_species: // same order as the end of sPokedexSort_NationalNum; armips can't see the SPECIES_ constants
+encore_dex_species: // same order as the end of sPokedexSort_NationalNum; armips can't see the SPECIES_ constants
     .halfword 750, 949, 950, 951, 1029, 1031, 1032, 0 // Sylveon, Wyrdeer, Kleavor, Ursaluna, Annihilape, Farigiraf, Dudunsparce
 
 .endarea

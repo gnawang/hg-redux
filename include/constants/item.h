@@ -2694,7 +2694,7 @@
 // define your custom move effects below like this
 // #define ITEM_CUSTOM_1 (MAX_BASE_ITEM_NUM + 1)
 
-// Redux custom items (names/descriptions in data/text/222.txt and the custom files 221/223/224/829)
+// Encore custom items (names/descriptions in data/text/222.txt and the custom files 221/223/224/829)
 #define ITEM_INFINITE_CANDY     (MAX_BASE_ITEM_NUM + 1) // Rare Candy that is never used up
 #define ITEM_POCKET_PKMN_CENTER (MAX_BASE_ITEM_NUM + 2) // key item: heals the whole party outside battle
 

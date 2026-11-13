@@ -12,7 +12,7 @@
 #define GFX_ITEM_RETURN_ID ((MAX_TOTAL_ITEM_NUM + 1) * 2 + 4)
 #define NEW_ITEM_GFX       (797)
 
-// Redux: common script that heals the party and prints a message (scr_seq_0003_074_pocket_pkmn_center)
+// Encore: common script that heals the party and prints a message (scr_seq_0003_074_pocket_pkmn_center)
 #define SCRIPT_POCKET_PKMN_CENTER 2074
 
 u16 GetItemIndex(u16 item, u16 type);
@@ -39,7 +39,7 @@ const struct ItemUseFuncDat sNewItemFieldUseFuncs[] = {
     { ItemMenuUseFunc_Mint, NULL, NULL },
     { ItemMenuUseFunc_Nectar, NULL, NULL },
     { ItemMenuUseFunc_RotomCatalog, NULL, NULL },
-    // Redux: usable from the bag and from the registered (Y) button
+    // Encore: usable from the bag and from the registered (Y) button
     { ItemMenuUseFunc_PocketPkmnCenter, ItemFieldUseFunc_PocketPkmnCenter, NULL }, // fieldUseFunc 36
 };
 

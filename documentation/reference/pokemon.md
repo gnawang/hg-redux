@@ -2,7 +2,7 @@
 
 Generated from the data files by `scripts/build_reference_docs.py`. Don't edit by hand.
 
-Covers the Redux roster: all 493 Pokémon of Gens 1–4 plus the later evolutions it adds. "Changed" means different from hg-engine, not from the original HeartGold, so changes hg-engine already made aren't flagged.
+Covers the Encore roster: all 493 Pokémon of Gens 1–4 plus the later evolutions it adds. "Changed" means different from hg-engine, not from the original HeartGold, so changes hg-engine already made aren't flagged.
 
 TMs/HMs and tutor moves list only what the game teaches. Friendship evolutions need 80 friendship in every case.
 

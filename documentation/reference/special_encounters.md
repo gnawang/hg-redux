@@ -2050,7 +2050,7 @@ Bonus Pokémon are locked until the area has reached the listed levels of Plains
 
 ## Bug-Catching Contest
 
-Held on Tuesdays, Thursdays and Saturdays. Without the National Dex the game always uses the first set. With it, the set depends on the day. Redux's `ALWAYS_HAVE_NATIONAL_DEX` setting should mean you get the National Dex sets. Levels are random within the range.
+Held on Tuesdays, Thursdays and Saturdays. Without the National Dex the game always uses the first set. With it, the set depends on the day. Encore's `ALWAYS_HAVE_NATIONAL_DEX` setting should mean you get the National Dex sets. Levels are random within the range.
 
 ### Johto Dex
 

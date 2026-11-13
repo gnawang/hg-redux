@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Converts data/graphics/title/redux_logo.png into the title screen files in rawdata/title_demo/.
+# Converts data/graphics/title/encore_logo.png into the title screen files in rawdata/title_demo/.
 # The PNG is 256x128 and indexed against the vanilla logo palette (a/0/4/6 file 4), which the
 # game keeps using, so edits have to stay on those colours. Index 0 is transparent.
 #
@@ -9,7 +9,7 @@ import struct
 
 from PIL import Image
 
-SOURCE = "data/graphics/title/redux_logo.png"
+SOURCE = "data/graphics/title/encore_logo.png"
 OUTPUT_DIR = "rawdata/title_demo"
 TILE_SIZE = 8
 WIDTH_TILES = 32

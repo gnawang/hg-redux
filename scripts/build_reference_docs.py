@@ -3,7 +3,7 @@
 # drift from what the game does. Rerun it after changing encounters, trainers, Pokemon or learnsets:
 #   python3 scripts/build_reference_docs.py
 #
-# "Changed from hg-engine" sections compare against the commit Redux last merged from upstream.
+# "Changed from hg-engine" sections compare against the commit Encore last merged from upstream.
 import argparse
 import json
 import os
@@ -34,7 +34,7 @@ BUG_CONTEST_SLOT_SIZE = 8
 BUG_CONTEST_SLOTS = 10
 BUG_CONTEST_SETS = ["Johto Dex", "National Dex, Tuesday", "National Dex, Thursday", "National Dex, Saturday"]
 
-# the Redux roster besides the 493 Pokemon of Gens 1-4, from the design rules in REDUX_CHANGES.md
+# the Encore roster besides the 493 Pokemon of Gens 1-4, from the design rules in ENCORE_CHANGES.md
 ROSTER_EXTRAS = ["SPECIES_SYLVEON", "SPECIES_WYRDEER", "SPECIES_KLEAVOR", "SPECIES_URSALUNA", "SPECIES_ANNIHILAPE",
                  "SPECIES_FARIGIRAF", "SPECIES_DUDUNSPARCE"]
 LAST_GEN_4_SPECIES = 493
@@ -414,7 +414,7 @@ def build_bug_contest(names, ids):
     species_by_id = {number: key for key, number in ids.items()}
     lines = ["## Bug-Catching Contest", "",
              "Held on Tuesdays, Thursdays and Saturdays. Without the National Dex the game always uses the first set. With it, "
-             "the set depends on the day. Redux's `ALWAYS_HAVE_NATIONAL_DEX` setting should mean you get the National Dex sets. "
+             "the set depends on the day. Encore's `ALWAYS_HAVE_NATIONAL_DEX` setting should mean you get the National Dex sets. "
              "Levels are random within the range.", ""]
     for index, label in enumerate(BUG_CONTEST_SETS):
         lines += ["### %s" % label, "", "| Pokémon | Chance | Levels | Base score |", "|---|---|---|---|"]
@@ -613,7 +613,7 @@ def build_moves(species):
 
     lines = ["# Moves", "",
              "Generated from `data/Moves.c` and the learnsets by `scripts/build_reference_docs.py`. Don't edit by hand.", "",
-             "Every move a Redux Pokémon can learn, with who learns it and how. Power and accuracy show \"–\" where they don't apply.", ""]
+             "Every move an Encore Pokémon can learn, with who learns it and how. Power and accuracy show \"–\" where they don't apply.", ""]
     for move in sorted(learners, key=pretty):
         data, ways = move_data[move], learners[move]
         lines += ["## %s" % pretty(move), "",
@@ -759,13 +759,104 @@ def build_pokemon(species, base):
 
     lines = ["# Pokémon", "",
              "Generated from the data files by `scripts/build_reference_docs.py`. Don't edit by hand.", "",
-             "Covers the Redux roster: all 493 Pokémon of Gens 1–4 plus the later evolutions it adds. \"Changed\" means "
+             "Covers the Encore roster: all 493 Pokémon of Gens 1–4 plus the later evolutions it adds. \"Changed\" means "
              "different from hg-engine, not from the original HeartGold, so changes hg-engine already made aren't flagged.", "",
              "TMs/HMs and tutor moves list only what the game teaches. Friendship evolutions need %d friendship in every case." % friendship_threshold(), "",
              "## Changes from hg-engine", "",
              "This table covers types, abilities, stats and evolutions. Each Pokémon's entry below lists these along with its move and egg cycle changes.", "",
              "| Pokémon | Change |", "|---|---|"] + summary + [""]
     return lines + entries
+
+
+# What data/AbilityFlags.c's flags mean, for the abilities page. disabledByNeutralizingGas is listed when it's missing instead,
+# because almost every ability has it.
+ABILITY_FLAG_TEXT = (
+    ("ignoredByMoldBreaker", "Mold Breaker, Teravolt and Turboblaze ignore it"),
+    ("failsTrace", "Trace can't copy it"),
+    ("failsRolePlay", "Role Play can't copy it"),
+    ("failsSwap", "Skill Swap fails"),
+    ("failsEntrainment", "Entrainment can't replace it"),
+    ("failsReceiver", "Receiver and Power of Alchemy can't copy it"),
+    ("failsSuppress", "Gastro Acid can't suppress it"),
+    ("disabledWhenTransformed", "A Pokémon that transforms into it doesn't get its effect"),
+)
+
+# Where an ability works differently from its in-game text, or not at all. Checked against: Stench src/battle/ability.c; Sturdy
+# src/individual/ServerHPCalc.c; Intimidate blockers data/battle_scripts/subscripts/subscript_0186_INTIMIDATE.s; Illuminate and Keen Eye
+# src/battle/other_battle_calculators.c and btl_scr_cmd_33_statbuffchange.c; Rock Smash src/field/rock_smash_item.c; Compound Eyes
+# src/field/enemy_party.c; snow SNOW_WARNING_GENERATION in include/config.h; Cud Chew has no code outside data/AbilityFlags.c.
+ABILITY_NOTES = {
+    "ABILITY_STENCH": ["The in-game text gives only its field effect. In battle, its damaging moves also have a 10% chance to make the target flinch."],
+    "ABILITY_STURDY": ["Besides blocking one-hit KO moves, a Pokémon at full HP survives any hit with 1 HP."],
+    "ABILITY_OBLIVIOUS": ["Also blocks Intimidate and Captivate."],
+    "ABILITY_OWN_TEMPO": ["Also blocks Intimidate."],
+    "ABILITY_INNER_FOCUS": ["Also blocks Intimidate."],
+    "ABILITY_SCRAPPY": ["Also blocks Intimidate."],
+    "ABILITY_ILLUMINATE": ["In battle it now works like Keen Eye: its accuracy can't be lowered, and it ignores the target's evasion boosts."],
+    "ABILITY_KEEN_EYE": ["Also ignores the target's evasion boosts.",
+                         "Out of battle, a lead Pokémon with it adds 5% to the chance of finding an item in a smashed rock."],
+    "ABILITY_SUCTION_CUPS": ["Out of battle, a lead Pokémon with it adds 5% to the chance of finding an item in a smashed rock."],
+    "ABILITY_MAGNET_PULL": ["Out of battle, a lead Pokémon with it adds 5% to the chance of finding an item in a smashed rock."],
+    "ABILITY_SERENE_GRACE": ["Out of battle, a lead Pokémon with it finds better items in smashed rocks, and never the lowest-quality ones."],
+    "ABILITY_SUPER_LUCK": ["Out of battle, a lead Pokémon with it finds better items in smashed rocks, and never the lowest-quality ones."],
+    "ABILITY_COMPOUND_EYES": ["Out of battle, a lead Pokémon with it makes wild Pokémon more likely to hold items."],
+    "ABILITY_SNOW_WARNING": ["Summons snow, not hail. Snow does no damage and raises Ice-types' Defense by half."],
+    "ABILITY_ICE_BODY": ["Works in snow as well as hail."],
+    "ABILITY_SNOW_CLOAK": ["Works in snow as well as hail."],
+    "ABILITY_PLUS": ["Works with a partner that has Plus or Minus, so only in double battles. Wild double battles are off."],
+    "ABILITY_MINUS": ["Works with a partner that has Plus or Minus, so only in double battles. Wild double battles are off."],
+    "ABILITY_HEALER": ["Only helps a partner, so it only matters in double battles. Wild double battles are off."],
+    "ABILITY_FRIEND_GUARD": ["Only helps a partner, so it only matters in double battles. Wild double battles are off."],
+    "ABILITY_TELEPATHY": ["Only dodges a partner's moves, so it only matters in double battles. Wild double battles are off."],
+    "ABILITY_CUD_CHEW": ["Not implemented: hg-engine has no code for it, so it does nothing."],
+}
+
+
+def read_ability_flags():
+    flags = {}
+    for constant, body in re.findall(r"\[(ABILITY_\w+)\] = \{(.*?)\},", read_file("data/AbilityFlags.c")):
+        flags[constant] = set(re.findall(r"\.(\w+) = TRUE", body))
+    return flags
+
+
+def read_ability_descriptions():
+    with open("data/text/722.txt", encoding="utf-8") as source:
+        text = source.read().split("\n")
+    with open("include/constants/ability.h", encoding="utf-8") as source:
+        values = re.findall(r"#define (ABILITY_\w+)\s+(\d+)", source.read())
+    return {constant: re.sub(r"\s+", " ", text[int(value)].replace("\\n", " ")).strip() for constant, value in values if int(value) < len(text)}
+
+
+def build_abilities(species):
+    hidden = read_hidden_abilities()
+    flags, descriptions = read_ability_flags(), read_ability_descriptions()
+    holders = {}
+    for key in roster_keys(species):
+        name = species[key]["name"]
+        for ability in species[key]["abilities"]:
+            holders.setdefault(ability, {}).setdefault("regular", []).append(name)
+        if hidden.get(key, "ABILITY_NONE") != "ABILITY_NONE":
+            holders.setdefault(hidden[key], {}).setdefault("hidden", []).append(name)
+
+    lines = ["# Abilities", "",
+             "Generated from the ability data by `scripts/build_reference_docs.py`. Don't edit by hand.", "",
+             "Every ability an Encore Pokémon can have, with the in-game description, who has it, and notes where it works "
+             "differently from that description. Battle effects follow hg-engine, which uses the latest games' behaviour.", ""]
+    for ability in sorted(holders, key=pretty):
+        ways, ability_flags = holders[ability], flags.get(ability, set())
+        details = [text for flag, text in ABILITY_FLAG_TEXT if flag in ability_flags]
+        if "disabledByNeutralizingGas" not in ability_flags:
+            details.append("Neutralizing Gas doesn't stop it")
+        lines += ["## %s" % pretty(ability), "", "- Description: %s" % descriptions.get(ability, "")]
+        if "regular" in ways:
+            lines.append("- Pokémon: %s" % ", ".join(ways["regular"]))
+        if "hidden" in ways:
+            lines.append("- Hidden ability of: %s" % ", ".join(ways["hidden"]))
+        if details:
+            lines.append("- Battle rules: %s" % "; ".join(details))
+        lines += ["- Note: %s" % note for note in ABILITY_NOTES.get(ability, [])]
+        lines.append("")
+    return lines
 
 
 def write(name, lines):
@@ -787,6 +878,7 @@ def main():
     write("other_trainers", build_other_trainers(species))
     write("pokemon", build_pokemon(species, base))
     write("moves", build_moves(species))
+    write("abilities", build_abilities(species))
     write("items", build_items())
 
 

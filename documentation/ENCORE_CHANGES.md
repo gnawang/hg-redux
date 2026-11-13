@@ -1,7 +1,7 @@
-# Pokémon HeartGold Redux: changes from hg-engine
+# Pokémon HeartGold Encore: changes from hg-engine
 
-Pokémon HeartGold Redux is a fork of [BluRosie/hg-engine](https://github.com/BluRosie/hg-engine).
-This file lists every change Redux makes on top of upstream, the design rules behind them,
+Pokémon HeartGold Encore (called HeartGold Redux until November 2026) is a fork of [BluRosie/hg-engine](https://github.com/BluRosie/hg-engine).
+This file lists every change Encore makes on top of upstream, the design rules behind them,
 and the work still planned. Keep it up to date in the same commit as each change.
 
 For what's in the game now (wild encounters, every Pokémon and move, trainers' teams, shop stock), see
@@ -36,7 +36,7 @@ For what's in the game now (wild encounters, every Pokémon and move, trainers' 
 
 ## What hg-engine already changes from HeartGold
 
-The rest of this file lists changes from hg-engine. These come with hg-engine and stay on in Redux (see `include/config.h`):
+The rest of this file lists changes from hg-engine. These come with hg-engine and stay on in Encore (see `include/config.h`):
 
 - **Pokémon and battles:** Fairy type and the latest type chart, modern base stats, moves and abilities, hidden abilities, the expanded species list, and Champions power, type, accuracy and effect-chance changes.
 - **Catching and growth:** capture experience, critical captures, modern Poké Ball logic, the modern experience formula and vitamin EV caps.
@@ -48,20 +48,21 @@ The rest of this file lists changes from hg-engine. These come with hg-engine an
 
 | Setting | Value | Why |
 |---|---|---|
-| ROM title and banner | "HG REDUX" / "Pokemon HeartGold Redux" | Hack name |
+| ROM title and banner | "HG ENCORE" / "Pokemon HeartGold Encore" | Hack name |
 | `MEGA_EVOLUTIONS`, `PRIMAL_REVERSION` | Off | Replaced by permanent retypes |
 | `IMPLEMENT_BDHCAM_ROUTINE` | Off | Keep vanilla camera behaviour |
 | `SHINY_ODDS` | 32 (1 in 2048) | Matches HeartGold Generations |
 | `DELETABLE_HMS` | On | HMs can be forgotten |
 | `FAST_TEXT_PRINTING`, `ALWAYS_HAVE_NATIONAL_DEX` | On | QoL; National Dex from the start |
 | Transparent text boxes, level cap, 60 fps, wild double battles | Off (upstream default) | Not wanted, or unstable |
-| `BUILD_DUMPED_EVENTDATA` | On | Map objects Redux changes come from `data/eventdata/zone_event/`. Only maps in that folder replace the ROM's |
+| `BUILD_DUMPED_EVENTDATA` | On | Map objects Encore changes come from `data/eventdata/zone_event/`. Only maps in that folder replace the ROM's |
 | `ALLOW_SAVE_CHANGES` | On (upstream default) | Required for the expanded Pokédex. Saves aren't PKHeX-compatible. The armips side uses `.ifdef`, so its `0` value still means on |
 
-### Title screen logo (`rawdata/title_demo/`, `data/graphics/title/redux_logo.png`)
+### Title screen logo (`rawdata/title_demo/`, `data/graphics/title/encore_logo.png`)
 
-The title screen shows "REDUX" in place of "VERSION" under the HeartGold logo, following the layout of HeartGold Generations.
-"REDUX" is original pixel art; the rest of the logo is the vanilla art, and it uses the vanilla palette, so there are no
+The title screen shows "ENCORE" in place of "VERSION" under the HeartGold logo, following the layout of HeartGold Generations.
+"ENCORE" is original pixel art in the style of the earlier "REDUX" lettering: the same 16×20 letters with the vanilla
+logo's gradient, a dark outline and a gold border. The rest of the logo is the vanilla art, and it uses the vanilla palette, so there are no
 code changes. The logo is one tile row taller than vanilla (16 rows, 32 KB), which is the most that fits before its tilemap in VRAM.
 
 - `narcs.mk`, `Makefile`: `a/0/4/6` gets the same `rawdata` override rule as `a/2/6/2`
@@ -90,11 +91,11 @@ their other type or their pre-Fairy type, as in vanilla.
 
 ### Pokédex (`data/PokedexSort.c`, `data/PokedexArea.c`, `armips/asm/pokedex.s`, `scripts/build_dex_areas.py`)
 
-The National list and every search list hold only the Redux roster of 500 Pokémon: Gens 1–4 and the seven later evolutions. Upstream had those seven only in the National list, so
+The National list and every search list hold only the Encore roster of 500 Pokémon: Gens 1–4 and the seven later evolutions. Upstream had those seven only in the National list, so
 they're added to the name, height, weight, type and body lists, and Sylveon is listed under Normal. Kyogre, Giratina and Shaymin, missing from upstream's height lists, are added too.
 
 The seven later evolutions are numbered 494 to 500 in roster order, straight after Arceus, instead of their official numbers, so the National grid ends at 500 with no blank run. The numbers come from
-one lookup, `redux_dex_species` in `armips/asm/pokedex.s`, which the grid, entry page and summary screen all use. Keep it in the same order as the end of `sPokedexSort_NationalNum`. Their entries in `data/Species.c` are
+one lookup, `encore_dex_species` in `armips/asm/pokedex.s`, which the grid, entry page and summary screen all use. Keep it in the same order as the end of `sPokedexSort_NationalNum`. Their entries in `data/Species.c` are
 trimmed where a long line stopped the text from wrapping: Ursaluna, Annihilape, Farigiraf and Dudunsparce. Dudunsparce shows as "Dudunspars" because names are capped at 10 characters.
 
 The area maps' time-of-day lists are generated from `data/Encounters.c` by `scripts/build_dex_areas.py`. Swarm and radio Pokémon go in the Special lists, which
@@ -116,7 +117,7 @@ python3 scripts/build_learnsets.py --generate data/learnsets/learnsets.json --cu
   are left out of level-up and egg moves; with `BLOCK_LEARNING_UNIMPLEMENTED_MOVES` the game wouldn't teach them anyway.
 - TM and tutor compatibility is the union of every game. TM01–TM92, the HMs, the move tutors and the newer TMs and TRs sold in shops (see Shops) can be used in the game.
   hg-engine's other expansion TMs and TRs exist as items but nothing gives or sells them; they teach moves already on a vanilla TM or a tutor, or unimplemented ones.
-- Legends: Arceus and Pokémon GO are ignored. Every Redux species has mainline data.
+- Legends: Arceus and Pokémon GO are ignored. Every Encore species has mainline data.
 - `data/learnsets/base/custom.json` applies last and holds every roster Pokémon's full level-up and egg moves, with the union above already applied.
   Rage Fist, which hg-engine hasn't implemented, is replaced with Shadow Punch for Primeape and Annihilape. To change one learnset, edit its entry there and rerun the command.
 
@@ -149,7 +150,7 @@ python3 scripts/build_learnsets.py --learnsets data/learnsets/learnsets.json --m
 
 ### Evolutions (`data/Evolutions.c`, `data/itemdata/itemdata.c`)
 
-The original methods are kept; Redux adds alternatives or replaces broken ones.
+The original methods are kept; Encore adds alternatives or replaces broken ones.
 
 | Change | Species |
 |---|---|
@@ -179,7 +180,7 @@ HeartGold Generations.
 | Celadon Dept. Store 3F | Shiny, Dusk and Dawn Stones, Black Augurite (Kleavor), Peat Block (Ursaluna) |
 | Town Poké Marts, Goldenrod 5F and Celadon 3F | 71 newer TMs and 22 TRs, see Newer TMs below |
 
-Redux prices (selling to a shop gives half):
+Encore prices (selling to a shop gives half):
 
 | Items | Price |
 |---|---|
@@ -245,15 +246,15 @@ Files involved:
   moved to 2689/2690 to stay right after the last item
 
 **Mom gives the items.** Mom's opening scene in New Bark Town ends with `callstd 2038`
-(`std_fade_end_mom_music`). Vanilla shares that script's body with five other shared scripts, so Redux gives 2038 its own
+(`std_fade_end_mom_music`). Vanilla shares that script's body with five other shared scripts, so Encore gives 2038 its own
 entry point. If the player doesn't have the Pocket Center yet, Mom says one extra line and gives both items with the
 usual "obtained" fanfare (the vanilla give-item routine `_080A`); then the music fades as before. Her scene is the first
 script that calls 2038, and the item check makes it a one-time gift, so no new flag or map script edit is needed.
 
 ### Regional forms (excluded)
 
-Redux has no regional forms: they add complexity and don't fit the feel of HeartGold. hg-engine keeps their species
-data, but nothing in Redux places them. Upstream's wild encounters, trainers, Safari Zone, Headbutt trees, shops and
+Encore has no regional forms: they add complexity and don't fit the feel of HeartGold. hg-engine keeps their species
+data, but nothing in Encore places them. Upstream's wild encounters, trainers, Safari Zone, Headbutt trees, shops and
 scripts don't use them, and no normal Gen 1–4 Pokémon can evolve into one, so they can't appear in a playthrough.
 Keep it that way when adding encounters, trainers, gifts, trades and eggs.
 
@@ -278,7 +279,7 @@ Grass, cave, water, Rock Smash, swarm and radio-sound encounters follow Drayano'
 listed rate can't be made from the game's slots (for example 7% on a water table), the closest fit is used. Land levels are spread across
 the listed range. Water and rod levels keep upstream's values except in slots that were empty. Headbutt trees, the Safari Zone,
 the Bug-Catching Contest, Cerulean Cave and Mt. Silver are unchanged, and Bell Tower uses Storm Silver's levels because the list gives none for
-Sacred Gold. Gifts and static encounters from Sacred Gold aren't added. Redux has no 1% wild encounters: wherever a Pokémon filled only the 1% grass or surf slots, they hold the Pokémon from the 4% slot next to them instead (37 slots). Lapras, Phione and Wigglytuff left the wild this way; they come from Union Cave, breeding Manaphy and evolution. Roster Pokémon the list leaves out come from [the Collector](reference/gift_static.md).
+Sacred Gold. Gifts and static encounters from Sacred Gold aren't added. Encore has no 1% wild encounters: wherever a Pokémon filled only the 1% grass or surf slots, they hold the Pokémon from the 4% slot next to them instead (37 slots). Lapras, Phione and Wigglytuff left the wild this way; they come from Union Cave, breeding Manaphy and evolution. Roster Pokémon the list leaves out come from [the Collector](reference/gift_static.md).
 
 Johto and Kanto Pokémon are the common finds, as in HeartGold, and Hoenn and Sinnoh Pokémon are uncommon. A Pokémon counts as Johto or Kanto when any
 member of its evolution family is #1–251, so Azurill, Munchlax and Magnezone do. In each grass, cave, surf, rod and Rock Smash table:
@@ -296,7 +297,7 @@ Overall the Hoenn and Sinnoh share fell from 20% to 15% of grass and cave encoun
 ### Trainers (`data/Trainers.c`)
 
 Key trainers are rebuilt with team design drawn equally from Sacred Gold, Crystal Legacy and Polished Crystal, on top of vanilla rosters.
-Levels follow Sacred Gold's curve, matching Redux's wild levels. This covers all 16 Gym Leaders, the first-round Elite Four, Lance, Red, Giovanni,
+Levels follow Sacred Gold's curve, matching Encore's wild levels. This covers all 16 Gym Leaders, the first-round Elite Four, Lance, Red, Giovanni,
 the Rocket Executives and Silver's fights from Azalea on, except the Cherrygrove and Dragon's Den ones. The full teams are on the [trainer](reference/trainers.md) page.
 
 - Team size starts from vanilla. Early bosses gain one or two Pokémon, the Johto Gyms use 3 to 5, and 6-Pokémon teams start with Lance's
@@ -305,7 +306,7 @@ the Rocket Executives and Silver's fights from Azalea on, except the Cherrygrove
   cover his starter's weaknesses.
 - Red keeps his vanilla HeartGold movesets on Sacred Gold's levels, including the three ultimate starter moves.
 - Proton's ace is the Zubat line and Petrel's is Weezing; neither uses the other's line.
-- Fighting Dojo rematches, the League second round, the tag battles, Kimono Girls and Eusine use Redux's own teams, set by each trainer's theme and place in the
+- Fighting Dojo rematches, the League second round, the tag battles, Kimono Girls and Eusine use Encore's own teams, set by each trainer's theme and place in the
   story. Levels for the Dojo and second round follow Sacred Gold's range.
 - Later team changes:
   - Whitney's rematch has Wyrdeer instead of Stantler. Pryce's Sneasel is a Weavile. Chuck's Poliwrath uses Close Combat instead of Dynamic Punch.
@@ -391,18 +392,20 @@ In HeartGold the Embedded Tower hides Groudon and only uses the Blue Orb, which 
 
 With an empty party, the Pocket Center now says there's nothing to heal, with no heal jingle.
 
-Ability Capsules, Ability Patches and Mints are hg-engine features. Redux only adds them to shops and sets their prices.
+Ability Capsules, Ability Patches and Mints are hg-engine features. Encore only adds them to shops and sets their prices.
 
 ### Developer tools
 
 - `scripts/emu_test.py`: plays `test.nds` headlessly for testing. See `AGENTS.md`
 - `scripts/build_reference_docs.py`: generates `documentation/reference/`
 - `scripts/build_reference_site.py`: builds the [reference site](https://gnawang.github.io/hg-redux/) from `documentation/reference/`, using `scripts/reference_site.html`.
-  Its tabs are Pokémon, moves (with who learns each and how), locations, trainers, key trainers, shops, and events and gifts (from the hand-written
+  Its tabs are Pokémon, moves (with who learns each and how), abilities (with who has each, the battle rules from `data/AbilityFlags.c`, and
+  caveats where an ability works differently from its in-game text or not at all, kept in `ABILITY_NOTES` in `build_reference_docs.py`), locations, trainers, key trainers, shops, and events and gifts (from the hand-written
   `gift_static.md`). Locations holds every wild area plus the places that only have trainers, such as Gyms, and lists the trainers fought in each. Place names
   elsewhere link to their location. Each tab opens on its first entry and keeps its search, selection and scroll position when you switch away and back. Hovering a move
   outside the Moves tab shows its type, power, accuracy, PP and description. Every listed move shows its type to its left. Hovering a Pokémon's name shows its
-  number, types and abilities beside a hexagon of its base stats. `.github/workflows/reference-site.yml` publishes it to GitHub Pages when those pages change on `main`
+  number, types and abilities beside a hexagon of its base stats. Hovering an ability shows its name and description, and clicking it opens it on
+  the Abilities tab. A Pokémon's "Changed in Encore" box lists its TM, tutor and egg move changes one move per row, like its level-up changes. `.github/workflows/reference-site.yml` publishes it to GitHub Pages when those pages change on `main`
 - `scripts/build_trainer_locations.py`: writes `scripts/trainer_locations.json`, where each trainer is fought and what the fight is (Gym battle, rematch, the
   rival's fight for your starter and so on), which `build_reference_docs.py` adds to the trainer pages. It reads a [pret/pokeheartgold](https://github.com/pret/pokeheartgold)
   checkout: the map objects and scripts that start each battle, and the phone rematch table. That checkout isn't in the repo, so the JSON is committed. Fights the

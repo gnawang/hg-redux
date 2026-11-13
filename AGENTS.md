@@ -1,10 +1,10 @@
-# Pokémon HeartGold Redux
+# Pokémon HeartGold Encore
 
-This repo is Pokémon HeartGold Redux, a fork of hg-engine. Before making changes, read
-`documentation/REDUX_CHANGES.md`. It lists every change from upstream, the design rules,
+This repo is Pokémon HeartGold Encore, a fork of hg-engine. Before making changes, read
+`documentation/ENCORE_CHANGES.md`. It lists every change from upstream, the design rules,
 and the work still planned.
 
-- Record each change in `documentation/REDUX_CHANGES.md` in the same commit.
+- Record each change in `documentation/ENCORE_CHANGES.md` in the same commit.
 - Prefer hg-engine's existing code and config toggles over new code. Keep experimental or
   unstable features off.
 - Test changes in the real game when a ROM is available (see below). The developer's own
@@ -17,7 +17,7 @@ and the work still planned.
   scripts, so update it yourself when scripts or legendaries change.
 - Pushing changed reference pages to `main` republishes the reference site through `.github/workflows/reference-site.yml`.
 - After changing wild encounters, run `python3 scripts/build_dex_areas.py` too, which updates `data/PokedexArea.c`.
-- Map objects and warps are built from `data/eventdata/zone_event/`, which holds only the maps Redux changes (`BUILD_DUMPED_EVENTDATA` is on). To hide an object
+- Map objects and warps are built from `data/eventdata/zone_event/`, which holds only the maps Encore changes (`BUILD_DUMPED_EVENTDATA` is on). To hide an object
   without changing script object IDs, set its `hidden_flag` to `FLAG_GOT_BAG`, which is set in the opening and never cleared. Don't delete it from the list.
   Some outdoor maps, such as Route 47, stack levels on the same tiles, so collision data alone doesn't prove a new object is reachable. Check it in the emulator.
 - `data/learnsets/learnsets.json` is generated. Change learnsets through

@@ -133,6 +133,18 @@ def read_moves():
     return moves
 
 
+def read_abilities():
+    parts = re.split(r"\n## (.+)\n", "\n".join(read_lines("abilities.md")))
+    abilities = []
+    for name, body in zip(parts[1::2], parts[2::2]):
+        fields = dict(re.findall(r"^- ([^:]+): (.*)$", body, re.M))
+        abilities.append({"name": name, "desc": fields.get("Description", ""), "mons": name_list(fields.get("Pokémon", "")),
+                          "hid": name_list(fields.get("Hidden ability of", "")),
+                          "rules": fields["Battle rules"].split("; ") if "Battle rules" in fields else [],
+                          "notes": re.findall(r"^- Note: (.*)$", body, re.M)})
+    return abilities
+
+
 def read_shops():
     lines = read_lines("items.md")
     shops = []
@@ -173,7 +185,7 @@ def read_events():
 def main():
     output = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_OUTPUT
     data = {"P": read_pokemon(), "E": read_areas("encounters.md", "## "), "S": read_areas("special_encounters.md", "### ", "## "),
-            "T": read_trainers("trainers.md"), "O": read_trainers("other_trainers.md"), "M": read_moves(), "I": read_shops(),
+            "T": read_trainers("trainers.md"), "O": read_trainers("other_trainers.md"), "M": read_moves(), "A": read_abilities(), "I": read_shops(),
             "G": read_events()}
     with open(TEMPLATE, encoding="utf-8") as source:
         page = source.read()
@@ -181,8 +193,8 @@ def main():
     os.makedirs(output, exist_ok=True)
     with open(os.path.join(output, "index.html"), "w", encoding="utf-8") as target:
         target.write(page.replace("__DATA__", text))
-    print("Wrote %s with %d Pokémon, %d areas, %d trainer fights, %d moves, %d shops and %d event lists" % (os.path.join(output, "index.html"),
-          len(data["P"]), len(data["E"]) + len(data["S"]), len(data["T"]) + len(data["O"]), len(data["M"]), len(data["I"]), len(data["G"])))
+    print("Wrote %s with %d Pokémon, %d areas, %d trainer fights, %d moves, %d abilities, %d shops and %d event lists" % (os.path.join(output, "index.html"),
+          len(data["P"]), len(data["E"]) + len(data["S"]), len(data["T"]) + len(data["O"]), len(data["M"]), len(data["A"]), len(data["I"]), len(data["G"])))
 
 
 if __name__ == "__main__":

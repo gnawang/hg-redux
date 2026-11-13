@@ -40,7 +40,7 @@ const struct BadgeMartItems sBadgeMart[] = {
     { ITEM_REPEL, 1 },
     { ITEM_SUPER_REPEL, 3 },
     { ITEM_MAX_REPEL, 5 },
-    // Redux additions
+    // Encore additions
     { ITEM_MAX_ETHER, 3 },
     { ITEM_ELIXIR, 5 },
     { ITEM_MAX_ELIXIR, 7 },
@@ -55,7 +55,7 @@ u16 sCherrygroveCityMart[] = {
 
 u16 sVioletCityMart[] = {
     ITEM_TUNNEL_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL,
-    // Redux: newer TMs, supporting and niche moves
+    // Encore: newer TMs, supporting and niche moves
     ITEM_TM174, // Haze
     ITEM_TM096, // Eerie Impulse
     ITEM_TM223, // Metal Sound
@@ -67,7 +67,7 @@ u16 sVioletCityMart[] = {
 
 u16 sAzaleaCityMart[] = {
     ITEM_BLOOM_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL,
-    // Redux: newer TMs, low-damage and support moves, and the terrains
+    // Encore: newer TMs, low-damage and support moves, and the terrains
     ITEM_TM176, // Sand Tomb
     ITEM_TM179, // Smack Down
     ITEM_TM193, // Weather Ball
@@ -83,7 +83,7 @@ u16 sAzaleaCityMart[] = {
 
 u16 sGoldenrodDepartmentUpper2F[] = {
     ITEM_POTION, ITEM_SUPER_POTION, ITEM_HYPER_POTION, ITEM_MAX_POTION, ITEM_REVIVE, ITEM_ANTIDOTE, ITEM_PARALYZE_HEAL, ITEM_BURN_HEAL, ITEM_ICE_HEAL, ITEM_AWAKENING, ITEM_FULL_HEAL,
-    // Redux: PP Up, Ability Capsule/Patch and Nature Mints
+    // Encore: PP Up, Ability Capsule/Patch and Nature Mints
     ITEM_PP_UP,
     ITEM_ABILITY_CAPSULE,
     ITEM_ABILITY_PATCH,
@@ -117,7 +117,7 @@ u16 sGoldenrodDepartmentLower2F[] = {
 
 u16 sGoldenrodDepartment3F[] = {
     ITEM_X_SPEED, ITEM_X_ATTACK, ITEM_X_DEFENSE, ITEM_GUARD_SPEC, ITEM_DIRE_HIT, ITEM_X_ACCURACY, ITEM_X_SP_ATK, ITEM_X_SP_DEF,
-    // Redux: evolution items (used directly on the Pokemon)
+    // Encore: evolution items (used directly on the Pokemon)
     ITEM_KINGS_ROCK,
     ITEM_METAL_COAT,
     ITEM_DRAGON_SCALE,
@@ -142,7 +142,7 @@ u16 sGoldenrodDepartment4F[] = {
 
 u16 sGoldenrodDepartment5F[] = {
     ITEM_TM070, ITEM_TM017, ITEM_TM054, ITEM_TM083, ITEM_TM016, ITEM_TM033, ITEM_TM022, ITEM_TM052, ITEM_TM038, ITEM_TM025, ITEM_TM014, ITEM_TM015,
-    // Redux: newer TMs and TRs, medium-damage and niche moves, and the less useful TRs
+    // Encore: newer TMs and TRs, medium-damage and niche moves, and the less useful TRs
     ITEM_TM222, // Breaking Swipe
     ITEM_TM219, // Skitter Smack
     ITEM_TM215, // Scorching Sands
@@ -164,7 +164,7 @@ u16 sGoldenrodDepartment5F[] = {
     ITEM_TR19, // Tri Attack
     ITEM_TR41, // Blaze Kick
     ITEM_TR01, // Body Slam
-    // Redux: evolution stones
+    // Encore: evolution stones
     ITEM_FIRE_STONE,
     ITEM_WATER_STONE,
     ITEM_THUNDER_STONE,
@@ -181,7 +181,7 @@ u16 sGoldenrodHerbs[] = {
 
 u16 sEcruteakMart[] = {
     ITEM_HEART_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL,
-    // Redux: newer TMs, high-utility moves
+    // Encore: newer TMs, high-utility moves
     ITEM_TM196, // Flip Turn
     ITEM_TM188, // Scald
     ITEM_TM095, // Leech Life
@@ -195,7 +195,7 @@ u16 sEcruteakMart[] = {
 
 u16 sOlivineMart[] = {
     ITEM_HEART_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL,
-    // Redux: newer TMs, consistent, stronger attacks
+    // Encore: newer TMs, consistent, stronger attacks
     ITEM_TM197, // Dual Wingbeat
     ITEM_TM112, // Aura Sphere
     ITEM_TM212, // Triple Axel
@@ -215,7 +215,7 @@ u16 sCianwoodPharmacy[] = {
 
 u16 sBlackthornAndBattleFrontierMart[] = {
     ITEM_AIR_MAIL, ITEM_NET_BALL, ITEM_DUSK_BALL,
-    // Redux: newer TMs, strong attacks
+    // Encore: newer TMs, strong attacks
     ITEM_TM186, // High Horsepower
     ITEM_TM127, // Play Rough
     ITEM_TM147, // Wild Charge
@@ -229,7 +229,7 @@ u16 sBlackthornAndBattleFrontierMart[] = {
 
 u16 sIndigoPlateau[] = {
     ITEM_ULTRA_BALL, ITEM_MAX_REPEL, ITEM_HYPER_POTION, ITEM_MAX_POTION, ITEM_FULL_RESTORE, ITEM_REVIVE, ITEM_FULL_HEAL,
-    // Redux: newer TMs, strong attacks
+    // Encore: newer TMs, strong attacks
     ITEM_TM204, // Double Edge
     ITEM_TM210, // Supercell Slam
     ITEM_TM201, // Misty Explosion
@@ -255,7 +255,7 @@ u16 sCeruleanMart[] = {
 
 u16 sCeladonDepartmentUpper2F[] = {
     ITEM_POTION, ITEM_SUPER_POTION, ITEM_HYPER_POTION, ITEM_MAX_POTION, ITEM_REVIVE, ITEM_ANTIDOTE, ITEM_PARALYZE_HEAL, ITEM_BURN_HEAL, ITEM_ICE_HEAL, ITEM_AWAKENING, ITEM_FULL_HEAL,
-    // Redux: PP Up, Ability Capsule/Patch and Nature Mints
+    // Encore: PP Up, Ability Capsule/Patch and Nature Mints
     ITEM_PP_UP,
     ITEM_ABILITY_CAPSULE,
     ITEM_ABILITY_PATCH,
@@ -289,7 +289,7 @@ u16 sCeladonDepartmentLower2F[] = {
 
 u16 sCeladonDepartment3F[] = {
     ITEM_TM021, ITEM_TM027, ITEM_TM087, ITEM_TM078, ITEM_TM012, ITEM_TM041, ITEM_TM020, ITEM_TM028, ITEM_TM076, ITEM_TM055, ITEM_TM072, ITEM_TM079,
-    // Redux: newer TMs and TRs, the strongest attacks, and the stronger TRs
+    // Encore: newer TMs and TRs, the strongest attacks, and the stronger TRs
     ITEM_TM167, // Close Combat
     ITEM_TM164, // Brave Bird
     ITEM_TM217, // Future Sight
@@ -312,7 +312,7 @@ u16 sCeladonDepartment3F[] = {
     ITEM_TR99, // Body Press
     ITEM_TR28, // Megahorn
     ITEM_TR72, // Power Whip
-    // Redux: late-game stones and items for later evolutions of Gen 1-4 Pokemon (Kleavor, Ursaluna)
+    // Encore: late-game stones and items for later evolutions of Gen 1-4 Pokemon (Kleavor, Ursaluna)
     ITEM_SHINY_STONE,
     ITEM_DUSK_STONE,
     ITEM_DAWN_STONE,
@@ -355,7 +355,7 @@ u16 sMahoganyPreRocketHideout[] = {
 
 u16 sMahoganyPostRocketHideout[] = {
     ITEM_GREAT_BALL, ITEM_SUPER_POTION, ITEM_HYPER_POTION, ITEM_ANTIDOTE, ITEM_PARALYZE_HEAL, ITEM_SUPER_REPEL, ITEM_REVIVE, ITEM_AIR_MAIL,
-    // Redux: newer TMs, setup moves
+    // Encore: newer TMs, setup moves
     ITEM_TM100_SV, // Dragon Dance
     ITEM_TM140, // Nasty Plot
     ITEM_TM128, // Amnesia

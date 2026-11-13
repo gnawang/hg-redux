@@ -118,7 +118,7 @@ GF_CpuCopy8 = 0x0204D450;
 GetEvScriptWorkMemberAdrs = 0x020402F0 |1;
 WORDSET_RegisterAbilityName = 0x0200C060|1;
 EventSet_Script = 0x0203FE74 |1;
-/* Redux: script_manager.c functions for starting a script from the bag (pret/pokeheartgold names).
+/* Encore: script_manager.c functions for starting a script from the bag (pret/pokeheartgold names).
    Addresses from KalaayPT/G4Patcher QoLItems_HG_SS.asm, which also agrees with EventSet_Script
    (StartMapSceneScript) and FieldSystem_LoadFieldOverlay above/below. */
 Task_RunScripts = 0x0203FF44 | 1;

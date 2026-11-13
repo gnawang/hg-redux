@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>HeartGold Redux Reference</title>
+<title>HeartGold Encore Reference</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -83,6 +83,9 @@ dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 12px;mar
 .lk:hover{color:var(--gold);text-decoration-color:var(--gold)}
 .mv{border:0;background:none;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
 .mv:hover{color:var(--gold);text-decoration-color:var(--gold)}
+.abl{border:0;background:none;padding:0;font:inherit;color:inherit;cursor:pointer;text-align:left;text-decoration:underline dotted;text-decoration-color:var(--muted);text-underline-offset:3px}
+.abl:hover{color:var(--gold);text-decoration-color:var(--gold)}
+.rules{margin:8px 0 0;padding-left:18px;font-size:14px;display:flex;flex-direction:column;gap:3px}
 .team{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
 .card{border:1px solid var(--line);border-radius:6px;padding:9px 11px;display:flex;flex-direction:column;gap:5px;min-width:0}
 .card .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}.card .top span{font:500 13px var(--mono);color:var(--gold)}
@@ -99,7 +102,7 @@ dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 12px;mar
 
 .note{color:var(--muted);font-size:13.5px;margin:0}
 .tip{position:fixed;z-index:20;width:290px;max-width:calc(100vw - 24px);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;box-shadow:0 6px 24px rgba(0,0,0,.18);pointer-events:none;font-size:13.5px}
-.tip[hidden]{display:none}.tip h4{font:700 17px/1.2 var(--display);margin:0 0 6px}.tip .ts{margin-bottom:8px}.tip .cat{color:var(--muted);font-size:13px;margin-left:6px}
+.tip[hidden]{display:none}.tip.abt{width:260px}.tip.abt p{margin:0}.tip h4{font:700 17px/1.2 var(--display);margin:0 0 6px}.tip .ts{margin-bottom:8px}.tip .cat{color:var(--muted);font-size:13px;margin-left:6px}
 .tip dl{grid-template-columns:repeat(3,max-content minmax(0,auto));gap:2px 8px;font-size:13px}.tip p{margin:8px 0 0;color:var(--muted)}
 /* Pokémon hover card: name, types and abilities on the left, the stat hexagon on the right. */
 .tip.pk{width:440px}.tip .pkc{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:12px;align-items:center}
@@ -113,8 +116,8 @@ dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 12px;mar
 </head>
 <body>
 <header><div class="wrap">
-<h1>HeartGold Redux Reference</h1>
-<p class="sub">Every Pokémon and move, wild encounters, trainer teams, what the shops sell, and gifts, trades and one-off encounters. Built from the current game data.</p>
+<h1>HeartGold Encore Reference</h1>
+<p class="sub">Every Pokémon, move and ability, wild encounters, trainer teams, what the shops sell, and gifts, trades and one-off encounters. Built from the current game data.</p>
 <nav role="tablist" id="tabs"></nav>
 </div></header>
 <main><div class="wrap cols">
@@ -159,6 +162,12 @@ const linkPlaces=s=>esc(s).replace(LOC_RE,n=>locb(n.replace(/&amp;/g,'&')));
 const byMove=new Map(D.M.map(m=>[m.name,m]));
 D.M.forEach(m=>{m.s=(m.name+' '+m.type+' '+m.cat+' '+m.lvl.map(x=>x[0]).join(' ')+' '+m.tm.join(' ')+' '+m.tutor.join(' ')+' '+m.egg.join(' ')).toLowerCase()});
 D.I.forEach(i=>{i.s=(i.name+' '+i.r.map(r=>r[0]).join(' ')).toLowerCase()});
+const byAb=new Map(D.A.map(a=>[a.name,a]));
+D.A.forEach(a=>{a.s=(a.name+' '+a.desc+' '+a.mons.join(' ')+' '+a.hid.join(' ')).toLowerCase()});
+const abl=n=>byAb.has(n)?`<button class="abl" data-ab="${esc(n)}">${esc(n)}</button>`:esc(n);
+// Links ability names inside free text such as "Abilities changed from Overgrow", longest names first.
+const AB_RE=new RegExp('\\b('+[...byAb.keys()].sort((a,b)=>b.length-a.length).map(n=>esc(n).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')\\b','g');
+const linkAbs=s=>esc(s).replace(AB_RE,n=>abl(n.replace(/&amp;/g,'&')));
 const mvb=n=>byMove.has(n)?`<button class="mv" data-m="${esc(n)}">${esc(n)}</button>`:esc(n);
 // A move with its type chip to the left. link=false keeps the name as plain text, e.g. for a removed move.
 const mvt=(n,link=true)=>{const m=byMove.get(n);return `<span class="mvt">${m?`<span class="t mt" style="background:${TC[m.type]||'#666'}">${esc(m.type)}</span>`:''}<span>${link?mvb(n):esc(n)}</span></span>`};
@@ -183,14 +192,14 @@ const machKey=n=>{const k=MACH.get(n)||'';const m=k.match(/^(TM|TR|HM)(\d+)$/);r
 const MON_RE=new RegExp('\\b('+[...byName.keys()].sort((a,b)=>b.length-a.length).map(n=>n.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')\\b','g');
 const linkMons=s=>esc(s).replace(MON_RE,n=>mon(n));
 D.G.forEach(g=>{g.s=(g.name+' '+g.p.join(' ')+' '+g.t.flatMap(t=>t.r.flat()).join(' ')).toLowerCase()});
-const TABS={pokemon:'Pokémon',moves:'Moves',wild:'Locations',others:'Trainers',trainers:'Key Trainers',items:'Shops',events:'Events/Gifts'};
+const TABS={pokemon:'Pokémon',moves:'Moves',abilities:'Abilities',wild:'Locations',others:'Trainers',trainers:'Key Trainers',items:'Shops',events:'Events/Gifts'};
 // Each tab keeps its own search, selection and scroll positions, so leaving a tab and coming back shows it as it was. Each starts on its first entry.
-const st={tab:'pokemon',q:Object.fromEntries(Object.keys(TABS).map(k=>[k,''])),sel:{pokemon:D.P[0],moves:D.M[0],wild:AREAS[0],others:OG[0],trainers:TG[0],items:D.I[0],events:D.G[0]},
+const st={tab:'pokemon',q:Object.fromEntries(Object.keys(TABS).map(k=>[k,''])),sel:{pokemon:D.P[0],moves:D.M[0],abilities:D.A[0],wild:AREAS[0],others:OG[0],trainers:TG[0],items:D.I[0],events:D.G[0]},
   scroll:{},type:'',mtype:'',big:false};
 const $=id=>document.getElementById(id);
 function tabs(){$('tabs').innerHTML=Object.entries(TABS).map(([k,v])=>`<button role="tab" data-tab="${k}" aria-selected="${st.tab===k}">${v}</button>`).join('')}
 function controls(){
-  const ph={wild:'Search a place, Pokémon or trainer',trainers:'Search a trainer, Pokémon or move',others:'Search a trainer, class or Pokémon',pokemon:'Search a name, move or ability',moves:'Search a move or a Pokémon that learns it',items:'Search a shop or item',events:'Search a Pokémon or place'}[st.tab];
+  const ph={wild:'Search a place, Pokémon or trainer',trainers:'Search a trainer, Pokémon or move',others:'Search a trainer, class or Pokémon',pokemon:'Search a name, move or ability',moves:'Search a move or a Pokémon that learns it',abilities:'Search an ability or a Pokémon that has it',items:'Search a shop or item',events:'Search a Pokémon or place'}[st.tab];
   let h=`<input type="search" id="q" aria-label="${ph}" placeholder="${ph}" value="${esc(st.q[st.tab])}">`;
   if(st.tab==='pokemon')h+=`<select id="ty" aria-label="Filter by type"><option value="">All types</option>${Object.keys(TC).map(t=>`<option${st.type===t?' selected':''}>${t}</option>`).join('')}</select><label class="chk"><input type="checkbox" id="big"${st.big?' checked':''}>Type, ability or evolution changed</label>`;
   if(st.tab==='moves')h+=`<select id="mty" aria-label="Filter by type"><option value="">All types</option>${Object.keys(TC).map(t=>`<option${st.mtype===t?' selected':''}>${t}</option>`).join('')}</select>`;
@@ -207,6 +216,7 @@ function list(){
   if(st.tab==='trainers'||st.tab==='others'){cur=(st.tab==='trainers'?TG:OG).filter(t=>!q||t.s.includes(q));h=grouped(cur,(t,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel[st.tab]===t}"><span class="nm">${esc(t.name)}</span></button>`)}
   if(st.tab==='events'){cur=D.G.filter(g=>!q||g.s.includes(q));h=cur.map((g,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.events===g}"><span class="nm">${esc(g.name)}</span><span class="tag">${g.t.reduce((a,t)=>a+t.r.length,0)||''}</span></button>`).join('')}
   if(st.tab==='moves'){cur=D.M.filter(m=>(!q||m.s.includes(q))&&(!st.mtype||m.type===st.mtype));h=cur.map((m,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.moves===m}"><span class="dots"><i style="background:${TC[m.type]||'#666'}" title="${m.type}"></i></span><span class="nm">${esc(m.name)}</span><span class="tag">${esc(m.cat.slice(0,4))}${m.pow!=='–'?' '+esc(m.pow):''}</span></button>`).join('')}
+  if(st.tab==='abilities'){cur=D.A.filter(a=>!q||a.s.includes(q));h=cur.map((a,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.abilities===a}"><span class="nm">${esc(a.name)}</span><span class="tag">${a.mons.length+a.hid.length}</span></button>`).join('')}
   if(st.tab==='items'){cur=D.I.filter(i=>!q||i.s.includes(q));h=cur.map((s,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.items===s}"><span class="nm">${esc(s.name)}</span><span class="tag">${s.r.length}</span></button>`).join('')}
   if(st.tab==='pokemon'){cur=D.P.filter(p=>(!q||p.s.includes(q))&&(!st.type||p.types.includes(st.type))&&(!st.big||p.big));h=cur.map((p,i)=>`<button class="item" data-i="${i}" aria-current="${st.sel.pokemon===p}"><span class="no">${num(p.n)}</span><span class="nm">${esc(p.name)}</span><span class="dots">${p.types.map(t=>`<i style="background:${TC[t]}" title="${t}"></i>`).join('')}</span></button>`).join('')}
   $('list').innerHTML=h||'<div class="empty">Nothing matches that search.</div>';
@@ -219,18 +229,22 @@ function wild(a){const sp=a.sp?`<section class="sec"><h3>Special conditions</h3>
   const also=AREAS.filter(x=>x!==a&&x.a===a.a);
   const tr=a.tr.length?`<section class="sec"><h3>Trainers<small>${a.tr.length}</small></h3><div class="scroll"><table><thead><tr><th scope="col">Trainer</th><th scope="col">Class</th><th scope="col">Fight</th><th scope="col">Pokémon</th></tr></thead><tbody>${a.tr.map(x=>`<tr><td><button class="lk" data-tt="${x.tab}" data-ti="${(x.tab==='trainers'?TG:OG).indexOf(x.e)}">${esc(x.e.name)}</button></td><td>${esc(x.e.g)}</td><td>${esc(x.f.fight||'–')}</td><td>${x.f.t.map(r=>`${mon(r[0])} <span class="note">${esc(r[1])}</span>`).join(', ')}</td></tr>`).join('')}</tbody></table></div></section>`:'';
   return `<div class="eh"><h2>${esc(a.a)}</h2><p>${esc(a.g)}${also.length?' · Also: '+also.map(x=>areaBtn(x,x.g)).join(', '):''}</p></div>`+(a.m.length?'':'<p class="note">No wild Pokémon here.</p>')+a.m.map(m=>`<section class="sec"><h3>${esc(m.k||'Encounters')}</h3>${tbl(m)}</section>`).join('')+sp+tr}
-function trainer(t){return `<div class="eh"><h2>${esc(t.name)}</h2><p>${esc(t.g)}</p></div>`+t.f.map(f=>`<section class="sec"><h3>${f.loc?locb(f.loc):'Not found in the game'}${f.fight?`<small>${esc(f.fight)}</small>`:''}</h3>${f.it?`<p class="note">Uses in battle: ${esc(f.it)}</p><br>`:''}<div class="team">${f.t.map(r=>{const p=byName.get(r[0]);const mv=r[4]==='Default'?'<li>Default moves for its level</li>':r[4].split(', ').map(x=>`<li>${mvt(x)}</li>`).join('');return `<div class="card"><div class="top">${mon(r[0])}<span>Lv ${esc(r[1])}</span></div>${p?chips(p.types):''}<small>${esc(r[2])}${r[3]!=='–'?' · '+esc(r[3]):''}</small><ol>${mv}</ol></div>`}).join('')}</div></section>`).join('')}
+function trainer(t){return `<div class="eh"><h2>${esc(t.name)}</h2><p>${esc(t.g)}</p></div>`+t.f.map(f=>`<section class="sec"><h3>${f.loc?locb(f.loc):'Not found in the game'}${f.fight?`<small>${esc(f.fight)}</small>`:''}</h3>${f.it?`<p class="note">Uses in battle: ${esc(f.it)}</p><br>`:''}<div class="team">${f.t.map(r=>{const p=byName.get(r[0]);const mv=r[4]==='Default'?'<li>Default moves for its level</li>':r[4].split(', ').map(x=>`<li>${mvt(x)}</li>`).join('');return `<div class="card"><div class="top">${mon(r[0])}<span>Lv ${esc(r[1])}</span></div>${p?chips(p.types):''}<small>${abl(r[2])}${r[3]!=='–'?' · '+esc(r[3]):''}</small><ol>${mv}</ol></div>`}).join('')}</div></section>`).join('')}
 function pokemon(p){
   const tot=p.st.reduce((a,b)=>a+b,0);const where=FOUND.get(p.name);
   return `<div class="eh"><span class="no">${num(p.n)}</span><h2>${esc(p.name)}</h2><p>${chips(p.types)}</p></div>`+
-  (p.chg.length?`<section class="sec chg"><h3>Changed in Redux</h3><ul>${p.chg.map(c=>`<li>${c[0]?`<b>${esc(c[0])}:</b> `:''}${esc(c[1])}${c[2]&&c[2].length?`<ol>${c[2].map(chgRow).join('')}</ol>`:''}</li>`).join('')}</ul></section>`:'')+
+  (p.chg.length?`<section class="sec chg"><h3>Changed in Encore</h3><ul>${p.chg.map(c=>`<li>${c[0]?`<b>${esc(c[0])}:</b> `:''}${SET_CHG.has(c[0])?`<ol>${chgSet(c[0],c[1])}</ol>`:linkAbs(c[1])}${c[2]&&c[2].length?`<ol>${c[2].map(chgRow).join('')}</ol>`:''}</li>`).join('')}</ul></section>`:'')+
   `<div class="grid2"><section class="sec"><h3>Base stats</h3>${p.st.map((v,i)=>`<div class="stat"><span>${STATS[i]}</span><span>${v}</span><span class="tr"><i style="width:${(v/255*100).toFixed(1)}%"></i></span></div>`).join('')}<div class="stat total"><span>Total</span><span>${tot}</span><span></span></div></section>
-  <section class="sec"><h3>Details</h3><dl><dt>Abilities</dt><dd>${esc(p.ab.join(', ')||'None')}</dd><dt>Hidden</dt><dd>${esc(p.hid||'None')}</dd>${p.cyc?`<dt>Egg cycles</dt><dd>${p.cyc}</dd>`:''}<dt>Evolves</dt><dd>${p.evo.length?p.evo.map(esc).join('<br>'):'Does not evolve further'}</dd></dl></section></div>
+  <section class="sec"><h3>Details</h3><dl><dt>Abilities</dt><dd>${p.ab.map(abl).join(', ')||'None'}</dd><dt>Hidden</dt><dd>${p.hid?abl(p.hid):'None'}</dd>${p.cyc?`<dt>Egg cycles</dt><dd>${p.cyc}</dd>`:''}<dt>Evolves</dt><dd>${p.evo.length?p.evo.map(esc).join('<br>'):'Does not evolve further'}</dd></dl></section></div>
   <section class="sec"><h3>Level-up moves<small>${p.lvl.length}</small></h3><div class="lv">${p.lvl.map(x=>`<div><b>${x[0]==='evolve'?'Evolve':'Lv '+x[0]}</b>${mvt(x[1])}</div>`).join('')}</div></section>
   ${p.tm.length?`<section class="sec"><h3>TMs and HMs<small>${p.tm.length}</small></h3><div class="lv">${[...p.tm].sort((a,b)=>machKey(a)-machKey(b)||a.localeCompare(b)).map(x=>`<div><b>${esc(MACH.get(x)||'–')}</b>${mvt(x)}</div>`).join('')}</div></section>`:''}
   ${[['Tutor moves',p.tutor],['Egg moves',p.egg]].filter(x=>x[1].length).map(([k,v])=>`<section class="sec"><h3>${k}<small>${v.length}</small></h3><div class="lv">${v.map(x=>`<div>${mvt(x)}</div>`).join('')}</div></section>`).join('')}
   <section class="sec"><h3>Where to find it</h3>${where?`<dl>${[...where].map(([a,k])=>`<dt>${areaBtn(a,a.g===MAIN?a.a:a.g+': '+a.a)}</dt><dd>${esc([...k].join(', '))}</dd>`).join('')}</dl>`:'<p class="note">Not in the wild. Evolve it, or check the gift list.</p>'}</section>`}
 function chgRow(r){const m=r.match(/^(Evolve|Lv \d+): (.*) \((new|removed|was .*)\)$/);if(!m)return `<li><span>${esc(r)}</span></li>`;return `<li${m[3]==='removed'?' class="rm"':''}><b>${esc(m[1])}</b><span>${mvt(m[2],m[3]!=='removed')}</span><em>${esc(m[3]==='new'?'New':m[3]==='removed'?'Removed':m[3][0].toUpperCase()+m[3].slice(1))}</em></li>`}
+// "added Amnesia, Charm; removed Ally Switch" for TM, tutor and egg moves, one row per move like the level-up changes. TMs show their number.
+const SET_CHG=new Set(['TMs/HMs','Tutor moves','Egg moves']);
+function chgSet(k,v){return v.split('; ').flatMap(part=>{const m=part.match(/^(added|removed) (.*)$/);if(!m)return [`<li><span>${esc(part)}</span></li>`];const rm=m[1]==='removed';
+  return m[2].split(', ').map(n=>`<li${rm?' class="rm"':''}>${k==='TMs/HMs'?`<b>${esc(MACH.get(n)||'–')}</b>`:''}<span>${mvt(n,!rm)}</span><em>${rm?'Removed':'New'}</em></li>`)}).join('')}
 function lvNum(l){return l==='evolve'?0:+l.slice(3)}
 function move(m){
   const lv=[...m.lvl].sort((a,b)=>lvNum(a[1])-lvNum(b[1]));
@@ -239,15 +253,21 @@ function move(m){
   <section class="sec"><h3>TM or HM</h3>${m.src.length?`<dl>${m.src.map(x=>{const k=x.match(/^(\S+) \((.*), (₽[\d,]+)\)$/);return k?`<dt>${esc(k[1])}</dt><dd>${esc(k[2])}, ${esc(k[3])}</dd>`:`<dt>${esc(x)}</dt><dd>Found or given in the game</dd>`}).join('')}</dl>`:'<p class="note">No TM or HM teaches this move.</p>'}</section></div>
   ${lv.length?`<section class="sec"><h3>By level-up<small>${lv.length}</small></h3><div class="scroll"><table><thead><tr><th scope="col">Pokémon</th><th scope="col">Type</th><th scope="col">Level</th></tr></thead><tbody>${lv.map(x=>{const p=byName.get(x[0]);return `<tr><td>${mon(x[0])}</td><td>${p?chips(p.types):''}</td><td style="white-space:nowrap">${x[1]==='evolve'?'Evolve':esc(x[1].replace('Lv ',''))}</td></tr>`}).join('')}</tbody></table></div></section>`:''}
   ${[['By TM or HM',m.tm],['By move tutor',m.tutor],['As an egg move',m.egg]].filter(x=>x[1].length).map(([k,v])=>`<section class="sec"><h3>${k}<small>${v.length}</small></h3><p class="chips">${v.map(mon).join(', ')}</p></section>`).join('')}`}
+function ability(a){
+  const rows=[...a.mons.map(n=>[n,'Ability']),...a.hid.map(n=>[n,'Hidden ability'])].sort((x,y)=>(byName.get(x[0])?.n||0)-(byName.get(y[0])?.n||0));
+  return `<div class="eh"><h2>${esc(a.name)}</h2><p>${rows.length} Pokémon</p></div>`+
+  (a.notes.length?`<section class="sec chg"><h3>Caveats</h3><ul>${a.notes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul></section>`:'')+
+  `<section class="sec"><h3>Details</h3><p class="note" style="color:var(--fg)">${esc(a.desc)}</p>${a.rules.length?`<ul class="rules">${a.rules.map(r=>`<li>${esc(r)}</li>`).join('')}</ul>`:''}</section>
+  <section class="sec"><h3>Pokémon with it<small>${rows.length}</small></h3><div class="scroll"><table><thead><tr><th scope="col">Pokémon</th><th scope="col">Type</th><th scope="col">How</th></tr></thead><tbody>${rows.map(([n,how])=>{const p=byName.get(n);return `<tr><td>${mon(n)}</td><td>${p?chips(p.types):''}</td><td>${how}</td></tr>`}).join('')}</tbody></table></div></section>`}
 function shop(s){const b=s.h.includes('Badges');return `<div class="eh"><h2>${esc(s.name)}</h2><p>${s.r.length} items${b?'. Items appear once you have the listed number of badges.':''}</p></div><section class="sec"><div class="scroll"><table><thead><tr>${s.h.map(x=>`<th scope="col">${esc(x)}</th>`).join('')}</tr></thead><tbody>${s.r.map(r=>'<tr>'+r.map((c,i)=>{if(i===0){const k=c.match(/^((?:TM|HM|TR)\d+) (.*)$/);return `<td style="white-space:nowrap">${k?`<span class="mvt">${esc(k[1])} ${mvt(k[2])}</span>`:esc(c)}</td>`}if(s.h[i]==='Description')return `<td class="note">${esc(c)}</td>`;return `<td style="white-space:nowrap">${esc(c)}</td>`}).join('')+'</tr>').join('')}</tbody></table></div></section>`}
 function events(g){return `<div class="eh"><h2>${esc(g.name)}</h2></div>`+(g.p.length?`<section class="sec">${g.p.map(x=>`<p class="note">${esc(x)}</p>`).join('<br>')}</section>`:'')+
   g.t.map(t=>`<section class="sec"><div class="scroll"><table><thead><tr>${t.h.map(x=>`<th scope="col">${esc(x)}</th>`).join('')}</tr></thead><tbody>${t.r.map(r=>'<tr>'+r.map((c,i)=>`<td${t.h[i]==='Level'?' style="white-space:nowrap"':''}>${t.h[i]==='Where'?linkPlaces(c):t.h[i]==='Level'?esc(c):linkMons(c)}</td>`).join('')+'</tr>').join('')}</tbody></table></div></section>`).join('')}
-function entry(){const s=st.sel[st.tab];$('entry').innerHTML=st.tab==='wild'?wild(s):(st.tab==='trainers'||st.tab==='others')?trainer(s):st.tab==='moves'?move(s):st.tab==='items'?shop(s):st.tab==='events'?events(s):pokemon(s)}
+function entry(){const s=st.sel[st.tab];$('entry').innerHTML=st.tab==='wild'?wild(s):(st.tab==='trainers'||st.tab==='others')?trainer(s):st.tab==='moves'?move(s):st.tab==='abilities'?ability(s):st.tab==='items'?shop(s):st.tab==='events'?events(s):pokemon(s)}
 function show(){tabs();controls();list();entry()}
 // Switching tabs saves this tab's scroll positions and restores the new tab's. fresh=true (following a link) starts the new tab at the top.
 function go(t,fresh){hideTip();st.scroll[st.tab]=[window.scrollY,$('list').scrollTop];st.tab=t;try{history.replaceState(null,'','#'+t)}catch(e){}show();
   const s=!fresh&&st.scroll[t];if(s){$('list').scrollTop=s[1];window.scrollTo(0,s[0])}else{const c=$('list').querySelector('[aria-current="true"]');if(c)c.scrollIntoView({block:'nearest'});window.scrollTo(0,0)}}
-// Hovering a move anywhere but the Moves tab shows its details.
+// Hovering a move anywhere but the Moves tab shows its details. Hovering an ability shows its name and description.
 function tipHtml(m){return `<h4>${esc(m.name)}</h4>${chips([m.type])}<span class="cat">${esc(m.cat)}</span><dl><dt>Power</dt><dd>${esc(m.pow)}</dd><dt>Acc</dt><dd>${esc(m.acc)}</dd><dt>PP</dt><dd>${esc(m.pp)}</dd></dl><p>${esc(m.desc)}</p>`}
 // Hovering a Pokémon's name shows its types, abilities and base stats, except for the Pokémon already open on the Pokémon tab.
 function monTipHtml(p){return `<div class="pkc"><div><span class="no">${num(p.n)}</span><h4>${esc(p.name)}</h4>${chips(p.types)}<p class="lbl">Abilities</p><ul class="ab">${p.ab.map(a=>`<li>${esc(a)}</li>`).join('')}${p.hid?`<li>${esc(p.hid)} <em>hidden</em></li>`:''}${!p.ab.length&&!p.hid?'<li>None</li>':''}</ul></div>${hex(p.st,TC[p.types[0]]||'#666')}</div>`}
@@ -255,18 +275,20 @@ const byNum=new Map(D.P.map(p=>[String(p.n),p]));
 function hideTip(){$('tip').hidden=true}
 function showTip(b){let html,cls='tip';
   if(b.classList.contains('mv')){const m=byMove.get(b.dataset.m);if(!m||st.tab==='moves')return;html=tipHtml(m)}
+  else if(b.classList.contains('abl')){const a=byAb.get(b.dataset.ab);if(!a||(st.tab==='abilities'&&st.sel.abilities===a))return;html=`<h4>${esc(a.name)}</h4><p>${esc(a.desc)}</p>`;cls='tip abt'}
   else{const p=byNum.get(b.dataset.p);if(!p||(st.tab==='pokemon'&&st.sel.pokemon===p))return;html=monTipHtml(p);cls='tip pk'}
   const t=$('tip');t.className=cls;t.innerHTML=html;t.hidden=false;
   const r=b.getBoundingClientRect(),w=t.offsetWidth,h=t.offsetHeight;let x=Math.min(Math.max(8,r.left),innerWidth-w-8),y=r.bottom+6;if(y+h>innerHeight-8)y=Math.max(8,r.top-h-6);t.style.left=x+'px';t.style.top=y+'px'}
-document.addEventListener('mouseover',e=>{const b=e.target.closest('.mv,.mon');if(b)showTip(b)});
-document.addEventListener('mouseout',e=>{const b=e.target.closest('.mv,.mon');if(b&&!b.contains(e.relatedTarget))hideTip()});
-document.addEventListener('focusin',e=>{const b=e.target.closest('.mv,.mon');b?showTip(b):hideTip()});
+document.addEventListener('mouseover',e=>{const b=e.target.closest('.mv,.mon,.abl');if(b)showTip(b)});
+document.addEventListener('mouseout',e=>{const b=e.target.closest('.mv,.mon,.abl');if(b&&!b.contains(e.relatedTarget))hideTip()});
+document.addEventListener('focusin',e=>{const b=e.target.closest('.mv,.mon,.abl');b?showTip(b):hideTip()});
 window.addEventListener('scroll',hideTip,{passive:true});
 document.addEventListener('click',e=>{
   const b=e.target.closest('button');if(!b)return;
   if(b.dataset.tab)return go(b.dataset.tab);
   if(b.dataset.p){st.sel.pokemon=D.P.find(p=>p.n==b.dataset.p);go('pokemon',true);return}
   if(b.dataset.m){st.sel.moves=byMove.get(b.dataset.m);st.q.moves='';st.mtype='';go('moves',true);return}
+  if(b.dataset.ab){st.sel.abilities=byAb.get(b.dataset.ab);st.q.abilities='';go('abilities',true);return}
   if(b.dataset.a!==undefined){st.sel.wild=AREAS[+b.dataset.a];st.q.wild='';go('wild',true);return}
   if(b.dataset.tt){const t=b.dataset.tt;st.sel[t]=(t==='trainers'?TG:OG)[+b.dataset.ti];st.q[t]='';go(t,true);return}
   if(b.dataset.i!==undefined){st.sel[st.tab]=cur[+b.dataset.i];list();entry();window.scrollTo(0,0)}

@@ -1307,7 +1307,7 @@ scr_seq_0003_022:
     releaseall
     end
 
-// Redux: Pocket Center key item, used from the bag or the Y button. Heals the party like a Pokemon Center.
+// Encore: Pocket Center key item, used from the bag or the Y button. Heals the party like a Pokemon Center.
 scr_seq_0003_074_pocket_pkmn_center:
     lockall
     get_party_count VAR_SPECIAL_RESULT
@@ -1330,21 +1330,21 @@ _pocket_pkmn_center_heal:
     releaseall
     end
 
-// Redux: std 2038 (std_fade_end_mom_music) ends Mom's temporary music. Vanilla shares its body
+// Encore: std 2038 (std_fade_end_mom_music) ends Mom's temporary music. Vanilla shares its body
 // with std 2043/2045/2066/2068/2071. Mom's opening scene in New Bark Town is the first script to
-// call it, right after she explains the Options menu, so she hands over the Redux starting items
+// call it, right after she explains the Options menu, so she hands over the Encore starting items
 // here. The item check makes this happen once, without a new flag.
 scr_seq_0003_038:
     hasitem ITEM_POCKET_PKMN_CENTER, 1, VAR_SPECIAL_RESULT
     compare VAR_SPECIAL_RESULT, 0
-    call_if_eq _ReduxGiveStartingItems
+    call_if_eq _EncoreGiveStartingItems
     fade_out_bgm 0, 30
     stop_bgm 0
     reset_bgm
     endstd
     end
 
-_ReduxGiveStartingItems:
+_EncoreGiveStartingItems:
     npc_msg 122
     setvar VAR_SPECIAL_x8004, ITEM_INFINITE_CANDY
     setvar VAR_SPECIAL_x8005, 1

@@ -3,7 +3,7 @@
 Written by hand. These come from the game's event scripts, not a data file, so `scripts/build_reference_docs.py` can't
 generate them. Levels and species were read from [pret/pokeheartgold](https://github.com/pret/pokeheartgold)'s decompiled
 scripts, using the HeartGold branch where the versions differ. Check this page when changing scripts, and when working on the
-planned legendary changes in [REDUX_CHANGES.md](../REDUX_CHANGES.md).
+planned legendary changes in [ENCORE_CHANGES.md](../ENCORE_CHANGES.md).
 
 Wild encounters are in [encounters.md](encounters.md) and [special_encounters.md](special_encounters.md).
 
@@ -27,7 +27,7 @@ Wild encounters are in [encounters.md](encounters.md) and [special_encounters.md
 
 ### The Collector
 
-A Redux NPC in the house beside Mr. Pokémon's on Route 30, available after beating the Elite Four. Each Pokémon can be taken once, and all are from
+An Encore NPC in the house beside Mr. Pokémon's on Route 30, available after beating the Elite Four. Each Pokémon can be taken once, and all are from
 this menu. Mew, Celebi, Jirachi, Deoxys, Manaphy, Darkrai, Shaymin and Arceus are marked as fateful encounters, so they obey and trigger their vanilla
 events: Celebi in Ilex Forest, Arceus at the Sinjoh Ruins and Shaymin's Gracidea in Goldenrod.
 

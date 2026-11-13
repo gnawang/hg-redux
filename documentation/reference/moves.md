@@ -2,7 +2,7 @@
 
 Generated from `data/Moves.c` and the learnsets by `scripts/build_reference_docs.py`. Don't edit by hand.
 
-Every move a Redux Pokémon can learn, with who learns it and how. Power and accuracy show "–" where they don't apply.
+Every move an Encore Pokémon can learn, with who learns it and how. Power and accuracy show "–" where they don't apply.
 
 ## Absorb
 
